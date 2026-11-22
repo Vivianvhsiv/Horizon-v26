@@ -1,0 +1,8 @@
+test_head_rejected_get_fallback (__main__.AuditorTests.test_head_rejected_get_fallback) ... ok
+test_head_success (__main__.AuditorTests.test_head_success) ... ok
+test_timeout_is_review_not_invalid (__main__.AuditorTests.test_timeout_is_review_not_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

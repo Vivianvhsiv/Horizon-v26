@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "principle": "No evidence, no confirmed connection.",
+  "scope": "Use only the 13 current EMASI subjects as the school-subject exploration framework. This does not mean all 13 are required for every major or that they are university admission prerequisites.",
+  "relationship_types": [
+    {
+      "id": "direct_academic_connection",
+      "label_en": "Direct Academic Connection",
+      "label_vi": "Mối liên hệ học thuật trực tiếp",
+      "criteria": "A specific EMASI learning outcome or topic corresponds to a named university programme course, core knowledge area, or explicitly documented prerequisite."
+    },
+    {
+      "id": "related_knowledge_connection",
+      "label_en": "Related Knowledge Connection",
+      "label_vi": "Mối liên hệ kiến thức liên quan",
+      "criteria": "A reliable academic source supports a relevant supporting or interdisciplinary relationship, but the subject is not shown to be a core requirement."
+    },
+    {
+      "id": "no_direct_connection_identified",
+      "label_en": "No Direct Connection Identified",
+      "label_vi": "Chưa xác định mối liên hệ trực tiếp",
+      "criteria": "The reviewed evidence does not establish a direct relationship. This is not evidence of student inability or unsuitability."
+    }
+  ],
+  "required_fields": [
+    "subject_id",
+    "major_id",
+    "relationship_type",
+    "emasi_curriculum_evidence",
+    "university",
+    "programme_name",
+    "university_course_or_learning_outcome",
+    "evidence_explanation",
+    "source_url",
+    "source_section_or_page",
+    "verification_status",
+    "last_reviewed"
+  ],
+  "verification_statuses": [
+    "Verified",
+    "Supported",
+    "Pending Verification",
+    "Rejected / Not Supported"
+  ],
+  "source_rules": [
+    "Prefer official university programme pages, curriculum maps, course catalogues, course descriptions, and admission requirements.",
+    "Use peer-reviewed research or authoritative academic/professional frameworks for broader disciplinary claims.",
+    "A programme listing verifies programme existence only; it does not verify curriculum, prerequisites, skills, careers, or subject relationships.",
+    "Record the specific institution and programme. Do not generalize one university's curriculum to every university offering a similarly named major.",
+    "Never promote a Pending Verification relationship into the interactive network as a confirmed connection.",
+    "Do not infer admission eligibility, aptitude, or suitability from a high-school subject connection."
+  ]
+}

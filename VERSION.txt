@@ -1,0 +1,3 @@
+Horizon v26.0 — Final Release Candidate
+Status: controlled testing only; public release on hold.
+Based on v25.9 development package. v24 baseline and live Railway deployment unchanged.

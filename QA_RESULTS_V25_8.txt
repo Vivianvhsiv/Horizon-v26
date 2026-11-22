@@ -1,0 +1,47 @@
+PASS Root and data major registries are byte-equivalent in parsed content
+PASS Root and data academic-source registries are synchronized
+PASS Every major has a matching academic-source profile
+PASS Exactly 20 major profiles are present
+PASS Major profiles contain core bilingual explanation and caveat fields
+PASS Major subject and career fields retain list structure
+PASS Exactly 13 EMASI exploration subjects are present
+PASS EMASI subject IDs are present and unique
+PASS English subject names are present and unique
+PASS Vietnamese subject names are present and unique
+PASS Mapping protocol defines three relationship types
+PASS Mapping protocol preserves its no-evidence/no-confirmation principle
+PASS Mapping protocol retains pending verification status
+PASS All 260 major-subject pairs exist in all three matrix artifacts
+PASS All 186 source records exist in register, ledger and review queue
+PASS Matrix pair IDs are unique
+PASS Source row IDs are unique
+PASS Matrix queue preserves crosswalk IDs and ordering
+PASS Source queue preserves ledger IDs and ordering
+PASS Every matrix row references a known major
+PASS Every matrix row references a known EMASI subject ID
+PASS Every source-register row references a known major
+PASS Unconfirmed source-to-matrix links remain unresolved
+PASS No matrix pair is falsely marked as EMASI syllabus-verified
+PASS Source review decisions remain unreviewed until human input
+PASS Matrix guidance remains exploratory by default
+PASS No source passage is fabricated in review queue
+PASS No EMASI evidence is fabricated in review queue
+PASS app.py parses as valid Python
+PASS audit_source_urls.py parses as valid Python
+PASS build_claim_traceability_v25_6.py parses as valid Python
+PASS build_evidence_coverage_report.py parses as valid Python
+PASS build_review_workflow_v25_7.py parses as valid Python
+PASS README_V25_7.md is present and non-empty
+PASS HUMAN_EVIDENCE_REVIEW_PROTOCOL_V25_7.md is present and non-empty
+PASS EVIDENCE_TRACEABILITY_REPORT_V25_6.md is present and non-empty
+PASS Human review protocol distinguishes review eligibility from verification
+PASS Historical qa_check.py passes
+PASS Historical qa_v25.py passes
+PASS Historical qa_v25_1.py passes
+PASS Historical qa_v25_2.py passes
+PASS Historical qa_v25_3.py passes
+PASS Historical qa_v25_4.py passes
+PASS Historical qa_v25_5.py passes
+PASS Historical qa_v25_6.py passes
+PASS Historical qa_v25_7.py passes
+Summary: 46/46 passed

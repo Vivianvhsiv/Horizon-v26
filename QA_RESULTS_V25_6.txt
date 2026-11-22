@@ -1,0 +1,22 @@
+PASS Every source-register row has one ledger row
+PASS Every matrix pair has one crosswalk row
+PASS Source Row IDs are unique
+PASS Matrix Pair IDs are unique
+PASS Ledger preserves source URLs in original row order
+PASS Ledger preserves major and source title
+PASS Programme availability remains separately scoped
+PASS No source row is promoted to EMASI mapping evidence
+PASS Unproven source-to-matrix joins remain explicitly unresolved
+PASS No unsupported syllabus verification is asserted
+PASS HTTPS URLs have parsed host fields
+PASS Reproducible generator is included
+PASS Report explains missing row-level foreign key
+PASS Report preserves validation boundary
+PASS Existing qa_check.py passes
+PASS Existing qa_v25.py passes
+PASS Existing qa_v25_1.py passes
+PASS Existing qa_v25_2.py passes
+PASS Existing qa_v25_3.py passes
+PASS Existing qa_v25_4.py passes
+PASS Existing qa_v25_5.py passes
+Summary: 21/21 passed

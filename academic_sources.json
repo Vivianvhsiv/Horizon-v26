@@ -1,0 +1,2288 @@
+{
+  "Cognitive Science": {
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "The sources support the interdisciplinary nature of Cognitive Science and the listed contributing fields. They do not establish universal course requirements across universities. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon. Official curriculum references for Cognitive Science, Psychology and Computer Science have been added at claim level. They support course-area context, not universal admissions prerequisites or EMASI syllabus equivalence.",
+    "scope_vi": "Các nguồn hỗ trợ tính liên ngành và những lĩnh vực đóng góp được liệt kê. Chúng không xác lập yêu cầu môn học chung cho mọi trường đại học. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon. Đã bổ sung nguồn chương trình chính thức ở cấp độ nhận định cho Cognitive Science, Psychology và Computer Science. Các nguồn hỗ trợ bối cảnh học phần, không phải điều kiện tuyển sinh áp dụng chung hoặc bằng chứng tương đương với đề cương EMASI.",
+    "claims": [
+      {
+        "claim": "Cognitive Science is interdisciplinary and draws on psychology, computer science, linguistics, philosophy and neuroscience.",
+        "claim_vi": "Khoa học nhận thức có tính liên ngành, kết hợp tâm lý học, khoa học máy tính, ngôn ngữ học, triết học và khoa học thần kinh.",
+        "type": "Disciplinary evidence",
+        "type_vi": "Bằng chứng về mối liên hệ học thuật",
+        "sources": [
+          {
+            "institution": "Yale University",
+            "title": "Cognitive Science — Yale College Programs of Study",
+            "url": "https://catalog.yale.edu/ycps/subjects-of-instruction/cognitive-science/",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          },
+          {
+            "institution": "Johns Hopkins University",
+            "title": "Undergraduate Cognitive Science",
+            "url": "https://cogsci.jhu.edu/undergraduate/",
+            "source_type": "Official department program page",
+            "source_type_vi": "Trang chương trình đào tạo chính thức của khoa"
+          },
+          {
+            "institution": "UC San Diego",
+            "title": "Cognitive Science Major Requirements",
+            "url": "https://cogsci.ucsd.edu/undergraduates/major/",
+            "source_type": "Official department program page",
+            "source_type_vi": "Trang chương trình đào tạo chính thức của khoa"
+          }
+        ],
+        "status": "Verified for broad disciplinary relationship",
+        "status_vi": "Đã xác minh mối liên hệ học thuật ở cấp độ khái quát"
+      },
+      {
+        "claim": "Specific course requirements differ by institution and degree pathway.",
+        "claim_vi": "Yêu cầu học phần cụ thể khác nhau tùy trường đại học và lộ trình bằng cấp.。",
+        "type": "Curriculum scope",
+        "type_vi": "Mô tả phạm vi chương trình",
+        "sources": [
+          {
+            "institution": "UC San Diego",
+            "title": "B.S. Cognitive Science",
+            "url": "https://cogsci.ucsd.edu/undergraduates/major/bs-cogsci.html",
+            "source_type": "Official degree requirements",
+            "source_type_vi": "Yêu cầu văn bằng chính thức"
+          }
+        ],
+        "status": "Verified for the cited institution only",
+        "status_vi": "Chỉ yêu cầu chương trình của các trường đại học được trích dẫn đã được đối chiếu."
+      },
+      {
+        "claim": "Official university programme directories list Cognitive Science or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Cognitive Science hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of Pennsylvania",
+            "title": "Undergraduate Programs Catalogue",
+            "url": "https://catalog.upenn.edu/undergraduate/programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Cognitive Science",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          },
+          {
+            "institution": "The University of Texas at Dallas",
+            "title": "2026 Undergraduate Catalog — Programs",
+            "url": "https://catalog.utdallas.edu/2026/undergraduate/programs",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Cognitive Science",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official university curriculum and programme pages document the listed course areas; these provide curriculum context for subject exploration, not universal high-school prerequisites.",
+        "claim_vi": "Các trang chương trình và chương trình đào tạo chính thức của đại học ghi nhận những lĩnh vực học phần được liệt kê; đây là bối cảnh chương trình để khám phá môn học, không phải điều kiện tiên quyết phổ thông áp dụng chung.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình hỗ trợ gợi ý môn học khám phá",
+        "sources": [
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Program Information (2026–27 requirements)",
+            "url": "https://www.cogsci.uci.edu/undergraduate/",
+            "source_type": "Official programme requirements and course list",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu chương trình và danh sách học phần chính thức"
+          },
+          {
+            "institution": "Rice University",
+            "title": "Cognitive Science Core Courses",
+            "url": "https://cogsci.rice.edu/core-courses",
+            "source_type": "Official major core-course list",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Danh sách học phần cốt lõi của ngành chính thức"
+          },
+          {
+            "institution": "Tufts University",
+            "title": "BA/BS in Cognitive and Brain Science — Course Requirements",
+            "url": "https://as.tufts.edu/psychology/academics/undergraduate-programs/babs-cognitive-and-brain-science",
+            "source_type": "Official degree requirements",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu văn bằng chính thức"
+          },
+          {
+            "institution": "Dartmouth College",
+            "title": "About the Cognitive Science Major",
+            "url": "https://cognitive-science.dartmouth.edu/undergraduate/about-major",
+            "source_type": "Official programme description",
+            "claim_type": "Disciplinary scope",
+            "source_type_vi": "Mô tả chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "University of Virginia",
+            "title": "Cognitive Science — Admission and Requirements",
+            "url": "https://cogsci.as.virginia.edu/admission-and-requirements",
+            "source_type": "Official programme requirements",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu chương trình đào tạo chính thức"
+          }
+        ],
+        "status": "Official curriculum pages identified; individual EMASI mappings remain exploratory",
+        "status_vi": "Đã xác định trang chương trình chính thức; ánh xạ từng môn EMASI vẫn mang tính khám phá"
+      },
+      {
+        "claim": "UC Irvine’s 2026–27 comparison distinguishes B.S. Cognitive Sciences from B.S. Psychology: both list psychology fundamentals, statistics, programming and science background, while the Cognitive Sciences degree additionally lists calculus and computational/statistical-learning core options.",
+        "claim_vi": "Bảng đối chiếu 2026–27 của UC Irvine phân biệt B.S. Cognitive Sciences với B.S. Psychology: cả hai đều có nền tảng tâm lý học, thống kê, lập trình và khoa học; chương trình Cognitive Sciences còn liệt kê giải tích và các học phần cốt lõi về tính toán/học thống kê.",
+        "type": "Institution-specific curriculum comparison",
+        "type_vi": "So sánh chương trình đào tạo theo từng trường",
+        "sources": [
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Program Information — 2026–27 Cognitive Sciences and Psychology comparison",
+            "url": "https://www.cogsci.uci.edu/undergraduate/",
+            "source_type": "Official department programme requirements and course comparison",
+            "claim_scope": "Compares the listed UCI degree requirements for the stated catalogue year; applies only to UCI and the named degree pathways.",
+            "source_type_vi": "Yêu cầu chương trình và so sánh học phần chính thức của khoa"
+          }
+        ],
+        "status": "Verified for UC Irvine 2026–27 catalogue only; not a universal Cognitive Science or Psychology requirement and not an EMASI syllabus match.",
+        "status_vi": "Đã xác minh riêng theo danh mục UC Irvine 2026–27; không phải yêu cầu chung cho mọi chương trình Cognitive Science hoặc Psychology và không chứng minh tương đương đề cương EMASI."
+      }
+    ]
+  },
+  "Psychology": {
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "APA Guidelines 3.0 describe broad undergraduate learning goals for psychological science, including scientific inquiry, research methods, statistics, ethics and applications. They are guidance, not identical course requirements for every university. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon. Official curriculum references for Cognitive Science, Psychology and Computer Science have been added at claim level. They support course-area context, not universal admissions prerequisites or EMASI syllabus equivalence.",
+    "scope_vi": "APA 3.0 mô tả các mục tiêu học tập rộng cho ngành tâm lý học bậc đại học, bao gồm nghiên cứu khoa học, phương pháp nghiên cứu, thống kê, đạo đức và ứng dụng. Đây là hướng dẫn, không phải yêu cầu môn học giống nhau ở mọi trường. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon. Đã bổ sung nguồn chương trình chính thức ở cấp độ nhận định cho Cognitive Science, Psychology và Computer Science. Các nguồn hỗ trợ bối cảnh học phần, không phải điều kiện tuyển sinh áp dụng chung hoặc bằng chứng tương đương với đề cương EMASI.",
+    "claims": [
+      {
+        "claim": "Undergraduate psychology education includes scientific inquiry, critical thinking, research methods and statistics.",
+        "claim_vi": "Đào tạo tâm lý học bậc đại học bao gồm nghiên cứu khoa học, tư duy phản biện, phương pháp nghiên cứu và thống kê.",
+        "type": "Professional education guidance",
+        "type_vi": "Hướng dẫn đào tạo chuyên ngành",
+        "sources": [
+          {
+            "institution": "American Psychological Association",
+            "title": "Guidelines for the Undergraduate Psychology Major, Version 3.0",
+            "url": "https://www.apa.org/ed/precollege/undergraduate-major",
+            "source_type": "Professional association guidelines",
+            "source_type_vi": "Hướng dẫn của hiệp hội nghề nghiệp"
+          },
+          {
+            "institution": "American Psychological Association",
+            "title": "Guidelines 3.0 — Policy page",
+            "url": "https://www.apa.org/about/policy/undergraduate-psychology-major",
+            "source_type": "Official policy page",
+            "source_type_vi": "Trang chính sách chính thức"
+          }
+        ],
+        "status": "Verified as APA undergraduate guidance",
+        "status_vi": "Đã xác minh theo hướng dẫn đào tạo bậc đại học của APA"
+      },
+      {
+        "claim": "Official university programme directories list Psychology or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Psychology hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes (AY2026)",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme directory",
+            "listed_programme_name": "Psychology",
+            "source_type_vi": "Danh mục chương trình cấp bằng chính thức"
+          },
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Psychology",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Psychology",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Psychology",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "The University of Texas at Dallas",
+            "title": "2026 Undergraduate Catalog — Programs",
+            "url": "https://catalog.utdallas.edu/2026/undergraduate/programs",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Psychology",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official university curriculum and programme pages document the listed course areas; these provide curriculum context for subject exploration, not universal high-school prerequisites.",
+        "claim_vi": "Các trang chương trình và chương trình đào tạo chính thức của đại học ghi nhận những lĩnh vực học phần được liệt kê; đây là bối cảnh chương trình để khám phá môn học, không phải điều kiện tiên quyết phổ thông áp dụng chung.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình hỗ trợ gợi ý môn học khám phá",
+        "sources": [
+          {
+            "institution": "Harvard University",
+            "title": "Psychology Undergraduate Requirements Chart",
+            "url": "https://undergrad.psychology.fas.harvard.edu/requirements-chart",
+            "source_type": "Official concentration requirements",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu định hướng chuyên sâu chính thức"
+          },
+          {
+            "institution": "Harvard University",
+            "title": "Statistics and Research Methods",
+            "url": "https://undergrad.psychology.fas.harvard.edu/research-methods-statistics",
+            "source_type": "Official course requirement explanation",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Giải thích yêu cầu học phần chính thức"
+          },
+          {
+            "institution": "University of Pennsylvania",
+            "title": "Undergraduate Handbook for Psychology Majors",
+            "url": "https://psychology.sas.upenn.edu/undergraduate-handbook",
+            "source_type": "Official undergraduate handbook",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Sổ tay đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Georgetown University",
+            "title": "Psychology Course Offerings",
+            "url": "https://psychology.georgetown.edu/undergraduate/handbook/course-offerings/",
+            "source_type": "Official major course requirements",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu học phần của ngành chính thức"
+          },
+          {
+            "institution": "University of Hawaiʻi at Mānoa",
+            "title": "BS Degree — Psychology",
+            "url": "https://psychology.manoa.hawaii.edu/bs-degree/",
+            "source_type": "Official degree coursework requirements",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Yêu cầu học phần để hoàn thành văn bằng chính thức"
+          }
+        ],
+        "status": "Official curriculum pages identified; individual EMASI mappings remain exploratory",
+        "status_vi": "Đã xác định trang chương trình chính thức; ánh xạ từng môn EMASI vẫn mang tính khám phá"
+      },
+      {
+        "claim": "VinUniversity’s Psychology curriculum distinguishes College Core, Major Core, Area of Focus and Electives; Educational Psychology appears within the Educational/Counseling Psychology focus, not as a universal core requirement for every student.",
+        "claim_vi": "Chương trình Psychology của VinUniversity phân biệt College Core, Major Core, Area of Focus và Electives; Educational Psychology nằm trong hướng chuyên sâu Educational/Counseling Psychology, không phải học phần cốt lõi chung cho mọi sinh viên.",
+        "type": "Institution-specific curriculum structure",
+        "type_vi": "Cấu trúc chương trình đào tạo theo từng trường",
+        "sources": [
+          {
+            "institution": "VinUniversity",
+            "title": "Bachelor of Arts in Psychology — Curriculum Components and Areas of Focus",
+            "url": "https://cas.vinuni.edu.vn/undergraduate/bachelor-of-psychology/",
+            "source_type": "Official undergraduate programme page",
+            "claim_scope": "The page identifies curriculum components and an Educational/Counseling Psychology focus; it does not establish EMASI subject equivalence.",
+            "source_type_vi": "Trang chương trình đào tạo đại học chính thức"
+          }
+        ],
+        "status": "Verified for the published VinUniversity curriculum page; course classification should be checked against the applicable cohort framework.",
+        "status_vi": "Đã xác minh theo trang chương trình VinUniversity đã công bố; cần đối chiếu phân loại học phần với khung chương trình áp dụng cho từng khóa."
+      }
+    ]
+  },
+  "Computer Science": {
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon. Official curriculum references for Cognitive Science, Psychology and Computer Science have been added at claim level. They support course-area context, not universal admissions prerequisites or EMASI syllabus equivalence.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon. Đã bổ sung nguồn chương trình chính thức ở cấp độ nhận định cho Cognitive Science, Psychology và Computer Science. Các nguồn hỗ trợ bối cảnh học phần, không phải điều kiện tuyển sinh áp dụng chung hoặc bằng chứng tương đương với đề cương EMASI.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Computer Science at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Computer Science tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Computer Science or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Computer Science hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Computer Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Computer Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Computer Science",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Computer Science",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Computer Science",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Computer Science and Technology",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curricula at HCMUT, UCL, NUS and VinUniversity document recurring Computer Science knowledge areas including programming, mathematics/discrete structures, algorithms, systems and (in some curricula) physics, AI or machine learning.",
+        "claim_vi": "Chương trình đại học chính thức tại HCMUT, UCL, NUS và VinUniversity ghi nhận các lĩnh vực kiến thức thường gặp của Khoa học máy tính, gồm lập trình, toán học/cấu trúc rời rạc, thuật toán, hệ thống và (trong một số chương trình) vật lý, AI hoặc học máy.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình hỗ trợ gợi ý môn học khám phá",
+        "sources": [
+          {
+            "institution": "Ho Chi Minh City University of Technology (HCMUT)",
+            "title": "Computer Science — Curriculum Structure",
+            "url": "https://oisp.hcmut.edu.vn/en/study-programs/bachelor-degree/computer-science",
+            "source_type": "Official programme curriculum",
+            "claim_type": "Curriculum evidence",
+            "source_type_vi": "Chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "University College London (UCL)",
+            "title": "Computer Science BSc — 2026 entry: compulsory modules",
+            "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/computer-science-bsc-2026",
+            "source_type": "Official undergraduate curriculum (2026 entry)",
+            "curriculum_evidence": "Year 1 includes Principles of Programming, Algorithms, Introductory Mathematics for Computer Science and Discrete Mathematics; later years include computer architecture, software engineering, systems engineering, security and compilers.",
+            "scope_note": "Supports university-level computing and mathematics knowledge areas; it does not establish an EMASI subject as a universal admission prerequisite.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức (tuyển sinh năm 2026)"
+          },
+          {
+            "institution": "National University of Singapore (NUS)",
+            "title": "Computer Science Cohort 2026/2027 — Degree Requirements",
+            "url": "https://www.comp.nus.edu.sg/cug/per-cohort/cs/cs-26-27/",
+            "source_type": "Official undergraduate curriculum (AY2026/27 cohort)",
+            "curriculum_evidence": "Computer Science foundation includes Discrete Structures, Programming Methodology II, Data Structures and Algorithms, Computer Organisation, Operating Systems, AI and Machine Learning, and Design and Analysis of Algorithms. The page notes a bridging course for students without A-level/H2 Mathematics or equivalent.",
+            "scope_note": "The bridging-course statement is institution- and cohort-specific; it must not be generalized to other universities or treated as a school-subject requirement.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức (khóa năm học 2026/27)"
+          },
+          {
+            "institution": "VinUniversity",
+            "title": "Undergraduate Computer Science Curriculum Framework (BSCS)",
+            "url": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/02/20220712_CurriculumFramework_BSCS_V2022_ForIntake3Onward.pdf",
+            "source_type": "Official university curriculum framework (specified intakes)",
+            "curriculum_evidence": "Lists Calculus I and II, Physics I, Introduction to Programming, Probability and Statistics, Discrete Mathematics, Computer Organization, Algorithm Design, AI, Linear Algebra, Operating Systems and Machine Learning.",
+            "scope_note": "Applies to the curriculum framework and intake scope named in the document; course requirements may differ for other intakes.",
+            "source_type_vi": "Khung chương trình đào tạo chính thức của trường (áp dụng cho các khóa tuyển sinh được nêu rõ)"
+          }
+        ],
+        "status": "Curriculum evidence expanded across four institutions; subject-to-EMASI mapping remains exploratory and institution-specific requirements must not be generalized.",
+        "status_vi": "Đã mở rộng bằng chứng chương trình ở bốn cơ sở; ánh xạ môn học sang EMASI vẫn mang tính khám phá và không được khái quát yêu cầu riêng của từng trường."
+      },
+      {
+        "claim": "UEH’s published Computer Science plan lists Mathematics for Computing, Fundamentals of Programming, Database, Computer Architecture and Operating Systems, and Data Structures and Algorithms as compulsory courses; it also lists compulsory interdisciplinary courses such as Information Technology Law, Microeconomics and Introduction to Psychology.",
+        "claim_vi": "Chương trình Computer Science được UEH công bố liệt kê Mathematics for Computing, Fundamentals of Programming, Database, Computer Architecture and Operating Systems, và Data Structures and Algorithms là học phần bắt buộc; đồng thời có các học phần liên ngành bắt buộc như Information Technology Law, Microeconomics và Introduction to Psychology.",
+        "type": "Institution-specific curriculum and course classification",
+        "type_vi": "Chương trình và phân loại học phần theo từng trường",
+        "sources": [
+          {
+            "institution": "University of Economics Ho Chi Minh City",
+            "title": "Computer Science — Undergraduate Standard Programme",
+            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/computer-science/",
+            "source_type": "Official undergraduate curriculum page",
+            "claim_scope": "Course list and compulsory/elective labels are programme-specific to UEH.",
+            "source_type_vi": "Trang chương trình đào tạo đại học chính thức"
+          },
+          {
+            "institution": "VNUHCM-University of Science",
+            "title": "Advanced Programme in Computer Science — Programme and Course List",
+            "url": "https://www.fit.hcmus.edu.vn/undergraduate/advanced-program/programme",
+            "source_type": "Official faculty programme page",
+            "claim_scope": "The page describes programme objectives, CS core courses and cohort-specific curriculum caveats.",
+            "source_type_vi": "Trang chương trình đào tạo chính thức của khoa"
+          }
+        ],
+        "status": "Verified for the UEH programme page as published; do not treat every compulsory interdisciplinary course as a defining core of Computer Science.",
+        "status_vi": "Đã xác minh theo trang chương trình UEH được công bố; không xem mọi học phần liên ngành bắt buộc là kiến thức cốt lõi định nghĩa ngành Computer Science."
+      }
+    ]
+  },
+  "Data Science": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Data Science at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Data Science tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "University of Economics Ho Chi Minh City",
+            "title": "Standard Programs",
+            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Data Science or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Data Science hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Data Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Data Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Data Science",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Undergraduate Programs",
+            "url": "https://uocatalog.uoregon.edu/ug-programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Data Science",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Data Science",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula and professional curriculum guidance from multiple institutions document Data Science foundations spanning mathematics, statistics, computing/programming, data management and domain-specific or science applications; the balance differs by programme.",
+        "claim_vi": "Chương trình chính thức và hướng dẫn chương trình chuyên môn từ nhiều cơ sở ghi nhận nền tảng Khoa học dữ liệu gồm toán học, thống kê, tin học/lập trình, quản trị dữ liệu và ứng dụng theo lĩnh vực hoặc khoa học; tỷ trọng khác nhau tùy chương trình.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình hỗ trợ gợi ý môn học khám phá",
+        "sources": [
+          {
+            "institution": "ACM Data Science Task Force",
+            "title": "Computing Competencies for Undergraduate Data Science Curricula",
+            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+            "source_type": "Professional curriculum framework",
+            "source_type_vi": "Khung chương trình đào tạo nghề nghiệp"
+          },
+          {
+            "institution": "University College London",
+            "title": "Data Science BSc — Compulsory and Optional Modules",
+            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
+            "source_type": "Official undergraduate curriculum",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "The University of Texas at Austin",
+            "title": "Undergraduate Major — Statistics and Data Science",
+            "url": "https://stat.utexas.edu/academics/undergraduate-major",
+            "source_type": "Official undergraduate major requirements",
+            "source_type_vi": "Yêu cầu ngành học bậc đại học chính thức"
+          },
+          {
+            "institution": "Hong Kong Polytechnic University",
+            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
+            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
+            "source_type": "Official undergraduate curriculum",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Economics Ho Chi Minh City",
+            "title": "Data Science — Standard Undergraduate Program",
+            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
+            "source_type": "Official undergraduate curriculum",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota",
+            "title": "Undergraduate Courses — Data Science",
+            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
+            "source_type": "Official undergraduate curriculum",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Auckland",
+            "title": "Undergraduate Study in Data Science",
+            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
+            "source_type": "Official undergraduate programme guidance",
+            "source_type_vi": "Hướng dẫn chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Data Science BA/BS — Academic Catalog",
+            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          }
+        ],
+        "status": "Multi-institution curriculum context expanded; individual EMASI subject mappings remain exploratory and are not universal prerequisites.",
+        "status_vi": "Đã mở rộng bối cảnh chương trình từ nhiều cơ sở; ánh xạ từng môn EMASI vẫn mang tính khám phá và không phải điều kiện tiên quyết áp dụng chung."
+      },
+      {
+        "claim": "The current evidence register supports programme-specific mathematics, statistics, programming and data-analysis course areas across the reviewed Data Science curricula; course combinations differ by institution and intake.",
+        "claim_vi": "Danh mục bằng chứng hiện tại hỗ trợ các nhóm học phần toán, thống kê, lập trình và phân tích dữ liệu theo từng chương trình Khoa học dữ liệu đã rà soát; tổ hợp học phần khác nhau tùy trường và khóa tuyển sinh.",
+        "type": "Cross-institution curriculum context",
+        "type_vi": "Bối cảnh chương trình đào tạo giữa các trường",
+        "sources": [
+          {
+            "institution": "VinUniversity",
+            "title": "Academic Catalogs — Data Science Curriculum Frameworks by Cohort",
+            "url": "https://policy.vinuni.edu.vn/publication/academic-catalogs/",
+            "source_type": "Official academic catalogue index",
+            "claim_scope": "Provides cohort-specific curriculum framework links; catalogue index alone does not verify individual course claims.",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          }
+        ],
+        "status": "Supported as a broad curriculum pattern in the reviewed sources; each source must remain attached only to the claims it directly supports.",
+        "status_vi": "Được hỗ trợ như xu hướng chương trình ở các nguồn đã rà soát; mỗi nguồn chỉ được gắn với nhận định mà nó trực tiếp hỗ trợ."
+      }
+    ]
+  },
+  "Economics": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Economics at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Economics tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Academic Program",
+            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Economics or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Economics hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Economics",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Economics",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Undergraduate Programs",
+            "url": "https://uocatalog.uoregon.edu/ug-programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Economics",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate requirements at Notre Dame and Stanford document microeconomics, macroeconomics, statistics/econometrics and calculus or other quantitative mathematics; requirements differ by degree track and institution.",
+        "claim_vi": "Yêu cầu đại học chính thức tại Notre Dame và Stanford ghi nhận kinh tế vi mô, kinh tế vĩ mô, thống kê/kinh tế lượng và giải tích hoặc toán định lượng; yêu cầu khác nhau theo hướng bằng cấp và trường.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "University of Notre Dame",
+            "title": "Economics Major — Requirements",
+            "url": "https://economics.nd.edu/undergraduate/economics-major/requirements/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Core courses include microeconomics, macroeconomics, statistics for economics and econometrics; calculus is a prerequisite for a stated core sequence.",
+            "scope_note": "Specific to Notre Dame major structure; not universal admissions prerequisites.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Stanford University",
+            "title": "Economics BS",
+            "url": "https://economics.stanford.edu/undergraduate/major/economics-bs",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include micro/macro theory, probability, econometrics and linear algebra/multivariable calculus.",
+            "scope_note": "Specific to Stanford BS; BA/other programmes may differ.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two official institutions; subject-to-EMASI mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ môn học sang EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Biology": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Biology at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Biology tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Biology or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Biology hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Biological Sciences",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Bioscience",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Biological Sciences",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Biological Science",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Biology",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curricula at Stanford and Iowa State document biology foundations alongside supporting coursework in chemistry, mathematics/statistics, physics and, in some pathways, computer science. The required mix varies by subplan and institution.",
+        "claim_vi": "Chương trình đại học chính thức của Stanford và Iowa State ghi nhận nền tảng sinh học cùng các môn hỗ trợ như hóa học, toán học/thống kê, vật lý và ở một số hướng có tin học. Tổ hợp môn cụ thể thay đổi theo định hướng và trường đại học.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Stanford University",
+            "title": "The Undergraduate Major in Biology",
+            "url": "https://biology.stanford.edu/academics/undergraduate-program/undergraduate-major-biology",
+            "source_type": "Official undergraduate major requirements",
+            "curriculum_evidence": "Biology foundations and laboratory courses; breadth courses in Chemistry, Math, Physics, Statistics and/or Computer Science; specific requirements vary by subplan.",
+            "scope_note": "Supports the presence of these university-level subject areas in Stanford Biology pathways; does not establish EMASI syllabus equivalence or universal admission prerequisites.",
+            "source_type_vi": "Yêu cầu ngành học bậc đại học chính thức"
+          },
+          {
+            "institution": "Iowa State University",
+            "title": "Biology Degree Requirements",
+            "url": "https://www.biology.iastate.edu/academics/biology-major-requirements",
+            "source_type": "Official undergraduate degree requirements",
+            "curriculum_evidence": "Biology core, two semesters of calculus and/or statistics, chemistry sequences including organic chemistry/biochemistry, and physics options.",
+            "scope_note": "Requirements are specific to Iowa State and vary by college/career goals; do not generalize as universal Biology requirements.",
+            "source_type_vi": "Yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum evidence added from two official institutions; subject-to-EMASI mappings remain exploratory and subplan-specific.",
+        "status_vi": "Đã bổ sung bằng chứng chương trình từ hai trường chính thức; ánh xạ môn học sang EMASI vẫn mang tính khám phá và phụ thuộc định hướng chuyên sâu."
+      }
+    ]
+  },
+  "Mechanical Engineering": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Mechanical Engineering at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Mechanical Engineering tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Vietnamese-German University",
+            "title": "Bachelor Programs",
+            "url": "https://vgu.edu.vn/documents/14921/10674296/20250219_EN_Bachelor_Application%2BGuideline.pdf/d713aea3-aa8c-481b-b467-717bdbd19153",
+            "source_type": "Official programme guide",
+            "source_type_vi": "Hướng dẫn chương trình đào tạo chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Mechanical Engineering or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Mechanical Engineering hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Mechanical Engineering",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Mechanical Design, Manufacture, and Automation",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Mechanical Engineering",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Mechanical Engineering",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at NUS, VinUniversity and Purdue document mathematics, mechanics/materials, design, engineering science and computing/programming elements; course structure and specializations vary by cohort and institution.",
+        "claim_vi": "Chương trình chính thức tại NUS, VinUniversity và Purdue ghi nhận toán học, cơ học/vật liệu, thiết kế, khoa học kỹ thuật và các nội dung tin học/lập trình; cấu trúc và chuyên ngành thay đổi theo khóa và trường.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "National University of Singapore (NUS)",
+            "title": "Mechanical Engineering Undergraduate Curriculum Structure (AY2025/26 onwards)",
+            "url": "https://cde.nus.edu.sg/me/undergraduate/beng-me/curriculum/",
+            "source_type": "Official undergraduate curriculum",
+            "curriculum_evidence": "Engineering core includes Mathematics I, differential equations and linear algebra; major courses include mechanics/materials and mechatronics/automation; common courses include programming methodology and design.",
+            "scope_note": "Applies to the cohort specified on the page; does not establish universal admissions requirements or direct equivalence to EMASI subjects.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "VinUniversity",
+            "title": "Mechanical Engineering — Undergraduate Curriculum",
+            "url": "https://cecs.vinuni.edu.vn/undergraduate/mechanical-engineering/",
+            "source_type": "Official undergraduate programme curriculum",
+            "curriculum_evidence": "Curriculum framework separates general education, professional education, major foundation, concentration electives and capstone design.",
+            "scope_note": "The page provides programme structure; detailed course-level claims should use the linked curriculum framework where available.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Purdue University",
+            "title": "Mechanical Engineering Curriculum Map (2026–27)",
+            "url": "https://engineering.purdue.edu/Engr/Academics/Undergraduate/majors/2026-27/majors/ME_curriculum_map",
+            "source_type": "Official undergraduate curriculum map",
+            "curriculum_evidence": "Sample sequence includes calculus, chemistry, physics, multivariable calculus, thermodynamics and mechanics.",
+            "scope_note": "Curriculum map is an exploration/planning aid and may vary by plan and year; not a universal prerequisite list.",
+            "source_type_vi": "Sơ đồ chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum evidence added from NUS, VinUniversity and Purdue; ICT/design/technology links are supported as university-level learning areas but EMASI mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bằng chứng chương trình từ NUS, VinUniversity và Purdue; liên hệ ICT/thiết kế/công nghệ có cơ sở ở cấp đại học nhưng ánh xạ EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Finance": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Finance at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Finance tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Ton Duc Thang University",
+            "title": "Undergraduate Programs",
+            "url": "https://www.tdtu.edu.vn/en/academics/undergraduate/undergraduate-programs-taught-vietnamese-language-and-english-language",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Finance or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Finance hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Finance",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Finance",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Economics and Finance; Financial Mathematics",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official Finance curricula at HKU and UIUC document finance foundations alongside accounting, economics, statistics and mathematics; course choices vary by cohort and degree structure.",
+        "claim_vi": "Chương trình Tài chính chính thức tại HKU và UIUC ghi nhận kiến thức tài chính cùng kế toán, kinh tế, thống kê và toán học; học phần thay đổi theo khóa và cấu trúc bằng cấp.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "The University of Hong Kong (HKU)",
+            "title": "Finance Major — Programme Structure",
+            "url": "https://ug.hkubs.hku.hk/major/finance",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "The curriculum includes financial accounting, micro/macro economics, corporate finance, statistics, mathematics, econometrics, investments and derivatives.",
+            "scope_note": "The page states applicability from the 2023–24 intake onward; verify current cohort before using as current planning advice.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Illinois Urbana-Champaign",
+            "title": "Finance, BS — 2026–2027 Catalog",
+            "url": "https://catalog.illinois.edu/undergraduate/bus/finance-bs/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include corporate finance, financial markets, investments, business mathematics or calculus, and statistics.",
+            "scope_note": "Specific to the stated catalog year and UIUC degree structure.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from HKU and UIUC; suggested EMASI links are not admissions requirements.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ HKU và UIUC; các liên hệ EMASI được gợi ý không phải điều kiện tuyển sinh."
+      }
+    ]
+  },
+  "Chemistry": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Chemistry at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Chemistry tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Academic Program",
+            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Chemistry or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Chemistry hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Chemistry",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Applied Chemistry",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Chemistry",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Chemistry",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Chemistry",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at UC Berkeley, MIT and USTH document chemistry lecture/laboratory sequences alongside mathematics and physics foundations; the exact sequence and emphasis vary by institution and degree pathway.",
+        "claim_vi": "Chương trình chính thức tại UC Berkeley, MIT và USTH ghi nhận các học phần lý thuyết/thực hành hóa học cùng nền tảng toán học và vật lý; trình tự và trọng tâm thay đổi theo trường và lộ trình bằng cấp.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "University of California, Berkeley",
+            "title": "B.S. Chemistry",
+            "url": "https://chemistry.berkeley.edu/ugrad/degrees/chem",
+            "source_type": "Official undergraduate degree sequence",
+            "curriculum_evidence": "General/quantitative chemistry, organic chemistry, calculus, physics for scientists and engineers, multivariable calculus and linear algebra/differential equations.",
+            "scope_note": "Supports university-level curriculum content at Berkeley; not a universal school-subject or admission requirement.",
+            "source_type_vi": "Trình tự học phần của chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Chemistry Major & ChemFlex Option",
+            "url": "https://chemistry.mit.edu/academic-programs/undergraduate-programs/chemistry-major-chem-flex/",
+            "source_type": "Official undergraduate major requirements",
+            "curriculum_evidence": "Required lecture subjects include inorganic, biological, chemical science, organic chemistry, thermodynamics/kinetics and spectroscopy; laboratory modules are required.",
+            "scope_note": "Documents MIT chemistry curriculum structure; does not establish EMASI subject coverage or admissions requirements.",
+            "source_type_vi": "Yêu cầu ngành học bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Science and Technology of Hanoi (USTH)",
+            "title": "Bachelor in Chemistry",
+            "url": "https://admission.usth.edu.vn/bachelor-in-chemistry-249/",
+            "source_type": "Official undergraduate programme curriculum",
+            "curriculum_evidence": "2026–2027 curriculum includes analytical, inorganic, organic, physical, instrumental, polymer, materials and biochemistry-related courses.",
+            "scope_note": "Vietnam-based curriculum context; exact cohort/year and programme details should be rechecked before making current admissions claims.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum evidence added from Berkeley, MIT and USTH; mathematics/physics links have curriculum context, while EMASI mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bằng chứng chương trình từ Berkeley, MIT và USTH; liên hệ toán/vật lý có bối cảnh chương trình, còn ánh xạ EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Physics": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Physics at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Physics tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Academic Program",
+            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          },
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Physics or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Physics hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Physics",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Applied Physics",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Physics",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Physics",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at Seoul National University, Cal Poly Pomona and Cornell document core physics areas alongside substantial mathematics; chemistry and computational methods appear in some pathways or electives.",
+        "claim_vi": "Chương trình chính thức tại Seoul National University, Cal Poly Pomona và Cornell ghi nhận các lĩnh vực vật lý cốt lõi cùng nền tảng toán học đáng kể; hóa học và phương pháp tính toán xuất hiện trong một số lộ trình hoặc học phần tự chọn.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Seoul National University",
+            "title": "Undergraduate Curriculum — Physics & Astronomy",
+            "url": "https://physics.snu.ac.kr/en/academics/undergraduate/curriculum",
+            "source_type": "Official undergraduate curriculum",
+            "curriculum_evidence": "Required courses include mechanics, electricity and magnetism, electronics/measurement, quantum physics, thermal/statistical physics; electives include linear algebra and computational physics.",
+            "scope_note": "Course list applies to the stated curriculum cohort and degree structure; not a universal admissions checklist.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State Polytechnic University, Pomona",
+            "title": "Physics Major",
+            "url": "https://www.cpp.edu/sci/physics-astronomy/academic-programs/physics-major.shtml",
+            "source_type": "Official undergraduate major requirements",
+            "curriculum_evidence": "Core requirements include calculus, computational methods, linear algebra, Newtonian mechanics, electromagnetism/circuits and general chemistry.",
+            "scope_note": "Documents one institution’s core; chemistry and computing are programme-specific, not universal for every Physics degree.",
+            "source_type_vi": "Yêu cầu ngành học bậc đại học chính thức"
+          },
+          {
+            "institution": "Cornell University",
+            "title": "Physics (BA) — Program Requirements",
+            "url": "https://courses.cornell.edu/programs/physics-ba/",
+            "source_type": "Official undergraduate programme requirements",
+            "curriculum_evidence": "Physics core includes mechanics/heat, electromagnetism, waves/quantum physics and mathematics requirements.",
+            "scope_note": "Supports university-level physics and mathematics content at Cornell; not an EMASI or universal admission requirement.",
+            "source_type_vi": "Yêu cầu chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum evidence added from three official institutions; ICT/computational links are pathway-dependent and EMASI mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bằng chứng chương trình từ ba trường chính thức; liên hệ ICT/tính toán phụ thuộc lộ trình và ánh xạ EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Environmental Science": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Environmental Science at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Environmental Science tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Environmental Science or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Environmental Science hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Environmental Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Environmental Science",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Environmental Science and Policy; Environmental and Earth System Science",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Undergraduate Programs",
+            "url": "https://uocatalog.uoregon.edu/ug-programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Environmental Science",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curricula at HCMUS and Iowa State document interdisciplinary environmental science foundations including chemistry, ecology, geology, hydrology, statistics, GIS and supporting sciences.",
+        "claim_vi": "Chương trình đại học chính thức tại HCMUS và Iowa State ghi nhận nền tảng khoa học môi trường liên ngành gồm hóa học, sinh thái học, địa chất, thủy văn, thống kê, GIS và các khoa học hỗ trợ.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "VNUHCM University of Science (HCMUS)",
+            "title": "Bachelor of Science in Environmental Science",
+            "url": "https://environment.hcmus.edu.vn/en/bachelor-of-science-in-environmental-science/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Curriculum includes general/analytical chemistry, environmental statistics, ecology, geology, hydrology, environmental chemistry and GIS.",
+            "scope_note": "Vietnam-based curriculum reference; cohort and current programme details should be checked.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Iowa State University",
+            "title": "Environmental Science Major — Degree Requirements",
+            "url": "https://www.ensci.iastate.edu/academics/environmental-science-major",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Supporting courses include biology, chemistry, earth science, physics, calculus and statistics.",
+            "scope_note": "Requirements apply to Iowa State programme; not a universal prerequisite list.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from Vietnam and international institutions; specific EMASI mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ Việt Nam và trường quốc tế; ánh xạ EMASI cụ thể vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Architecture": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Architecture at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Architecture tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Ton Duc Thang University",
+            "title": "Undergraduate Programs",
+            "url": "https://www.tdtu.edu.vn/en/academics/undergraduate/undergraduate-programs-taught-vietnamese-language-and-english-language",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Architecture or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Architecture hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Architecture",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Architecture",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Undergraduate Programs",
+            "url": "https://uocatalog.uoregon.edu/ug-programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Architecture",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curriculum information from MIT and NUS documents design studios, visual/design communication, environmental/building technology, structural design and design computing. These are curriculum components, not proof that any single EMASI subject is required for admission.",
+        "claim_vi": "Thông tin chương trình đại học chính thức từ MIT và NUS ghi nhận studio thiết kế, truyền đạt thị giác/thiết kế, công nghệ môi trường/công trình, thiết kế kết cấu và thiết kế tính toán. Đây là thành phần chương trình đại học, không chứng minh một môn EMASI cụ thể là điều kiện tuyển sinh.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Undergraduate Programs — Architecture",
+            "url": "https://architecture.mit.edu/undergraduate-programs",
+            "source_type": "Official undergraduate programme and curriculum page",
+            "curriculum_evidence": "Lists architecture design studios, foundations in art/design/spatial practices, environmental technologies in buildings, structural design and design computing.",
+            "scope_note": "Supports these university-level curriculum areas at MIT; does not imply every architecture programme has the same structure or admission prerequisites.",
+            "source_type_vi": "Trang chương trình và chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "National University of Singapore (NUS)",
+            "title": "Bachelor of Arts in Architecture — Curriculum",
+            "url": "https://cde.nus.edu.sg/arch/programmes/bachelor-of-arts-in-architecture/curriculum/",
+            "source_type": "Official undergraduate curriculum",
+            "curriculum_evidence": "Publishes curriculum structure for the BA Architecture and cohort-specific curriculum information.",
+            "scope_note": "The page describes NUS cohorts and curriculum structure; use the detailed cohort plan for individual course-level claims.",
+            "source_type_vi": "Chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum evidence added from MIT and NUS; Fine Arts/ICT/Mathematics/Physics suggestions remain exploratory and pathway-sensitive.",
+        "status_vi": "Đã bổ sung bằng chứng chương trình từ MIT và NUS; gợi ý Mỹ thuật/ICT/Toán/Vật lý vẫn mang tính khám phá và phụ thuộc hướng chuyên sâu."
+      }
+    ]
+  },
+  "Electrical Engineering": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Electrical Engineering at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Electrical Engineering tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Vietnamese-German University",
+            "title": "Bachelor Programs",
+            "url": "https://vgu.edu.vn/documents/14921/10674296/20250219_EN_Bachelor_Application%2BGuideline.pdf/d713aea3-aa8c-481b-b467-717bdbd19153",
+            "source_type": "Official programme guide",
+            "source_type_vi": "Hướng dẫn chương trình đào tạo chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Electrical Engineering or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Electrical Engineering hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Electrical Engineering",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Electronic Information Engineering",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Electrical Engineering",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Electrical Engineering",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Electrical Engineering",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Electrical Engineering",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curricula at SIUE, Boston University and UC San Diego document mathematics, physics, computing/programming and core electrical/electronic systems; pathway-specific requirements vary.",
+        "claim_vi": "Chương trình đại học chính thức tại SIUE, Boston University và UC San Diego ghi nhận toán học, vật lý, tin học/lập trình và hệ thống điện/điện tử cốt lõi; yêu cầu thay đổi theo hướng chuyên sâu.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Southern Illinois University Edwardsville",
+            "title": "Electrical Engineering Sample Curriculum",
+            "url": "https://www.siue.edu/academics/undergraduate/degrees-and-programs/electrical-engineering/curriculum.shtml",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Sample sequence includes calculus, engineering chemistry, physics, computing, circuits, digital systems and differential equations.",
+            "scope_note": "Sample curriculum for the named programme; course plans may change.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Boston University",
+            "title": "BS in Electrical Engineering",
+            "url": "https://www.bu.edu/academics/eng/programs/electrical-engineering/bs/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Typical sequence includes calculus, physics, programming, computational linear algebra, circuits, probability/statistics and electronics.",
+            "scope_note": "The page labels a typical sequence; it is not a universal requirement across institutions.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, San Diego",
+            "title": "Electrical and Computer Engineering — Undergraduate Catalog",
+            "url": "https://catalog.ucsd.edu/archive/2026-27/curric/ECE-ug.html",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "The 2026–27 archived curriculum includes mathematics, programming and physics in specified depth pathways.",
+            "scope_note": "Archived 2026–27 catalogue; physics and programming course requirements vary by depth.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from three official institutions; EMASI mapping remains exploratory and pathway-sensitive.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ ba trường chính thức; ánh xạ EMASI vẫn mang tính khám phá và phụ thuộc hướng chuyên sâu."
+      }
+    ]
+  },
+  "Civil Engineering": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Civil Engineering at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Civil Engineering tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Ton Duc Thang University",
+            "title": "Undergraduate Programs",
+            "url": "https://www.tdtu.edu.vn/en/academics/undergraduate/undergraduate-programs-taught-vietnamese-language-and-english-language",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Civil Engineering or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Civil Engineering hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota Twin Cities",
+            "title": "Undergraduate Majors",
+            "url": "https://cse.umn.edu/college/departments-and-majors/undergraduate-majors",
+            "source_type": "Official college undergraduate majors directory",
+            "listed_programme_name": "Civil Engineering",
+            "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official undergraduate curricula at Auburn, Illinois and Minnesota document calculus, physics, chemistry, mechanics, computing and engineering design; individual plans vary.",
+        "claim_vi": "Chương trình đại học chính thức tại Auburn, Illinois và Minnesota ghi nhận giải tích, vật lý, hóa học, cơ học, tin học và thiết kế kỹ thuật; kế hoạch học tập cụ thể có thể khác nhau.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Auburn University",
+            "title": "Civil Engineering Curriculum",
+            "url": "https://eng.auburn.edu/cee/academics/undergraduate/civil-curriculum.html",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Course sequence includes calculus, chemistry, engineering physics, computing, statistics, statics, mechanics of materials and civil engineering design areas.",
+            "scope_note": "Curriculum is specific to Auburn; do not treat as universal admission prerequisites.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Illinois Urbana-Champaign",
+            "title": "BS in Civil Engineering",
+            "url": "https://cee.illinois.edu/academics/undergraduate-programs/bs-civil-engineering",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include calculus, linear algebra/differential equations, chemistry, physics, applied mechanics, computing and engineering risk/uncertainty.",
+            "scope_note": "Specific to UIUC degree requirements.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Minnesota",
+            "title": "Civil Engineering Four-Year Plan",
+            "url": "https://cse.umn.edu/college/four-year-plans/civil-engineering-four-year-plan",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Sample plan includes calculus, physics, chemistry, statics, computer applications, linear algebra and environmental engineering.",
+            "scope_note": "The page describes a sample plan revised 04/2026; alternatives and catalog requirements may differ.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from three official institutions; subject suggestions remain exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ ba trường chính thức; gợi ý môn học vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Political Science": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Political Science at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Political Science tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Massachusetts Institute of Technology",
+            "title": "Academic Program",
+            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
+            "source_type": "Official academic catalog",
+            "source_type_vi": "Danh mục học thuật chính thức"
+          },
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Political Science or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Political Science hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Political Science",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, Irvine",
+            "title": "Undergraduate Degrees",
+            "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+            "source_type": "Official undergraduate catalogue",
+            "listed_programme_name": "Political Science",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Political Science",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at Stanford and Rice document political science pathways with methods, statistics/data science and research seminars alongside substantive political science coursework.",
+        "claim_vi": "Chương trình chính thức tại Stanford và Rice ghi nhận các hướng chính trị học có phương pháp nghiên cứu, thống kê/khoa học dữ liệu và seminar nghiên cứu bên cạnh học phần chính trị học chuyên ngành.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Stanford University",
+            "title": "Political Science Major",
+            "url": "https://politicalscience.stanford.edu/undergraduate-program/major",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "The major requires a methods course, with options including statistical methods, data science for politics or programming; students choose substantive tracks.",
+            "scope_note": "Methods options and tracks are specific to Stanford; do not generalize to every political science degree.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Rice University",
+            "title": "Political Science Major — Degree Requirements",
+            "url": "https://politicalscience.rice.edu/undergraduate/political-science/degree-requirements",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include social science statistics, applied research methods and research seminars.",
+            "scope_note": "Specific to Rice programme requirements.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from Stanford and Rice; language/social-science connections require further claim-level review.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ Stanford và Rice; các liên hệ ngôn ngữ/khoa học xã hội cần được rà soát ở cấp nhận định."
+      }
+    ]
+  },
+  "Sociology": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Sociology at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Sociology tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "University of Pittsburgh",
+            "title": "Undergraduate Programs",
+            "url": "https://www.academics.pitt.edu/undergraduate-programs",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Sociology or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Sociology hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of Illinois Chicago",
+            "title": "Undergraduate Programs",
+            "url": "https://global.uic.edu/undergraduate/",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Sociology",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Sociology",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at Stanford and Johns Hopkins document sociological theory, social research methods, data analysis and social statistics; some pathways allow qualitative or quantitative methods.",
+        "claim_vi": "Chương trình chính thức tại Stanford và Johns Hopkins ghi nhận lý thuyết xã hội học, phương pháp nghiên cứu xã hội, phân tích dữ liệu và thống kê xã hội; một số hướng cho phép phương pháp định tính hoặc định lượng.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Stanford University",
+            "title": "Curriculum for the Sociology Major",
+            "url": "https://sociology.stanford.edu/undergraduate/curriculum-sociology-major",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Core requirements include foundations of social research and introduction to data analysis; additional methodology/statistics options are available.",
+            "scope_note": "Specific to Stanford major options and requirements.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Johns Hopkins University",
+            "title": "Sociology Major Requirements",
+            "url": "https://soc.jhu.edu/undergraduate/requirements/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Required courses include research methods for social sciences and introduction to social statistics.",
+            "scope_note": "Specific to Johns Hopkins major structure.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two official institutions; individual EMASI subject mapping remains exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ từng môn EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Linguistics": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Linguistics at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Linguistics tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Linguistics or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Linguistics hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Applied Linguistics",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Linguistics",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at Stanford and Penn State document phonetics/phonology, morphology/syntax, semantics, sociolinguistics and computational linguistics; statistics appears in some degree requirements.",
+        "claim_vi": "Chương trình chính thức tại Stanford và Penn State ghi nhận ngữ âm/âm vị học, hình thái học/cú pháp, ngữ nghĩa, ngôn ngữ học xã hội và ngôn ngữ học tính toán; thống kê xuất hiện trong một số yêu cầu bằng cấp.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Stanford University",
+            "title": "Major in Linguistics",
+            "url": "https://linguistics.stanford.edu/degree-programs/undergraduate-programs/major-linguistics",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Core and breadth options include phonetics/phonology, morphology/syntax, semantics/pragmatics, psycholinguistics and computational linguistics.",
+            "scope_note": "Course options and requirements are specific to Stanford.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "The Pennsylvania State University",
+            "title": "Linguistics Major",
+            "url": "https://linguistics.la.psu.edu/undergraduate/major/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include linguistics core, a quantitative requirement with statistics options, and social/non-English linguistics components.",
+            "scope_note": "Specific to Penn State major requirements; not a universal prerequisite list.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two official institutions; language and ICT suggestions remain pathway-dependent.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; gợi ý ngôn ngữ và ICT phụ thuộc hướng chuyên sâu."
+      }
+    ]
+  },
+  "Education": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Education at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Education tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "UC San Diego",
+            "title": "Undergraduate Degrees Offered",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate catalog",
+            "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Pittsburgh",
+            "title": "Undergraduate Programs",
+            "url": "https://www.academics.pitt.edu/undergraduate-programs",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Education or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Education hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "University of California, San Diego",
+            "title": "Undergraduate Degrees Offered, 2026–27",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate degree catalogue",
+            "listed_programme_name": "Education Sciences; Communication BA",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Elementary Education; Teacher Education",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Art and Education",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at UC Irvine and University of Florida document educational research design, statistics/data literacy, development and learning, educational psychology, measurement and educational technology.",
+        "claim_vi": "Chương trình chính thức tại UC Irvine và University of Florida ghi nhận thiết kế nghiên cứu giáo dục, thống kê/hiểu biết dữ liệu, phát triển và học tập, tâm lý học giáo dục, đo lường và công nghệ giáo dục.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "University of California, Irvine",
+            "title": "Education Sciences, BA — 2026–27 Catalogue",
+            "url": "https://catalogue.uci.edu/schoolofeducation/education_ba/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include educational research design, statistics for education research, theories of development and learning, and education-related domains.",
+            "scope_note": "Specific to UCI 2026–27 catalogue and Education Sciences BA.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Florida",
+            "title": "Educational Psychology and Research — Undergraduate Catalog",
+            "url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Courses include educational psychology, research design, cognition in education, measurement/evaluation and survey research methods.",
+            "scope_note": "Specific to UF Education Sciences specialization and catalogue year.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two official institutions; EMASI mapping remains exploratory and must not be framed as teacher-certification requirements.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ EMASI vẫn mang tính khám phá và không được trình bày như điều kiện chứng chỉ giáo viên."
+      }
+    ]
+  },
+  "Accounting": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Accounting at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Accounting tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Ton Duc Thang University",
+            "title": "Undergraduate Programs",
+            "url": "https://www.tdtu.edu.vn/en/academics/undergraduate/undergraduate-programs-taught-vietnamese-language-and-english-language",
+            "source_type": "Official undergraduate programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Accounting or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Accounting hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Accounting",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "Hainan University",
+            "title": "Undergraduate Degree Programs",
+            "url": "https://en.hainanu.edu.cn/Admission/Undergraduate/Degree_Programs.htm",
+            "source_type": "Official undergraduate degree programme directory",
+            "listed_programme_name": "Accounting",
+            "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Accounting",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official accounting curricula at Ton Duc Thang University and Foreign Trade University document accounting foundations and applications alongside mathematics/statistics, economics, business law, information systems, auditing and tax.",
+        "claim_vi": "Chương trình kế toán chính thức tại Đại học Tôn Đức Thắng và Đại học Ngoại thương ghi nhận nền tảng và ứng dụng kế toán cùng toán/thống kê, kinh tế, luật kinh doanh, hệ thống thông tin, kiểm toán và thuế.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Ton Duc Thang University",
+            "title": "Accounting — Standard Programme",
+            "url": "https://aaf.tdtu.edu.vn/en/education/standard-program",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Curriculum lists advanced mathematics, probability/statistics, informatics, economics, business law, accounting, auditing, tax and accounting information systems.",
+            "scope_note": "Vietnam-based programme reference; exact curriculum and language tracks should be checked for the relevant cohort.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "Foreign Trade University",
+            "title": "Bachelor in Accounting — Accounting and Auditing",
+            "url": "https://eqldt.ftu.edu.vn/bachelor-in-accounting-majoring-in-accounting-and-auditing-for-cohorts-from-k64-onward/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Course list includes financial accounting, management accounting, auditing, financial management, tax and advanced accounting.",
+            "scope_note": "Applies to cohorts from K64 onward as stated on the page; check current cohort details.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two Vietnamese universities; individual subject-to-EMASI links remain exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường đại học Việt Nam; liên hệ từng môn với EMASI vẫn mang tính khám phá."
+      }
+    ]
+  },
+  "Communication & Media Studies": {
+    "status": "Partially verified",
+    "status_vi": "Đã xác minh một phần",
+    "scope": "These official pages confirm that the named institution lists a programme or academic field corresponding to this major. They are programme-existence references only; they do not independently verify every academic connection, typical course, school-subject suggestion, skill, research area or career pathway in this Horizon profile. Additional official university catalogues have been added to document programme availability. These catalogues do not, by themselves, verify every academic relationship, school-subject suggestion, skill, research area, or career pathway in Horizon.",
+    "scope_vi": "Các trang chính thức này xác nhận trường được nêu có chương trình hoặc lĩnh vực học thuật tương ứng với ngành này. Đây chỉ là nguồn xác nhận chương trình tồn tại; chúng chưa tự xác minh mọi mối liên hệ học thuật, môn học điển hình, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hay lộ trình nghề nghiệp trong hồ sơ Horizon. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon.",
+    "claims": [
+      {
+        "claim": "Official programme references are available for Communication & Media Studies at the institutions listed below.",
+        "claim_vi": "Có nguồn chương trình chính thức về ngành Communication & Media Studies tại các cơ sở được liệt kê bên dưới.",
+        "type": "Programme existence / official curriculum reference",
+        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "sources": [
+          {
+            "institution": "Nanyang Technological University",
+            "title": "Degree Programmes",
+            "url": "https://www.ntu.edu.sg/education/degree-programmes",
+            "source_type": "Official degree programme listing",
+            "source_type_vi": "Danh sách chương trình đào tạo chính thức"
+          },
+          {
+            "institution": "Keio University",
+            "title": "Undergraduate Fields of Study",
+            "url": "https://www.keio.ac.jp/en/education/fields-of-study/undergraduate/",
+            "source_type": "Official undergraduate fields listing",
+            "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
+          }
+        ],
+        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
+        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+      },
+      {
+        "claim": "Official university programme directories list Communication & Media Studies or the explicitly named related programme variants below.",
+        "claim_vi": "Danh mục chương trình chính thức của các trường đại học liệt kê ngành Communication & Media Studies hoặc các chương trình liên quan có tên cụ thể bên dưới.",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc trường có chương trình đào tạo",
+        "sources": [
+          {
+            "institution": "Xi’an Jiaotong-Liverpool University",
+            "title": "Undergraduate Programmes",
+            "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+            "source_type": "Official undergraduate programme directory",
+            "listed_programme_name": "Media and Communication Studies",
+            "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "University of California, San Diego",
+            "title": "Undergraduate Degrees Offered, 2026–27",
+            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
+            "source_type": "Official undergraduate degree catalogue",
+            "listed_programme_name": "Communication & Media Studies",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "California State University, Fullerton",
+            "title": "Undergraduate Degrees",
+            "url": "https://international.fullerton.edu/prospective-students/degrees/undergraduate-degrees.html",
+            "source_type": "Official undergraduate degree directory",
+            "listed_programme_name": "Communication Studies; Cinema and Television Arts",
+            "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Pennsylvania",
+            "title": "Undergraduate Programs Catalogue",
+            "url": "https://catalog.upenn.edu/undergraduate/programs/",
+            "source_type": "Official undergraduate academic catalogue",
+            "listed_programme_name": "Communication; Cinema and Media Studies",
+            "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
+          }
+        ],
+        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
+        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+      },
+      {
+        "claim": "Official curricula at Stanford and the University of Oregon document communication theory, media/journalism, communication research methods, statistics, writing and media production; programme structures differ.",
+        "claim_vi": "Chương trình chính thức tại Stanford và University of Oregon ghi nhận lý thuyết truyền thông, truyền thông/báo chí, phương pháp nghiên cứu truyền thông, thống kê, viết và sản xuất truyền thông; cấu trúc chương trình khác nhau.",
+        "type": "Curriculum evidence for exploratory subject guidance",
+        "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
+        "sources": [
+          {
+            "institution": "Stanford University",
+            "title": "Major in Communication",
+            "url": "https://comm.stanford.edu/major",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "The curriculum includes communication research methods, statistics, media and society, journalism, communication theory and writing-intensive courses.",
+            "scope_note": "Specific to Stanford Communication major; not all media programmes require the same quantitative sequence.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          },
+          {
+            "institution": "University of Oregon",
+            "title": "Journalism: Media Studies Major Requirements",
+            "url": "https://catalog.uoregon.edu/journalism_comm/ug-jour-media-studies/",
+            "source_type": "Official undergraduate curriculum / degree requirements",
+            "curriculum_evidence": "Requirements include media studies, writing, media production, communication law/ethics, research methods and specialization tracks.",
+            "scope_note": "Specific to the Journalism: Media Studies major and its catalog structure.",
+            "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
+          }
+        ],
+        "status": "Curriculum context added from two official institutions; individual EMASI subject mappings remain exploratory.",
+        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ từng môn EMASI vẫn mang tính khám phá."
+      }
+    ]
+  }
+}

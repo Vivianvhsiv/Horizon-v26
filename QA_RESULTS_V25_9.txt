@@ -1,0 +1,15 @@
+PASS English and Vietnamese UI dictionaries are statically extractable
+PASS UI translation keys match (English=82, Vietnamese=82)
+PASS All UI dictionary translations are non-empty strings
+PASS All 20 major profiles contain core English/Vietnamese descriptions and caveats
+PASS All 13 EMASI subject labels have English and Vietnamese values
+PASS No obvious name/email/phone/address/student-ID input widget found in app.py
+PASS No obvious local write, outbound write request, or database client reference found in app.py
+PASS User selections are represented in Streamlit session state
+PASS Application includes an explicit summary-download feature requiring user-facing privacy notice
+PASS PRIVACY_REVIEW_V25_9.md exists and is populated
+PASS BILINGUAL_AUDIT_V25_9.md exists and is populated
+PASS RELEASE_READINESS_V25_9.md exists and is populated
+PASS app.py parses as valid Python
+PASS qa_v25_9.py parses as valid Python
+Summary: 14/14 passed

@@ -1,0 +1,71 @@
+{
+  "version": "1.1",
+  "description": "The 13 subjects in the current EMASI project inventory, including Geography and History as added by the project owner. These are exploration inputs, not universal university admission prerequisites.",
+  "subjects": [
+    {
+      "id": "S01",
+      "name_vi": "Toán",
+      "name_en": "Mathematics"
+    },
+    {
+      "id": "S02",
+      "name_vi": "Văn",
+      "name_en": "Literature"
+    },
+    {
+      "id": "S03",
+      "name_vi": "Tiếng Anh",
+      "name_en": "English"
+    },
+    {
+      "id": "S04",
+      "name_vi": "Lý",
+      "name_en": "Physics"
+    },
+    {
+      "id": "S05",
+      "name_vi": "Sinh",
+      "name_en": "Biology"
+    },
+    {
+      "id": "S06",
+      "name_vi": "Hoá học",
+      "name_en": "Chemistry"
+    },
+    {
+      "id": "S07",
+      "name_vi": "Âm nhạc",
+      "name_en": "Music"
+    },
+    {
+      "id": "S08",
+      "name_vi": "Mỹ thuật",
+      "name_en": "Fine Arts"
+    },
+    {
+      "id": "S09",
+      "name_vi": "ICT",
+      "name_en": "ICT (Information and Communication Technology)"
+    },
+    {
+      "id": "S10",
+      "name_vi": "Kinh tế pháp luật",
+      "name_en": "Economics and Law"
+    },
+    {
+      "id": "S11",
+      "name_vi": "Công nghệ",
+      "name_en": "Technology"
+    },
+    {
+      "id": "S12",
+      "name_vi": "Địa lý",
+      "name_en": "Geography"
+    },
+    {
+      "id": "S13",
+      "name_vi": "Lịch sử",
+      "name_en": "History"
+    }
+  ]
+}

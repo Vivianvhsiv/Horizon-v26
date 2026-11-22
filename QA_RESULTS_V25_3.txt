@@ -1,0 +1,14 @@
+PASS 20 major profiles retained
+PASS 13 EMASI subjects retained
+PASS 260 major-subject audit pairs retained
+PASS 186 source-claim rows retained
+PASS All source register URLs use HTTPS
+PASS Every source row has institution, title and source type
+PASS Every source row has an explicit scope/limitation
+PASS 86 distinct URLs retained
+PASS Optional live URL audit tool included
+PASS No unrun live URL audit is falsely presented as completed
+PASS Root and data major registries synchronized
+PASS Root and data source registries synchronized
+PASS app.py syntax valid
+Summary: 13/13 passed

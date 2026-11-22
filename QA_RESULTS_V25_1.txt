@@ -1,0 +1,576 @@
+PASS  majors.json: valid JSON
+PASS  academic_sources.json: valid JSON
+PASS  data/majors.json: valid JSON
+PASS  data/academic_sources.json: valid JSON
+PASS  data/emasi_subjects.json: valid JSON
+PASS  data/emasi_mapping_protocol.json: valid JSON
+PASS  majors.json matches data/majors.json
+PASS  academic_sources.json matches data/academic_sources.json
+PASS  20 major profiles are present
+PASS  Cognitive Science: bilingual academic_foundations aligned
+PASS  Cognitive Science: academic_foundations has Vietnamese translation
+PASS  Cognitive Science: academic_foundations has Vietnamese translation
+PASS  Cognitive Science: academic_foundations has Vietnamese translation
+PASS  Cognitive Science: academic_foundations has Vietnamese translation
+PASS  Cognitive Science: academic_foundations has Vietnamese translation
+PASS  Cognitive Science: bilingual related_disciplines aligned
+PASS  Cognitive Science: related_disciplines has Vietnamese translation
+PASS  Cognitive Science: related_disciplines has Vietnamese translation
+PASS  Cognitive Science: related_disciplines has Vietnamese translation
+PASS  Cognitive Science: related_disciplines has Vietnamese translation
+PASS  Cognitive Science: bilingual specialized_applications aligned
+PASS  Cognitive Science: specialized_applications has Vietnamese translation
+PASS  Cognitive Science: specialized_applications has Vietnamese translation
+PASS  Cognitive Science: specialized_applications has Vietnamese translation
+PASS  Cognitive Science: specialized_applications has Vietnamese translation
+PASS  Cognitive Science: specialized_applications has Vietnamese translation
+PASS  Cognitive Science: bilingual research_areas aligned
+PASS  Cognitive Science: research_areas has Vietnamese translation
+PASS  Cognitive Science: research_areas has Vietnamese translation
+PASS  Cognitive Science: research_areas has Vietnamese translation
+PASS  Cognitive Science: research_areas has Vietnamese translation
+PASS  Cognitive Science: research_areas has Vietnamese translation
+PASS  Cognitive Science: bilingual limitations aligned
+PASS  Cognitive Science: limitations has Vietnamese translation
+PASS  Cognitive Science: academic source record exists
+PASS  Psychology: bilingual academic_foundations aligned
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: academic_foundations has Vietnamese translation
+PASS  Psychology: bilingual related_disciplines aligned
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: related_disciplines has Vietnamese translation
+PASS  Psychology: bilingual specialized_applications aligned
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: specialized_applications has Vietnamese translation
+PASS  Psychology: bilingual research_areas aligned
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: research_areas has Vietnamese translation
+PASS  Psychology: bilingual limitations aligned
+PASS  Psychology: limitations has Vietnamese translation
+PASS  Psychology: academic source record exists
+PASS  Computer Science: bilingual academic_foundations aligned
+PASS  Computer Science: academic_foundations has Vietnamese translation
+PASS  Computer Science: academic_foundations has Vietnamese translation
+PASS  Computer Science: academic_foundations has Vietnamese translation
+PASS  Computer Science: academic_foundations has Vietnamese translation
+PASS  Computer Science: academic_foundations has Vietnamese translation
+PASS  Computer Science: bilingual related_disciplines aligned
+PASS  Computer Science: related_disciplines has Vietnamese translation
+PASS  Computer Science: related_disciplines has Vietnamese translation
+PASS  Computer Science: related_disciplines has Vietnamese translation
+PASS  Computer Science: related_disciplines has Vietnamese translation
+PASS  Computer Science: bilingual specialized_applications aligned
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: specialized_applications has Vietnamese translation
+PASS  Computer Science: bilingual research_areas aligned
+PASS  Computer Science: research_areas has Vietnamese translation
+PASS  Computer Science: research_areas has Vietnamese translation
+PASS  Computer Science: research_areas has Vietnamese translation
+PASS  Computer Science: research_areas has Vietnamese translation
+PASS  Computer Science: research_areas has Vietnamese translation
+PASS  Computer Science: bilingual limitations aligned
+PASS  Computer Science: limitations has Vietnamese translation
+PASS  Computer Science: academic source record exists
+PASS  Data Science: bilingual academic_foundations aligned
+PASS  Data Science: academic_foundations has Vietnamese translation
+PASS  Data Science: academic_foundations has Vietnamese translation
+PASS  Data Science: academic_foundations has Vietnamese translation
+PASS  Data Science: academic_foundations has Vietnamese translation
+PASS  Data Science: academic_foundations has Vietnamese translation
+PASS  Data Science: bilingual related_disciplines aligned
+PASS  Data Science: related_disciplines has Vietnamese translation
+PASS  Data Science: related_disciplines has Vietnamese translation
+PASS  Data Science: related_disciplines has Vietnamese translation
+PASS  Data Science: related_disciplines has Vietnamese translation
+PASS  Data Science: bilingual specialized_applications aligned
+PASS  Data Science: specialized_applications has Vietnamese translation
+PASS  Data Science: specialized_applications has Vietnamese translation
+PASS  Data Science: specialized_applications has Vietnamese translation
+PASS  Data Science: specialized_applications has Vietnamese translation
+PASS  Data Science: specialized_applications has Vietnamese translation
+PASS  Data Science: bilingual research_areas aligned
+PASS  Data Science: research_areas has Vietnamese translation
+PASS  Data Science: research_areas has Vietnamese translation
+PASS  Data Science: research_areas has Vietnamese translation
+PASS  Data Science: research_areas has Vietnamese translation
+PASS  Data Science: research_areas has Vietnamese translation
+PASS  Data Science: bilingual limitations aligned
+PASS  Data Science: limitations has Vietnamese translation
+PASS  Data Science: academic source record exists
+PASS  Economics: bilingual academic_foundations aligned
+PASS  Economics: academic_foundations has Vietnamese translation
+PASS  Economics: academic_foundations has Vietnamese translation
+PASS  Economics: academic_foundations has Vietnamese translation
+PASS  Economics: academic_foundations has Vietnamese translation
+PASS  Economics: academic_foundations has Vietnamese translation
+PASS  Economics: bilingual related_disciplines aligned
+PASS  Economics: related_disciplines has Vietnamese translation
+PASS  Economics: related_disciplines has Vietnamese translation
+PASS  Economics: related_disciplines has Vietnamese translation
+PASS  Economics: related_disciplines has Vietnamese translation
+PASS  Economics: related_disciplines has Vietnamese translation
+PASS  Economics: bilingual specialized_applications aligned
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: specialized_applications has Vietnamese translation
+PASS  Economics: bilingual research_areas aligned
+PASS  Economics: research_areas has Vietnamese translation
+PASS  Economics: research_areas has Vietnamese translation
+PASS  Economics: research_areas has Vietnamese translation
+PASS  Economics: research_areas has Vietnamese translation
+PASS  Economics: research_areas has Vietnamese translation
+PASS  Economics: bilingual limitations aligned
+PASS  Economics: limitations has Vietnamese translation
+PASS  Economics: academic source record exists
+PASS  Biology: bilingual academic_foundations aligned
+PASS  Biology: academic_foundations has Vietnamese translation
+PASS  Biology: academic_foundations has Vietnamese translation
+PASS  Biology: academic_foundations has Vietnamese translation
+PASS  Biology: academic_foundations has Vietnamese translation
+PASS  Biology: academic_foundations has Vietnamese translation
+PASS  Biology: bilingual related_disciplines aligned
+PASS  Biology: related_disciplines has Vietnamese translation
+PASS  Biology: related_disciplines has Vietnamese translation
+PASS  Biology: related_disciplines has Vietnamese translation
+PASS  Biology: related_disciplines has Vietnamese translation
+PASS  Biology: related_disciplines has Vietnamese translation
+PASS  Biology: bilingual specialized_applications aligned
+PASS  Biology: specialized_applications has Vietnamese translation
+PASS  Biology: specialized_applications has Vietnamese translation
+PASS  Biology: specialized_applications has Vietnamese translation
+PASS  Biology: specialized_applications has Vietnamese translation
+PASS  Biology: specialized_applications has Vietnamese translation
+PASS  Biology: bilingual research_areas aligned
+PASS  Biology: research_areas has Vietnamese translation
+PASS  Biology: research_areas has Vietnamese translation
+PASS  Biology: research_areas has Vietnamese translation
+PASS  Biology: research_areas has Vietnamese translation
+PASS  Biology: research_areas has Vietnamese translation
+PASS  Biology: bilingual limitations aligned
+PASS  Biology: limitations has Vietnamese translation
+PASS  Biology: academic source record exists
+PASS  Mechanical Engineering: bilingual academic_foundations aligned
+PASS  Mechanical Engineering: academic_foundations has Vietnamese translation
+PASS  Mechanical Engineering: academic_foundations has Vietnamese translation
+PASS  Mechanical Engineering: academic_foundations has Vietnamese translation
+PASS  Mechanical Engineering: academic_foundations has Vietnamese translation
+PASS  Mechanical Engineering: academic_foundations has Vietnamese translation
+PASS  Mechanical Engineering: bilingual related_disciplines aligned
+PASS  Mechanical Engineering: related_disciplines has Vietnamese translation
+PASS  Mechanical Engineering: related_disciplines has Vietnamese translation
+PASS  Mechanical Engineering: related_disciplines has Vietnamese translation
+PASS  Mechanical Engineering: related_disciplines has Vietnamese translation
+PASS  Mechanical Engineering: related_disciplines has Vietnamese translation
+PASS  Mechanical Engineering: bilingual specialized_applications aligned
+PASS  Mechanical Engineering: specialized_applications has Vietnamese translation
+PASS  Mechanical Engineering: specialized_applications has Vietnamese translation
+PASS  Mechanical Engineering: specialized_applications has Vietnamese translation
+PASS  Mechanical Engineering: specialized_applications has Vietnamese translation
+PASS  Mechanical Engineering: specialized_applications has Vietnamese translation
+PASS  Mechanical Engineering: bilingual research_areas aligned
+PASS  Mechanical Engineering: research_areas has Vietnamese translation
+PASS  Mechanical Engineering: research_areas has Vietnamese translation
+PASS  Mechanical Engineering: research_areas has Vietnamese translation
+PASS  Mechanical Engineering: research_areas has Vietnamese translation
+PASS  Mechanical Engineering: research_areas has Vietnamese translation
+PASS  Mechanical Engineering: bilingual limitations aligned
+PASS  Mechanical Engineering: limitations has Vietnamese translation
+PASS  Mechanical Engineering: academic source record exists
+PASS  Finance: bilingual academic_foundations aligned
+PASS  Finance: academic_foundations has Vietnamese translation
+PASS  Finance: academic_foundations has Vietnamese translation
+PASS  Finance: academic_foundations has Vietnamese translation
+PASS  Finance: academic_foundations has Vietnamese translation
+PASS  Finance: academic_foundations has Vietnamese translation
+PASS  Finance: bilingual related_disciplines aligned
+PASS  Finance: related_disciplines has Vietnamese translation
+PASS  Finance: related_disciplines has Vietnamese translation
+PASS  Finance: related_disciplines has Vietnamese translation
+PASS  Finance: related_disciplines has Vietnamese translation
+PASS  Finance: related_disciplines has Vietnamese translation
+PASS  Finance: bilingual specialized_applications aligned
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: specialized_applications has Vietnamese translation
+PASS  Finance: bilingual research_areas aligned
+PASS  Finance: research_areas has Vietnamese translation
+PASS  Finance: research_areas has Vietnamese translation
+PASS  Finance: research_areas has Vietnamese translation
+PASS  Finance: research_areas has Vietnamese translation
+PASS  Finance: research_areas has Vietnamese translation
+PASS  Finance: bilingual limitations aligned
+PASS  Finance: limitations has Vietnamese translation
+PASS  Finance: academic source record exists
+PASS  Chemistry: bilingual academic_foundations aligned
+PASS  Chemistry: academic_foundations has Vietnamese translation
+PASS  Chemistry: academic_foundations has Vietnamese translation
+PASS  Chemistry: academic_foundations has Vietnamese translation
+PASS  Chemistry: academic_foundations has Vietnamese translation
+PASS  Chemistry: academic_foundations has Vietnamese translation
+PASS  Chemistry: bilingual related_disciplines aligned
+PASS  Chemistry: related_disciplines has Vietnamese translation
+PASS  Chemistry: related_disciplines has Vietnamese translation
+PASS  Chemistry: related_disciplines has Vietnamese translation
+PASS  Chemistry: related_disciplines has Vietnamese translation
+PASS  Chemistry: related_disciplines has Vietnamese translation
+PASS  Chemistry: bilingual specialized_applications aligned
+PASS  Chemistry: specialized_applications has Vietnamese translation
+PASS  Chemistry: specialized_applications has Vietnamese translation
+PASS  Chemistry: specialized_applications has Vietnamese translation
+PASS  Chemistry: specialized_applications has Vietnamese translation
+PASS  Chemistry: specialized_applications has Vietnamese translation
+PASS  Chemistry: bilingual research_areas aligned
+PASS  Chemistry: research_areas has Vietnamese translation
+PASS  Chemistry: research_areas has Vietnamese translation
+PASS  Chemistry: research_areas has Vietnamese translation
+PASS  Chemistry: research_areas has Vietnamese translation
+PASS  Chemistry: research_areas has Vietnamese translation
+PASS  Chemistry: bilingual limitations aligned
+PASS  Chemistry: limitations has Vietnamese translation
+PASS  Chemistry: academic source record exists
+PASS  Physics: bilingual academic_foundations aligned
+PASS  Physics: academic_foundations has Vietnamese translation
+PASS  Physics: academic_foundations has Vietnamese translation
+PASS  Physics: academic_foundations has Vietnamese translation
+PASS  Physics: academic_foundations has Vietnamese translation
+PASS  Physics: academic_foundations has Vietnamese translation
+PASS  Physics: bilingual related_disciplines aligned
+PASS  Physics: related_disciplines has Vietnamese translation
+PASS  Physics: related_disciplines has Vietnamese translation
+PASS  Physics: related_disciplines has Vietnamese translation
+PASS  Physics: related_disciplines has Vietnamese translation
+PASS  Physics: bilingual specialized_applications aligned
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: specialized_applications has Vietnamese translation
+PASS  Physics: bilingual research_areas aligned
+PASS  Physics: research_areas has Vietnamese translation
+PASS  Physics: research_areas has Vietnamese translation
+PASS  Physics: research_areas has Vietnamese translation
+PASS  Physics: research_areas has Vietnamese translation
+PASS  Physics: research_areas has Vietnamese translation
+PASS  Physics: bilingual limitations aligned
+PASS  Physics: limitations has Vietnamese translation
+PASS  Physics: academic source record exists
+PASS  Environmental Science: bilingual academic_foundations aligned
+PASS  Environmental Science: academic_foundations has Vietnamese translation
+PASS  Environmental Science: academic_foundations has Vietnamese translation
+PASS  Environmental Science: academic_foundations has Vietnamese translation
+PASS  Environmental Science: academic_foundations has Vietnamese translation
+PASS  Environmental Science: academic_foundations has Vietnamese translation
+PASS  Environmental Science: bilingual related_disciplines aligned
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: related_disciplines has Vietnamese translation
+PASS  Environmental Science: bilingual specialized_applications aligned
+PASS  Environmental Science: specialized_applications has Vietnamese translation
+PASS  Environmental Science: specialized_applications has Vietnamese translation
+PASS  Environmental Science: specialized_applications has Vietnamese translation
+PASS  Environmental Science: specialized_applications has Vietnamese translation
+PASS  Environmental Science: specialized_applications has Vietnamese translation
+PASS  Environmental Science: bilingual research_areas aligned
+PASS  Environmental Science: research_areas has Vietnamese translation
+PASS  Environmental Science: research_areas has Vietnamese translation
+PASS  Environmental Science: research_areas has Vietnamese translation
+PASS  Environmental Science: research_areas has Vietnamese translation
+PASS  Environmental Science: research_areas has Vietnamese translation
+PASS  Environmental Science: bilingual limitations aligned
+PASS  Environmental Science: limitations has Vietnamese translation
+PASS  Environmental Science: academic source record exists
+PASS  Architecture: bilingual academic_foundations aligned
+PASS  Architecture: academic_foundations has Vietnamese translation
+PASS  Architecture: academic_foundations has Vietnamese translation
+PASS  Architecture: academic_foundations has Vietnamese translation
+PASS  Architecture: academic_foundations has Vietnamese translation
+PASS  Architecture: academic_foundations has Vietnamese translation
+PASS  Architecture: bilingual related_disciplines aligned
+PASS  Architecture: related_disciplines has Vietnamese translation
+PASS  Architecture: related_disciplines has Vietnamese translation
+PASS  Architecture: related_disciplines has Vietnamese translation
+PASS  Architecture: related_disciplines has Vietnamese translation
+PASS  Architecture: related_disciplines has Vietnamese translation
+PASS  Architecture: bilingual specialized_applications aligned
+PASS  Architecture: specialized_applications has Vietnamese translation
+PASS  Architecture: specialized_applications has Vietnamese translation
+PASS  Architecture: specialized_applications has Vietnamese translation
+PASS  Architecture: specialized_applications has Vietnamese translation
+PASS  Architecture: specialized_applications has Vietnamese translation
+PASS  Architecture: bilingual research_areas aligned
+PASS  Architecture: research_areas has Vietnamese translation
+PASS  Architecture: research_areas has Vietnamese translation
+PASS  Architecture: research_areas has Vietnamese translation
+PASS  Architecture: research_areas has Vietnamese translation
+PASS  Architecture: research_areas has Vietnamese translation
+PASS  Architecture: bilingual limitations aligned
+PASS  Architecture: limitations has Vietnamese translation
+PASS  Architecture: academic source record exists
+PASS  Electrical Engineering: bilingual academic_foundations aligned
+PASS  Electrical Engineering: academic_foundations has Vietnamese translation
+PASS  Electrical Engineering: academic_foundations has Vietnamese translation
+PASS  Electrical Engineering: academic_foundations has Vietnamese translation
+PASS  Electrical Engineering: academic_foundations has Vietnamese translation
+PASS  Electrical Engineering: academic_foundations has Vietnamese translation
+PASS  Electrical Engineering: bilingual related_disciplines aligned
+PASS  Electrical Engineering: related_disciplines has Vietnamese translation
+PASS  Electrical Engineering: related_disciplines has Vietnamese translation
+PASS  Electrical Engineering: related_disciplines has Vietnamese translation
+PASS  Electrical Engineering: related_disciplines has Vietnamese translation
+PASS  Electrical Engineering: related_disciplines has Vietnamese translation
+PASS  Electrical Engineering: bilingual specialized_applications aligned
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: specialized_applications has Vietnamese translation
+PASS  Electrical Engineering: bilingual research_areas aligned
+PASS  Electrical Engineering: research_areas has Vietnamese translation
+PASS  Electrical Engineering: research_areas has Vietnamese translation
+PASS  Electrical Engineering: research_areas has Vietnamese translation
+PASS  Electrical Engineering: research_areas has Vietnamese translation
+PASS  Electrical Engineering: research_areas has Vietnamese translation
+PASS  Electrical Engineering: bilingual limitations aligned
+PASS  Electrical Engineering: limitations has Vietnamese translation
+PASS  Electrical Engineering: academic source record exists
+PASS  Civil Engineering: bilingual academic_foundations aligned
+PASS  Civil Engineering: academic_foundations has Vietnamese translation
+PASS  Civil Engineering: academic_foundations has Vietnamese translation
+PASS  Civil Engineering: academic_foundations has Vietnamese translation
+PASS  Civil Engineering: academic_foundations has Vietnamese translation
+PASS  Civil Engineering: academic_foundations has Vietnamese translation
+PASS  Civil Engineering: bilingual related_disciplines aligned
+PASS  Civil Engineering: related_disciplines has Vietnamese translation
+PASS  Civil Engineering: related_disciplines has Vietnamese translation
+PASS  Civil Engineering: related_disciplines has Vietnamese translation
+PASS  Civil Engineering: related_disciplines has Vietnamese translation
+PASS  Civil Engineering: related_disciplines has Vietnamese translation
+PASS  Civil Engineering: bilingual specialized_applications aligned
+PASS  Civil Engineering: specialized_applications has Vietnamese translation
+PASS  Civil Engineering: specialized_applications has Vietnamese translation
+PASS  Civil Engineering: specialized_applications has Vietnamese translation
+PASS  Civil Engineering: specialized_applications has Vietnamese translation
+PASS  Civil Engineering: specialized_applications has Vietnamese translation
+PASS  Civil Engineering: bilingual research_areas aligned
+PASS  Civil Engineering: research_areas has Vietnamese translation
+PASS  Civil Engineering: research_areas has Vietnamese translation
+PASS  Civil Engineering: research_areas has Vietnamese translation
+PASS  Civil Engineering: research_areas has Vietnamese translation
+PASS  Civil Engineering: research_areas has Vietnamese translation
+PASS  Civil Engineering: bilingual limitations aligned
+PASS  Civil Engineering: limitations has Vietnamese translation
+PASS  Civil Engineering: academic source record exists
+PASS  Political Science: bilingual academic_foundations aligned
+PASS  Political Science: academic_foundations has Vietnamese translation
+PASS  Political Science: academic_foundations has Vietnamese translation
+PASS  Political Science: academic_foundations has Vietnamese translation
+PASS  Political Science: academic_foundations has Vietnamese translation
+PASS  Political Science: academic_foundations has Vietnamese translation
+PASS  Political Science: bilingual related_disciplines aligned
+PASS  Political Science: related_disciplines has Vietnamese translation
+PASS  Political Science: related_disciplines has Vietnamese translation
+PASS  Political Science: related_disciplines has Vietnamese translation
+PASS  Political Science: related_disciplines has Vietnamese translation
+PASS  Political Science: related_disciplines has Vietnamese translation
+PASS  Political Science: bilingual specialized_applications aligned
+PASS  Political Science: specialized_applications has Vietnamese translation
+PASS  Political Science: specialized_applications has Vietnamese translation
+PASS  Political Science: specialized_applications has Vietnamese translation
+PASS  Political Science: specialized_applications has Vietnamese translation
+PASS  Political Science: specialized_applications has Vietnamese translation
+PASS  Political Science: bilingual research_areas aligned
+PASS  Political Science: research_areas has Vietnamese translation
+PASS  Political Science: research_areas has Vietnamese translation
+PASS  Political Science: research_areas has Vietnamese translation
+PASS  Political Science: research_areas has Vietnamese translation
+PASS  Political Science: research_areas has Vietnamese translation
+PASS  Political Science: bilingual limitations aligned
+PASS  Political Science: limitations has Vietnamese translation
+PASS  Political Science: academic source record exists
+PASS  Sociology: bilingual academic_foundations aligned
+PASS  Sociology: academic_foundations has Vietnamese translation
+PASS  Sociology: academic_foundations has Vietnamese translation
+PASS  Sociology: academic_foundations has Vietnamese translation
+PASS  Sociology: academic_foundations has Vietnamese translation
+PASS  Sociology: academic_foundations has Vietnamese translation
+PASS  Sociology: bilingual related_disciplines aligned
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: related_disciplines has Vietnamese translation
+PASS  Sociology: bilingual specialized_applications aligned
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: specialized_applications has Vietnamese translation
+PASS  Sociology: bilingual research_areas aligned
+PASS  Sociology: research_areas has Vietnamese translation
+PASS  Sociology: research_areas has Vietnamese translation
+PASS  Sociology: research_areas has Vietnamese translation
+PASS  Sociology: research_areas has Vietnamese translation
+PASS  Sociology: research_areas has Vietnamese translation
+PASS  Sociology: bilingual limitations aligned
+PASS  Sociology: limitations has Vietnamese translation
+PASS  Sociology: academic source record exists
+PASS  Linguistics: bilingual academic_foundations aligned
+PASS  Linguistics: academic_foundations has Vietnamese translation
+PASS  Linguistics: academic_foundations has Vietnamese translation
+PASS  Linguistics: academic_foundations has Vietnamese translation
+PASS  Linguistics: academic_foundations has Vietnamese translation
+PASS  Linguistics: academic_foundations has Vietnamese translation
+PASS  Linguistics: bilingual related_disciplines aligned
+PASS  Linguistics: related_disciplines has Vietnamese translation
+PASS  Linguistics: related_disciplines has Vietnamese translation
+PASS  Linguistics: related_disciplines has Vietnamese translation
+PASS  Linguistics: related_disciplines has Vietnamese translation
+PASS  Linguistics: related_disciplines has Vietnamese translation
+PASS  Linguistics: bilingual specialized_applications aligned
+PASS  Linguistics: specialized_applications has Vietnamese translation
+PASS  Linguistics: specialized_applications has Vietnamese translation
+PASS  Linguistics: specialized_applications has Vietnamese translation
+PASS  Linguistics: specialized_applications has Vietnamese translation
+PASS  Linguistics: specialized_applications has Vietnamese translation
+PASS  Linguistics: bilingual research_areas aligned
+PASS  Linguistics: research_areas has Vietnamese translation
+PASS  Linguistics: research_areas has Vietnamese translation
+PASS  Linguistics: research_areas has Vietnamese translation
+PASS  Linguistics: research_areas has Vietnamese translation
+PASS  Linguistics: research_areas has Vietnamese translation
+PASS  Linguistics: bilingual limitations aligned
+PASS  Linguistics: limitations has Vietnamese translation
+PASS  Linguistics: academic source record exists
+PASS  Education: bilingual academic_foundations aligned
+PASS  Education: academic_foundations has Vietnamese translation
+PASS  Education: academic_foundations has Vietnamese translation
+PASS  Education: academic_foundations has Vietnamese translation
+PASS  Education: academic_foundations has Vietnamese translation
+PASS  Education: academic_foundations has Vietnamese translation
+PASS  Education: bilingual related_disciplines aligned
+PASS  Education: related_disciplines has Vietnamese translation
+PASS  Education: related_disciplines has Vietnamese translation
+PASS  Education: related_disciplines has Vietnamese translation
+PASS  Education: related_disciplines has Vietnamese translation
+PASS  Education: related_disciplines has Vietnamese translation
+PASS  Education: bilingual specialized_applications aligned
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: specialized_applications has Vietnamese translation
+PASS  Education: bilingual research_areas aligned
+PASS  Education: research_areas has Vietnamese translation
+PASS  Education: research_areas has Vietnamese translation
+PASS  Education: research_areas has Vietnamese translation
+PASS  Education: research_areas has Vietnamese translation
+PASS  Education: research_areas has Vietnamese translation
+PASS  Education: bilingual limitations aligned
+PASS  Education: limitations has Vietnamese translation
+PASS  Education: academic source record exists
+PASS  Accounting: bilingual academic_foundations aligned
+PASS  Accounting: academic_foundations has Vietnamese translation
+PASS  Accounting: academic_foundations has Vietnamese translation
+PASS  Accounting: academic_foundations has Vietnamese translation
+PASS  Accounting: academic_foundations has Vietnamese translation
+PASS  Accounting: academic_foundations has Vietnamese translation
+PASS  Accounting: bilingual related_disciplines aligned
+PASS  Accounting: related_disciplines has Vietnamese translation
+PASS  Accounting: related_disciplines has Vietnamese translation
+PASS  Accounting: related_disciplines has Vietnamese translation
+PASS  Accounting: related_disciplines has Vietnamese translation
+PASS  Accounting: related_disciplines has Vietnamese translation
+PASS  Accounting: bilingual specialized_applications aligned
+PASS  Accounting: specialized_applications has Vietnamese translation
+PASS  Accounting: specialized_applications has Vietnamese translation
+PASS  Accounting: specialized_applications has Vietnamese translation
+PASS  Accounting: specialized_applications has Vietnamese translation
+PASS  Accounting: specialized_applications has Vietnamese translation
+PASS  Accounting: bilingual research_areas aligned
+PASS  Accounting: research_areas has Vietnamese translation
+PASS  Accounting: research_areas has Vietnamese translation
+PASS  Accounting: research_areas has Vietnamese translation
+PASS  Accounting: research_areas has Vietnamese translation
+PASS  Accounting: research_areas has Vietnamese translation
+PASS  Accounting: bilingual limitations aligned
+PASS  Accounting: limitations has Vietnamese translation
+PASS  Accounting: academic source record exists
+PASS  Communication & Media Studies: bilingual academic_foundations aligned
+PASS  Communication & Media Studies: academic_foundations has Vietnamese translation
+PASS  Communication & Media Studies: academic_foundations has Vietnamese translation
+PASS  Communication & Media Studies: academic_foundations has Vietnamese translation
+PASS  Communication & Media Studies: academic_foundations has Vietnamese translation
+PASS  Communication & Media Studies: academic_foundations has Vietnamese translation
+PASS  Communication & Media Studies: bilingual related_disciplines aligned
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: related_disciplines has Vietnamese translation
+PASS  Communication & Media Studies: bilingual specialized_applications aligned
+PASS  Communication & Media Studies: specialized_applications has Vietnamese translation
+PASS  Communication & Media Studies: specialized_applications has Vietnamese translation
+PASS  Communication & Media Studies: specialized_applications has Vietnamese translation
+PASS  Communication & Media Studies: specialized_applications has Vietnamese translation
+PASS  Communication & Media Studies: specialized_applications has Vietnamese translation
+PASS  Communication & Media Studies: bilingual research_areas aligned
+PASS  Communication & Media Studies: research_areas has Vietnamese translation
+PASS  Communication & Media Studies: research_areas has Vietnamese translation
+PASS  Communication & Media Studies: research_areas has Vietnamese translation
+PASS  Communication & Media Studies: research_areas has Vietnamese translation
+PASS  Communication & Media Studies: research_areas has Vietnamese translation
+PASS  Communication & Media Studies: bilingual limitations aligned
+PASS  Communication & Media Studies: limitations has Vietnamese translation
+PASS  Communication & Media Studies: academic source record exists
+PASS  academic evidence labels and claims have Vietnamese fields
+PASS  109 subject-guidance records have bilingual labels and known EMASI subjects
+PASS  13 EMASI subjects are registered
+PASS  EMASI subject IDs are unique
+PASS  Geography S12 and History S13 are registered
+PASS  Geography and History appear in the interactive subject selector
+PASS  source type labels use Vietnamese in Vietnamese UI
+PASS  app.py: no CJK text remains
+PASS  majors.json: no CJK text remains
+PASS  academic_sources.json: no CJK text remains
+PASS  data/emasi_subjects.json: no CJK text remains
+PASS  README.md: no CJK text remains
+PASS  app.py parses successfully
+PASS  all academic source URLs use HTTPS
+
+Summary: 574/574 checks passed

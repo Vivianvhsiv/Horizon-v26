@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Horizon — Discover connections. Open new horizons.">
+<rect width="1200" height="900" rx="46" fill="#172B4D"/>
+<rect x="42" y="42" width="1116" height="816" rx="42" fill="none" stroke="#263D5B" stroke-width="3"/>
+<g transform="translate(0,20)">
+ <path d="M270 390 Q600 210 930 390 Q760 335 600 375 Q430 335 270 390Z" fill="#203D62" opacity=".95"/>
+ <path d="M270 390 Q600 210 930 390" fill="none" stroke="#F4C542" stroke-width="13" stroke-linecap="round"/>
+ <path d="M405 323 L397 278 L424 317 M505 278 L498 222 L526 273 M600 260 L600 190 L614 260 M695 278 L702 222 L674 273 M795 323 L803 278 L776 317" fill="#F4C542"/>
+ <path d="M330 404 Q450 350 550 405 Q650 460 770 400 Q850 365 900 404" fill="none" stroke="#203D62" stroke-width="7"/>
+</g>
+<text x="600" y="590" text-anchor="middle" fill="#F7F2EB" font-family="Arial, Helvetica, sans-serif" font-size="112" letter-spacing="3">HORIZON</text>
+<text x="600" y="680" text-anchor="middle" fill="#E9D8C8" font-family="Arial, Helvetica, sans-serif" font-size="43">Discover connections. Open new horizons.</text>
+<text x="600" y="770" text-anchor="middle" fill="#F7F2EB" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="3">ACADEMIC &amp; CAREER EXPLORATION</text>
+</svg>

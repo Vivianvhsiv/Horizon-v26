@@ -1,0 +1,17 @@
+PASS 20 major profiles
+PASS 13 EMASI subjects
+PASS 260 audit matrix pairs
+PASS 186 source-claim register rows
+PASS Every major represented in source-claim register
+PASS All claim URLs use HTTPS
+PASS Claim rows have institution, title and source type
+PASS Every claim row states its evidence scope/limitation
+PASS 86 distinct source URLs
+PASS Academic source registry covers the same 20 majors
+PASS Programme availability claims explicitly countable (not mapping proof)
+PASS Live URL audit script present
+PASS Live URL audit script syntax valid
+PASS Streamlit app syntax valid
+PASS Major registries synchronized
+PASS Source registries synchronized
+Summary: 16/16 passed

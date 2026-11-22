@@ -1,0 +1,21 @@
+﻿Major,Source Claim Rows,Distinct Source URLs,Programme Availability Only Rows,Curriculum Context Rows,Disciplinary Evidence Rows,Professional Guidance Rows,Other Claim Rows,EMASI Subject Pairs,Pairs With Current Guidance,Pairs With No Guidance Entry,Pairs Marked Exploratory Not EMASI Verified,Pairs With Attached Reference Count,EMASI Syllabus Verified Pairs
+Cognitive Science,12,11,2,7,3,0,0,13,6,7,6,5,0
+Psychology,13,13,5,6,0,2,0,13,5,8,5,4,0
+Computer Science,14,14,6,8,0,0,0,13,4,9,4,4,0
+Data Science,17,17,5,12,0,0,0,13,11,2,11,10,0
+Economics,7,7,3,4,0,0,0,13,6,7,6,0,0
+Biology,9,9,5,4,0,0,0,13,5,8,5,3,0
+Mechanical Engineering,9,9,4,5,0,0,0,13,4,9,4,4,0
+Finance,7,7,3,4,0,0,0,13,4,9,4,0,0
+Chemistry,10,10,5,5,0,0,0,13,4,9,4,3,0
+Physics,9,9,4,5,0,0,0,13,4,9,4,4,0
+Environmental Science,8,8,4,4,0,0,0,13,6,7,6,0,0
+Architecture,7,7,3,4,0,0,0,13,7,6,7,4,0
+Electrical Engineering,12,12,6,6,0,0,0,13,4,9,4,0,0
+Civil Engineering,11,11,6,5,0,0,0,13,5,8,5,0,0
+Political Science,7,7,3,4,0,0,0,13,6,7,6,0,0
+Sociology,6,6,2,4,0,0,0,13,6,7,6,0,0
+Linguistics,6,6,2,4,0,0,0,13,5,8,5,0,0
+Education,7,6,3,4,0,0,0,13,6,7,6,0,0
+Accounting,7,7,3,4,0,0,0,13,4,9,4,0,0
+Communication & Media Studies,8,8,4,4,0,0,0,13,7,6,7,0,0
