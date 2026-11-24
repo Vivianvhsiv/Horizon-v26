@@ -496,9 +496,9 @@ elif page == tr("network"):
             st.info(tr("sample_notice"))
             if not candidates:
                 st.warning(
-                    "No direct matches were found in the current sample database. Your selections are still shown; the map does not infer a connection without a database relationship."
+                    "No evidence-backed major matches are currently recorded. Your selected inputs remain visible without inferred major connections."
                     if st.session_state.language == "English" else
-                    "Không tìm thấy mối liên hệ trực tiếp trong cơ sở dữ liệu mẫu hiện tại. Các lựa chọn của bạn vẫn được hiển thị; bản đồ không tự suy đoán mối liên hệ khi chưa có dữ liệu hỗ trợ."
+                    "Hiện chưa có mối liên hệ ngành học được hỗ trợ bằng bằng chứng. Các lựa chọn của bạn vẫn hiển thị riêng, không tự suy ra ngành học."
                 )
 
             selected_key = st.session_state.get("selected_network_node")
@@ -539,27 +539,9 @@ elif page == tr("network"):
                             relation = RELATION_VI.get(relation, relation)
                         with st.expander(f'{translated_node_label(other_node)} · {relation}'):
                             st.markdown(f"**{tr('why_connected')}**")
-                            if edge["relation"] == "interest connection":
-                                explanation = ("This link is based on an interest tag in the sample major database."
-                                               if st.session_state.language == "English" else
-                                               "Mối liên hệ này dựa trên nhãn sở thích trong cơ sở dữ liệu ngành học mẫu.")
-                            elif edge["relation"] == "academic subject connection":
-                                explanation = ("This link is based on a related-subject tag in the sample major database; it is not necessarily an admission prerequisite."
-                                               if st.session_state.language == "English" else
-                                               "Mối liên hệ này dựa trên nhãn môn học liên quan trong cơ sở dữ liệu mẫu; không nhất thiết là điều kiện đầu vào.")
-                            elif edge["relation"] == "draws on":
-                                explanation = ("This is an academic-discipline tag associated with the sample major entry."
-                                               if st.session_state.language == "English" else
-                                               "Đây là nhãn lĩnh vực học thuật được gắn với ngành học mẫu.")
-                            elif edge["relation"] == "may connect to":
-                                explanation = ("This is an illustrative possible career-area association, not a guaranteed career outcome."
-                                               if st.session_state.language == "English" else
-                                               "Đây là mối liên hệ minh họa với lĩnh vực nghề nghiệp có thể liên quan, không phải kết quả nghề nghiệp được đảm bảo.")
-                            else:
-                                explanation = edge["evidence"]
-                            st.write(explanation)
+                            st.write(edge["evidence"])
                             st.caption(f'{tr("relationship")}: {relation}')
-                            st.caption(f'{tr("evidence_status")}: Sample database tag — source verification pending.')
+
                 else:
                     st.info(tr("no_connections"))
 
