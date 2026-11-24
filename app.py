@@ -375,22 +375,43 @@ def translated_node_label(node):
     return f'{node["type"].title()}: {label}'
 
 def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
-    # Never hide the catalogue. Selection changes emphasis, not visibility.
-    focus = set(focus_keys or [])
-    if selected_key:
+    """Render the full catalogue while highlighting only direct, supported links."""
+    focus = {key for key in (focus_keys or []) if key in nodes}
+    if selected_key in nodes:
         focus.add(selected_key)
-    major_focus = {key for key in focus if key.startswith("major::")}
-    # Evidence-referenced subject guidance adds an explicitly exploratory path
-    # from a selected subject to a major. It is not a verified prerequisite.
-    for edge in edges:
-        if edge["relation"] == "explore through curriculum context" and edge["source"] in focus:
-            major_focus.add(edge["target"])
-    active_nodes = set(focus) | set(major_focus)
-    for edge in edges:
-        if edge["source"] in major_focus or edge["target"] in major_focus:
-            active_nodes.update((edge["source"], edge["target"]))
-        elif edge["source"] in focus or edge["target"] in focus:
-            active_nodes.update((edge["source"], edge["target"]))
+
+    # A subject can illuminate only the majors directly connected to it by a
+    # referenced exploratory curriculum record. Do not expand those majors to
+    # their unrelated profile branches.
+    subject_linked_majors = {
+        edge["target"] for edge in edges
+        if edge["relation"] == "explore through curriculum context"
+        and edge["source"] in focus
+    }
+
+    # An explicitly selected major (or a node the user clicks) may show its
+    # immediate catalogue/profile neighbours. This is one-hop emphasis only.
+    explicit_majors = {key for key in focus if nodes[key]["type"] == "major"}
+    expansion_seeds = set(explicit_majors)
+    if selected_key in nodes:
+        expansion_seeds.add(selected_key)
+
+    active_nodes = set(focus) | subject_linked_majors
+    active_edges = set()
+    for index, edge in enumerate(edges):
+        source, target = edge["source"], edge["target"]
+        directly_selected = source in focus or target in focus
+        selected_major_branch = (
+            (source in expansion_seeds or target in expansion_seeds)
+            and edge["relation"] != "explore through curriculum context"
+        )
+        selected_subject_evidence = (
+            edge["relation"] == "explore through curriculum context"
+            and source in focus
+        )
+        if directly_selected or selected_major_branch or selected_subject_evidence:
+            active_edges.add(index)
+            active_nodes.update((source, target))
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98",
@@ -398,36 +419,40 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         "skill":"#B28B9C", "cluster":"#D6A84F", "foundation":"#A87979",
         "related":"#9A86B8", "application":"#6D9C98", "research":"#6F88A8"
     }
+    muted = {"background":"#EEF1F4", "border":"#D9DEE5", "font":"#A7B0BC"}
     graph_nodes = []
     for key, item in nodes.items():
-        color = palette.get(item["type"], "#8393A6")
         is_focus = key in focus
         is_active = key in active_nodes
-        border = "#172B4D" if is_focus else ("#FFFFFF" if is_active else "#D6DCE4")
-        size = 32 if is_focus else (25 if is_active else (21 if item["type"] == "major" else 17))
         display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
         title = item.get("description", display_label)
         if item["type"] == "major":
             info = MAJORS.get(item["label"], {})
             title = info.get("overview_vi", info.get("overview", title)) if st.session_state.language == "Tiếng Việt" else info.get("overview", title)
+        if is_active:
+            base = palette.get(item["type"], "#8393A6")
+            color = {"background":base, "border":"#172B4D" if is_focus else "#FFFFFF", "highlight":{"background":base,"border":"#172B4D"}}
+            font_color = "#17263D"
+        else:
+            color = {"background":muted["background"], "border":muted["border"], "highlight":{"background":muted["background"],"border":muted["border"]}}
+            font_color = muted["font"]
         graph_nodes.append(Node(
-            id=key, label=display_label, title=title, size=size,
-            color={"background":color, "border":border, "highlight":{"background":color,"border":"#172B4D"}},
-            borderWidth=3 if is_focus else (2 if is_active else 1),
-            font={"color":"#17263D", "size":15 if is_active else (13 if item["type"] == "major" else 12)}
+            id=key, label=display_label, title=title,
+            size=32 if is_focus else (25 if is_active else (19 if item["type"] == "major" else 15)),
+            color=color, borderWidth=3 if is_focus else (2 if is_active else 1),
+            font={"color":font_color, "size":15 if is_focus else (13 if is_active else 10)}
         ))
 
     graph_edges = []
-    for edge in edges:
-        active = (edge["source"] in active_nodes and edge["target"] in active_nodes)
+    for index, edge in enumerate(edges):
+        active = index in active_edges
         relation = edge["relation"]
         label = "" if relation == "profile includes" else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
-        exploratory = relation == "explore through curriculum context"
         graph_edges.append(Edge(
             source=edge["source"], target=edge["target"], label=label,
-            color="#315B83" if active else "#C8D0DA",
-            width=3 if active else 1.1,
-            font={"color":"#315B83" if active else "#A4ADB9", "size":10},
+            color="#315B83" if active else "#E1E5EA",
+            width=2.8 if active else 0.7,
+            font={"color":"#315B83" if active else "#C3CAD3", "size":10},
             arrows="to"
         ))
 
