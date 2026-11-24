@@ -219,8 +219,8 @@
             "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official university curriculum and programme pages document the listed course areas; these provide curriculum context for subject exploration, not universal high-school prerequisites.",
@@ -301,8 +301,8 @@
       {
         "claim": "Official programme references are available for Computer Science at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Computer Science tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -319,8 +319,8 @@
             "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Computer Science or the explicitly named related programme variants below.",
@@ -377,8 +377,8 @@
             "source_type_vi": "Danh mục chương trình cấp bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curricula at HCMUT, UCL, NUS and VinUniversity document recurring Computer Science knowledge areas including programming, mathematics/discrete structures, algorithms, systems and (in some curricula) physics, AI or machine learning.",
@@ -462,8 +462,8 @@
       {
         "claim": "Official programme references are available for Data Science at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Data Science tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -487,8 +487,8 @@
             "source_type_vi": "Danh mục đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Data Science or the explicitly named related programme variants below.",
@@ -537,8 +537,8 @@
             "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula and professional curriculum guidance from multiple institutions document Data Science foundations spanning mathematics, statistics, computing/programming, data management and domain-specific or science applications; the balance differs by programme.",
@@ -687,8 +687,8 @@
             "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate requirements at Notre Dame and Stanford document microeconomics, macroeconomics, statistics/econometrics and calculus or other quantitative mathematics; requirements differ by degree track and institution.",
@@ -729,8 +729,8 @@
       {
         "claim": "Official programme references are available for Biology at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Biology tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "UC San Diego",
@@ -747,8 +747,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Biology or the explicitly named related programme variants below.",
@@ -797,8 +797,8 @@
             "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curricula at Stanford and Iowa State document biology foundations alongside supporting coursework in chemistry, mathematics/statistics, physics and, in some pathways, computer science. The required mix varies by subplan and institution.",
@@ -839,8 +839,8 @@
       {
         "claim": "Official programme references are available for Mechanical Engineering at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Mechanical Engineering tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -851,14 +851,16 @@
           },
           {
             "institution": "Vietnamese-German University",
-            "title": "Bachelor Programs",
+            "title": "Bachelor Programs — VGU Undergraduate Application Guideline (2025)",
             "url": "https://vgu.edu.vn/documents/14921/10674296/20250219_EN_Bachelor_Application%2BGuideline.pdf/d713aea3-aa8c-481b-b467-717bdbd19153",
-            "source_type": "Official programme guide",
-            "source_type_vi": "Hướng dẫn chương trình đào tạo chính thức"
+            "source_type": "Official undergraduate application guideline (programme names/admission information only)",
+            "source_type_vi": "Hướng dẫn tuyển sinh đại học chính thức (chỉ hỗ trợ tên chương trình/thông tin tuyển sinh)",
+            "claim_type": "Programme availability context only",
+            "scope": "This 2025 document is an undergraduate application guideline, not a curriculum or course-requirement source. It supports only programme names or admissions information explicitly stated in the document; it does not support course-content, subject mapping or curriculum claims."
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Mechanical Engineering or the explicitly named related programme variants below.",
@@ -899,8 +901,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at NUS, VinUniversity and Purdue document mathematics, mechanics/materials, design, engineering science and computing/programming elements; course structure and specializations vary by cohort and institution.",
@@ -950,8 +952,8 @@
       {
         "claim": "Official programme references are available for Finance at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Finance tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -968,8 +970,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Finance or the explicitly named related programme variants below.",
@@ -1002,8 +1004,8 @@
             "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official Finance curricula at HKU and UIUC document finance foundations alongside accounting, economics, statistics and mathematics; course choices vary by cohort and degree structure.",
@@ -1112,8 +1114,8 @@
             "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at UC Berkeley, MIT and USTH document chemistry lecture/laboratory sequences alongside mathematics and physics foundations; the exact sequence and emphasis vary by institution and degree pathway.",
@@ -1223,8 +1225,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at Seoul National University, Cal Poly Pomona and Cornell document core physics areas alongside substantial mathematics; chemistry and computational methods appear in some pathways or electives.",
@@ -1274,8 +1276,8 @@
       {
         "claim": "Official programme references are available for Environmental Science at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Environmental Science tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "UC San Diego",
@@ -1292,8 +1294,8 @@
             "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Environmental Science or the explicitly named related programme variants below.",
@@ -1334,8 +1336,8 @@
             "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curricula at HCMUS and Iowa State document interdisciplinary environmental science foundations including chemistry, ecology, geology, hydrology, statistics, GIS and supporting sciences.",
@@ -1376,8 +1378,8 @@
       {
         "claim": "Official programme references are available for Architecture at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Architecture tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Keio University",
@@ -1394,8 +1396,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Architecture or the explicitly named related programme variants below.",
@@ -1428,8 +1430,8 @@
             "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curriculum information from MIT and NUS documents design studios, visual/design communication, environmental/building technology, structural design and design computing. These are curriculum components, not proof that any single EMASI subject is required for admission.",
@@ -1470,8 +1472,8 @@
       {
         "claim": "Official programme references are available for Electrical Engineering at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Electrical Engineering tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -1489,14 +1491,16 @@
           },
           {
             "institution": "Vietnamese-German University",
-            "title": "Bachelor Programs",
+            "title": "Bachelor Programs — VGU Undergraduate Application Guideline (2025)",
             "url": "https://vgu.edu.vn/documents/14921/10674296/20250219_EN_Bachelor_Application%2BGuideline.pdf/d713aea3-aa8c-481b-b467-717bdbd19153",
-            "source_type": "Official programme guide",
-            "source_type_vi": "Hướng dẫn chương trình đào tạo chính thức"
+            "source_type": "Official undergraduate application guideline (programme names/admission information only)",
+            "source_type_vi": "Hướng dẫn tuyển sinh đại học chính thức (chỉ hỗ trợ tên chương trình/thông tin tuyển sinh)",
+            "claim_type": "Programme availability context only",
+            "scope": "This 2025 document is an undergraduate application guideline, not a curriculum or course-requirement source. It supports only programme names or admissions information explicitly stated in the document; it does not support course-content, subject mapping or curriculum claims."
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Electrical Engineering or the explicitly named related programme variants below.",
@@ -1553,8 +1557,8 @@
             "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curricula at SIUE, Boston University and UC San Diego document mathematics, physics, computing/programming and core electrical/electronic systems; pathway-specific requirements vary.",
@@ -1604,8 +1608,8 @@
       {
         "claim": "Official programme references are available for Civil Engineering at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Civil Engineering tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -1622,8 +1626,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Civil Engineering or the explicitly named related programme variants below.",
@@ -1680,8 +1684,8 @@
             "source_type_vi": "Danh mục ngành học bậc đại học của trường/khoa"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official undergraduate curricula at Auburn, Illinois and Minnesota document calculus, physics, chemistry, mechanics, computing and engineering design; individual plans vary.",
@@ -1783,8 +1787,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at Stanford and Rice document political science pathways with methods, statistics/data science and research seminars alongside substantive political science coursework.",
@@ -1825,8 +1829,8 @@
       {
         "claim": "Official programme references are available for Sociology at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Sociology tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -1843,8 +1847,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Sociology or the explicitly named related programme variants below.",
@@ -1869,8 +1873,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at Stanford and Johns Hopkins document sociological theory, social research methods, data analysis and social statistics; some pathways allow qualitative or quantitative methods.",
@@ -1911,8 +1915,8 @@
       {
         "claim": "Official programme references are available for Linguistics at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Linguistics tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -1929,8 +1933,8 @@
             "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Linguistics or the explicitly named related programme variants below.",
@@ -1955,8 +1959,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at Stanford and Penn State document phonetics/phonology, morphology/syntax, semantics, sociolinguistics and computational linguistics; statistics appears in some degree requirements.",
@@ -1997,8 +2001,8 @@
       {
         "claim": "Official programme references are available for Education at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Education tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "UC San Diego",
@@ -2015,8 +2019,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Education or the explicitly named related programme variants below.",
@@ -2049,8 +2053,8 @@
             "source_type_vi": "Danh mục chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at UC Irvine and University of Florida document educational research design, statistics/data literacy, development and learning, educational psychology, measurement and educational technology.",
@@ -2091,8 +2095,8 @@
       {
         "claim": "Official programme references are available for Accounting at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Accounting tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -2109,8 +2113,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Accounting or the explicitly named related programme variants below.",
@@ -2143,8 +2147,8 @@
             "source_type_vi": "Danh mục văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official accounting curricula at Ton Duc Thang University and Foreign Trade University document accounting foundations and applications alongside mathematics/statistics, economics, business law, information systems, auditing and tax.",
@@ -2185,8 +2189,8 @@
       {
         "claim": "Official programme references are available for Communication & Media Studies at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Communication & Media Studies tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -2203,8 +2207,8 @@
             "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "Partially verified — programme-directory or application pages are identified, but the exact programme title and undergraduate award must be confirmed on each institution's current official listing.",
+        "status_vi": "Xác minh một phần — đã xác định danh mục chương trình hoặc trang tuyển sinh, nhưng cần xác nhận tên chương trình chính xác và văn bằng đại học trên danh mục chính thức hiện hành của từng trường."
       },
       {
         "claim": "Official university programme directories list Communication & Media Studies or the explicitly named related programme variants below.",
@@ -2245,8 +2249,8 @@
             "source_type_vi": "Danh mục học thuật bậc đại học chính thức"
           }
         ],
-        "status": "Verified for the listed institutions and exact programme labels only; degree level and equivalence may differ.",
-        "status_vi": "Chỉ xác minh việc các trường được liệt kê có những chương trình mang tên tương ứng; bậc học và mức độ tương đương có thể khác nhau."
+        "status": "Programme directories identified; confirm the exact title and undergraduate degree level on each institution's current official page before treating every listed entry as verified. Degree equivalence may differ.",
+        "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
         "claim": "Official curricula at Stanford and the University of Oregon document communication theory, media/journalism, communication research methods, statistics, writing and media production; programme structures differ.",
