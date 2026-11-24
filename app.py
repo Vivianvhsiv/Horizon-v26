@@ -519,17 +519,16 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 20 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "Click a node to inspect its profile relationships. Profile elements describe a major; they are not a suitability score. No unsupported interest-to-major or subject-to-major links are drawn."
+                "All 20 majors and their profile branches remain visible. Selected EMASI subjects may show referenced curriculum-context paths, clearly labelled exploratory; interests are not mapped to majors without claim-level evidence."
                 if st.session_state.language == "English" else
-                "Nhấp vào một nút để xem các mối liên hệ trong hồ sơ ngành. Những yếu tố này mô tả ngành học, không phải điểm đánh giá mức độ phù hợp. Hệ thống không tự suy ra kết nối sở thích hoặc môn học–ngành khi chưa có bằng chứng."
+                "Cả 20 ngành và các nhánh thông tin đều luôn hiển thị. Môn EMASI bạn chọn có thể xuất hiện kết nối bối cảnh chương trình học khi có nguồn tham khảo, nhưng chỉ mang tính khám phá; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
             )
             st.info(tr("sample_notice"))
-            if not candidates:
-                st.warning(
-                    "No evidence-backed major matches are currently recorded. Your selected inputs remain visible without inferred major connections."
-                    if st.session_state.language == "English" else
-                    "Hiện chưa có mối liên hệ ngành học được hỗ trợ bằng bằng chứng. Các lựa chọn của bạn vẫn hiển thị riêng, không tự suy ra ngành học."
-                )
+            exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
+            if not intended_majors:
+                st.info("Horizon does not rank or choose a major for you. Referenced subject paths, when shown, are exploratory curriculum context—not proof of a school prerequisite or personal suitability." if st.session_state.language == "English" else "Horizon không xếp hạng hoặc chọn ngành thay bạn. Các kết nối môn học có nguồn tham khảo, nếu xuất hiện, chỉ là bối cảnh chương trình mang tính khám phá, không phải điều kiện tiên quyết phổ thông hay kết luận về mức độ phù hợp cá nhân.")
+            if exploratory_subject_paths:
+                st.caption(("Exploratory subject paths shown: " if st.session_state.language == "English" else "Số kết nối môn học mang tính khám phá: ") + str(len(exploratory_subject_paths)))
 
             selected_key = st.session_state.get("selected_network_node")
             if selected_key not in nodes:
