@@ -546,6 +546,12 @@ elif page == tr("network"):
         st.session_state.undecided_major = undecided
         st.session_state.chosen_interests = [interest_label_to_key[x] for x in chosen_interest_labels]
         st.session_state.chosen_subjects = [subject_label_to_key[x] for x in chosen_subject_labels]
+        # Reset the major detail browser to the student's stated direction.
+        # Never silently default an undecided student to Cognitive Science.
+        education_interest = "Education and learning" in st.session_state.chosen_interests
+        major_placeholder = "— Chọn ngành để xem chi tiết —" if st.session_state.language == "Tiếng Việt" else "— Choose a major to explore —"
+        initial_major = st.session_state.chosen_majors[0] if st.session_state.chosen_majors else ("Education" if education_interest else major_placeholder)
+        st.session_state.network_major_explorer = initial_major
         st.session_state.network_generated = True
         st.session_state.selected_network_node = None
 
@@ -652,10 +658,20 @@ elif page == tr("network"):
             st.subheader("Explore any of the 20 majors" if st.session_state.language == "English" else "Khám phá 20 ngành học")
             st.caption("Inspect academic foundations, related fields, research areas and exploratory EMASI subject guidance. This is browsing support, not a personalized recommendation." if st.session_state.language == "English" else "Tìm hiểu nền tảng học thuật, lĩnh vực liên quan, hướng nghiên cứu và gợi ý khám phá môn học EMASI. Đây là thông tin tham khảo, không phải đề xuất ngành phù hợp cá nhân.")
             major_options = list(MAJORS.keys())
-            default_major = intended_majors[0] if intended_majors else major_options[0]
-            explore_major = st.selectbox("Choose a major" if st.session_state.language == "English" else "Chọn ngành học", major_options, index=major_options.index(default_major), format_func=lambda value: (value + " · " + MAJORS[value].get("name_vi", value)) if st.session_state.language == "Tiếng Việt" else value, key="network_major_explorer")
-            explore_info = MAJORS[explore_major]
-            st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
+            major_placeholder = "— Chọn ngành để xem chi tiết —" if st.session_state.language == "Tiếng Việt" else "— Choose a major to explore —"
+            default_major = intended_majors[0] if intended_majors else ("Education" if "Education and learning" in interests else major_placeholder)
+            explore_options = [major_placeholder] + major_options
+            explore_major = st.selectbox(
+                "Choose a major" if st.session_state.language == "English" else "Chọn ngành học",
+                explore_options,
+                index=explore_options.index(default_major),
+                format_func=lambda value: (value + " · " + MAJORS[value].get("name_vi", value)) if st.session_state.language == "Tiếng Việt" and value in MAJORS else value,
+                key="network_major_explorer")
+            if explore_major == major_placeholder:
+                st.info("Choose a major to browse its academic profile. Horizon will not select one for you." if st.session_state.language == "English" else "Chọn một ngành để xem hồ sơ học thuật. Horizon sẽ không tự ý chọn ngành thay bạn.")
+            else:
+                explore_info = MAJORS[explore_major]
+                st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
             st.write(explore_info.get("overview_vi", explore_info.get("overview", "")) if st.session_state.language == "Tiếng Việt" else explore_info.get("overview", ""))
             detail_fields = [("academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"), ("related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"), ("specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"), ("research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu")]
             for field, field_vi, label_en, label_vi in detail_fields:
