@@ -71,6 +71,27 @@ check(not missing_major_vi,'all 20 major profiles contain English–Vietnamese p
       (': '+', '.join(missing_major_vi[:8]) if missing_major_vi else ''))
 # Keep Vietnamese source/claim labels and subject guidance checked above; do not use
 # unrelated Chinese-character absence as a proxy for bilingual quality.
+# Explore Majors regression checks
+explore_start=app.find('elif page == tr("majors"):')
+explore_end=app.find('elif page == tr("compare"):', explore_start)
+explore_code=app[explore_start:explore_end] if explore_start >= 0 and explore_end > explore_start else ''
+check(explore_start >= 0 and explore_end > explore_start,'Explore Majors page is present')
+check('profile_scope_vi' in explore_code and 'source_status_vi' in explore_code,'Explore Majors displays bilingual profile scope and evidence status')
+check('subject_inventory_note_vi' in explore_code,'Explore Majors displays the Vietnamese EMASI subject-inventory note')
+check('preferred_role_order' in explore_code and 'available_roles' in explore_code,'Explore Majors renders every subject-guidance role, including future categories')
+role_values={item.get('role_en') for record in majors.values() for item in record.get('emasi_subject_guidance',[]) if item.get('role_en')}
+check('role_order.extend(role for role in available_roles if role not in role_order)' in explore_code,
+      f'all {len(role_values)} subject-guidance role categories are rendered')
+source_errors=[]
+for major,record in sources.items():
+    for i,claim in enumerate(record.get('claims',[])):
+        if not claim.get('sources'):
+            source_errors.append(f'{major}.claims[{i}] has no source')
+        for j,source in enumerate(claim.get('sources',[])):
+            if not source.get('institution') or not source.get('title') or not source.get('url','').startswith('https://'):
+                source_errors.append(f'{major}.claims[{i}].sources[{j}] has incomplete metadata')
+check(not source_errors,'all source-register claims have source links and institution/title metadata'+
+      (': '+', '.join(source_errors[:8]) if source_errors else ''))
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
 except SyntaxError as e: check(False,f'app.py syntax error: {e}')
