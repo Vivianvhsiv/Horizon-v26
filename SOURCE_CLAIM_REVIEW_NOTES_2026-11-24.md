@@ -81,3 +81,10 @@ The additional programme-status/source-scope edits above were committed after th
 ### Resulting interpretation
 
 These spot-checks strengthen a small number of named programme-availability and curriculum references, but they do not complete the page-by-page review of all 65 claims. Exact programme titles, award level, cohort and course classification remain essential. Directory or application pages are not interchangeable with curriculum pages, and a course listed under general education or electives must not be relabelled as a compulsory major prerequisite.
+
+## Data Science — VinUniversity cohort-specific curriculum check
+
+- Replaced the generic VinUniversity academic-catalogue index attached to the Data Science cross-institution claim with a specific institution-level curriculum claim.
+- The official VinUniversity programme page identifies the B.S. Data Science degree structure (including College Core, Major/Discipline Requirements, Discipline Electives, Free Electives, projects, internship and capstone) and publishes course descriptions such as Discrete Mathematics, Data Science Programming, Machine Learning, Databases and Data Visualization.
+- Added the official 2025–2029 cohort curriculum framework PDF as the cohort-specific framework source. The claim is now explicitly limited to VinUniversity and that published cohort framework; it must not be generalized into universal Data Science prerequisites or assumed EMASI subject equivalence.
+- The programme page and framework should be treated as complementary: the webpage supports the displayed programme/course descriptions, while the PDF establishes the stated cohort scope. Course status must follow the actual framework classification rather than being inferred from a course description alone.
