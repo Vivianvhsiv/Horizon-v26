@@ -64,3 +64,20 @@ On commit `8f234f9fbba4715d620834afb8cdbc5175e1d929`:
 
 The additional programme-status/source-scope edits above were committed after that run and require a fresh CI run. The earlier 86-URL / 76-reachable report is superseded by this 88-URL result.
 
+## Additional official-source scope review — 24 November 2026
+
+### Programme availability pages
+
+- **Vietnamese-German University (VGU), 2025 Bachelor Application Guideline:** the document explicitly labels a table “VGU Bachelor Programs” and lists programme labels including Architecture, Civil Engineering and Construction Management, Computer Science, Electrical and Computer Engineering, Mechanical Engineering, Finance and Accounting, and a Major in Economics. This is valid evidence that those programme labels appeared in the 2025 application guideline. It is not a curriculum source, and the grouped labels must not be silently expanded into separate degree awards (for example, “Electrical Engineering” alone) or used to infer course content. Keep the existing scope limited to application/programme-list evidence.
+- **University of Economics Ho Chi Minh City (UEH), Standard Programs:** the current programme overview explicitly lists Finance, Corporate Accounting, Economics and related named pathways. It is stronger than a generic university homepage for programme availability, but programme names must remain exact (for example, Corporate Accounting is not automatically identical to every Accounting degree).
+- **Ton Duc Thang University (TDTU), Standard Programmes:** the official undergraduate programme list explicitly includes Accounting, Computer Science, Environmental Science, Architecture and Finance and Banking, among other programmes. This supports the listed programme labels only; it does not establish curriculum requirements.
+- **Vietnam National University HCMC — University of Science (HCMUS), Module Handbook:** the page exposes module groupings including compulsory pre-major requirements and general-education electives. It is a module handbook for the faculty/programme context shown, not a general curriculum source for every major in Horizon. Its pre-major Computer Science module list includes programming, data structures and algorithms, databases, operating systems and computer systems; the same page also separates general-education electives such as Biology, Chemistry, Physics and Environmental Science. Do not describe those electives as CS prerequisites.
+
+### Curriculum evidence
+
+- **VinUniversity, B.S. Mechanical Engineering Curriculum Framework (2025, Intake 6):** the indexed framework separates College Core, Major Core, Major Foundation, Area of Concentration, internship and capstone. It lists calculus, linear algebra, probability/statistics, differential equations, physics, chemistry, programming, statics/mechanics, thermodynamics, dynamics, fluid mechanics, heat transfer, mechatronics and control. This is useful institution- and intake-specific curriculum evidence. It does not support universal Mechanical Engineering prerequisites or a direct EMASI subject equivalence.
+- **VinUniversity, B.S. Electrical and Computer Engineering framework (2025; stated cohorts 2023–2027):** the framework identifies a College Core section including probability/statistics, calculus, differential equations and linear algebra. Any additional claim about electrical engineering major-core content must be checked against the full framework sections, not inferred from the College Core table alone.
+
+### Resulting interpretation
+
+These spot-checks strengthen a small number of named programme-availability and curriculum references, but they do not complete the page-by-page review of all 65 claims. Exact programme titles, award level, cohort and course classification remain essential. Directory or application pages are not interchangeable with curriculum pages, and a course listed under general education or electives must not be relabelled as a compulsory major prerequisite.
