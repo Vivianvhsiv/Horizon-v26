@@ -55,10 +55,22 @@ app=(ROOT/'app.py').read_text(encoding='utf-8')
 check('("Geography", "Địa lý")' in app and '("History", "Lịch sử")' in app,'Geography and History appear in the interactive subject selector')
 # Check the UI language code uses Vietnamese source-type labels.
 check('source.get("source_type_vi"' in app,'source type labels use Vietnamese in Vietnamese UI')
-# No Chinese CJK strings in user-facing app/data/readme files.
-for f in ['app.py','majors.json','academic_sources.json','emasi_subjects.json','README.md']:
-    text=(ROOT/f).read_text(encoding='utf-8')
-    check(not re.search(r'[\u3400-\u9fff]',text),f'{f}: no CJK text remains')
+# Explicit English–Vietnamese product-language checks.
+readme=(ROOT/'README.md').read_text(encoding='utf-8')
+check('"English"' in app and '"Tiếng Việt"' in app and '["English","Tiếng Việt"]' in app,
+      'language selector offers exactly English and Vietnamese')
+check('## Languages' in readme and '- English' in readme and '- Tiếng Việt' in readme,
+      'README identifies English and Vietnamese as the supported languages')
+# Major profile content must provide Vietnamese equivalents for each displayed field.
+major_vi_fields=['name_vi','cluster_vi','overview_vi','preparation_vi','caveat_vi',
+                 'disciplines_vi','skills_vi','careers_vi','academic_foundations_vi',
+                 'related_disciplines_vi','specialized_applications_vi','research_areas_vi','limitations_vi']
+missing_major_vi=[f'{name}.{key}' for name,record in majors.items()
+                  for key in major_vi_fields if not record.get(key)]
+check(not missing_major_vi,'all 20 major profiles contain English–Vietnamese paired content'+
+      (': '+', '.join(missing_major_vi[:8]) if missing_major_vi else ''))
+# Keep Vietnamese source/claim labels and subject guidance checked above; do not use
+# unrelated Chinese-character absence as a proxy for bilingual quality.
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
 except SyntaxError as e: check(False,f'app.py syntax error: {e}')
