@@ -619,6 +619,10 @@ elif page == tr("network"):
                         with st.expander(f'{translated_node_label(other_node)} · {relation}'):
                             st.markdown(f"**{tr('why_connected')}**")
                             st.write(edge["evidence"])
+                            for ref in edge.get("evidence_refs", []):
+                                url = ref.get("url", "")
+                                if url:
+                                    st.markdown("- [" + ref.get("institution", "Institution") + ": " + ref.get("title", "Reference") + "](" + url + ")")
                             st.caption(f'{tr("relationship")}: {relation}')
 
                 else:
@@ -628,13 +632,11 @@ elif page == tr("network"):
                     st.session_state.selected_network_node = None
                     st.rerun()
 
-            st.subheader(tr("candidates"))
-            if candidates:
-                candidate_display = [f"{m} (your stated choice)" if m in intended_majors and st.session_state.language == "English" else (f"{MAJORS[m].get('name_vi',m)} (lựa chọn của bạn)" if m in intended_majors else (m if st.session_state.language == "English" else MAJORS[m].get("name_vi",m))) for m in candidates]
-                st.write(", ".join(candidate_display))
-                st.caption(tr("notranked"))
-            else:
-                st.info(tr("nomatch"))
+            if intended_majors:
+                st.subheader("Your stated major choices" if st.session_state.language == "English" else "Ngành học bạn chủ động cân nhắc")
+                chosen_display = [m if st.session_state.language == "English" else MAJORS[m].get("name_vi", m) for m in intended_majors]
+                st.write(", ".join(chosen_display))
+                st.caption("These are your own stated choices, not a suitability ranking." if st.session_state.language == "English" else "Đây là lựa chọn do bạn tự nêu, không phải xếp hạng mức độ phù hợp.")
 
 elif page == tr("majors"):
     st.title(tr("majors"))
