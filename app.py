@@ -500,9 +500,9 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 20 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "Click a node to inspect its direct student-selected relationship. No unsupported interest-to-major links are drawn."
+                "Click a node to inspect its profile relationships. Profile elements describe a major; they are not a suitability score. No unsupported interest-to-major or subject-to-major links are drawn."
                 if st.session_state.language == "English" else
-                "Nhấp vào một nút để xem mối liên hệ do chính bạn lựa chọn. Hệ thống không vẽ các kết nối sở thích–ngành khi chưa có bằng chứng."
+                "Nhấp vào một nút để xem các mối liên hệ trong hồ sơ ngành. Những yếu tố này mô tả ngành học, không phải điểm đánh giá mức độ phù hợp. Hệ thống không tự suy ra kết nối sở thích hoặc môn học–ngành khi chưa có bằng chứng."
             )
             st.info(tr("sample_notice"))
             if not candidates:
