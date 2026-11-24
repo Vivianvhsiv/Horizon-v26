@@ -329,6 +329,12 @@ MAJOR_TRANSLATIONS = {
     "Cognitive Science":"Khoa học nhận thức", "Psychology":"Tâm lý học", "Computer Science":"Khoa học máy tính", "Data Science":"Khoa học dữ liệu", "Economics":"Kinh tế học", "Biology":"Sinh học", "Mechanical Engineering":"Kỹ thuật cơ khí", "Finance":"Tài chính", "Chemistry":"Hóa học", "Physics":"Vật lý", "Environmental Science":"Khoa học môi trường", "Architecture":"Kiến trúc", "Electrical Engineering":"Kỹ thuật điện", "Civil Engineering":"Kỹ thuật xây dựng", "Political Science":"Khoa học chính trị", "Sociology":"Xã hội học", "Linguistics":"Ngôn ngữ học", "Education":"Giáo dục học", "Accounting":"Kế toán", "Communication & Media Studies":"Truyền thông và nghiên cứu truyền thông"
 }
 
+SKILL_TRANSLATIONS = {
+    en: vi
+    for info in MAJORS.values()
+    for en, vi in zip(info.get("skills", []), info.get("skills_vi", []))
+}
+
 NODE_TYPE_VI = {
     "student":"Khám phá của bạn", "interest":"Sở thích", "subject":"Các môn học hiện có tại EMASI",
     "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng"
@@ -342,7 +348,7 @@ RELATION_VI = {
 def translated_node_label(node):
     label = node["label"]
     if st.session_state.language == "Tiếng Việt":
-        label = MAJOR_TRANSLATIONS.get(label, SUBJECT_TRANSLATIONS.get(label, INTEREST_TRANSLATIONS.get(label, DISCIPLINE_TRANSLATIONS.get(label, CAREER_TRANSLATIONS.get(label, label)))))
+        label = MAJOR_TRANSLATIONS.get(label, SUBJECT_TRANSLATIONS.get(label, INTEREST_TRANSLATIONS.get(label, DISCIPLINE_TRANSLATIONS.get(label, CAREER_TRANSLATIONS.get(label, SKILL_TRANSLATIONS.get(label, label))))))
         return f'{NODE_TYPE_VI.get(node["type"], node["type"])}: {label}'
     return f'{node["type"].title()}: {label}'
 
@@ -381,7 +387,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         size = 31 if key == selected_key else (23 if active else 17)
         display_label = item["label"]
         if st.session_state.language == "Tiếng Việt":
-            display_label = MAJOR_TRANSLATIONS.get(display_label, SUBJECT_TRANSLATIONS.get(display_label, INTEREST_TRANSLATIONS.get(display_label, DISCIPLINE_TRANSLATIONS.get(display_label, CAREER_TRANSLATIONS.get(display_label, display_label)))))
+            display_label = MAJOR_TRANSLATIONS.get(display_label, SUBJECT_TRANSLATIONS.get(display_label, INTEREST_TRANSLATIONS.get(display_label, DISCIPLINE_TRANSLATIONS.get(display_label, CAREER_TRANSLATIONS.get(display_label, SKILL_TRANSLATIONS.get(display_label, display_label))))))
         graph_nodes.append(Node(
             id=key, label=display_label, title=(MAJORS.get(item["label"], {}).get("overview_vi", item["description"]) if st.session_state.language == "Tiếng Việt" and item["type"] == "major" else display_label),
             size=size,
