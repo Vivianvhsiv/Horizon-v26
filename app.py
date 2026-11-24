@@ -252,19 +252,19 @@ def node_id(kind, label):
     return f"{kind}::{label}"
 
 def build_network(selected_interests, selected_subjects, selected_majors=None):
-    """Build the full major map while distinguishing context from personal links.
+    """Build the complete major landscape and its descriptive profile elements.
 
-    All 20 majors remain visible as browseable context nodes. Only majors the
-    student explicitly selected receive a student-to-major edge. No
-    interest-to-major or subject-to-major edge is inferred from shared tags;
-    those links require claim-level evidence records.
+    All majors and their profile elements remain visible as catalogue context.
+    Student interests and current subjects remain separate inputs; they are
+    never matched to majors through shared taxonomy tags.
     """
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     nodes, edges = {}, []
 
     def add_node(kind, label, description=""):
         key = node_id(kind, label)
-        nodes[key] = {"id": key, "type": kind, "label": label, "description": description}
+        if key not in nodes:
+            nodes[key] = {"id": key, "type": kind, "label": label, "description": description}
         return key
 
     def add_edge(source, target, relation, evidence):
@@ -273,12 +273,25 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             edges.append(edge)
 
     you = add_node("student", "Your exploration", "Your inputs are shown without inferred suitability claims.")
-
-    # Preserve the full 20-major map as neutral browseable context. These
-    # nodes are not personalized matches unless the student explicitly
-    # selects them below; no unsupported edges are added.
+    profile_fields = [
+        ("discipline", "disciplines", "academic profile field"),
+        ("skill", "skills", "academic profile field"),
+        ("career", "careers", "possible application/career area listed in the profile"),
+    ]
+    # Keep all 20 majors and their descriptive profile elements on the map.
+    # These profile links are context, not personalized suitability matches.
     for major, info in MAJORS.items():
-        add_node("major", major, info.get("overview", ""))
+        major_key = add_node("major", major, info.get("overview", ""))
+        for kind, field, relationship_note in profile_fields:
+            values = info.get(field, [])
+            if not isinstance(values, list):
+                continue
+            for value in values:
+                if not isinstance(value, str) or not value.strip():
+                    continue
+                detail = f"Listed under {field} in the Horizon profile for {major}. Descriptive context only; not a suitability assessment."
+                element_key = add_node(kind, value, detail)
+                add_edge(major_key, element_key, "profile includes", relationship_note)
 
     for interest in selected_interests:
         i = add_node("interest", interest, "An interest selected by the student; not a measured aptitude.")
@@ -287,14 +300,9 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
         sub = add_node("subject", subject, "A current school subject selected by the student.")
         add_edge(you, sub, "currently studies", "Student-selected input")
     for major in selected_majors:
-        m = add_node("major", major, MAJORS[major].get("overview", ""))
-        add_edge(you, m, "considering", "Student-selected major intention")
-
-    # Current interests fields are taxonomy tags, not claim-level evidence.
-    # Current EMASI subject guidance is exploratory and no verified
-    # subject-to-major connection records are populated. No inferred edges.
+        add_edge(you, node_id("major", major), "considering", "Student-selected major intention")
+    # No interest-to-major or EMASI-subject-to-major edges are inferred.
     return nodes, edges, selected_majors
-
 
 def graphviz_source(nodes, edges):
     colors = {"student":"#DCEBFA","interest":"#E8E3FA","subject":"#E2F2E8",
@@ -312,7 +320,7 @@ def graphviz_source(nodes, edges):
     return "\n".join(lines)
 
 def node_options(nodes):
-    order = ["student","interest","subject","major","discipline","career"]
+    order = ["student","interest","subject","major","discipline","skill","career"]
     return [(f'{n["type"].title()} · {n["label"]}', key) for kind in order
             for key,n in nodes.items() if n["type"] == kind]
 
@@ -323,10 +331,10 @@ MAJOR_TRANSLATIONS = {
 
 NODE_TYPE_VI = {
     "student":"Khám phá của bạn", "interest":"Sở thích", "subject":"Các môn học hiện có tại EMASI",
-    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp"
+    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng"
 }
 RELATION_VI = {
-    "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc",
+    "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
 }
@@ -353,10 +361,17 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     else:
         # focus_keys are the explicitly selected inputs and the student node.
         adjacent.update(focus_keys or [])
+        # Highlight the selected major and its own profile elements only.
+        # No interest-to-major or subject-to-major matches are inferred.
+        for edge in edges:
+            if edge["source"] in adjacent:
+                adjacent.add(edge["target"])
+            elif edge["target"] in adjacent:
+                adjacent.add(edge["source"])
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98",
-        "major":"#C18B4A", "discipline":"#B87575", "career":"#7187A6"
+        "major":"#C18B4A", "discipline":"#B87575", "career":"#7187A6", "skill":"#B28B9C"
     }
     graph_nodes = []
     for key, item in nodes.items():
