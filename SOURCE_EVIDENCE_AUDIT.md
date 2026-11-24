@@ -2,7 +2,7 @@
 
 Audit date: 2026-11-24  
 Branch: `horizon-network-map-fix`  
-Scope: 20 major profiles, 65 academic claims, 186 source occurrences, and the visible career / subject-guidance presentation.
+Scope: 20 major profiles, 65 academic claims, 185 source occurrences, and the visible career / subject-guidance presentation.
 
 ## Findings and changes
 
@@ -34,7 +34,7 @@ Additional official curriculum spot-checks surfaced in current search results in
 
 - A page being reachable is not proof that every claim attached to it is supported.
 - Some association, accreditation and programme-directory links are context sources, not curriculum evidence.
-- The full 86-URL reachability audit and a page-by-page manual verification of all 65 claims are not represented as complete by this report.
+- The full URL reachability audit and a page-by-page manual verification of all 65 claims are not represented as complete by this report.
 - No career-outcome dataset or graduate-employment evidence is currently attached to the career lists. They are therefore presented as exploratory examples.
 - English / Vietnamese content presence is structurally checked; this report does not claim native-editor approval of every Vietnamese sentence.
 
