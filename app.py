@@ -597,7 +597,7 @@ elif page == tr("majors"):
             # Subject guidance answers the student's practical question: which EMASI subjects
             # are useful to explore for this major? It is deliberately separate from verified
             # institution-specific prerequisite/connection claims.
-            st.markdown("### EMASI subjects to consider" if st.session_state.language == "English" else "### Các môn EMASI nên cân nhắc")
+            st.markdown("### EMASI subjects to consider carefully" if st.session_state.language == "English" else "### Những môn học EMASI cần được cân nhắc kỹ")
             st.caption(info.get("subject_guidance_note_en", "") if st.session_state.language == "English" else info.get("subject_guidance_note_vi", ""))
             inventory_note = info.get("subject_inventory_note_en", "") if st.session_state.language == "English" else info.get("subject_inventory_note_vi", "")
             if inventory_note:
@@ -735,7 +735,7 @@ elif page == tr("compare"):
                     if val is None: val = []
                     if val is None: val = []
                     st.write(", ".join(val) if isinstance(val,list) else val)
-        st.subheader("EMASI subjects to consider" if st.session_state.language == "English" else "Các môn EMASI nên cân nhắc")
+        st.subheader("EMASI subjects to consider carefully" if st.session_state.language == "English" else "Những môn học EMASI cần được cân nhắc kỹ")
         for name in selected:
             info = MAJORS[name]
             shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
@@ -745,6 +745,55 @@ elif page == tr("compare"):
                 role = g.get("role_en") if st.session_state.language == "English" else g.get("role_vi")
                 why = g.get("why_en") if st.session_state.language == "English" else g.get("why_vi")
                 st.markdown(f"- **{subject} · {role}** — {why}")
+                # Keep subject guidance exploratory and show its supporting context beside the comparison.
+                refs = g.get("evidence_refs", [])
+                if refs:
+                    for ref in refs:
+                        title = ref.get("title", "Academic reference")
+                        institution = ref.get("institution", "Institution")
+                        st.caption(("Academic context: " if st.session_state.language == "English" else "Bối cảnh học thuật: ") + f"{institution} — {title}")
+                        st.markdown(f"  - [{title}]({ref.get('url', '#')})")
+                        support = ref.get("support_en", "") if st.session_state.language == "English" else ref.get("support_vi", "")
+                        scope = ref.get("scope_en", "") if st.session_state.language == "English" else ref.get("scope_vi", "")
+                        if support: st.caption(("Supports: " if st.session_state.language == "English" else "Nguồn hỗ trợ: ") + support)
+                        if scope: st.caption(scope)
+                    status = g.get("evidence_status_en", "") if st.session_state.language == "English" else g.get("evidence_status_vi", "")
+                    if status: st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
+                else:
+                    st.caption("No source is attached to this exploratory subject suggestion yet." if st.session_state.language == "English" else "Gợi ý môn học mang tính khám phá này hiện chưa có nguồn đính kèm.")
+
+        st.divider()
+        st.subheader("Academic evidence behind these profiles" if st.session_state.language == "English" else "Bằng chứng học thuật cho các hồ sơ ngành học")
+        st.caption(
+            "The references below support specific disciplinary or curriculum claims. They do not validate every comparison field, predict personal suitability, or establish universal admission prerequisites."
+            if st.session_state.language == "English" else
+            "Các nguồn dưới đây hỗ trợ những nhận định cụ thể về lĩnh vực học thuật hoặc chương trình đào tạo. Chúng không xác minh mọi trường thông tin so sánh, dự đoán mức độ phù hợp cá nhân hay xác lập điều kiện tuyển sinh áp dụng chung."
+        )
+        for name in selected:
+            evidence = ACADEMIC_SOURCES.get(name, {})
+            shown_name = MAJORS[name].get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
+            with st.expander(shown_name + (" · sources" if st.session_state.language == "English" else " · nguồn")):
+                if not evidence or not evidence.get("claims"):
+                    st.caption("No reviewed claim-level sources are recorded yet." if st.session_state.language == "English" else "Chưa có nguồn ở cấp độ nhận định đã được rà soát.")
+                    continue
+                status = evidence.get("status", "") if st.session_state.language == "English" else evidence.get("status_vi", evidence.get("status", ""))
+                scope = evidence.get("scope", "") if st.session_state.language == "English" else evidence.get("scope_vi", evidence.get("scope", ""))
+                if status: st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
+                if scope: st.write(scope)
+                for claim in evidence.get("claims", []):
+                    claim_text = claim.get("claim", "") if st.session_state.language == "English" else claim.get("claim_vi", claim.get("claim", ""))
+                    claim_type = claim.get("type", "") if st.session_state.language == "English" else claim.get("type_vi", claim.get("type", ""))
+                    claim_status = claim.get("status", "") if st.session_state.language == "English" else claim.get("status_vi", claim.get("status", ""))
+                    st.markdown(f"**{claim_text}**")
+                    if claim_type: st.caption(("Evidence category: " if st.session_state.language == "English" else "Loại bằng chứng: ") + claim_type)
+                    if claim_status: st.caption(("Verification: " if st.session_state.language == "English" else "Xác minh: ") + claim_status)
+                    for source in claim.get("sources", []):
+                        st.markdown(f"- **{source.get('institution', 'Institution')}** — [{source.get('title', 'Academic source')}]({source.get('url', '#')})")
+        st.caption(
+            "Career areas and skills are presented as exploration prompts; the source register does not imply that every listed item has been independently validated."
+            if st.session_state.language == "English" else
+            "Các lĩnh vực nghề nghiệp và kỹ năng được trình bày như gợi ý để khám phá; danh mục nguồn không có nghĩa mọi mục đều đã được xác minh độc lập."
+        )
     else: st.info(tr("mincompare"))
 
 elif page == tr("about"):
