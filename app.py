@@ -103,7 +103,7 @@ INTEREST_GROUPS = {
 T = {
     "English": {
         "nav":"Navigation", "home":"Home", "network":"My Exploration Network", "majors":"Explore Majors",
-        "compare":"Compare Majors", "reflect":"Reflection", "about":"About This Website",
+        "compare":"Compare Majors", "about":"About This Website",
         "tagline":"Discover connections. Open new horizons.",
         "intro":"Explore how your interests and current school subjects may connect to academic disciplines, university majors and possible career areas.",
         "layers":"Connection layers", "sample":"Sample majors", "approach":"Approach",
@@ -142,7 +142,7 @@ T = {
     },
     "Tiếng Việt": {
         "nav":"Điều hướng", "home":"Trang chủ", "network":"Mạng lưới khám phá của tôi", "majors":"Khám phá ngành học",
-        "compare":"So sánh ngành học", "reflect":"Suy ngẫm", "about":"Giới thiệu trang web",
+        "compare":"So sánh ngành học", "about":"Giới thiệu trang web",
         "tagline":"Khám phá những kết nối. Mở ra những chân trời mới.",
         "intro":"Tìm hiểu cách sở thích và các môn học hiện tại có thể liên hệ với lĩnh vực học thuật, ngành học đại học và các nhóm nghề nghiệp tiềm năng.",
         "layers":"Các lớp kết nối", "sample":"Ngành học mẫu", "approach":"Cách tiếp cận",
