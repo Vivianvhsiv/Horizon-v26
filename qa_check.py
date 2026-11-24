@@ -109,6 +109,34 @@ for item in ds_guidance:
             ds_ref_errors.append(f"{item.get('subject_en')}: incomplete bilingual source explanation")
 check(not ds_ref_errors,'Data Science subject-level source explanations and limitations are bilingual'+
       (': '+', '.join(ds_ref_errors[:5]) if ds_ref_errors else ''))
+# Source presentation and scope checks
+for name,record in majors.items():
+    check('profile_reference_links' not in record,
+          f'{name}: no generic placeholder reference links remain in the major profile')
+check('Reference organisation' not in app and 'Academic reference' not in app,
+      'app does not render generic placeholder reference labels')
+check('Illustrative career areas to explore' in app and 'lĩnh vực nghề nghiệp mang tính tham khảo' in app,
+      'career areas are explicitly framed as illustrative in English and Vietnamese')
+# Check the machine-readable CSV register against the JSON source-of-truth records.
+import csv
+csv_path=ROOT/'SOURCE_CLAIM_REGISTER.csv'
+if csv_path.exists():
+    with csv_path.open(encoding='utf-8-sig',newline='') as f:
+        csv_rows=list(csv.DictReader(f))
+    json_rows=[]
+    for major,record in sources.items():
+        for i,claim in enumerate(record.get('claims',[]),1):
+            for source in claim.get('sources',[]):
+                json_rows.append((major,str(i),claim.get('type',''),claim.get('status',''),
+                                  source.get('institution',''),source.get('title',''),source.get('url','')))
+    csv_rows_norm={(r.get('Major',''),r.get('Claim Number',''),r.get('Claim Type',''),
+                    r.get('Claim Status',''),r.get('Institution',''),r.get('Source Title',''),r.get('URL',''))
+                   for r in csv_rows}
+    json_rows_norm=set(json_rows)
+    check(csv_rows_norm==json_rows_norm,
+          f'SOURCE_CLAIM_REGISTER.csv matches academic_sources.json ({len(csv_rows_norm)} CSV rows / {len(json_rows_norm)} JSON source rows)')
+else:
+    check(False,'SOURCE_CLAIM_REGISTER.csv exists')
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
 except SyntaxError as e: check(False,f'app.py syntax error: {e}')
