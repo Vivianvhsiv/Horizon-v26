@@ -544,7 +544,7 @@ elif page == tr("network"):
 
 elif page == tr("majors"):
     st.title(tr("majors"))
-    q = st.text_input(tr("search_major"), placeholder="e.g. Psychology / Tâm lý học")
+    q = st.text_input(tr("search_major"), placeholder="e.g. Psychology / Tâm lý học" if st.session_state.language == "English" else "Ví dụ: Psychology / Tâm lý học")
     clusters = sorted({v["cluster"] for v in MAJORS.values()})
     cluster_labels = {tr("all"): None}
     for c in clusters:
@@ -568,6 +568,12 @@ elif page == tr("majors"):
             prep = info.get("preparation_vi",info["preparation"]) if st.session_state.language == "Tiếng Việt" else info["preparation"]
             for item in prep: st.markdown(f"- {item}")
             st.caption(info.get("caveat_vi",info["caveat"]) if st.session_state.language == "Tiếng Việt" else info["caveat"])
+            profile_scope = info.get("profile_scope_vi", info.get("profile_scope", "")) if st.session_state.language == "Tiếng Việt" else info.get("profile_scope", "")
+            source_status = info.get("source_status_vi", info.get("source_status", "")) if st.session_state.language == "Tiếng Việt" else info.get("source_status", "")
+            if source_status:
+                st.caption(("Profile evidence status: " if st.session_state.language == "English" else "Tình trạng bằng chứng của hồ sơ: ") + source_status)
+            if profile_scope:
+                st.caption(profile_scope)
 
             # Expanded academic profile; these fields are descriptive, not admission requirements.
             detail_fields = [
@@ -592,11 +598,14 @@ elif page == tr("majors"):
             # institution-specific prerequisite/connection claims.
             st.markdown("### EMASI subjects to consider" if st.session_state.language == "English" else "### Các môn EMASI nên cân nhắc")
             st.caption(info.get("subject_guidance_note_en", "") if st.session_state.language == "English" else info.get("subject_guidance_note_vi", ""))
+            inventory_note = info.get("subject_inventory_note_en", "") if st.session_state.language == "English" else info.get("subject_inventory_note_vi", "")
+            if inventory_note:
+                st.caption(inventory_note)
             audit = info.get("evidence_audit_summary", {})
             audit_status = audit.get("status_en", "") if st.session_state.language == "English" else audit.get("status_vi", "")
             audit_note = audit.get("note_en", "") if st.session_state.language == "English" else audit.get("note_vi", "")
             if audit_status:
-                st.info(f"**{audit_status}**\\n\\n{audit_note}")
+                st.info(f"**{audit_status}**\n\n{audit_note}")
             guidance = info.get("emasi_subject_guidance", [])
             if guidance:
                 sourced_guidance = sum(1 for item in guidance if item.get("evidence_refs"))
@@ -605,7 +614,10 @@ elif page == tr("majors"):
                     st.caption(f"Evidence coverage for this major: {sourced_guidance}/{len(guidance)} subject suggestions have attached curriculum references; {unsourced_guidance} still need claim-level sources. References support university-level context and do not verify EMASI syllabus alignment or admission prerequisites.")
                 else:
                     st.caption(f"Mức độ bao phủ bằng chứng cho ngành này: {sourced_guidance}/{len(guidance)} gợi ý môn học có nguồn chương trình đại học đính kèm; {unsourced_guidance} gợi ý vẫn cần nguồn ở cấp độ nhận định. Các nguồn chỉ hỗ trợ bối cảnh chương trình đại học, không xác minh sự tương ứng với đề cương EMASI hoặc điều kiện tuyển sinh.")
-                role_order = ["Strong preparation", "Helpful support", "Pathway-dependent", "Application-dependent"]
+                preferred_role_order = ["Strong preparation", "Helpful support", "Pathway-dependent", "Application-dependent", "Specialized application"]
+                available_roles = list(dict.fromkeys(g.get("role_en", "") for g in guidance if g.get("role_en")))
+                role_order = [role for role in preferred_role_order if role in available_roles]
+                role_order.extend(role for role in available_roles if role not in role_order)
                 for role in role_order:
                     items = [g for g in guidance if g.get("role_en") == role]
                     if not items:
@@ -625,7 +637,6 @@ elif page == tr("majors"):
                             st.markdown(("  - **Academic basis:** " if st.session_state.language == "English" else "  - **Cơ sở học thuật:** ") + evidence_text)
                         # Claim-level evidence traceability. Sources are shown with their actual scope;
                         # a major-level source is never presented as proof of an EMASI prerequisite.
-                        claim_id = item.get("claim_id", "")
                         status = item.get("evidence_status_en", "") if st.session_state.language == "English" else item.get("evidence_status_vi", "")
                         if status:
                             st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
