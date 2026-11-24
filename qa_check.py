@@ -75,3 +75,16 @@ check(not bad,'all academic source URLs use HTTPS'+(f': {bad[:5]}' if bad else '
 for ok,msg in checks: print(('PASS' if ok else 'FAIL')+'  '+msg)
 print(f'\nSummary: {sum(x for x,_ in checks)}/{len(checks)} checks passed')
 if errors: sys.exit(1)
+
+
+# Network Map evidence-first regression checks
+network_start=app.find('def build_network(')
+network_end=app.find('def graphviz_source(', network_start)
+network_code=app[network_start:network_end] if network_start >= 0 and network_end > network_start else ''
+check(network_start >= 0 and network_end > network_start,'Network Map builder is present')
+check('if interest in info["interests"]' not in network_code,'Network Map does not infer majors from shared interest tags')
+check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
+check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
+check('tr("reflect")' not in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
+check('cols = st.columns(4)' in app and 'step_icons=["✧","▤","⌘","⚖"]' in app,'homepage workflow contains four steps and no Reflection step')
+check('No evidence-backed interest-to-major' in app,'Network Map explains the current evidence gap')
