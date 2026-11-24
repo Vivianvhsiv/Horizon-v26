@@ -45,7 +45,7 @@ for major,record in majors.items():
             if not item.get(key): guidance_errors.append(f'{major}[{idx}].{key}')
 check(not guidance_errors,f'{guidance_count} subject-guidance records have bilingual labels and known EMASI subjects'+(': '+', '.join(guidance_errors[:8]) if guidance_errors else ''))
 # EMASI subject inventory
-subjects=loaded.get('data/emasi_subjects.json',{}).get('subjects',[])
+subjects=loaded.get('emasi_subjects.json',{}).get('subjects',[])
 check(len(subjects)==13,'13 EMASI subjects are registered')
 ids=[x.get('id') for x in subjects]
 check(len(ids)==len(set(ids)),'EMASI subject IDs are unique')
@@ -80,7 +80,7 @@ check('emasi_subject_connections' not in network_code,'Network Map does not infe
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
 check('pages = [tr("home"),tr("network"),tr("majors"),tr("compare"),tr("about")]' in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
 check('cols = st.columns(4)' in app and 'step_icons=["✧","▤","⌘","⚖"]' in app,'homepage workflow contains four steps and no Reflection step')
-check('No evidence-backed interest-to-major' in app,'Network Map explains the current evidence gap')
+check('No inferred major matches are shown.' in app,'Network Map explains the current evidence gap')
 
 # Print a single summary after every base and regression check has run.
 for ok,msg in checks:
