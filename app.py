@@ -252,11 +252,12 @@ def node_id(kind, label):
     return f"{kind}::{label}"
 
 def build_network(selected_interests, selected_subjects, selected_majors=None):
-    """Build a transparent map of student inputs and explicitly stated choices.
+    """Build the full major map while distinguishing context from personal links.
 
-    No interest-to-major or school-subject-to-major edge is inferred from
-    shared tags. Such edges require claim-level evidence records that are
-    currently absent from the major data.
+    All 20 majors remain visible as browseable context nodes. Only majors the
+    student explicitly selected receive a student-to-major edge. No
+    interest-to-major or subject-to-major edge is inferred from shared tags;
+    those links require claim-level evidence records.
     """
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     nodes, edges = {}, []
@@ -272,6 +273,13 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             edges.append(edge)
 
     you = add_node("student", "Your exploration", "Your inputs are shown without inferred suitability claims.")
+
+    # Preserve the full 20-major map as neutral browseable context. These
+    # nodes are not personalized matches unless the student explicitly
+    # selects them below; no unsupported edges are added.
+    for major, info in MAJORS.items():
+        add_node("major", major, info.get("overview", ""))
+
     for interest in selected_interests:
         i = add_node("interest", interest, "An interest selected by the student; not a measured aptitude.")
         add_edge(you, i, "interest in", "Student-selected input")
@@ -468,9 +476,9 @@ elif page == tr("network"):
             nodes, edges, candidates = build_network(interests, subjects, intended_majors)
             st.subheader(tr("fullmap"))
             st.caption(
-                "This map shows only your selected inputs and explicitly chosen majors. It does not infer a major match from shared tags."
+                "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
                 if st.session_state.language == "English" else
-                "Bản đồ chỉ hiển thị các lựa chọn của bạn và những ngành bạn chủ động chọn. Hệ thống không suy ra mối liên hệ ngành học từ nhãn trùng nhau."
+                "Bản đồ đầy đủ luôn hiển thị cả 20 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
                 "Click a node to inspect its direct student-selected relationship. No unsupported interest-to-major links are drawn."
