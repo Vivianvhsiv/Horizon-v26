@@ -313,11 +313,20 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             subject_name = guidance.get("subject_en", "")
             if not subject_name or subject_name.casefold() not in selected_subject_names:
                 continue
-            refs = guidance.get("evidence_refs", [])
-            if not refs:
+            status = (guidance.get("evidence_status_en") or "").strip()
+            # A map edge requires an approved evidence status AND claim-level
+            # references. A general major-curriculum URL alone is insufficient
+            # to support a specific school-subject-to-major relationship.
+            eligible_statuses = {
+                "Curriculum context identified; EMASI subject mapping remains exploratory",
+            }
+            refs = [
+                ref for ref in guidance.get("evidence_refs", [])
+                if ref.get("claim_id") and ref.get("institution") and ref.get("title") and ref.get("url")
+            ]
+            if status not in eligible_statuses or not refs:
                 continue
             subject_key = add_node("subject", subject_name, "A current EMASI subject selected by the student.", guidance.get("subject_vi", SUBJECT_TRANSLATIONS.get(subject_name, subject_name)))
-            status = guidance.get("evidence_status_en", "Exploratory curriculum context")
             scope = guidance.get("evidence_scope_en", "")
             why = guidance.get("why_en", "")
             evidence = f"{why} Status: {status}. Scope: {scope} This is an exploratory curriculum-context link, not proof that EMASI teaches the same content or that this subject is an admission prerequisite."
@@ -612,12 +621,16 @@ elif page == tr("network"):
                 for guidance in relevant_guidance:
                     subject_label = guidance.get("subject_en", "") if st.session_state.language == "English" else guidance.get("subject_vi", guidance.get("subject_en", ""))
                     reason = guidance.get("why_en", "") if st.session_state.language == "English" else guidance.get("why_vi", "")
-                    status = guidance.get("evidence_status_en", "") if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
+                    status_en = (guidance.get("evidence_status_en") or "").strip()
+                    status = status_en if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
                     role_label = guidance.get("role_en", "") if st.session_state.language == "English" else guidance.get("role_vi", "")
+                    map_eligible = (status_en == "Curriculum context identified; EMASI subject mapping remains exploratory" and any(ref.get("claim_id") and ref.get("institution") and ref.get("title") and ref.get("url") for ref in guidance.get("evidence_refs", [])))
                     with st.expander(subject_label + " · " + role_label):
                         st.write(reason)
                         if status:
                             st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
+                        if not map_eligible:
+                            st.caption("Not displayed as a map connection: this specific subject-to-major relationship has not met Horizon’s evidence threshold." if st.session_state.language == "English" else "Không hiển thị thành kết nối trên bản đồ: mối liên hệ cụ thể giữa môn học và ngành chưa đạt ngưỡng bằng chứng của Horizon.")
                         scope = guidance.get("evidence_scope_en", "") if st.session_state.language == "English" else guidance.get("evidence_scope_vi", "")
                         if scope:
                             st.caption(scope)
