@@ -490,29 +490,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 1",
-        "url": "https://cognitive-science.dartmouth.edu/undergraduate/about-major",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 2",
-        "url": "https://www.cogsci.uci.edu/undergraduate/bscogsci.php",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 3",
-        "url": "https://majors.ucsd.edu/academic-schools/social-sciences/cognitive-science/index.html",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -987,22 +964,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Psychology — academic reference 1",
-        "url": "https://www.apa.org/education-career/undergrad/psychology-major",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Psychology — academic reference 2",
-        "url": "https://www.bps.org.uk/psychologist/what-psychology",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -1419,15 +1380,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Computer Science — academic reference 1",
-        "url": "https://www.acm.org/education/curricula-recommendations",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -2120,15 +2072,6 @@
     ],
     "subject_guidance_source_note_en": "References are attached only to the subject explanations they support. They document university-level curriculum context; they do not establish that an EMASI subject covers the same content or is an admission prerequisite.",
     "subject_guidance_source_note_vi": "Nguồn chỉ được gắn với những giải thích môn học mà chúng hỗ trợ. Các nguồn cung cấp bối cảnh chương trình đại học; không xác lập rằng môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Data Science — academic reference 1",
-        "url": "https://www.amstat.org/your-career/education/data-science",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -2451,15 +2394,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Economics — academic reference 1",
-        "url": "https://www.aeaweb.org/resources/students/what-is-economics",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -2816,15 +2750,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Biology — academic reference 1",
-        "url": "https://www.asbmb.org/education/teaching-resources/undergraduate-programs",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -3168,15 +3093,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Mechanical Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -3477,15 +3393,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Finance — academic reference 1",
-        "url": "https://www.cfainstitute.org/en/programs/cfa",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -3809,15 +3716,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Chemistry — academic reference 1",
-        "url": "https://www.acs.org/education/policies/acs-guidelines.html",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4150,15 +4048,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Physics — academic reference 1",
-        "url": "https://www.aapt.org/Resources/policy/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4492,15 +4381,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Environmental Science — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-environmental-science-programs/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4897,15 +4777,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Architecture — academic reference 1",
-        "url": "https://www.naab.org/accreditation/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5196,15 +5067,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Electrical Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5514,15 +5376,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Civil Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5852,15 +5705,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Political Science — academic reference 1",
-        "url": "https://www.apsanet.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6193,15 +6037,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Sociology — academic reference 1",
-        "url": "https://www.asanet.org/teaching-learning/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6511,15 +6346,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Linguistics — academic reference 1",
-        "url": "https://www.linguisticsociety.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6851,15 +6677,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Education — academic reference 1",
-        "url": "https://www.aacte.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -7149,15 +6966,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Accounting — academic reference 1",
-        "url": "https://www.aacsb.edu/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -7510,15 +7318,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Communication & Media Studies — academic reference 1",
-        "url": "https://www.natcom.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
