@@ -560,6 +560,36 @@ elif page == tr("network"):
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
+            # Summarize evidence-backed subject-to-major pathways for undecided
+            # students. This is a transparent browse aid, not a synthesized fit score.
+            evidence_by_major = {}
+            for path in exploratory_subject_paths:
+                major_node = nodes.get(path["target"], {})
+                subject_node = nodes.get(path["source"], {})
+                major_label = major_node.get("label", "")
+                subject_label = subject_node.get("label", "")
+                if major_label and subject_label:
+                    evidence_by_major.setdefault(major_label, {})[subject_label] = path
+            if evidence_by_major:
+                st.markdown("#### " + ("Evidence-linked majors to explore" if st.session_state.language == "English" else "Các ngành có liên kết bằng chứng để tìm hiểu"))
+                st.caption("These directions are surfaced only from subject-to-major links that passed Horizon’s evidence threshold. The number of subjects indicates breadth of documented context, not suitability, admission eligibility, or a final combined major." if st.session_state.language == "English" else "Các hướng này chỉ được hiển thị từ những liên kết môn học–ngành đã đạt ngưỡng bằng chứng của Horizon. Số môn cho biết phạm vi bối cảnh được ghi nhận, không đánh giá mức độ phù hợp, điều kiện tuyển sinh hay kết luận ngành học cuối cùng.")
+                for major_label, subject_paths in sorted(evidence_by_major.items(), key=lambda item: (-len(item[1]), item[0])):
+                    major_info = MAJORS.get(major_label, {})
+                    display_major = major_label if st.session_state.language == "English" else major_info.get("name_vi", major_label)
+                    subject_labels = sorted(subject_paths)
+                    display_subjects = subject_labels if st.session_state.language == "English" else [SUBJECT_TRANSLATIONS.get(x, x) for x in subject_labels]
+                    breadth = str(len(subject_labels)) + (" documented subject context(s)" if st.session_state.language == "English" else " môn có bối cảnh được ghi nhận")
+                    with st.expander(display_major + " · " + breadth):
+                        st.write(("Documented subject context: " if st.session_state.language == "English" else "Bối cảnh môn học được ghi nhận: ") + ", ".join(display_subjects))
+                        for subject_label in subject_labels:
+                            path = subject_paths[subject_label]
+                            st.write(path.get("evidence", ""))
+                            for ref in path.get("evidence_refs", []):
+                                url = ref.get("url", "")
+                                if url:
+                                    st.markdown("- [" + ref.get("institution", "Source") + ": " + ref.get("title", "Reference") + "](" + url + ")")
+                if not intended_majors:
+                    st.caption("These are research directions to investigate, not a system-selected answer. Student interests remain separate unless a specific interest-to-major claim is independently evidenced." if st.session_state.language == "English" else "Đây là các hướng để tự tìm hiểu, không phải kết quả do hệ thống chọn thay. Sở thích của học sinh vẫn được hiển thị riêng trừ khi có bằng chứng độc lập cho mối liên hệ cụ thể giữa sở thích và ngành học.")
             if not intended_majors:
                 st.info("Horizon does not rank or choose a major for you. Referenced subject paths, when shown, are exploratory curriculum context—not proof of a school prerequisite or personal suitability." if st.session_state.language == "English" else "Horizon không xếp hạng hoặc chọn ngành thay bạn. Các kết nối môn học có nguồn tham khảo, nếu xuất hiện, chỉ là bối cảnh chương trình mang tính khám phá, không phải điều kiện tiên quyết phổ thông hay kết luận về mức độ phù hợp cá nhân.")
             if exploratory_subject_paths:
