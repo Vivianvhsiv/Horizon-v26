@@ -72,11 +72,6 @@ for name,record in sources.items():
             u=src.get('url','')
             if not u.startswith('https://'): bad.append((name,u))
 check(not bad,'all academic source URLs use HTTPS'+(f': {bad[:5]}' if bad else ''))
-for ok,msg in checks: print(('PASS' if ok else 'FAIL')+'  '+msg)
-print(f'\nSummary: {sum(x for x,_ in checks)}/{len(checks)} checks passed')
-if errors: sys.exit(1)
-
-
 # Network Map evidence-first regression checks
 network_start=app.find('def build_network(')
 network_end=app.find('def graphviz_source(', network_start)
@@ -88,3 +83,10 @@ check('return nodes, edges, selected_majors' in network_code,'Network Map return
 check('pages = [tr("home"),tr("network"),tr("majors"),tr("compare"),tr("about")]' in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
 check('cols = st.columns(4)' in app and 'step_icons=["✧","▤","⌘","⚖"]' in app,'homepage workflow contains four steps and no Reflection step')
 check('No evidence-backed interest-to-major' in app,'Network Map explains the current evidence gap')
+
+# Print a single summary after every base and regression check has run.
+for ok,msg in checks:
+    print(('PASS' if ok else 'FAIL')+'  '+msg)
+print(f'\\nSummary: {sum(x for x,_ in checks)}/{len(checks)} checks passed')
+if errors:
+    sys.exit(1)
