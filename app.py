@@ -252,13 +252,9 @@ def node_id(kind, label):
     return f"{kind}::{label}"
 
 def build_network(selected_interests, selected_subjects, selected_majors=None):
-    """Build the complete major landscape and its descriptive profile elements.
-
-    All majors and their profile elements remain visible as catalogue context.
-    Student interests and current subjects remain separate inputs; they are
-    never matched to majors through shared taxonomy tags.
-    """
+    """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
+    selected_subjects = list(selected_subjects or [])
     nodes, edges = {}, []
 
     def add_node(kind, label, description=""):
@@ -267,43 +263,68 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             nodes[key] = {"id": key, "type": kind, "label": label, "description": description}
         return key
 
-    def add_edge(source, target, relation, evidence):
-        edge = {"source": source, "target": target, "relation": relation, "evidence": evidence}
+    def add_edge(source, target, relation, evidence, evidence_refs=None, status="Descriptive profile data"):
+        edge = {"source": source, "target": target, "relation": relation, "evidence": evidence,
+                "evidence_refs": evidence_refs or [], "evidence_status": status}
         if edge not in edges:
             edges.append(edge)
 
-    you = add_node("student", "Your exploration", "Your inputs are shown without inferred suitability claims.")
+    student = add_node("student", "Your exploration", "Your interests and current subjects are student-provided inputs, not an aptitude assessment.")
+    for interest in selected_interests:
+        key = add_node("interest", interest, "An interest selected by the student. No major match is inferred from this input.")
+        add_edge(student, key, "interest in", "Student-selected input; no interest-to-major relationship is inferred.")
+    for subject in selected_subjects:
+        key = add_node("subject", subject, "A current EMASI subject selected by the student.")
+        add_edge(student, key, "currently studies", "Student-selected input.")
+
+    # Build the complete catalogue. Shared profile terms intentionally form
+    # cross-major discovery paths; they describe academic content, not student fit.
     profile_fields = [
-        ("discipline", "disciplines", "academic profile field"),
-        ("skill", "skills", "academic profile field"),
-        ("career", "careers", "possible application/career area listed in the profile"),
+        ("discipline", "disciplines", "disciplines_vi", "Academic disciplines", "Lĩnh vực học thuật"),
+        ("foundation", "academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"),
+        ("related", "related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"),
+        ("application", "specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"),
+        ("research", "research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu"),
+        ("skill", "skills", "skills_vi", "Skills", "Kỹ năng"),
+        ("career", "careers", "careers_vi", "Career areas", "Lĩnh vực nghề nghiệp"),
     ]
-    # Keep all 20 majors and their descriptive profile elements on the map.
-    # These profile links are context, not personalized suitability matches.
     for major, info in MAJORS.items():
         major_key = add_node("major", major, info.get("overview", ""))
-        for kind, field, relationship_note in profile_fields:
+        cluster = info.get("cluster", "Other")
+        cluster_key = add_node("cluster", cluster, "A browsing category used to organize the Horizon major catalogue; not a suitability label.")
+        add_edge(cluster_key, major_key, "contains major", "Horizon catalogue category.")
+        for kind, field, field_vi, label_en, label_vi in profile_fields:
             values = info.get(field, [])
+            values_vi = info.get(field_vi, [])
             if not isinstance(values, list):
                 continue
-            for value in values:
+            for index, value in enumerate(values):
                 if not isinstance(value, str) or not value.strip():
                     continue
-                detail = f"Listed under {field} in the Horizon profile for {major}. Descriptive context only; not a suitability assessment."
+                translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
+                detail = f"{label_en}: {value}. Listed in the Horizon profile for {major}. This is descriptive academic/career context, not a student suitability claim."
                 element_key = add_node(kind, value, detail)
-                add_edge(major_key, element_key, "profile includes", relationship_note)
+                add_edge(major_key, element_key, "profile includes", detail)
 
-    for interest in selected_interests:
-        i = add_node("interest", interest, "An interest selected by the student; not a measured aptitude.")
-        add_edge(you, i, "interest in", "Student-selected input")
-    for subject in selected_subjects:
-        sub = add_node("subject", subject, "A current school subject selected by the student.")
-        add_edge(you, sub, "currently studies", "Student-selected input")
+        # Subject guidance can create an explicitly exploratory path only when
+        # the record carries curriculum references. Its scope caveat is retained.
+        for guidance in info.get("emasi_subject_guidance", []):
+            subject_name = guidance.get("subject_en", "")
+            if not subject_name or not any(subject_name.casefold() == chosen.casefold() for chosen in selected_subjects):
+                continue
+            refs = guidance.get("evidence_refs", [])
+            if not refs:
+                continue
+            subject_key = add_node("subject", subject_name, "A current EMASI subject selected by the student.")
+            status = guidance.get("evidence_status_en", "Exploratory curriculum context")
+            scope = guidance.get("evidence_scope_en", "")
+            why = guidance.get("why_en", "")
+            evidence = f"{why} Status: {status}. Scope: {scope} This is an exploratory curriculum-context link, not proof that EMASI teaches the same content or that this subject is an admission prerequisite."
+            add_edge(subject_key, major_key, "explore through curriculum context", evidence, refs, status)
+
     for major in selected_majors:
-        add_edge(you, node_id("major", major), "considering", "Student-selected major intention")
-    # No interest-to-major or EMASI-subject-to-major edges are inferred.
+        add_edge(student, node_id("major", major), "considering", "Student-selected major intention; not a suitability assessment.")
     return nodes, edges, selected_majors
-
 def graphviz_source(nodes, edges):
     colors = {"student":"#DCEBFA","interest":"#E8E3FA","subject":"#E2F2E8",
               "major":"#FFF0D9","discipline":"#FCE4E4","career":"#E8EEF8"}
