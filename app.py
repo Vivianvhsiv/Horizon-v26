@@ -279,14 +279,11 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
 
     # Build the complete catalogue. Shared profile terms intentionally form
     # cross-major discovery paths; they describe academic content, not student fit.
+    # Keep the graph legible: the network shows majors, catalogue clusters and
+    # shared academic disciplines. Deeper foundations, applications, research,
+    # skills and career areas are available in the major explorer below.
     profile_fields = [
         ("discipline", "disciplines", "disciplines_vi", "Academic disciplines", "Lĩnh vực học thuật"),
-        ("foundation", "academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"),
-        ("related", "related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"),
-        ("application", "specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"),
-        ("research", "research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu"),
-        ("skill", "skills", "skills_vi", "Skills", "Kỹ năng"),
-        ("career", "careers", "careers_vi", "Career areas", "Lĩnh vực nghề nghiệp"),
     ]
     for major, info in MAJORS.items():
         major_key = add_node("major", major, info.get("overview", ""), info.get("name_vi", major))
