@@ -255,6 +255,9 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     selected_subjects = list(selected_subjects or [])
+    selected_subject_names = {value.casefold() for value in selected_subjects}
+    if "ict" in selected_subject_names:
+        selected_subject_names.add("ict (information and communication technology)")
     nodes, edges = {}, []
 
     def add_node(kind, label, description="", label_vi=None):
@@ -307,7 +310,7 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
         # the record carries curriculum references. Its scope caveat is retained.
         for guidance in info.get("emasi_subject_guidance", []):
             subject_name = guidance.get("subject_en", "")
-            if not subject_name or not any(subject_name.casefold() == chosen.casefold() for chosen in selected_subjects):
+            if not subject_name or subject_name.casefold() not in selected_subject_names:
                 continue
             refs = guidance.get("evidence_refs", [])
             if not refs:
@@ -358,7 +361,7 @@ NODE_TYPE_VI = {
     "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng", "cluster":"Nhóm ngành", "foundation":"Nền tảng học thuật", "related":"Lĩnh vực liên quan", "application":"Ứng dụng chuyên sâu", "research":"Hướng nghiên cứu"
 }
 RELATION_VI = {
-    "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm",
+    "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm", "contains major":"bao gồm ngành", "explore through curriculum context":"khám phá qua bối cảnh chương trình học",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
 }
