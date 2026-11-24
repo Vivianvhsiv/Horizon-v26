@@ -747,16 +747,22 @@ elif page == tr("compare"):
                 st.markdown(f"- **{subject} · {role}** — {why}")
                 # Keep subject guidance exploratory and show its supporting context beside the comparison.
                 refs = g.get("evidence_refs", [])
-                if refs:
-                    for ref in refs:
-                        title = ref.get("title", "Academic reference")
-                        institution = ref.get("institution", "Institution")
-                        st.caption(("Academic context: " if st.session_state.language == "English" else "Bối cảnh học thuật: ") + f"{institution} — {title}")
-                        st.markdown(f"  - [{title}]({ref.get('url', '#')})")
-                        support = ref.get("support_en", "") if st.session_state.language == "English" else ref.get("support_vi", "")
-                        scope = ref.get("scope_en", "") if st.session_state.language == "English" else ref.get("scope_vi", "")
-                        if support: st.caption(("Supports: " if st.session_state.language == "English" else "Nguồn hỗ trợ: ") + support)
-                        if scope: st.caption(scope)
+                displayed_refs = 0
+                for ref in refs:
+                    title = ref.get("title", "")
+                    institution = ref.get("institution", "")
+                    url = ref.get("url", "")
+                    # Never render generic placeholder labels or fabricate missing source metadata.
+                    if not (title and institution and url):
+                        continue
+                    displayed_refs += 1
+                    st.caption(("Academic context: " if st.session_state.language == "English" else "Bối cảnh học thuật: ") + f"{institution} — {title}")
+                    st.markdown(f"  - [{title}]({url})")
+                    support = ref.get("support_en", "") if st.session_state.language == "English" else ref.get("support_vi", "")
+                    scope = ref.get("scope_en", "") if st.session_state.language == "English" else ref.get("scope_vi", "")
+                    if support: st.caption(("Supports: " if st.session_state.language == "English" else "Nguồn hỗ trợ: ") + support)
+                    if scope: st.caption(scope)
+                if displayed_refs:
                     status = g.get("evidence_status_en", "") if st.session_state.language == "English" else g.get("evidence_status_vi", "")
                     if status: st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
                 else:
