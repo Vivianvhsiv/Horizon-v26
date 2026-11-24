@@ -38,7 +38,7 @@ The generic MIT *Academic Program* PDF was replaced with the exact MIT Course Ca
 - The APA duplicate source was removed from one claim.
 - The four MIT source URLs/titles were replaced with programme-specific catalogue pages.
 - `academic_sources.json` and `SOURCE_CLAIM_REGISTER.csv` were regenerated from the same source records.
-- Current expected source occurrences: 185 (down from 186 because one duplicate APA source was removed).
+- Current verified source occurrences: 186. The APA duplicate was removed from the Psychology claim; the complete register count is calculated from all remaining claim-source pairs.
 
 ## Remaining review status
 
@@ -52,7 +52,7 @@ Changes made:
 - Reclassified the first programme-reference claim for Computer Science, Data Science, Biology, Mechanical Engineering, Finance, Environmental Science, Architecture, Electrical Engineering, Civil Engineering, Sociology, Linguistics, Education, Accounting, and Communication & Media Studies as programme-availability evidence rather than implying curriculum evidence.
 - Downgraded the programme-directory claim statuses for Psychology, Computer Science, Data Science, Economics, Biology, Mechanical Engineering, Finance, Chemistry, Physics, Environmental Science, Architecture, Electrical Engineering, Civil Engineering, Political Science, Sociology, Linguistics, Education, Accounting, and Communication & Media Studies. The register now asks for exact programme-title and undergraduate-award confirmation on each current institutional page before treating every entry as verified.
 - Narrowed the Vietnamese-German University 2025 application-guideline entries under Mechanical Engineering and Electrical Engineering: they may support only programme names/admissions information explicitly stated in the document, not course content, curriculum or subject mappings.
-- Rebuilt the CSV register from the JSON source of truth. Expected source occurrences remain 185.
+- Rebuilt the CSV register from the JSON source of truth. Verified source occurrences: 186, regenerated from the JSON source of truth.
 
 ## Latest completed CI baseline (before this additional register edit)
 
