@@ -302,9 +302,10 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
                 if not isinstance(value, str) or not value.strip():
                     continue
                 translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
-                detail = f"{label_en}: {value}. Listed in the Horizon profile for {major}. This is descriptive academic/career context, not a student suitability claim."
+                source_refs = [{"institution": "Horizon profile reference", "title": record.get("source_type", "Reference"), "url": record.get("source_url", "")} for record in info.get("source_records", []) if record.get("source_url")]
+                detail = f"{label_en}: {value}. Listed in the Horizon profile for {major}. This is descriptive context, not a student suitability claim. Profile references provide major-level context and may not verify this exact individual relationship; check the source status in the major profile."
                 element_key = add_node(kind, value, detail, translated)
-                add_edge(major_key, element_key, "profile includes", detail)
+                add_edge(major_key, element_key, "profile includes", detail, source_refs, info.get("source_status", "Profile reference status not specified"))
 
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
