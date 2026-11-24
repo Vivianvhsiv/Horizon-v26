@@ -92,6 +92,23 @@ for major,record in sources.items():
                 source_errors.append(f'{major}.claims[{i}].sources[{j}] has incomplete metadata')
 check(not source_errors,'all source-register claims have source links and institution/title metadata'+
       (': '+', '.join(source_errors[:8]) if source_errors else ''))
+# Data Science subject-reference scope checks
+ds_guidance=majors.get('Data Science',{}).get('emasi_subject_guidance',[])
+ds_by_subject={item.get('subject_en'):item for item in ds_guidance}
+check(len(ds_guidance)==11,'Data Science has 11 EMASI subject suggestions')
+check(all(len(item.get('evidence_refs',[])) <= 3 for item in ds_guidance),
+      'Data Science subject suggestions use focused references rather than the same broad source list')
+check(bool(ds_by_subject.get('Music')) and not ds_by_subject['Music'].get('evidence_refs'),
+      'Data Science Music pathway remains explicitly exploratory without a mismatched curriculum citation')
+check(bool(ds_by_subject.get('Geography')) and not ds_by_subject['Geography'].get('evidence_refs'),
+      'Data Science Geography suggestion remains exploratory without an unsupported source')
+ds_ref_errors=[]
+for item in ds_guidance:
+    for source in item.get('evidence_refs',[]):
+        if not source.get('support_en') or not source.get('support_vi') or not source.get('scope_en') or not source.get('scope_vi'):
+            ds_ref_errors.append(f"{item.get('subject_en')}: incomplete bilingual source explanation")
+check(not ds_ref_errors,'Data Science subject-level source explanations and limitations are bilingual'+
+      (': '+', '.join(ds_ref_errors[:5]) if ds_ref_errors else ''))
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
 except SyntaxError as e: check(False,f'app.py syntax error: {e}')
