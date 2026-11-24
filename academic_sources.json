@@ -156,8 +156,8 @@
     "scope_vi": "APA 3.0 mô tả các mục tiêu học tập rộng cho ngành tâm lý học bậc đại học, bao gồm nghiên cứu khoa học, phương pháp nghiên cứu, thống kê, đạo đức và ứng dụng. Đây là hướng dẫn, không phải yêu cầu môn học giống nhau ở mọi trường. Đã bổ sung danh mục chính thức của nhiều trường đại học để ghi nhận việc có chương trình đào tạo. Các danh mục này tự thân không xác minh mọi mối liên hệ học thuật, gợi ý môn học phổ thông, kỹ năng, hướng nghiên cứu hoặc lộ trình nghề nghiệp trong Horizon. Đã bổ sung nguồn chương trình chính thức ở cấp độ nhận định cho Cognitive Science, Psychology và Computer Science. Các nguồn hỗ trợ bối cảnh học phần, không phải điều kiện tuyển sinh áp dụng chung hoặc bằng chứng tương đương với đề cương EMASI.",
     "claims": [
       {
-        "claim": "Undergraduate psychology education includes scientific inquiry, critical thinking, research methods and statistics.",
-        "claim_vi": "Đào tạo tâm lý học bậc đại học bao gồm nghiên cứu khoa học, tư duy phản biện, phương pháp nghiên cứu và thống kê.",
+        "claim": "The APA Guidelines for the Undergraduate Psychology Major, Version 3.0, define five broad learning-goal areas: content knowledge and applications; scientific inquiry and critical thinking; values in psychological science; communication, psychological literacy and technology skills; and personal and professional development.",
+        "claim_vi": "Hướng dẫn APA dành cho ngành Tâm lý học bậc đại học, phiên bản 3.0, xác định năm nhóm mục tiêu học tập rộng: kiến thức và ứng dụng chuyên ngành; nghiên cứu khoa học và tư duy phản biện; các giá trị trong khoa học tâm lý; giao tiếp, hiểu biết tâm lý học và kỹ năng công nghệ; phát triển cá nhân và nghề nghiệp.",
         "type": "Professional education guidance",
         "type_vi": "Hướng dẫn đào tạo chuyên ngành",
         "sources": [
@@ -165,19 +165,12 @@
             "institution": "American Psychological Association",
             "title": "Guidelines for the Undergraduate Psychology Major, Version 3.0",
             "url": "https://www.apa.org/ed/precollege/undergraduate-major",
-            "source_type": "Professional association guidelines",
-            "source_type_vi": "Hướng dẫn của hiệp hội nghề nghiệp"
-          },
-          {
-            "institution": "American Psychological Association",
-            "title": "Guidelines 3.0 — Policy page",
-            "url": "https://www.apa.org/about/policy/undergraduate-psychology-major",
-            "source_type": "Official policy page",
-            "source_type_vi": "Trang chính sách chính thức"
+            "source_type": "Official professional-association undergraduate education guidelines",
+            "source_type_vi": "Hướng dẫn giáo dục đại học chính thức của hiệp hội chuyên ngành"
           }
         ],
-        "status": "Verified as APA undergraduate guidance",
-        "status_vi": "Đã xác minh theo hướng dẫn đào tạo bậc đại học của APA"
+        "status": "Verified as APA undergraduate learning-goal guidance; not a uniform course requirement for every university.",
+        "status_vi": "Đã xác minh là hướng dẫn về mục tiêu học tập bậc đại học của APA; không phải yêu cầu học phần đồng nhất tại mọi trường đại học."
       },
       {
         "claim": "Official university programme directories list Psychology or the explicitly named related programme variants below.",
