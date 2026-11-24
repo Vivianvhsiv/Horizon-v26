@@ -88,3 +88,12 @@ These spot-checks strengthen a small number of named programme-availability and 
 - The official VinUniversity programme page identifies the B.S. Data Science degree structure (including College Core, Major/Discipline Requirements, Discipline Electives, Free Electives, projects, internship and capstone) and publishes course descriptions such as Discrete Mathematics, Data Science Programming, Machine Learning, Databases and Data Visualization.
 - Added the official 2025–2029 cohort curriculum framework PDF as the cohort-specific framework source. The claim is now explicitly limited to VinUniversity and that published cohort framework; it must not be generalized into universal Data Science prerequisites or assumed EMASI subject equivalence.
 - The programme page and framework should be treated as complementary: the webpage supports the displayed programme/course descriptions, while the PDF establishes the stated cohort scope. Course status must follow the actual framework classification rather than being inferred from a course description alone.
+
+
+### Economics — curriculum claim: Notre Dame and Stanford degree-specific requirements
+
+- Rechecked the official Notre Dame Economics major requirements and Stanford Economics B.S. requirements pages.
+- Rewrote the claim to distinguish Notre Dame's six-course core (including microeconomics, macroeconomics, Statistics for Economics and Econometrics) from Calc B, which is explicitly a prerequisite, not one of the named core courses.
+- Rewrote the Stanford portion to name the B.S.-specific quantitative core: Theory of Probability I, Econometrics, Linear Algebra/Multivariable Calculus, and Functions of a Real Variable.
+- Added scope notes so the Stanford B.S. is not generalized to the B.A. or other institutions. These sources provide university-level curriculum context only; they do not establish universal admissions prerequisites or verified EMASI subject equivalence.
+- Sources: https://economics.nd.edu/undergraduate/economics-major/requirements/ and https://economics.stanford.edu/undergraduate/major/economics-bs
