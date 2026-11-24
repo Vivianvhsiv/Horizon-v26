@@ -1,0 +1,36 @@
+name: Horizon QA
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [horizon-network-map-fix]
+
+jobs:
+  structural-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install application and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Run Horizon structural and Network Map regression checks
+        run: python qa_check.py
+      - name: Check reachability of all unique academic source URLs
+        run: python audit_source_urls.py --timeout 8 --retries 0 --delay 0.1
+      - name: Upload source URL reachability report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: horizon-source-url-audit
+          path: SOURCE_URL_LIVE_AUDIT.csv
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Run Streamlit Explore Majors smoke tests
+        run: pytest -q test_app.py

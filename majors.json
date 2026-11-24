@@ -490,29 +490,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 1",
-        "url": "https://cognitive-science.dartmouth.edu/undergraduate/about-major",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 2",
-        "url": "https://www.cogsci.uci.edu/undergraduate/bscogsci.php",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Cognitive Science — academic reference 3",
-        "url": "https://majors.ucsd.edu/academic-schools/social-sciences/cognitive-science/index.html",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -987,22 +964,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Psychology — academic reference 1",
-        "url": "https://www.apa.org/education-career/undergrad/psychology-major",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      },
-      {
-        "institution": "Reference organisation",
-        "title": "Psychology — academic reference 2",
-        "url": "https://www.bps.org.uk/psychologist/what-psychology",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -1419,15 +1380,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Computer Science — academic reference 1",
-        "url": "https://www.acm.org/education/curricula-recommendations",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -1654,114 +1606,31 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
             "institution": "ACM Data Science Task Force",
             "title": "Computing Competencies for Undergraduate Data Science Curricula",
             "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-02",
             "institution": "University College London",
             "title": "Data Science BSc — Compulsory and Optional Modules",
             "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Lists calculus, linear algebra, probability, statistics, programming, databases, algorithms, statistical learning and data ethics.",
+            "support_vi": "Liệt kê giải tích, đại số tuyến tính, xác suất, thống kê, lập trình cơ bản, hệ cơ sở dữ liệu, thuật toán và học máy thống kê.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-03",
             "institution": "The University of Texas at Austin",
             "title": "Undergraduate Major — Statistics and Data Science",
             "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Lists mathematics foundations, probability/statistical inference, programming and databases.",
+            "support_vi": "Liệt kê nền tảng toán học, xác suất và suy luận thống kê, lập trình và cơ sở dữ liệu.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -1789,114 +1658,31 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
             "institution": "ACM Data Science Task Force",
             "title": "Computing Competencies for Undergraduate Data Science Curricula",
             "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-02",
             "institution": "University College London",
             "title": "Data Science BSc — Compulsory and Optional Modules",
             "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Lists calculus, linear algebra, probability, statistics, programming, databases, algorithms, statistical learning and data ethics.",
+            "support_vi": "Liệt kê giải tích, đại số tuyến tính, xác suất, thống kê, lập trình cơ bản, hệ cơ sở dữ liệu, thuật toán và học máy thống kê.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-03",
             "institution": "The University of Texas at Austin",
             "title": "Undergraduate Major — Statistics and Data Science",
             "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Lists mathematics foundations, probability/statistical inference, programming and databases.",
+            "support_vi": "Liệt kê nền tảng toán học, xác suất và suy luận thống kê, lập trình và cơ sở dữ liệu.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -1923,114 +1709,22 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
-            "institution": "ACM Data Science Task Force",
-            "title": "Computing Competencies for Undergraduate Data Science Curricula",
-            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
             "institution": "Hong Kong Polytechnic University",
             "title": "BSc (Hons) Data Science and Analytics — Curriculum",
             "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Lists programming, statistical inference, machine learning, professional English and underpinning mathematics/programming courses.",
+            "support_vi": "Liệt kê học phần tiếng Anh chuyên ngành dành cho sinh viên Khoa học dữ liệu và Phân tích dữ liệu, cùng các học phần nền tảng về toán học và lập trình.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-05",
             "institution": "University of Economics Ho Chi Minh City",
             "title": "Data Science — Standard Undergraduate Program",
             "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Shows an applied programme combining statistics, mathematics, programming, econometrics, economics, English, databases and data visualization.",
+            "support_vi": "Cho thấy chương trình ứng dụng kết hợp thống kê, toán học, lập trình, kinh tế lượng, kinh tế học, tiếng Anh, cơ sở dữ liệu và trực quan hóa dữ liệu.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2056,114 +1750,13 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
-            "institution": "ACM Data Science Task Force",
-            "title": "Computing Competencies for Undergraduate Data Science Curricula",
-            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
             "institution": "University of Minnesota",
             "title": "Undergraduate Courses — Data Science",
             "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Illustrates that one university programme includes mathematics, statistics, computer science, technical writing and a science breadth requirement including physics or other sciences.",
+            "support_vi": "Minh họa rằng một chương trình đại học có học phần toán học, thống kê, khoa học máy tính, viết kỹ thuật và yêu cầu kiến thức khoa học tự nhiên, có thể chọn Vật lý hoặc môn khoa học khác.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2190,114 +1783,22 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
-            "institution": "ACM Data Science Task Force",
-            "title": "Computing Competencies for Undergraduate Data Science Curricula",
-            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
             "institution": "University of Oregon",
             "title": "Data Science BA/BS — Academic Catalog",
             "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Shows mathematics, computer science, probability and domain-specific application in a Data Science degree.",
+            "support_vi": "Cho thấy chương trình Khoa học dữ liệu có các kỹ thuật tính toán cho lĩnh vực hệ gen như một học phần kỹ thuật tự chọn.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
+          },
+          {
+            "institution": "University of Minnesota",
+            "title": "Undergraduate Courses — Data Science",
+            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
+            "support_en": "Illustrates that one university programme includes mathematics, statistics, computer science, technical writing and a science breadth requirement including physics or other sciences.",
+            "support_vi": "Minh họa rằng một chương trình đại học có học phần toán học, thống kê, khoa học máy tính, viết kỹ thuật và yêu cầu kiến thức khoa học tự nhiên, có thể chọn Vật lý hoặc môn khoa học khác.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2324,114 +1825,22 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
-            "institution": "ACM Data Science Task Force",
-            "title": "Computing Competencies for Undergraduate Data Science Curricula",
-            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
             "institution": "University of Economics Ho Chi Minh City",
             "title": "Data Science — Standard Undergraduate Program",
             "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Shows an applied programme combining statistics, mathematics, programming, econometrics, economics, English, databases and data visualization.",
+            "support_vi": "Cho thấy chương trình ứng dụng kết hợp thống kê, toán học, lập trình, kinh tế lượng, kinh tế học, tiếng Anh, cơ sở dữ liệu và trực quan hóa dữ liệu.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           },
           {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "institution": "ACM Data Science Task Force",
+            "title": "Computing Competencies for Undergraduate Data Science Curricula",
+            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2457,114 +1866,13 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
             "institution": "ACM Data Science Task Force",
             "title": "Computing Competencies for Undergraduate Data Science Curricula",
             "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2590,114 +1898,13 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
             "institution": "ACM Data Science Task Force",
             "title": "Computing Competencies for Undergraduate Data Science Curricula",
             "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2723,114 +1930,13 @@
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
         "evidence_refs": [
           {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
             "institution": "ACM Data Science Task Force",
             "title": "Computing Competencies for Undergraduate Data Science Curricula",
             "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
+            "support_en": "Supports the combination of computing, data management, statistics, probability, programming, algorithms, data visualization and machine learning.",
+            "support_vi": "Hỗ trợ sự kết hợp giữa khoa học máy tính, quản lý dữ liệu, thống kê, xác suất, lập trình, thuật toán, trực quan hóa dữ liệu và học máy.",
+            "scope_en": "This source supports the university-level curriculum context described here only. It does not prove that the EMASI subject covers the same content or is an admission prerequisite.",
+            "scope_vi": "Nguồn này chỉ hỗ trợ bối cảnh chương trình học ở bậc đại học được nêu tại đây. Nguồn không chứng minh môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh."
           }
         ],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
@@ -2852,118 +1958,7 @@
         "claim_id": "DATASCIE-S07-10",
         "evidence_status_en": "Exploratory mapping — subject-level link not yet independently verified",
         "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
-        "evidence_refs": [
-          {
-            "claim_id": "DATASCIE-CURR-01-01",
-            "institution": "Nanyang Technological University",
-            "title": "Degree Programmes",
-            "url": "https://www.ntu.edu.sg/education/degree-programmes",
-            "source_type": "Official degree programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-02",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Standard Programs",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/",
-            "source_type": "Official undergraduate programme listing",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-01-03",
-            "institution": "UC San Diego",
-            "title": "Undergraduate Degrees Offered",
-            "url": "https://catalog.ucsd.edu/undergraduate/degrees-offered/index.html",
-            "source_type": "Official undergraduate catalog",
-            "claim_type": "Programme existence / official curriculum reference",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-01",
-            "institution": "ACM Data Science Task Force",
-            "title": "Computing Competencies for Undergraduate Data Science Curricula",
-            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/dstf_ccdsc2021.pdf",
-            "source_type": "Professional curriculum framework",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-02",
-            "institution": "University College London",
-            "title": "Data Science BSc — Compulsory and Optional Modules",
-            "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses/data-science-bsc",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-03",
-            "institution": "The University of Texas at Austin",
-            "title": "Undergraduate Major — Statistics and Data Science",
-            "url": "https://stat.utexas.edu/academics/undergraduate-major",
-            "source_type": "Official undergraduate major requirements",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-04",
-            "institution": "Hong Kong Polytechnic University",
-            "title": "BSc (Hons) Data Science and Analytics — Curriculum",
-            "url": "https://www.polyu.edu.hk/dsai/study/ug/prospective-students/bsc-in-data-science-and-analytics/curriculum/?sc_lang=en",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-05",
-            "institution": "University of Economics Ho Chi Minh City",
-            "title": "Data Science — Standard Undergraduate Program",
-            "url": "https://ueh.edu.vn/en/academics/undergraduate/standard-programs/data-science",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-06",
-            "institution": "University of Minnesota",
-            "title": "Undergraduate Courses — Data Science",
-            "url": "https://cse.umn.edu/datascience/undergraduate-courses",
-            "source_type": "Official undergraduate curriculum",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-07",
-            "institution": "University of Auckland",
-            "title": "Undergraduate Study in Data Science",
-            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/data-science/undergraduate.html",
-            "source_type": "Official undergraduate programme guidance",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          },
-          {
-            "claim_id": "DATASCIE-CURR-03-08",
-            "institution": "University of Oregon",
-            "title": "Data Science BA/BS — Academic Catalog",
-            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/data-science/ug-data-science/",
-            "source_type": "Official academic catalog",
-            "claim_type": "Curriculum evidence for exploratory subject guidance",
-            "scope_en": "This source is attached as curriculum/disciplinary context for the major. It does not by itself prove that this specific EMASI subject is required or that the EMASI syllabus contains the same material.",
-            "scope_vi": "Nguồn này được đính kèm làm bối cảnh chương trình/kiến thức của ngành. Tự thân nguồn không chứng minh môn EMASI cụ thể là bắt buộc hoặc đề cương EMASI có cùng nội dung."
-          }
-        ],
+        "evidence_refs": [],
         "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
         "evidence_scope_vi": "Các nguồn liên kết mô tả chương trình hoặc nền tảng kiến thức của ngành ở đại học. Việc ánh xạ từ nền tảng đó sang môn học EMASI là suy luận giáo dục và cần được đối chiếu với đề cương thực tế của EMASI."
       },
@@ -3075,17 +2070,8 @@
         "use": "Shows mathematics, computer science, probability and domain-specific application in a Data Science degree."
       }
     ],
-    "subject_guidance_source_note_en": "Sources below document university curricula or professional curriculum guidance. They support the specific academic content described in each subject explanation; they do not establish that the EMASI subject itself covers those topics or that a subject is an admission prerequisite.",
-    "subject_guidance_source_note_vi": "Các nguồn dưới đây là chương trình đại học hoặc hướng dẫn chương trình chuyên môn. Chúng hỗ trợ nội dung học thuật được nêu trong từng giải thích; không chứng minh môn học EMASI hiện tại đã dạy các chủ đề đó và cũng không xác lập môn học là điều kiện tuyển sinh.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Data Science — academic reference 1",
-        "url": "https://www.amstat.org/your-career/education/data-science",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
+    "subject_guidance_source_note_en": "References are attached only to the subject explanations they support. They document university-level curriculum context; they do not establish that an EMASI subject covers the same content or is an admission prerequisite.",
+    "subject_guidance_source_note_vi": "Nguồn chỉ được gắn với những giải thích môn học mà chúng hỗ trợ. Các nguồn cung cấp bối cảnh chương trình đại học; không xác lập rằng môn học EMASI có cùng nội dung hoặc là điều kiện tuyển sinh.",
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -3408,15 +2394,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Economics — academic reference 1",
-        "url": "https://www.aeaweb.org/resources/students/what-is-economics",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -3773,15 +2750,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Biology — academic reference 1",
-        "url": "https://www.asbmb.org/education/teaching-resources/undergraduate-programs",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4125,15 +3093,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Mechanical Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4434,15 +3393,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Finance — academic reference 1",
-        "url": "https://www.cfainstitute.org/en/programs/cfa",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -4766,15 +3716,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Chemistry — academic reference 1",
-        "url": "https://www.acs.org/education/policies/acs-guidelines.html",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5107,15 +4048,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Physics — academic reference 1",
-        "url": "https://www.aapt.org/Resources/policy/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5449,15 +4381,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Environmental Science — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-environmental-science-programs/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -5854,15 +4777,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Architecture — academic reference 1",
-        "url": "https://www.naab.org/accreditation/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6153,15 +5067,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Electrical Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6471,15 +5376,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Civil Engineering — academic reference 1",
-        "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -6809,15 +5705,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Political Science — academic reference 1",
-        "url": "https://www.apsanet.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -7150,15 +6037,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Sociology — academic reference 1",
-        "url": "https://www.asanet.org/teaching-learning/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -7468,15 +6346,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Linguistics — academic reference 1",
-        "url": "https://www.linguisticsociety.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -7808,15 +6677,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Education — academic reference 1",
-        "url": "https://www.aacte.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -8106,15 +6966,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Accounting — academic reference 1",
-        "url": "https://www.aacsb.edu/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
@@ -8467,15 +7318,6 @@
     "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
     "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
     "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_links": [
-      {
-        "institution": "Reference organisation",
-        "title": "Communication & Media Studies — academic reference 1",
-        "url": "https://www.natcom.org/",
-        "use_en": "Provides a disciplinary, curriculum or professional reference for the major. Use it as context; verify specific courses and admission prerequisites on each university's current programme page.",
-        "use_vi": "Cung cấp tài liệu tham chiếu về ngành học, chương trình hoặc tiêu chuẩn chuyên môn. Chỉ dùng làm bối cảnh; cần kiểm tra học phần và điều kiện đầu vào cụ thể trên trang chương trình hiện hành của từng đại học."
-      }
-    ],
     "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
     "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
     "evidence_audit_summary": {
