@@ -551,6 +551,55 @@ elif page == tr("network"):
                 st.session_state.selected_network_node = clicked
                 st.rerun()
 
+            # Undecided students can browse every major without entering a choice.
+            st.divider()
+            st.subheader("Explore any of the 20 majors" if st.session_state.language == "English" else "Khám phá 20 ngành học")
+            st.caption("Inspect academic foundations, related fields, research areas and exploratory EMASI subject guidance. This is browsing support, not a personalized recommendation." if st.session_state.language == "English" else "Tìm hiểu nền tảng học thuật, lĩnh vực liên quan, hướng nghiên cứu và gợi ý khám phá môn học EMASI. Đây là thông tin tham khảo, không phải đề xuất ngành phù hợp cá nhân.")
+            major_options = list(MAJORS.keys())
+            default_major = intended_majors[0] if intended_majors else major_options[0]
+            explore_major = st.selectbox("Choose a major" if st.session_state.language == "English" else "Chọn ngành học", major_options, index=major_options.index(default_major), format_func=lambda value: (value + " · " + MAJORS[value].get("name_vi", value)) if st.session_state.language == "Tiếng Việt" else value, key="network_major_explorer")
+            explore_info = MAJORS[explore_major]
+            st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
+            st.write(explore_info.get("overview_vi", explore_info.get("overview", "")) if st.session_state.language == "Tiếng Việt" else explore_info.get("overview", ""))
+            detail_fields = [("academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"), ("related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"), ("specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"), ("research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu")]
+            for field, field_vi, label_en, label_vi in detail_fields:
+                values = explore_info.get(field, []) if st.session_state.language == "English" else explore_info.get(field_vi, explore_info.get(field, []))
+                if values:
+                    st.markdown("**" + (label_en if st.session_state.language == "English" else label_vi) + "**")
+                    st.write(" · ".join(values))
+            st.markdown("**" + ("Skills" if st.session_state.language == "English" else "Kỹ năng") + "**")
+            skills = explore_info.get("skills", []) if st.session_state.language == "English" else explore_info.get("skills_vi", explore_info.get("skills", []))
+            st.write(" · ".join(skills))
+            st.markdown("**" + ("Career areas to explore" if st.session_state.language == "English" else "Lĩnh vực nghề nghiệp để tìm hiểu") + "**")
+            careers = explore_info.get("careers", []) if st.session_state.language == "English" else explore_info.get("careers_vi", explore_info.get("careers", []))
+            st.write(" · ".join(careers))
+            guidance_items = explore_info.get("emasi_subject_guidance", [])
+            relevant_guidance = [g for g in guidance_items if any(g.get("subject_en", "").casefold() == chosen.casefold() for chosen in subjects)]
+            if not subjects:
+                relevant_guidance = guidance_items[:4]
+            if relevant_guidance:
+                st.markdown("**" + ("EMASI subject exploration" if st.session_state.language == "English" else "Gợi ý khám phá môn học EMASI") + "**")
+                for guidance in relevant_guidance:
+                    subject_label = guidance.get("subject_en", "") if st.session_state.language == "English" else guidance.get("subject_vi", guidance.get("subject_en", ""))
+                    reason = guidance.get("why_en", "") if st.session_state.language == "English" else guidance.get("why_vi", "")
+                    status = guidance.get("evidence_status_en", "") if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
+                    role_label = guidance.get("role_en", "") if st.session_state.language == "English" else guidance.get("role_vi", "")
+                    with st.expander(subject_label + " · " + role_label):
+                        st.write(reason)
+                        if status:
+                            st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
+                        scope = guidance.get("evidence_scope_en", "") if st.session_state.language == "English" else guidance.get("evidence_scope_vi", "")
+                        if scope:
+                            st.caption(scope)
+                        for ref in guidance.get("evidence_refs", []):
+                            title = ref.get("title", "Reference")
+                            institution = ref.get("institution", "Institution")
+                            url = ref.get("url", "")
+                            if url:
+                                st.markdown("- [" + institution + ": " + title + "](" + url + ")")
+            else:
+                st.info("No subject-specific guidance is recorded for your selected subjects here. You can still explore the major profile above." if st.session_state.language == "English" else "Chưa có gợi ý môn học cụ thể cho các môn bạn đã chọn trong hồ sơ này. Bạn vẫn có thể tìm hiểu hồ sơ ngành ở trên.")
+
             selected_key = st.session_state.get("selected_network_node")
             if selected_key in nodes:
                 selected_node = nodes[selected_key]
