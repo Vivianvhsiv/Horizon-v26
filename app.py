@@ -597,7 +597,7 @@ elif page == tr("majors"):
             # Subject guidance answers the student's practical question: which EMASI subjects
             # are useful to explore for this major? It is deliberately separate from verified
             # institution-specific prerequisite/connection claims.
-            st.markdown("### EMASI subjects to consider carefully" if st.session_state.language == "English" else "### Những môn học EMASI cần được cân nhắc kỹ")
+            st.markdown("### EMASI subjects students should pay attention to when exploring this major" if st.session_state.language == "English" else "### Các môn học EMASI học sinh nên chú ý khi tìm hiểu ngành này")
             st.caption(info.get("subject_guidance_note_en", "") if st.session_state.language == "English" else info.get("subject_guidance_note_vi", ""))
             inventory_note = info.get("subject_inventory_note_en", "") if st.session_state.language == "English" else info.get("subject_inventory_note_vi", "")
             if inventory_note:
@@ -735,7 +735,7 @@ elif page == tr("compare"):
                     if val is None: val = []
                     if val is None: val = []
                     st.write(", ".join(val) if isinstance(val,list) else val)
-        st.subheader("EMASI subjects to consider carefully" if st.session_state.language == "English" else "Những môn học EMASI cần được cân nhắc kỹ")
+        st.subheader("EMASI subjects students should pay attention to when exploring this major" if st.session_state.language == "English" else "Các môn học EMASI học sinh nên chú ý khi tìm hiểu ngành này")
         for name in selected:
             info = MAJORS[name]
             shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
