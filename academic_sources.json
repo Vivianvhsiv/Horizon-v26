@@ -607,22 +607,30 @@
         "status_vi": "Đã mở rộng bối cảnh chương trình từ nhiều cơ sở; ánh xạ từng môn EMASI vẫn mang tính khám phá và không phải điều kiện tiên quyết áp dụng chung."
       },
       {
-        "claim": "The current evidence register supports programme-specific mathematics, statistics, programming and data-analysis course areas across the reviewed Data Science curricula; course combinations differ by institution and intake.",
-        "claim_vi": "Danh mục bằng chứng hiện tại hỗ trợ các nhóm học phần toán, thống kê, lập trình và phân tích dữ liệu theo từng chương trình Khoa học dữ liệu đã rà soát; tổ hợp học phần khác nhau tùy trường và khóa tuyển sinh.",
-        "type": "Cross-institution curriculum context",
-        "type_vi": "Bối cảnh chương trình đào tạo giữa các trường",
+        "claim": "VinUniversity’s Bachelor of Science in Data Science curriculum separates College Core, Major (Discipline) Requirements, Discipline Electives, Free Electives, course-related projects, internship and capstone; its published course descriptions include discrete mathematics, programming, probability and statistics, data management, machine learning and data visualization.",
+        "claim_vi": "Chương trình Cử nhân Khoa học ngành Khoa học dữ liệu của VinUniversity phân tách các phần College Core, yêu cầu chuyên ngành, học phần tự chọn chuyên ngành, tự chọn tự do, dự án học phần, thực tập và đồ án tốt nghiệp; mô tả học phần được công bố bao gồm toán rời rạc, lập trình, xác suất và thống kê, quản lý dữ liệu, học máy và trực quan hóa dữ liệu.",
+        "type": "Institution-specific curriculum structure",
+        "type_vi": "Cấu trúc chương trình đào tạo theo từng trường",
         "sources": [
           {
             "institution": "VinUniversity",
-            "title": "Academic Catalogs — Data Science Curriculum Frameworks by Cohort",
-            "url": "https://policy.vinuni.edu.vn/publication/academic-catalogs/",
-            "source_type": "Official academic catalogue index",
-            "claim_scope": "Provides cohort-specific curriculum framework links; catalogue index alone does not verify individual course claims.",
-            "source_type_vi": "Danh mục học thuật chính thức"
+            "title": "Bachelor of Science in Data Science — Program Profile, Curriculum Structure and Course Descriptions",
+            "url": "https://cecs.vinuni.edu.vn/undergraduate/data-science/",
+            "source_type": "Official undergraduate programme and curriculum page",
+            "claim_scope": "Supports the published VinUniversity B.S. Data Science structure and the course descriptions shown on this page; it is institution-specific and should not be generalized to other universities or intakes.",
+            "source_type_vi": "Trang chương trình và chương trình đào tạo bậc đại học chính thức"
+          },
+          {
+            "institution": "VinUniversity",
+            "title": "Curriculum Framework — Bachelor of Science in Data Science, Cohort 2025–2029",
+            "url": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/08/vF_250816_BSDS_25-29_Curriculum-Framework.pdf",
+            "source_type": "Official cohort-specific curriculum framework",
+            "claim_scope": "Applies to the stated 2025–2029 cohort; course classifications and requirements must be interpreted within this framework.",
+            "source_type_vi": "Khung chương trình đào tạo chính thức theo khóa tuyển sinh"
           }
         ],
-        "status": "Supported as a broad curriculum pattern in the reviewed sources; each source must remain attached only to the claims it directly supports.",
-        "status_vi": "Được hỗ trợ như xu hướng chương trình ở các nguồn đã rà soát; mỗi nguồn chỉ được gắn với nhận định mà nó trực tiếp hỗ trợ."
+        "status": "Verified against VinUniversity's published programme page and the 2025–2029 cohort framework; institution- and cohort-specific.",
+        "status_vi": "Đã đối chiếu với trang chương trình của VinUniversity và khung chương trình khóa 2025–2029; chỉ áp dụng cho trường và khóa tuyển sinh này."
       }
     ]
   },
