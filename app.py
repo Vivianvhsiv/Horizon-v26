@@ -374,70 +374,70 @@ def translated_node_label(node):
     return f'{node["type"].title()}: {label}'
 
 def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
-    # Default state: focus on the student's selected interests and current
-    # subjects, then illuminate their connected majors and the majors'
-    # academic-discipline / career branches. Keep the wider map visible but dim.
-    adjacent = set()
+    # Never hide the catalogue. Selection changes emphasis, not visibility.
+    focus = set(focus_keys or [])
     if selected_key:
-        adjacent.add(selected_key)
-        for edge in edges:
-            if edge["source"] == selected_key:
-                adjacent.add(edge["target"])
-            elif edge["target"] == selected_key:
-                adjacent.add(edge["source"])
-    else:
-        # focus_keys are the explicitly selected inputs and the student node.
-        adjacent.update(focus_keys or [])
-        # Highlight the selected major and its own profile elements only.
-        # No interest-to-major or subject-to-major matches are inferred.
-        for edge in edges:
-            if edge["source"] in adjacent:
-                adjacent.add(edge["target"])
-            elif edge["target"] in adjacent:
-                adjacent.add(edge["source"])
+        focus.add(selected_key)
+    major_focus = {key for key in focus if key.startswith("major::")}
+    # Evidence-referenced subject guidance adds an explicitly exploratory path
+    # from a selected subject to a major. It is not a verified prerequisite.
+    for edge in edges:
+        if edge["relation"] == "explore through curriculum context" and edge["source"] in focus:
+            major_focus.add(edge["target"])
+    active_nodes = set(focus) | set(major_focus)
+    for edge in edges:
+        if edge["source"] in major_focus or edge["target"] in major_focus:
+            active_nodes.update((edge["source"], edge["target"]))
+        elif edge["source"] in focus or edge["target"] in focus:
+            active_nodes.update((edge["source"], edge["target"]))
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98",
-        "major":"#C18B4A", "discipline":"#B87575", "career":"#7187A6", "skill":"#B28B9C"
+        "major":"#C18B4A", "discipline":"#B87575", "career":"#7187A6",
+        "skill":"#B28B9C", "cluster":"#D6A84F", "foundation":"#A87979",
+        "related":"#9A86B8", "application":"#6D9C98", "research":"#6F88A8"
     }
     graph_nodes = []
     for key, item in nodes.items():
-        active = key in adjacent if (selected_key or focus_keys) else True
-        color = palette.get(item["type"], "#8393A6") if active else "#D9DEE5"
-        border = "#172B4D" if key == selected_key else "#FFFFFF"
-        size = 31 if key == selected_key else (23 if active else 17)
+        color = palette.get(item["type"], "#8393A6")
+        is_focus = key in focus
+        is_active = key in active_nodes
+        border = "#172B4D" if is_focus else ("#FFFFFF" if is_active else "#D6DCE4")
+        size = 32 if is_focus else (25 if is_active else (21 if item["type"] == "major" else 17))
         display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
+        title = item.get("description", display_label)
+        if item["type"] == "major":
+            info = MAJORS.get(item["label"], {})
+            title = info.get("overview_vi", info.get("overview", title)) if st.session_state.language == "Tiếng Việt" else info.get("overview", title)
         graph_nodes.append(Node(
-            id=key, label=display_label, title=(MAJORS.get(item["label"], {}).get("overview_vi", item["description"]) if st.session_state.language == "Tiếng Việt" and item["type"] == "major" else display_label),
-            size=size,
+            id=key, label=display_label, title=title, size=size,
             color={"background":color, "border":border, "highlight":{"background":color,"border":"#172B4D"}},
-            borderWidth=3 if key == selected_key else 1,
-            font={"color":"#17263D" if active else "#A6AFBA", "size":15 if active else 12}
+            borderWidth=3 if is_focus else (2 if is_active else 1),
+            font={"color":"#17263D", "size":15 if is_active else (13 if item["type"] == "major" else 12)}
         ))
 
     graph_edges = []
     for edge in edges:
-        if selected_key or focus_keys:
-            active = edge["source"] in adjacent and edge["target"] in adjacent
-        else:
-            active = True
+        active = (edge["source"] in active_nodes and edge["target"] in active_nodes)
+        relation = edge["relation"]
+        label = "" if relation == "profile includes" else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
+        exploratory = relation == "explore through curriculum context"
         graph_edges.append(Edge(
-            source=edge["source"], target=edge["target"], label=(RELATION_VI.get(edge["relation"], edge["relation"]) if st.session_state.language == "Tiếng Việt" else edge["relation"]),
-            color="#315B83" if active else "#E1E5EA",
-            width=3 if (selected_key or focus_keys) and active else 1.2,
-            font={"color":"#52657B" if active else "#C1C8D1", "size":10},
+            source=edge["source"], target=edge["target"], label=label,
+            color="#315B83" if active else "#C8D0DA",
+            width=3 if active else 1.1,
+            font={"color":"#315B83" if active else "#A4ADB9", "size":10},
             arrows="to"
         ))
 
     config = Config(
-        width="100%", height=650, directed=True, physics=True, hierarchical=False,
+        width="100%", height=850, directed=True, physics=True, hierarchical=False,
         nodeHighlightBehavior=False, collapsible=False,
         interaction={"hover":True, "navigationButtons":True, "keyboard":True},
         physics_options={"solver":"forceAtlas2Based",
-                         "forceAtlas2Based":{"gravitationalConstant":-45,"springLength":150,"springConstant":0.08}}
+                         "forceAtlas2Based":{"gravitationalConstant":-75,"springLength":190,"springConstant":0.045}}
     )
     return agraph(nodes=graph_nodes, edges=graph_edges, config=config)
-
 with st.sidebar:
     st.image(str(Path(__file__).parent / 'horizon_logo.svg'), use_container_width=True)
     lang = st.selectbox("Language / Ngôn ngữ", ["English","Tiếng Việt"],
