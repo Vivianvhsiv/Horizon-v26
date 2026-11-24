@@ -6,13 +6,11 @@ def check(ok,msg):
     checks.append((bool(ok),msg))
     if not ok: errors.append(msg)
 # JSON and mirror consistency
-files=['majors.json','academic_sources.json','data/majors.json','data/academic_sources.json','data/emasi_subjects.json','data/emasi_mapping_protocol.json']
+files=['majors.json','academic_sources.json','emasi_subjects.json','emasi_mapping_protocol.json']
 loaded={}
 for f in files:
     try: loaded[f]=json.loads((ROOT/f).read_text(encoding='utf-8')); check(True,f'{f}: valid JSON')
     except Exception as e: check(False,f'{f}: invalid JSON ({e})')
-for a,b in [('majors.json','data/majors.json'),('academic_sources.json','data/academic_sources.json')]:
-    check((ROOT/a).read_bytes()==(ROOT/b).read_bytes(),f'{a} matches {b}')
 majors=loaded.get('majors.json',{})
 sources=loaded.get('academic_sources.json',{})
 check(len(majors)==20,'20 major profiles are present')
@@ -36,7 +34,7 @@ for name,record in sources.items():
             if not src.get('source_type_vi'): missing.append(f'{name}.claims[{i}].sources[{j}].source_type_vi')
 check(not missing,'academic evidence labels and claims have Vietnamese fields'+(': '+', '.join(missing[:8]) if missing else ''))
 # Subject guidance bilingual coverage and inventory membership
-subject_names={x.get("name_en"):x for x in loaded.get('data/emasi_subjects.json',{}).get('subjects',[])}
+subject_names={x.get("name_en"):x for x in loaded.get('emasi_subjects.json',{}).get('subjects',[])}
 guidance_count=0; guidance_errors=[]
 for major,record in majors.items():
     for idx,item in enumerate(record.get('emasi_subject_guidance',[])):
@@ -58,7 +56,7 @@ check('("Geography", "Địa lý")' in app and '("History", "Lịch sử")' in a
 # Check the UI language code uses Vietnamese source-type labels.
 check('source.get("source_type_vi"' in app,'source type labels use Vietnamese in Vietnamese UI')
 # No Chinese CJK strings in user-facing app/data/readme files.
-for f in ['app.py','majors.json','academic_sources.json','data/emasi_subjects.json','README.md']:
+for f in ['app.py','majors.json','academic_sources.json','emasi_subjects.json','README.md']:
     text=(ROOT/f).read_text(encoding='utf-8')
     check(not re.search(r'[\u3400-\u9fff]',text),f'{f}: no CJK text remains')
 # Python syntax
@@ -87,6 +85,6 @@ check('No evidence-backed interest-to-major' in app,'Network Map explains the cu
 # Print a single summary after every base and regression check has run.
 for ok,msg in checks:
     print(('PASS' if ok else 'FAIL')+'  '+msg)
-print(f'\\nSummary: {sum(x for x,_ in checks)}/{len(checks)} checks passed')
+print(f'\nSummary: {sum(x for x,_ in checks)}/{len(checks)} checks passed')
 if errors:
     sys.exit(1)
