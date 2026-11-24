@@ -648,6 +648,9 @@ elif page == tr("majors"):
                             st.markdown(("**Curriculum / disciplinary references**" if st.session_state.language == "English" else "**Nguồn tham khảo chương trình / ngành học**"))
                             for ref in refs:
                                 st.markdown(f"- [{ref.get('institution', 'Institution')}: {ref.get('title', 'Reference')}]({ref.get('url', '#')})")
+                                ref_support = ref.get("support_en", "") if st.session_state.language == "English" else ref.get("support_vi", "")
+                                if ref_support:
+                                    st.caption(("What this source supports: " if st.session_state.language == "English" else "Nội dung được nguồn hỗ trợ: ") + ref_support)
                                 ref_scope = ref.get("scope_en", "") if st.session_state.language == "English" else ref.get("scope_vi", "")
                                 if ref_scope:
                                     st.caption(ref_scope)
