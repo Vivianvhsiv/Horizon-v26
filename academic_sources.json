@@ -699,8 +699,8 @@
         "status_vi": "Đã xác định danh mục chương trình; cần xác nhận tên chính xác và bậc văn bằng đại học trên trang chính thức hiện hành của từng trường trước khi coi mọi mục là đã xác minh. Mức độ tương đương văn bằng có thể khác nhau."
       },
       {
-        "claim": "Official undergraduate requirements at Notre Dame and Stanford document microeconomics, macroeconomics, statistics/econometrics and calculus or other quantitative mathematics; requirements differ by degree track and institution.",
-        "claim_vi": "Yêu cầu đại học chính thức tại Notre Dame và Stanford ghi nhận kinh tế vi mô, kinh tế vĩ mô, thống kê/kinh tế lượng và giải tích hoặc toán định lượng; yêu cầu khác nhau theo hướng bằng cấp và trường.",
+        "claim": "Notre Dame's Economics major requires microeconomics, macroeconomics, Statistics for Economics and Econometrics as core courses, with Calc B as a prerequisite. Stanford's Economics B.S. core requires probability, econometrics, linear algebra/multivariable calculus and real-variable mathematics. These are institution- and degree-specific requirements; other Economics pathways may differ.",
+        "claim_vi": "Ngành Economics tại Notre Dame yêu cầu kinh tế vi mô, kinh tế vĩ mô, Thống kê kinh tế và Kinh tế lượng trong nhóm học phần cốt lõi, với Calc B là học phần tiên quyết. Phần cốt lõi của bằng Economics B.S. tại Stanford yêu cầu xác suất, kinh tế lượng, đại số tuyến tính/giải tích nhiều biến và toán học hàm biến thực. Đây là yêu cầu riêng theo trường và loại bằng; các lộ trình Economics khác có thể khác.",
         "type": "Curriculum evidence for exploratory subject guidance",
         "type_vi": "Bằng chứng chương trình đào tạo cho gợi ý khám phá môn học",
         "sources": [
@@ -709,8 +709,8 @@
             "title": "Economics Major — Requirements",
             "url": "https://economics.nd.edu/undergraduate/economics-major/requirements/",
             "source_type": "Official undergraduate curriculum / degree requirements",
-            "curriculum_evidence": "Core courses include microeconomics, macroeconomics, statistics for economics and econometrics; calculus is a prerequisite for a stated core sequence.",
-            "scope_note": "Specific to Notre Dame major structure; not universal admissions prerequisites.",
+            "curriculum_evidence": "The major lists Principles of Microeconomics, Principles of Macroeconomics, Statistics for Economics and Econometrics among six required core courses; Calc B (or equivalent) is a prerequisite. The major also requires four electives.",
+            "scope_note": "Specific to the Notre Dame Economics major requirements page. Calc B is stated as a prerequisite; do not describe it as an Economics core course. Not a universal admission prerequisite.",
             "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
           },
           {
@@ -718,13 +718,13 @@
             "title": "Economics BS",
             "url": "https://economics.stanford.edu/undergraduate/major/economics-bs",
             "source_type": "Official undergraduate curriculum / degree requirements",
-            "curriculum_evidence": "Requirements include micro/macro theory, probability, econometrics and linear algebra/multivariable calculus.",
-            "scope_note": "Specific to Stanford BS; BA/other programmes may differ.",
+            "curriculum_evidence": "The Economics B.S. core lists Theory of Probability I, Econometrics, Linear Algebra, Multivariable Calculus and Modern Applications, and Functions of a Real Variable. The page notes that the B.S. requirements differ from other degree paths and includes AY 2026–27 guidance.",
+            "scope_note": "Specific to Stanford Economics B.S. and the published current requirements; do not generalize to the B.A. or other institutions.",
             "source_type_vi": "Chương trình đào tạo và yêu cầu văn bằng bậc đại học chính thức"
           }
         ],
-        "status": "Curriculum context added from two official institutions; subject-to-EMASI mapping remains exploratory.",
-        "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ môn học sang EMASI vẫn mang tính khám phá."
+        "status": "Verified against the cited Notre Dame Economics major and Stanford Economics B.S. requirements; the course classifications and degree pathways are institution-specific. Subject-to-EMASI mapping remains exploratory.",
+        "status_vi": "Đã đối chiếu với yêu cầu ngành Economics tại Notre Dame và bằng Economics B.S. tại Stanford; phân loại học phần và lộ trình bằng cấp chỉ áp dụng theo từng trường. Ánh xạ môn học sang EMASI vẫn mang tính khám phá."
       }
     ]
   },
