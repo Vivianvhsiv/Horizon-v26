@@ -546,6 +546,11 @@ elif page == tr("network"):
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
             elif interests or subjects:
                 st.info("Your selected interests and subjects are shown as separate inputs. No major match is inferred without claim-level evidence." if st.session_state.language == "English" else "Sở thích và môn học bạn chọn được hiển thị riêng. Hệ thống không suy ra ngành học khi chưa có bằng chứng ở cấp độ nhận định.")
+            st.caption(
+                "Map key — gold: majors; amber: catalogue groups; rose: academic disciplines; purple: interests; teal: current EMASI subjects; navy: your exploration. Shared discipline nodes show academic overlap, not personal suitability."
+                if st.session_state.language == "English" else
+                "Chú giải — vàng cam: ngành học; vàng hổ phách: nhóm ngành; hồng: lĩnh vực học thuật; tím: sở thích; xanh ngọc: môn EMASI hiện tại; xanh đậm: quá trình khám phá của bạn. Nút lĩnh vực chung thể hiện sự giao thoa học thuật, không đánh giá mức độ phù hợp cá nhân."
+            )
             clicked = make_interactive_graph(nodes, edges, selected_key, focus_keys=focus_keys)
             if clicked and clicked in nodes and clicked != selected_key:
                 st.session_state.selected_network_node = clicked
