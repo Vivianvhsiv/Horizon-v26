@@ -635,8 +635,8 @@
       {
         "claim": "Official programme references are available for Economics at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Economics tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Nanyang Technological University",
@@ -647,14 +647,14 @@
           },
           {
             "institution": "Massachusetts Institute of Technology",
-            "title": "Academic Program",
-            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
-            "source_type": "Official academic catalog",
-            "source_type_vi": "Danh mục học thuật chính thức"
+            "title": "Department of Economics — MIT Course Catalog",
+            "url": "https://catalog.mit.edu/schools/humanities-arts-social-sciences/economics/",
+            "source_type": "Official undergraduate department and degree programme page",
+            "source_type_vi": "Trang khoa và chương trình cấp bằng đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "MIT's official catalog confirms the named undergraduate programme; the other listed institution reference still requires exact-title confirmation. This is programme evidence, not curriculum or admissions evidence.",
+        "status_vi": "Danh mục chính thức của MIT xác nhận chương trình đại học có tên tương ứng; nguồn của trường còn lại vẫn cần đối chiếu chính xác tên chương trình. Đây là bằng chứng về chương trình đào tạo, không phải bằng chứng về nội dung học phần hoặc tuyển sinh."
       },
       {
         "claim": "Official university programme directories list Economics or the explicitly named related programme variants below.",
@@ -1044,8 +1044,8 @@
       {
         "claim": "Official programme references are available for Chemistry at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Chemistry tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "UC San Diego",
@@ -1056,14 +1056,14 @@
           },
           {
             "institution": "Massachusetts Institute of Technology",
-            "title": "Academic Program",
-            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
-            "source_type": "Official academic catalog",
-            "source_type_vi": "Danh mục học thuật chính thức"
+            "title": "Department of Chemistry — MIT Course Catalog",
+            "url": "https://catalog.mit.edu/schools/science/chemistry/",
+            "source_type": "Official undergraduate department and degree programme page",
+            "source_type_vi": "Trang khoa và chương trình cấp bằng đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "MIT's official catalog confirms the named undergraduate programme; the other listed institution reference still requires exact-title confirmation. This is programme evidence, not curriculum or admissions evidence.",
+        "status_vi": "Danh mục chính thức của MIT xác nhận chương trình đại học có tên tương ứng; nguồn của trường còn lại vẫn cần đối chiếu chính xác tên chương trình. Đây là bằng chứng về chương trình đào tạo, không phải bằng chứng về nội dung học phần hoặc tuyển sinh."
       },
       {
         "claim": "Official university programme directories list Chemistry or the explicitly named related programme variants below.",
@@ -1163,15 +1163,15 @@
       {
         "claim": "Official programme references are available for Physics at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Physics tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Massachusetts Institute of Technology",
-            "title": "Academic Program",
-            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
-            "source_type": "Official academic catalog",
-            "source_type_vi": "Danh mục học thuật chính thức"
+            "title": "Department of Physics — MIT Course Catalog",
+            "url": "https://catalog.mit.edu/schools/science/physics/",
+            "source_type": "Official undergraduate department and degree programme page",
+            "source_type_vi": "Trang khoa và chương trình cấp bằng đại học chính thức"
           },
           {
             "institution": "Nanyang Technological University",
@@ -1181,8 +1181,8 @@
             "source_type_vi": "Danh sách chương trình đào tạo chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "MIT's official catalog confirms the named undergraduate programme; the other listed institution reference still requires exact-title confirmation. This is programme evidence, not curriculum or admissions evidence.",
+        "status_vi": "Danh mục chính thức của MIT xác nhận chương trình đại học có tên tương ứng; nguồn của trường còn lại vẫn cần đối chiếu chính xác tên chương trình. Đây là bằng chứng về chương trình đào tạo, không phải bằng chứng về nội dung học phần hoặc tuyển sinh."
       },
       {
         "claim": "Official university programme directories list Physics or the explicitly named related programme variants below.",
@@ -1731,15 +1731,15 @@
       {
         "claim": "Official programme references are available for Political Science at the institutions listed below.",
         "claim_vi": "Có nguồn chương trình chính thức về ngành Political Science tại các cơ sở được liệt kê bên dưới.",
-        "type": "Programme existence / official curriculum reference",
-        "type_vi": "Sự tồn tại của chương trình / nguồn chương trình chính thức",
+        "type": "Programme availability evidence",
+        "type_vi": "Bằng chứng về việc có chương trình đào tạo",
         "sources": [
           {
             "institution": "Massachusetts Institute of Technology",
-            "title": "Academic Program",
-            "url": "https://catalog.mit.edu/mit/overview/academic-program/academic-program.pdf",
-            "source_type": "Official academic catalog",
-            "source_type_vi": "Danh mục học thuật chính thức"
+            "title": "Department of Political Science — MIT Course Catalog",
+            "url": "https://catalog.mit.edu/schools/humanities-arts-social-sciences/political-science/",
+            "source_type": "Official undergraduate department and degree programme page",
+            "source_type_vi": "Trang khoa và chương trình cấp bằng đại học chính thức"
           },
           {
             "institution": "Keio University",
@@ -1749,8 +1749,8 @@
             "source_type_vi": "Danh sách lĩnh vực đào tạo bậc đại học chính thức"
           }
         ],
-        "status": "Partially verified — programme listing checked; profile content requires claim-level review",
-        "status_vi": "Đã xác minh một phần — đã đối chiếu danh mục chương trình; nội dung hồ sơ cần được kiểm tra theo từng nhận định"
+        "status": "MIT's official catalog confirms the named undergraduate programme; the other listed institution reference still requires exact-title confirmation. This is programme evidence, not curriculum or admissions evidence.",
+        "status_vi": "Danh mục chính thức của MIT xác nhận chương trình đại học có tên tương ứng; nguồn của trường còn lại vẫn cần đối chiếu chính xác tên chương trình. Đây là bằng chứng về chương trình đào tạo, không phải bằng chứng về nội dung học phần hoặc tuyển sinh."
       },
       {
         "claim": "Official university programme directories list Political Science or the explicitly named related programme variants below.",
