@@ -332,6 +332,16 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             evidence = f"{why} Status: {status}. Scope: {scope} This is an exploratory curriculum-context link, not proof that EMASI teaches the same content or that this subject is an admission prerequisite."
             add_edge(subject_key, major_key, "explore through curriculum context", evidence, refs, status)
 
+    # If the student explicitly selects Education and learning as an interest,
+    # surface Education as their primary exploration direction. This records
+    # the student's stated interest; it is not an aptitude inference or a claim
+    # that their current school subjects are formal prerequisites.
+    if "Education and learning" in selected_interests and "Education" in MAJORS:
+        education_interest_key = node_id("interest", "Education and learning")
+        education_major_key = node_id("major", "Education")
+        add_edge(education_interest_key, education_major_key, "student-selected exploration direction",
+                 "The student explicitly selected Education and learning. Horizon surfaces the Education major as the corresponding direction to explore; this is a reflection of stated interest, not a suitability assessment or an admission claim.")
+
     for major in selected_majors:
         add_edge(student, node_id("major", major), "considering", "Student-selected major intention; not a suitability assessment.")
     return nodes, edges, selected_majors
@@ -560,6 +570,21 @@ elif page == tr("network"):
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
+            # Lead with the direction the student explicitly expressed interest in.
+            # Current subjects are shown as context to investigate, not prerequisites.
+            if "Education and learning" in interests and "Education" in MAJORS:
+                education_info = MAJORS["Education"]
+                education_name = "Education" if st.session_state.language == "English" else education_info.get("name_vi", "Education")
+                subject_display = [x if st.session_state.language == "English" else SUBJECT_TRANSLATIONS.get(x, x) for x in subjects]
+                support_interest = [x if st.session_state.language == "English" else INTEREST_TRANSLATIONS.get(x, x) for x in interests if x != "Education and learning"]
+                st.markdown("### " + ("Your combined exploration direction" if st.session_state.language == "English" else "Hướng khám phá tổng hợp của bạn"))
+                st.success(("Primary direction to explore: " if st.session_state.language == "English" else "Hướng chính nên tìm hiểu: ") + education_name)
+                st.write(("Why this direction appears: you explicitly selected “Education and learning”. Horizon therefore surfaces the Education major, rather than treating Psychology or Cognitive Science as the final result." if st.session_state.language == "English" else "Vì sao xuất hiện hướng này: bạn đã chủ động chọn “Giáo dục và học tập”. Vì vậy Horizon hiển thị ngành Giáo dục học, thay vì xem Tâm lý học hoặc Khoa học nhận thức là kết quả cuối cùng."))
+                if subject_display:
+                    st.write(("Your current subjects to consider within this direction: " if st.session_state.language == "English" else "Các môn hiện tại để bạn xem xét trong hướng này: ") + ", ".join(subject_display))
+                if support_interest:
+                    st.write(("Other interests you selected: " if st.session_state.language == "English" else "Các sở thích bổ trợ bạn đã chọn: ") + ", ".join(support_interest))
+                st.caption("Your selected subjects and additional interests provide personal context for further research. They are not being presented as verified Education-degree prerequisites or proof of suitability; check each university’s programme structure and teaching specialisation." if st.session_state.language == "English" else "Các môn học và sở thích bổ sung là bối cảnh cá nhân để bạn tìm hiểu thêm, không được xem là điều kiện tiên quyết đã xác minh của ngành Giáo dục học hay bằng chứng về mức độ phù hợp. Hãy kiểm tra cấu trúc chương trình và hướng chuyên sâu sư phạm của từng trường.")
             # Summarize evidence-backed subject-to-major pathways for undecided
             # students. This is a transparent browse aid, not a synthesized fit score.
             evidence_by_major = {}
@@ -605,6 +630,8 @@ elif page == tr("network"):
             focus_keys.extend(node_id("interest", x) for x in interests)
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
+            if "Education and learning" in interests and "Education" in MAJORS:
+                focus_keys.append(node_id("major", "Education"))
             if intended_majors:
                 labels = intended_majors if st.session_state.language == "English" else [MAJORS[m].get("name_vi", m) for m in intended_majors]
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
