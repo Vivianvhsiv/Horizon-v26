@@ -392,9 +392,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
 
     graph_edges = []
     for edge in edges:
-        if selected_key:
-            active = selected_key in (edge["source"], edge["target"])
-        elif focus_keys:
+        if selected_key or focus_keys:
             active = edge["source"] in adjacent and edge["target"] in adjacent
         else:
             active = True
