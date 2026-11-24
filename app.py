@@ -564,6 +564,7 @@ elif page == tr("majors"):
             with b:
                 st.markdown(f"**{tr('skills')}**"); st.write(", ".join(info.get("skills_vi",info["skills"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["skills"]))
                 st.markdown(f"**{tr('careers')}**"); st.write(", ".join(info.get("careers_vi", info["careers"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["careers"]))
+                st.caption("Illustrative career areas to explore, not guaranteed job outcomes or a ranking of career paths." if st.session_state.language == "English" else "Đây là các lĩnh vực nghề nghiệp mang tính tham khảo để tìm hiểu, không phải cam kết về việc làm hay xếp hạng lộ trình nghề nghiệp.")
             st.markdown(f"**{tr('preparation')}**")
             prep = info.get("preparation_vi",info["preparation"]) if st.session_state.language == "Tiếng Việt" else info["preparation"]
             for item in prep: st.markdown(f"- {item}")
@@ -677,18 +678,6 @@ elif page == tr("majors"):
                         st.markdown(f"  - [Source: {c.get('source_title','Official source')}]({c['source_url']})")
             else:
                 st.info("No programme-specific EMASI subject link has been verified yet. The guidance above is exploratory; it is not presented as a confirmed university prerequisite." if st.session_state.language == "English" else "Hiện chưa có kết nối môn học EMASI nào được xác minh theo chương trình đại học cụ thể. Các gợi ý phía trên chỉ phục vụ khám phá, không được xem là điều kiện đầu vào đã xác nhận.")
-
-            # Major-specific reference links (bilingual; scope is stated to avoid overclaiming).
-            profile_refs = info.get("profile_reference_links", [])
-            if profile_refs:
-                st.markdown("**References for this major**" if st.session_state.language == "English" else "**Nguồn tham khảo cho ngành này**")
-                ref_note = info.get("profile_reference_note_en", "") if st.session_state.language == "English" else info.get("profile_reference_note_vi", "")
-                st.caption(ref_note)
-                for ref in profile_refs:
-                    st.markdown(f"- **{ref.get('institution', 'Reference organisation')}** — [{ref.get('title', 'Academic reference')}]({ref.get('url', '#')})")
-                    ref_use = ref.get("use_en", "") if st.session_state.language == "English" else ref.get("use_vi", "")
-                    if ref_use:
-                        st.caption(ref_use)
 
             # Academic Evidence & Sources: only explicitly reviewed claims carry verified status.
             evidence = ACADEMIC_SOURCES.get(name)
