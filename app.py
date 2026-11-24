@@ -130,8 +130,7 @@ T = {
         "disciplines":"Academic disciplines", "skills":"Relevant skills", "preparation":"Ways to prepare and explore", "careers":"Possible career areas",
         "choosemajors":"Choose two or three majors", "mainfocus":"Main focus", "mincompare":"Choose at least two majors to compare.",
         "areas":"Which majors would you like to explore further?", "questions":"What questions do you still have?",
-        "next":"What will you investigate next?", "summary":"Create reflection summary", "ready":"Your reflection summary is ready.",
-        "download":"Download summary", "about_title":"About Horizon", "about_sub":"A student-led space for thoughtful academic and career exploration.",
+        "about_title":"About Horizon", "about_sub":"A student-led space for thoughtful academic and career exploration.",
         "mission_title":"Our purpose", "mission":"Choosing a university major can feel complicated. Horizon helps students discover relationships between their interests, current school subjects, academic fields, university majors and possible career areas.",
         "how_title":"How to use the website", "how":"1. Select interests and current subjects. 2. Explore only connections supported by available evidence. 3. Read about majors. 4. Compare options and make your own informed decision.",
         "principles_title":"What this tool does — and does not do",
@@ -169,8 +168,7 @@ T = {
         "disciplines":"Các lĩnh vực học thuật", "skills":"Kỹ năng liên quan", "preparation":"Cách chuẩn bị và khám phá", "careers":"Các nhóm nghề nghiệp có thể liên quan",
         "choosemajors":"Chọn hai hoặc ba ngành học", "mainfocus":"Trọng tâm chính", "mincompare":"Hãy chọn ít nhất hai ngành để so sánh.",
         "areas":"Bạn muốn tìm hiểu thêm những ngành nào?", "questions":"Bạn vẫn còn câu hỏi nào?",
-        "next":"Bạn sẽ tìm hiểu điều gì tiếp theo?", "summary":"Tạo bản tóm tắt suy ngẫm", "ready":"Bản tóm tắt suy ngẫm đã sẵn sàng.",
-        "download":"Tải bản tóm tắt", "about_title":"Giới thiệu Horizon", "about_sub":"Không gian khám phá học thuật và nghề nghiệp do học sinh chủ động định hướng.",
+        "about_title":"Giới thiệu Horizon", "about_sub":"Không gian khám phá học thuật và nghề nghiệp do học sinh chủ động định hướng.",
         "mission_title":"Mục đích của chúng tôi", "mission":"Việc lựa chọn ngành học đại học có thể khá phức tạp. Horizon giúp học sinh khám phá mối liên hệ giữa sở thích, các môn học hiện tại, lĩnh vực học thuật, ngành học đại học và các nhóm nghề nghiệp tiềm năng.",
         "how_title":"Cách sử dụng trang web", "how":"1. Chọn sở thích và các môn học hiện tại. 2. Khám phá những kết nối có bằng chứng hỗ trợ. 3. Tìm hiểu thông tin về các ngành. 4. So sánh lựa chọn và tự đưa ra quyết định có thông tin.",
         "principles_title":"Công cụ này làm gì — và không làm gì",
@@ -252,19 +250,6 @@ div[data-testid="stExpander"] {background:rgba(255,255,255,.48); border-radius:1
 
 def node_id(kind, label):
     return f"{kind}::{label}"
-
-def rank_exploration_areas(selected_interests, selected_subjects, selected_majors=None):
-    """Return only majors explicitly selected by the student.
-
-    Interest tags and unverified subject suggestions are not evidence of a
-    major relationship. They are therefore not used to infer or rank majors.
-    """
-    selected_majors = selected_majors or []
-    return [
-        {"major": major, "score": 10000, "matched_interests": [], "matched_subjects": []}
-        for major in selected_majors if major in MAJORS
-    ]
-
 
 def build_network(selected_interests, selected_subjects, selected_majors=None):
     """Build a transparent map of student inputs and explicitly stated choices.
@@ -358,8 +343,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             elif edge["target"] == selected_key:
                 adjacent.add(edge["source"])
     else:
-        # focus_keys are the curated nodes of the strongest-supported
-        # academic exploration cluster, not every reachable node.
+        # focus_keys are the explicitly selected inputs and the student node.
         adjacent.update(focus_keys or [])
 
     palette = {
@@ -507,7 +491,8 @@ elif page == tr("network"):
 
             # Focus only on explicit inputs and stated major intentions.
             # No taxonomy-tag overlap is treated as a personalized match.
-            focus_keys = [node_id("interest", x) for x in interests]
+            focus_keys = [node_id("student", "Your exploration")]
+            focus_keys.extend(node_id("interest", x) for x in interests)
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
             if intended_majors:
