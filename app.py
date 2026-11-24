@@ -257,10 +257,10 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
     selected_subjects = list(selected_subjects or [])
     nodes, edges = {}, []
 
-    def add_node(kind, label, description=""):
+    def add_node(kind, label, description="", label_vi=None):
         key = node_id(kind, label)
         if key not in nodes:
-            nodes[key] = {"id": key, "type": kind, "label": label, "description": description}
+            nodes[key] = {"id": key, "type": kind, "label": label, "label_vi": label_vi or label, "description": description}
         return key
 
     def add_edge(source, target, relation, evidence, evidence_refs=None, status="Descriptive profile data"):
@@ -271,10 +271,10 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
 
     student = add_node("student", "Your exploration", "Your interests and current subjects are student-provided inputs, not an aptitude assessment.")
     for interest in selected_interests:
-        key = add_node("interest", interest, "An interest selected by the student. No major match is inferred from this input.")
+        key = add_node("interest", interest, "An interest selected by the student. No major match is inferred from this input.", INTEREST_TRANSLATIONS.get(interest, interest))
         add_edge(student, key, "interest in", "Student-selected input; no interest-to-major relationship is inferred.")
     for subject in selected_subjects:
-        key = add_node("subject", subject, "A current EMASI subject selected by the student.")
+        key = add_node("subject", subject, "A current EMASI subject selected by the student.", SUBJECT_TRANSLATIONS.get(subject, subject))
         add_edge(student, key, "currently studies", "Student-selected input.")
 
     # Build the complete catalogue. Shared profile terms intentionally form
@@ -289,9 +289,9 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
         ("career", "careers", "careers_vi", "Career areas", "Lĩnh vực nghề nghiệp"),
     ]
     for major, info in MAJORS.items():
-        major_key = add_node("major", major, info.get("overview", ""))
+        major_key = add_node("major", major, info.get("overview", ""), info.get("name_vi", major))
         cluster = info.get("cluster", "Other")
-        cluster_key = add_node("cluster", cluster, "A browsing category used to organize the Horizon major catalogue; not a suitability label.")
+        cluster_key = add_node("cluster", cluster, "A browsing category used to organize the Horizon major catalogue; not a suitability label.", info.get("cluster_vi", cluster))
         add_edge(cluster_key, major_key, "contains major", "Horizon catalogue category.")
         for kind, field, field_vi, label_en, label_vi in profile_fields:
             values = info.get(field, [])
@@ -303,7 +303,7 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
                     continue
                 translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
                 detail = f"{label_en}: {value}. Listed in the Horizon profile for {major}. This is descriptive academic/career context, not a student suitability claim."
-                element_key = add_node(kind, value, detail)
+                element_key = add_node(kind, value, detail, translated)
                 add_edge(major_key, element_key, "profile includes", detail)
 
         # Subject guidance can create an explicitly exploratory path only when
@@ -315,7 +315,7 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             refs = guidance.get("evidence_refs", [])
             if not refs:
                 continue
-            subject_key = add_node("subject", subject_name, "A current EMASI subject selected by the student.")
+            subject_key = add_node("subject", subject_name, "A current EMASI subject selected by the student.", guidance.get("subject_vi", SUBJECT_TRANSLATIONS.get(subject_name, subject_name)))
             status = guidance.get("evidence_status_en", "Exploratory curriculum context")
             scope = guidance.get("evidence_scope_en", "")
             why = guidance.get("why_en", "")
@@ -358,7 +358,7 @@ SKILL_TRANSLATIONS = {
 
 NODE_TYPE_VI = {
     "student":"Khám phá của bạn", "interest":"Sở thích", "subject":"Các môn học hiện có tại EMASI",
-    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng"
+    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng", "cluster":"Nhóm ngành", "foundation":"Nền tảng học thuật", "related":"Lĩnh vực liên quan", "application":"Ứng dụng chuyên sâu", "research":"Hướng nghiên cứu"
 }
 RELATION_VI = {
     "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm",
@@ -369,7 +369,7 @@ RELATION_VI = {
 def translated_node_label(node):
     label = node["label"]
     if st.session_state.language == "Tiếng Việt":
-        label = MAJOR_TRANSLATIONS.get(label, SUBJECT_TRANSLATIONS.get(label, INTEREST_TRANSLATIONS.get(label, DISCIPLINE_TRANSLATIONS.get(label, CAREER_TRANSLATIONS.get(label, SKILL_TRANSLATIONS.get(label, label))))))
+        label = node.get("label_vi") or MAJOR_TRANSLATIONS.get(label, SUBJECT_TRANSLATIONS.get(label, INTEREST_TRANSLATIONS.get(label, DISCIPLINE_TRANSLATIONS.get(label, CAREER_TRANSLATIONS.get(label, SKILL_TRANSLATIONS.get(label, label))))))
         return f'{NODE_TYPE_VI.get(node["type"], node["type"])}: {label}'
     return f'{node["type"].title()}: {label}'
 
@@ -406,9 +406,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         color = palette.get(item["type"], "#8393A6") if active else "#D9DEE5"
         border = "#172B4D" if key == selected_key else "#FFFFFF"
         size = 31 if key == selected_key else (23 if active else 17)
-        display_label = item["label"]
-        if st.session_state.language == "Tiếng Việt":
-            display_label = MAJOR_TRANSLATIONS.get(display_label, SUBJECT_TRANSLATIONS.get(display_label, INTEREST_TRANSLATIONS.get(display_label, DISCIPLINE_TRANSLATIONS.get(display_label, CAREER_TRANSLATIONS.get(display_label, SKILL_TRANSLATIONS.get(display_label, display_label))))))
+        display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
         graph_nodes.append(Node(
             id=key, label=display_label, title=(MAJORS.get(item["label"], {}).get("overview_vi", item["description"]) if st.session_state.language == "Tiếng Việt" and item["type"] == "major" else display_label),
             size=size,
