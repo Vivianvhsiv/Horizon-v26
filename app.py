@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import streamlit as st
 from streamlit_agraph import agraph, Node, Edge, Config
+from evidence_rules import has_subject_major_evidence
 
 st.set_page_config(page_title="Horizon", page_icon="✦", layout="wide")
 
@@ -317,15 +318,12 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             # A map edge requires an approved evidence status AND claim-level
             # references. A general major-curriculum URL alone is insufficient
             # to support a specific school-subject-to-major relationship.
-            eligible_statuses = {
-                "Curriculum context identified; EMASI subject mapping remains exploratory",
-            }
+            if not has_subject_major_evidence(guidance):
+                continue
             refs = [
                 ref for ref in guidance.get("evidence_refs", [])
                 if ref.get("claim_id") and ref.get("institution") and ref.get("title") and ref.get("url")
             ]
-            if status not in eligible_statuses or not refs:
-                continue
             subject_key = add_node("subject", subject_name, "A current EMASI subject selected by the student.", guidance.get("subject_vi", SUBJECT_TRANSLATIONS.get(subject_name, subject_name)))
             scope = guidance.get("evidence_scope_en", "")
             why = guidance.get("why_en", "")
@@ -697,7 +695,7 @@ elif page == tr("network"):
                         status_en = (guidance.get("evidence_status_en") or "").strip()
                         status = status_en if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
                         role_label = guidance.get("role_en", "") if st.session_state.language == "English" else guidance.get("role_vi", "")
-                        map_eligible = (status_en == "Curriculum context identified; EMASI subject mapping remains exploratory" and any(ref.get("claim_id") and ref.get("institution") and ref.get("title") and ref.get("url") for ref in guidance.get("evidence_refs", [])))
+                        map_eligible = has_subject_major_evidence(guidance)
                         with st.expander(subject_label + " · " + role_label):
                             st.write(reason)
                             if status:
