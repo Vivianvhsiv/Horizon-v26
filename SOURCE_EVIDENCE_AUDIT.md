@@ -2,7 +2,7 @@
 
 Audit date: 2026-11-24  
 Branch: `horizon-network-map-fix`  
-Scope: 20 major profiles, 65 academic claims, 185 source occurrences, and the visible career / subject-guidance presentation.
+Scope: 20 major profiles, 65 academic claims, 186 source occurrences, and the visible career / subject-guidance presentation.
 
 ## Findings and changes
 
