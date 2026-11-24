@@ -85,6 +85,6 @@ check(network_start >= 0 and network_end > network_start,'Network Map builder is
 check('if interest in info["interests"]' not in network_code,'Network Map does not infer majors from shared interest tags')
 check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
-check('tr("reflect")' not in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
+check('pages = [tr("home"),tr("network"),tr("majors"),tr("compare"),tr("about")]' in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
 check('cols = st.columns(4)' in app and 'step_icons=["✧","▤","⌘","⚖"]' in app,'homepage workflow contains four steps and no Reflection step')
 check('No evidence-backed interest-to-major' in app,'Network Map explains the current evidence gap')
