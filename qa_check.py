@@ -260,15 +260,17 @@ check('all_exploration_direction_nodes' not in renderer_code
       and 'global_exploration_edge' not in renderer_code
       and 'major_branch_nodes' in renderer_code,
       'Network Map highlights a selected branch without globally activating unrelated branches')
-check('all_major_nodes = {key for key, item in nodes.items() if item["type"] == "major"}' in renderer_code
-      and 'visible_node_keys = all_major_nodes | active_nodes' in renderer_code
+check('backbone_types = {"student", "interest", "subject", "major", "cluster"}' in renderer_code
+      and 'item["type"] in backbone_types or key in active_nodes' in renderer_code
       and 'if key not in visible_node_keys:' in renderer_code,
-      'Full Map retains all major anchors while limiting direction nodes to the selected exploration branches')
-check('if index not in active_edges and edge["relation"] != "contains major":' in renderer_code
-      and 'if edge["source"] not in visible_node_keys or edge["target"] not in visible_node_keys:' in renderer_code,
-      'Only active exploration links and major catalogue anchors are drawn, preventing unrelated branches from cluttering the map')
-check('"gravitationalConstant":-180' in renderer_code and '"springLength":260' in renderer_code,
-      'Network Map uses wider force-directed spacing for the selected exploration subnetwork')
+      'Full Map retains its catalogue backbone while limiting detail nodes to selected exploration branches')
+check('if not active and edge["relation"] != "contains major":' in renderer_code
+      and 'if source not in visible_node_keys or target not in visible_node_keys:' in renderer_code,
+      'Only active exploration links and catalogue structure are drawn, preventing unrelated branches from cluttering the map')
+check('physics=False' in renderer_code and 'hierarchical=True' in renderer_code
+      and 'direction="LR"' in renderer_code and 'nodeSpacing=190' in renderer_code
+      and 'levelSeparation=230' in renderer_code,
+      'Network Map uses the preserved hierarchical left-to-right layout with deliberate spacing')
 check('Unexpected directions to explore' in app and 'not verified degree pathways' in app,
       'Major detail pages explain the exploratory status of unexpected directions')
 
