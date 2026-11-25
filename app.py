@@ -419,12 +419,12 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                                  [], "Exploratory profile context — not independently verified")
 
 
-        # All curated exploration directions are part of the always-visible network.
-        # Every major contributes its curated exploration directions to the
-        # Network Map, even before a student selects or opens that major. This
-        # makes the 285-direction catalogue genuinely visible in the graph.
-        # These are exploratory prompts, not verified curriculum or suitability claims.
-        for direction in EXPLORATION_DIRECTIONS.get(major, []):
+        # Keep the complete direction catalogue in the data source, but instantiate
+        # branches only for majors the student explicitly chose or is browsing.
+        # This prevents hundreds of inactive labels and edges from overwhelming
+        # the full catalogue map while preserving every direction for exploration.
+        if major in expanded_set:
+            for direction in EXPLORATION_DIRECTIONS.get(major, []):
             label = direction.get("label", "").strip()
             if not label:
                 continue
@@ -607,7 +607,16 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     }
     muted = {"background":"#EEF1F4", "border":"#D9DEE5", "font":"#A7B0BC"}
     graph_nodes = []
+    # Keep the complete catalogue backbone visible; detail nodes appear only
+    # for expanded majors and explicitly selected input branches.
+    backbone_types = {"student", "interest", "subject", "major", "cluster"}
+    visible_node_keys = {
+        key for key, item in nodes.items()
+        if item["type"] in backbone_types or key in active_nodes
+    }
     for key, item in nodes.items():
+        if key not in visible_node_keys:
+            continue
         is_focus = key in focus
         is_active = key in active_nodes
         display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
@@ -631,23 +640,31 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
 
     graph_edges = []
     for index, edge in enumerate(edges):
+        source, target = edge["source"], edge["target"]
+        # The only always-visible links are the catalogue's cluster-to-major
+        # structure. Other links are shown only when their branch is active.
+        if source not in visible_node_keys or target not in visible_node_keys:
+            continue
         active = index in active_edges
+        if not active and edge["relation"] != "contains major":
+            continue
         relation = edge["relation"]
-        label = "" if relation == "profile includes" else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
+        label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
         graph_edges.append(Edge(
-            source=edge["source"], target=edge["target"], label=label,
-            color="#315B83" if active else "#E1E5EA",
-            width=2.8 if active else 0.7,
-            font={"color":"#315B83" if active else "#C3CAD3", "size":10},
+            source=source, target=target, label=label,
+            color="#315B83" if active else "#D9DEE5",
+            width=2.5 if active else 1.0,
+            font={"color":"#315B83" if active else "#A7B0BC", "size":9},
             arrows="to"
         ))
 
     config = Config(
-        width="100%", height=850, directed=True, physics=True, hierarchical=False,
+        width="100%", height=850, directed=True, physics=False, hierarchical=True,
+        direction="LR", sortMethod="directed",
+        nodeSpacing=190, levelSeparation=230, treeSpacing=260,
+        blockShifting=True, edgeMinimization=True, parentCentralization=True,
         nodeHighlightBehavior=False, collapsible=False,
-        interaction={"hover":True, "navigationButtons":True, "keyboard":True},
-        physics_options={"solver":"forceAtlas2Based",
-                         "forceAtlas2Based":{"gravitationalConstant":-75,"springLength":190,"springConstant":0.045}}
+        interaction={"hover":True, "navigationButtons":True, "keyboard":True}
     )
     return agraph(nodes=graph_nodes, edges=graph_edges, config=config)
 with st.sidebar:
