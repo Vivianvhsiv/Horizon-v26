@@ -554,7 +554,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             if owner_key in nodes:
                 expansion_seeds.add(owner_key)
 
-    active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
     # Include the first-hop discovery nodes of expanded majors so their
     # curated cross-major links are visible in the same map.
     major_branch_nodes = {
@@ -570,6 +569,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     major_branch_targets.update(
         edge["target"] for edge in edges if edge["source"] in major_branch_nodes
     )
+    active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
