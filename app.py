@@ -252,6 +252,45 @@ div[data-testid="stExpander"] {background:rgba(255,255,255,.48); border-radius:1
 def node_id(kind, label):
     return f"{kind}::{label}"
 
+
+def claims_for_profile_item(major, item):
+    """Return only claim records that explicitly name this profile item."""
+    phrase = str(item or "").strip().casefold()
+    if not phrase:
+        return []
+    record = ACADEMIC_SOURCES.get(major, {})
+    matches = []
+    for claim in record.get("claims", []):
+        claim_text = str(claim.get("claim", "")).casefold()
+        if phrase in claim_text and claim.get("sources"):
+            matches.append(claim)
+    return matches
+
+
+def render_profile_item_evidence(major, item, language):
+    """Render claim-level support for one displayed profile item, never generic major links."""
+    matches = claims_for_profile_item(major, item)
+    if not matches:
+        st.caption(
+            "No direct claim-level source is mapped to this item yet; treat it as exploratory profile context."
+            if language == "English" else
+            "Hiện chưa có nguồn ở cấp độ nhận định được gắn trực tiếp với nội dung này; hãy xem đây là thông tin hồ sơ mang tính khám phá."
+        )
+        return
+    for claim in matches:
+        claim_text = claim.get("claim", "") if language == "English" else claim.get("claim_vi", claim.get("claim", ""))
+        claim_status = claim.get("status", "") if language == "English" else claim.get("status_vi", claim.get("status", ""))
+        st.caption(("Evidence claim: " if language == "English" else "Nhận định được hỗ trợ: ") + claim_text)
+        if claim_status:
+            st.caption(("Verification: " if language == "English" else "Trạng thái xác minh: ") + claim_status)
+        for source in claim.get("sources", []):
+            institution = source.get("institution", "")
+            title = source.get("title", "")
+            url = source.get("url", "")
+            if institution and title and url.startswith("https://"):
+                st.markdown(f"- **{institution}** — [{title}]({url})")
+
+
 def build_network(selected_subjects, selected_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
@@ -300,10 +339,26 @@ def build_network(selected_subjects, selected_majors=None):
                 if not isinstance(value, str) or not value.strip():
                     continue
                 translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
-                source_refs = [{"institution": "Horizon profile reference", "title": record.get("source_type", "Reference"), "url": record.get("source_url", "")} for record in info.get("source_records", []) if record.get("source_url")]
-                detail = f"{label_en}: {value}. Listed in the Horizon profile for {major}. This is descriptive context, not a student suitability claim. Profile references provide major-level context and may not verify this exact individual relationship; check the source status in the major profile."
-                element_key = add_node(kind, value, detail, translated)
-                add_edge(major_key, element_key, "profile includes", detail, source_refs, info.get("source_status", "Profile reference status not specified"))
+                matching_claims = [
+                    claim for claim in claims_for_profile_item(major, value)
+                    if str(claim.get("status", "")).casefold().startswith("verified")
+                ]
+                # A Network Map academic relationship is shown only when a reviewed
+                # claim explicitly names the profile item and carries its own sources.
+                if not matching_claims:
+                    continue
+                element_key = add_node(kind, value, f"{label_en}: {value}. Claim-level evidence is available; this describes academic context, not student suitability.", translated)
+                for claim in matching_claims:
+                    claim_text = claim.get("claim", "")
+                    claim_status = claim.get("status", "")
+                    source_refs = [
+                        {"institution": source.get("institution", ""), "title": source.get("title", ""),
+                         "url": source.get("url", ""), "claim": claim_text, "claim_status": claim_status}
+                        for source in claim.get("sources", [])
+                        if source.get("institution") and source.get("title") and str(source.get("url", "")).startswith("https://")
+                    ]
+                    add_edge(major_key, element_key, "documented academic relationship",
+                             f"{claim_text} Verification: {claim_status}", source_refs, claim_status)
 
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
@@ -775,7 +830,11 @@ elif page == tr("majors"):
                 )
             a,b = st.columns(2)
             with a:
-                st.markdown(f"**{tr('disciplines')}**"); st.write(", ".join(info.get("disciplines_vi", info["disciplines"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["disciplines"]))
+                st.markdown(f"**{tr('disciplines')}**")
+                for value in info["disciplines"]:
+                    shown_value = DISCIPLINE_TRANSLATIONS.get(value, value) if st.session_state.language == "Tiếng Việt" else value
+                    st.markdown(f"- {shown_value}")
+                    render_profile_item_evidence(name, value, st.session_state.language)
                 st.caption("Academic disciplines are university-level fields of study; they are not the same thing as EMASI school subjects." if st.session_state.language == "English" else "Các lĩnh vực học thuật là lĩnh vực nghiên cứu ở bậc đại học; chúng không đồng nghĩa với các môn học tại EMASI.")
             with b:
                 st.markdown(f"**{tr('skills')}**"); st.write(", ".join(info.get("skills_vi",info["skills"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["skills"]))
@@ -807,6 +866,7 @@ elif page == tr("majors"):
                     st.markdown(f"**{label}**")
                     for value in values:
                         st.markdown(f"- {value}")
+                        render_profile_item_evidence(name, value, st.session_state.language)
             note_key = "taxonomy_note_vi" if st.session_state.language == "Tiếng Việt" else "taxonomy_note"
             if info.get(note_key): st.caption(info[note_key])
 
@@ -958,8 +1018,13 @@ elif page == tr("compare"):
                     if st.session_state.language == "Tiếng Việt" and field == "disciplines": val=MAJORS[name].get("disciplines_vi",val)
                     if st.session_state.language == "Tiếng Việt" and field == "careers": val=MAJORS[name].get("careers_vi",val)
                     if val is None: val = []
-                    if val is None: val = []
-                    st.write(", ".join(val) if isinstance(val,list) else val)
+                    if isinstance(val, list):
+                        for item in val:
+                            st.write(item)
+                            render_profile_item_evidence(name, item, st.session_state.language)
+                    else:
+                        st.write(val)
+                        render_profile_item_evidence(name, val, st.session_state.language)
         st.subheader("EMASI subjects students should pay attention to when exploring this major" if st.session_state.language == "English" else "Các môn học EMASI học sinh nên chú ý khi tìm hiểu ngành này")
         for name in selected:
             info = MAJORS[name]
