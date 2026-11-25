@@ -503,12 +503,19 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
                 expansion_seeds.add(owner_key)
 
     active_nodes = set(focus) | subject_linked_majors
+    # Include the first-hop discovery nodes of expanded majors so their
+    # curated cross-major links are visible in the same map.
+    major_branch_nodes = {
+        edge["target"] for edge in edges
+        if edge["source"] in expansion_seeds
+        and edge["relation"] in {"explore profile direction", "documented academic relationship", "unexpected direction to explore"}
+    }
     active_edges = set()
     for index, edge in enumerate(edges):
         source, target = edge["source"], edge["target"]
         directly_selected = source in focus or target in focus
         selected_major_branch = (
-            (source in expansion_seeds or target in expansion_seeds)
+            (source in expansion_seeds or target in expansion_seeds or source in major_branch_nodes)
             and edge["relation"] != "explore through curriculum context"
         )
         selected_subject_evidence = (
@@ -648,17 +655,21 @@ elif page == tr("network"):
         if not interests and not subjects and not intended_majors:
             st.warning(tr("selectfirst"))
         else:
-            expanded_major = None
+            expanded_majors = set(intended_majors)
+            # The currently browsed major is also expanded inside the graph.
+            browsed_major = st.session_state.get("network_major_explorer")
+            if browsed_major in MAJORS:
+                expanded_majors.add(browsed_major)
             selected_key = st.session_state.get("selected_network_node")
             if selected_key:
                 selected_node_type, _, selected_node_label = selected_key.partition("::")
                 if selected_node_type == "major" and selected_node_label in MAJORS:
-                    expanded_major = selected_node_label
-                elif selected_node_type in {"foundation", "related", "application", "research", "skill", "career"}:
+                    expanded_majors.add(selected_node_label)
+                elif selected_node_type in {"foundation", "related", "application", "research", "skill", "career", "direction"}:
                     possible_owner = selected_node_label.split("::", 1)[0]
                     if possible_owner in MAJORS:
-                        expanded_major = possible_owner
-            nodes, edges, candidates = build_network(subjects, intended_majors, interests, [expanded_major] if expanded_major else [])
+                        expanded_majors.add(possible_owner)
+            nodes, edges, candidates = build_network(subjects, intended_majors, interests, sorted(expanded_majors))
             st.subheader(tr("fullmap"))
             st.caption(
                 "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
@@ -717,6 +728,8 @@ elif page == tr("network"):
             focus_keys.extend(node_id("interest", x) for x in interests)
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
+            if browsed_major in MAJORS:
+                focus_keys.append(node_id("major", browsed_major))
             if intended_majors:
                 labels = intended_majors if st.session_state.language == "English" else [MAJORS[m].get("name_vi", m) for m in intended_majors]
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
