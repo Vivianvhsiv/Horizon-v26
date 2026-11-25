@@ -554,7 +554,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             if owner_key in nodes:
                 expansion_seeds.add(owner_key)
 
-    active_nodes = set(focus) | subject_linked_majors
+    active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
     # Include the first-hop discovery nodes of expanded majors so their
     # curated cross-major links are visible in the same map.
     major_branch_nodes = {
@@ -562,6 +562,14 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         if edge["source"] in expansion_seeds
         and edge["relation"] in {"explore profile direction", "documented academic relationship", "unexpected direction to explore"}
     }
+    # A selected major must visibly illuminate every generated exploration
+    # direction and every adjacent field/major connected from those directions.
+    # This explicit closure avoids relying on a narrow relation allow-list in
+    # the renderer, which previously left generated branches muted.
+    major_branch_targets = set(major_branch_nodes)
+    major_branch_targets.update(
+        edge["target"] for edge in edges if edge["source"] in major_branch_nodes
+    )
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -573,7 +581,9 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         source, target = edge["source"], edge["target"]
         directly_selected = source in focus or target in focus
         selected_major_branch = (
-            (source in expansion_seeds or target in expansion_seeds or source in major_branch_nodes
+            (source in expansion_seeds or target in expansion_seeds
+             or source in major_branch_nodes or target in major_branch_nodes
+             or source in major_branch_targets or target in major_branch_targets
              or source in subject_domain_nodes)
             and edge["relation"] != "explore through curriculum context"
         )
