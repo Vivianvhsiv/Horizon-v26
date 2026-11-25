@@ -2291,59 +2291,213 @@
     ]
   },
   "Pure Mathematics": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "UC Berkeley's official pure mathematics requirements support the listed foundations in calculus, analysis, linear algebra, abstract algebra, complex analysis, geometry and logic. This is institution-specific curriculum evidence, not a universal requirement or proof for every research theme.",
+    "scope_vi": "Yêu cầu ngành Toán học thuần túy chính thức của UC Berkeley hỗ trợ các nền tảng được liệt kê gồm giải tích, đại số tuyến tính, đại số trừu tượng, giải tích phức, hình học và logic. Đây là bằng chứng chương trình tại một trường cụ thể, không phải yêu cầu chung hay bằng chứng cho mọi chủ đề nghiên cứu.",
+    "claims": [
+      {
+        "claim": "UC Berkeley's Pure Mathematics major includes calculus, multivariable calculus, linear algebra, discrete mathematics, analysis, abstract algebra, complex analysis, geometry, topology and logic/foundations electives.",
+        "claim_vi": "Chương trình Toán học thuần túy của UC Berkeley bao gồm giải tích, giải tích nhiều biến, đại số tuyến tính, toán rời rạc, giải tích toán học, đại số trừu tượng, giải tích phức, hình học, tô pô và các môn tự chọn về logic/nền tảng.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for UC Berkeley's cited programme only; not a universal mathematics curriculum.",
+        "status_vi": "Đã xác minh đối với chương trình được trích dẫn của UC Berkeley; không đại diện cho chương trình toán học ở mọi trường.",
+        "sources": [
+          {
+            "institution": "University of California, Berkeley",
+            "title": "Course Requirements: Pure Mathematics",
+            "url": "https://math.berkeley.edu/undergraduate/major/pure",
+            "source_type": "Official department curriculum"
+          },
+          {
+            "institution": "University of California, Berkeley",
+            "title": "Student Learning Goals for Mathematics Majors",
+            "url": "https://math.berkeley.edu/undergraduate/student-learning-goals",
+            "source_type": "Official department learning outcomes"
+          }
+        ]
+      }
+    ]
   },
   "Geography": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "The UMass Amherst 2026–27 undergraduate guide documents common human and physical geography, fieldwork, GIS/mapping and statistics, with concentration-specific pathways. This supports broad curriculum context only.",
+    "scope_vi": "Cẩm nang đào tạo đại học UMass Amherst 2026–27 ghi nhận địa lý nhân văn và địa lý tự nhiên, thực địa, GIS/bản đồ và thống kê, cùng các lộ trình chuyên sâu khác nhau. Nguồn này chỉ hỗ trợ bối cảnh chương trình tổng quát.",
+    "claims": [
+      {
+        "claim": "UMass Amherst's Geography curriculum includes human and physical geography, fieldwork, GIS/mapping and statistics, with further concentrations such as environmental geography, climate and society, GIS, and urban geography.",
+        "claim_vi": "Chương trình Địa lý của UMass Amherst bao gồm địa lý nhân văn và địa lý tự nhiên, thực địa, GIS/bản đồ và thống kê, cùng các hướng chuyên sâu như địa lý môi trường, khí hậu và xã hội, GIS và địa lý đô thị.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for UMass Amherst's cited 2026–27 programme guide only.",
+        "status_vi": "Đã xác minh đối với cẩm nang chương trình 2026–27 được trích dẫn của UMass Amherst.",
+        "sources": [
+          {
+            "institution": "University of Massachusetts Amherst",
+            "title": "2026/2027 Guide to Undergraduate Programs — Geography",
+            "url": "https://catalog.umass.edu/undergradguide/2026-2027/Page26167.html",
+            "source_type": "Official undergraduate catalogue"
+          }
+        ]
+      }
+    ]
   },
   "Geology": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "The University of North Dakota Geology BS requirements provide institution-specific support for geology foundations including mineralogy, petrology, stratigraphy, structural geology, paleontology, geophysics and hydrogeology.",
+    "scope_vi": "Yêu cầu bằng Cử nhân Địa chất của University of North Dakota cung cấp bằng chứng tại một trường cụ thể cho các nền tảng gồm khoáng vật học, thạch học, địa tầng học, địa chất cấu trúc, cổ sinh vật học, địa vật lý và địa chất thủy văn.",
+    "claims": [
+      {
+        "claim": "The University of North Dakota Geology BS curriculum includes mineralogy, petrology, sedimentology and stratigraphy, structural geology, paleontology, applied geophysics, hydrogeology, field experience and undergraduate research.",
+        "claim_vi": "Chương trình Cử nhân Địa chất của University of North Dakota bao gồm khoáng vật học, thạch học, trầm tích học và địa tầng học, địa chất cấu trúc, cổ sinh vật học, địa vật lý ứng dụng, địa chất thủy văn, thực địa và nghiên cứu bậc đại học.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for the University of North Dakota's cited degree requirements only.",
+        "status_vi": "Đã xác minh đối với yêu cầu văn bằng được trích dẫn của University of North Dakota.",
+        "sources": [
+          {
+            "institution": "University of North Dakota",
+            "title": "Geology Degree Requirements",
+            "url": "https://und.edu/programs/geology-bs/requirements.html",
+            "source_type": "Official degree requirements"
+          }
+        ]
+      }
+    ]
   },
   "Astronomy & Astrophysics": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "Official University of Florida and UC San Diego curricula document the combination of mathematics, physics, observational methods, programming, laboratories and astrophysical topics. Requirements differ by institution and degree.",
+    "scope_vi": "Chương trình chính thức của University of Florida và UC San Diego ghi nhận sự kết hợp giữa toán học, vật lý, phương pháp quan sát, lập trình, thực hành phòng thí nghiệm và các chủ đề vật lý thiên văn. Yêu cầu khác nhau tùy trường và văn bằng.",
+    "claims": [
+      {
+        "claim": "The University of Florida Astrophysics BS requires calculus, physics, differential equations, observational astronomy, mechanics, electromagnetism and quantum mechanics, with advanced astronomy electives.",
+        "claim_vi": "Bằng Cử nhân Vật lý thiên văn của University of Florida yêu cầu giải tích, vật lý, phương trình vi phân, thiên văn học quan sát, cơ học, điện từ học và cơ học lượng tử, cùng các môn tự chọn thiên văn nâng cao.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for the University of Florida's cited Astrophysics BS only.",
+        "status_vi": "Đã xác minh đối với chương trình Cử nhân Vật lý thiên văn được trích dẫn của University of Florida.",
+        "sources": [
+          {
+            "institution": "University of Florida",
+            "title": "Astronomy Courses — BS in Astrophysics",
+            "url": "https://astro.ufl.edu/astronomy-courses/",
+            "source_type": "Official degree curriculum"
+          },
+          {
+            "institution": "University of California, San Diego",
+            "title": "Astronomy and Astrophysics Undergraduate Curriculum",
+            "url": "https://catalog.ucsd.edu/curric/ASTR-ug.html",
+            "source_type": "Official undergraduate catalogue"
+          }
+        ]
+      }
+    ]
   },
   "Statistics": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "Duke's official Statistical Science major lists probability, regression, statistical computing, statistical learning and inference, Bayesian modelling and applied case studies. This is a programme-specific example.",
+    "scope_vi": "Chương trình Khoa học Thống kê chính thức của Duke liệt kê xác suất, hồi quy, tính toán thống kê, học thống kê và suy luận, mô hình Bayes và các nghiên cứu tình huống ứng dụng. Đây là ví dụ theo chương trình của một trường.",
+    "claims": [
+      {
+        "claim": "Duke's Statistical Science major includes regression analysis, probability, statistical computing, statistical learning and inference, Bayesian statistical modelling and case studies.",
+        "claim_vi": "Chuyên ngành Khoa học Thống kê của Duke bao gồm phân tích hồi quy, xác suất, tính toán thống kê, học thống kê và suy luận, mô hình thống kê Bayes và các nghiên cứu tình huống.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for Duke's cited Statistical Science major only.",
+        "status_vi": "Đã xác minh đối với chuyên ngành Khoa học Thống kê được trích dẫn của Duke.",
+        "sources": [
+          {
+            "institution": "Duke University",
+            "title": "Majors in Statistical Science",
+            "url": "https://stat.duke.edu/undergraduate/major",
+            "source_type": "Official undergraduate major requirements"
+          }
+        ]
+      }
+    ]
   },
   "Philosophy": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "Georgetown and Stanford official philosophy programme pages document logic, philosophical skills, history of philosophy, ethics/value theory, metaphysics, epistemology and philosophy of science. Programme structures differ.",
+    "scope_vi": "Trang chương trình triết học chính thức của Georgetown và Stanford ghi nhận logic, kỹ năng triết học, lịch sử triết học, đạo đức/lý thuyết giá trị, siêu hình học, nhận thức luận và triết học khoa học. Cấu trúc chương trình có thể khác nhau.",
+    "claims": [
+      {
+        "claim": "Georgetown's Philosophy major includes core philosophy, philosophical writing and logic, texts and traditions, topics in language, epistemology, metaphysics, mind and science, normative philosophy and electives.",
+        "claim_vi": "Chuyên ngành Triết học của Georgetown bao gồm các môn triết học nền tảng, viết triết học và logic, văn bản và truyền thống, các chủ đề về ngôn ngữ, nhận thức luận, siêu hình học, tâm trí và khoa học, triết học chuẩn tắc và môn tự chọn.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for Georgetown's cited major requirements only.",
+        "status_vi": "Đã xác minh đối với yêu cầu chuyên ngành được trích dẫn của Georgetown.",
+        "sources": [
+          {
+            "institution": "Georgetown University",
+            "title": "Major in Philosophy",
+            "url": "https://philosophy.georgetown.edu/undergraduate/majors-minors/majors/",
+            "source_type": "Official undergraduate major requirements"
+          },
+          {
+            "institution": "Stanford University",
+            "title": "The Undergraduate Program in Philosophy",
+            "url": "https://philosophy.stanford.edu/academics/undergraduate-program-philosophy",
+            "source_type": "Official department programme page"
+          }
+        ]
+      }
+    ]
   },
   "History": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "Yale's official History major requirements document regional and thematic study, seminars and original senior research using primary sources. This is an institution-specific example, not a universal history curriculum.",
+    "scope_vi": "Yêu cầu chuyên ngành Lịch sử chính thức của Yale ghi nhận nghiên cứu theo khu vực và chủ đề, seminar và nghiên cứu độc lập cuối khóa sử dụng tư liệu sơ cấp. Đây là ví dụ tại một trường cụ thể, không phải chương trình lịch sử chung cho mọi trường.",
+    "claims": [
+      {
+        "claim": "Yale's History major combines regional and global concentrations, seminars and an original senior research project using accessible primary sources.",
+        "claim_vi": "Chuyên ngành Lịch sử của Yale kết hợp hướng khu vực và toàn cầu, seminar và dự án nghiên cứu độc lập cuối khóa sử dụng các tư liệu sơ cấp có thể tiếp cận.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for Yale's cited History major requirements only.",
+        "status_vi": "Đã xác minh đối với yêu cầu chuyên ngành Lịch sử được trích dẫn của Yale.",
+        "sources": [
+          {
+            "institution": "Yale University",
+            "title": "History — Yale College Programs of Study",
+            "url": "https://catalog.yale.edu/ycps/subjects-of-instruction/history/",
+            "source_type": "Official undergraduate catalogue"
+          }
+        ]
+      }
+    ]
   },
   "Anthropology": {
-    "status": "Exploratory profile — not independently verified",
-    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
-    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
-    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
-    "claims": []
+    "status": "Curriculum references added; subject-level EMASI mappings remain exploratory",
+    "status_vi": "Đã bổ sung nguồn chương trình; ánh xạ môn EMASI vẫn mang tính khám phá",
+    "scope": "The University of Florida Anthropology BA documents the four subfields of cultural anthropology, archaeology, biological anthropology and linguistic anthropology, with statistics and capstone coursework. Degree pathways vary.",
+    "scope_vi": "Chương trình Cử nhân Nhân học của University of Florida ghi nhận bốn phân ngành: nhân học văn hóa, khảo cổ học, nhân học sinh học và nhân học ngôn ngữ, cùng môn thống kê và capstone. Lộ trình văn bằng có thể khác nhau.",
+    "claims": [
+      {
+        "claim": "The University of Florida Anthropology BA covers cultural anthropology, world archaeology, biological anthropology and language and culture, with statistics and a capstone; the department identifies four subfields.",
+        "claim_vi": "Chương trình Cử nhân Nhân học của University of Florida bao gồm nhân học văn hóa, khảo cổ học thế giới, nhân học sinh học, ngôn ngữ và văn hóa, cùng thống kê và capstone; khoa xác định bốn phân ngành của nhân học.",
+        "type": "Curriculum evidence",
+        "type_vi": "Bằng chứng chương trình học",
+        "status": "Verified for the University of Florida's cited Anthropology BA only.",
+        "status_vi": "Đã xác minh đối với chương trình Cử nhân Nhân học được trích dẫn của University of Florida.",
+        "sources": [
+          {
+            "institution": "University of Florida",
+            "title": "Anthropology Major — BA in Anthropology",
+            "url": "https://anthro.ufl.edu/academics/undergrad-students/anthropology-major/",
+            "source_type": "Official undergraduate major requirements"
+          }
+        ]
+      }
+    ]
   }
 }
