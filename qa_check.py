@@ -217,10 +217,10 @@ if exploration_path.exists():
     exploration_majors = exploration_data.get('majors', {})
     check(len(exploration_majors) == 28 and set(exploration_majors) == set(majors.keys()),
           'Unexpected exploration directions cover all 28 Horizon majors')
-    check(sum(len(items) for items in exploration_majors.values()) >= 100,
-          'Unexpected exploration catalogue includes at least 100 curated directions')
-    check(all(len(items) >= 5 for items in exploration_majors.values()),
-          'Every major has at least five additional exploration directions')
+    check(sum(len(items) for items in exploration_majors.values()) >= 280,
+          'Unexpected exploration catalogue includes at least 280 curated directions')
+    check(all(len(items) >= 10 for items in exploration_majors.values()),
+          'Every major has at least ten additional exploration directions')
     check(all(item.get('label') and item.get('label_vi') and item.get('why') and item.get('why_vi') for items in exploration_majors.values() for item in items),
           'Every additional direction has English and Vietnamese labels and explanations')
     check(all(isinstance(target, str) and target.strip() for items in exploration_majors.values() for item in items for target in item.get('explore_with', [])),
