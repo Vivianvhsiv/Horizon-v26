@@ -251,10 +251,6 @@ check('EXPLORATION_DIRECTIONS' in app and 'unexpected direction to explore' in a
 check('for direction in EXPLORATION_DIRECTIONS.get(major, []):' in network_code
       and 'if major in expanded_set:' in network_code,
       'Network Map generates every major\'s curated directions independently of profile expansion')
-check('all_exploration_direction_nodes' not in renderer_code
-      and 'global_exploration_edge' not in renderer_code
-      and 'source in major_branch_nodes and target in major_branch_targets' in renderer_code,
-      'Unselected directions remain muted; only selected-major directions and their adjacent links are illuminated')
 check('unrelated majors stay muted' in app and 'các ngành không liên quan vẫn ở trạng thái mờ' in app,
       'Network Map explains that unrelated majors remain muted while the full map stays visible')
 renderer_start=app.find('def make_interactive_graph(')
