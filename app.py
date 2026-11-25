@@ -576,6 +576,13 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     # selected major's own directions and the adjacent fields/majors those
     # directions explicitly connect to.
     active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
+
+    # Full Map means all 28 major anchors remain visible. Direction and
+    # discipline nodes are included only for selected majors and their
+    # explicitly connected neighbours; unrelated majors' 285 directions
+    # must not be laid out as one dense background cloud.
+    all_major_nodes = {key for key, item in nodes.items() if item["type"] == "major"}
+    visible_node_keys = all_major_nodes | active_nodes
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -608,6 +615,8 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     muted = {"background":"#EEF1F4", "border":"#D9DEE5", "font":"#A7B0BC"}
     graph_nodes = []
     for key, item in nodes.items():
+        if key not in visible_node_keys:
+            continue
         is_focus = key in focus
         is_active = key in active_nodes
         display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
@@ -622,11 +631,8 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         else:
             color = {"background":muted["background"], "border":muted["border"], "highlight":{"background":muted["background"],"border":muted["border"]}}
             font_color = muted["font"]
-        # Keep all catalogue nodes in the full map, but suppress inactive
-        # direction/field labels so 285 prompts do not collapse into a text cloud.
-        show_label = is_active or item["type"] in {"major", "cluster", "student", "subject", "interest"}
-        node_label = display_label if show_label else ""
-        node_size = 32 if is_focus else (25 if is_active else (18 if item["type"] == "major" else 5))
+        node_label = display_label
+        node_size = 32 if is_focus else (25 if is_active else 19)
         graph_nodes.append(Node(
             id=key, label=node_label, title=title,
             size=node_size,
@@ -636,6 +642,10 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
 
     graph_edges = []
     for index, edge in enumerate(edges):
+        if index not in active_edges and edge["relation"] != "contains major":
+            continue
+        if edge["source"] not in visible_node_keys or edge["target"] not in visible_node_keys:
+            continue
         active = index in active_edges
         relation = edge["relation"]
         label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
@@ -756,9 +766,9 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 28 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "All 28 majors remain on the full map. Selecting a major highlights only that major's curated exploration directions and their explicitly connected adjacent fields or majors; unrelated majors stay muted. These are exploratory links, not personalized suitability matches or verified degree pathways."
+                "All 28 major anchors remain on the full map. Only the selected major's exploration directions and their explicitly connected adjacent fields or majors are drawn and highlighted; unrelated majors remain visible but muted, without their direction branches cluttering the view. These are exploratory links, not personalized suitability matches or verified degree pathways."
                 if st.session_state.language == "English" else
-                "Cả 28 ngành vẫn được giữ trên bản đồ đầy đủ. Khi chọn một ngành, chỉ các hướng khám phá của ngành đó và những lĩnh vực/ngành liên quan được kết nối rõ ràng mới được làm nổi bật; các ngành không liên quan vẫn ở trạng thái mờ. Đây là liên kết khám phá, không phải đánh giá mức độ phù hợp cá nhân hay lộ trình bằng cấp đã xác minh."
+                "Cả 28 nút ngành vẫn được giữ trên bản đồ đầy đủ. Chỉ các hướng khám phá của ngành được chọn và những lĩnh vực/ngành liên quan có kết nối rõ ràng mới được hiển thị và làm nổi bật; các ngành không liên quan vẫn hiển thị ở trạng thái mờ, không kéo theo các nhánh hướng khám phá gây rối bản đồ. Đây là liên kết khám phá, không phải đánh giá mức độ phù hợp cá nhân hay lộ trình bằng cấp đã xác minh."
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
