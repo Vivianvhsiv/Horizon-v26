@@ -194,7 +194,7 @@ check('for value in selected_interests:' in network_code and '"geograph" in valu
       'The Earth-systems branch can be triggered by Geography-related interest labels as well as current subjects')
 check('"Geology"' in network_code and '"Environmental Science"' in network_code and '"Climate Science"' in network_code and '"Oceanography"' in network_code and '"Hydrology"' in network_code,
       'The Geography branch exposes Geology, Environmental Science, Climate Science, Oceanography and Hydrology')
-check('explore earth and environmental systems' in network_code and 'explore earth system field' in network_code and 'source in subject_domain_nodes' in network_code,
+check('explore earth and environmental systems' in network_code and 'explore earth system field' in network_code and 'source in subject_domain_nodes' in app,
       'The entire Earth-systems branch, including its second-hop fields, is included in the visible highlighted map')
 check('chosen_interest_labels = st.multiselect(tr("interest")' in app and 'st.session_state.chosen_interests' in app,
       'Network Map exposes and stores the selected interest fields')
