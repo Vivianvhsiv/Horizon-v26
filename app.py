@@ -291,10 +291,11 @@ def render_profile_item_evidence(major, item, language):
                 st.markdown(f"- **{institution}** — [{title}]({url})")
 
 
-def build_network(selected_subjects, selected_majors=None):
+def build_network(selected_subjects, selected_majors=None, selected_interests=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     selected_subjects = list(selected_subjects or [])
+    selected_interests = list(selected_interests or [])
     selected_subject_names = {value.casefold() for value in selected_subjects}
     if "ict" in selected_subject_names:
         selected_subject_names.add("ict (information and communication technology)")
@@ -313,6 +314,10 @@ def build_network(selected_subjects, selected_majors=None):
             edges.append(edge)
 
     student = add_node("student", "Your exploration", "Your current subjects and explicitly considered majors are student-provided exploration inputs, not an aptitude assessment.")
+    for interest in selected_interests:
+        key = add_node("interest", interest, "An interest area explicitly selected by the student. It is exploration context, not evidence of suitability or a major match.", INTEREST_TRANSLATIONS.get(interest, interest))
+        add_edge(student, key, "interest in", "Student-selected interest area; no interest-to-major match is inferred.")
+
     for subject in selected_subjects:
         key = add_node("subject", subject, "A current EMASI subject selected by the student.", SUBJECT_TRANSLATIONS.get(subject, subject))
         add_edge(student, key, "currently studies", "Student-selected input.")
@@ -578,11 +583,13 @@ elif page == tr("network"):
             tr("major_intention"), list(major_label_to_key), max_selections=3,
             help=tr("major_intention_help"))
         undecided = st.checkbox(tr("undecided"), value=False)
+        chosen_interest_labels = st.multiselect(tr("interest"), list(interest_label_to_key))
         chosen_subject_labels = st.multiselect(tr("subject"), list(subject_label_to_key))
         submitted = st.form_submit_button(tr("generate"), type="primary")
     if submitted:
         st.session_state.chosen_majors = [] if undecided else [major_label_to_key[x] for x in chosen_major_labels]
         st.session_state.undecided_major = undecided
+        st.session_state.chosen_interests = [interest_label_to_key[x] for x in chosen_interest_labels]
         st.session_state.chosen_subjects = [subject_label_to_key[x] for x in chosen_subject_labels]
         # Reset the major detail browser to the student's stated direction.
         # Never silently default an undecided student to Cognitive Science.
@@ -594,11 +601,12 @@ elif page == tr("network"):
 
     if st.session_state.get("network_generated"):
         subjects = st.session_state.get("chosen_subjects",[])
+        interests = st.session_state.get("chosen_interests",[])
         intended_majors = st.session_state.get("chosen_majors",[])
-        if not subjects and not intended_majors:
+        if not interests and not subjects and not intended_majors:
             st.warning(tr("selectfirst"))
         else:
-            nodes, edges, candidates = build_network(subjects, intended_majors)
+            nodes, edges, candidates = build_network(subjects, intended_majors, interests)
             st.subheader(tr("fullmap"))
             st.caption(
                 "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
@@ -654,13 +662,14 @@ elif page == tr("network"):
             # Focus only on explicit inputs and stated major intentions.
             # No taxonomy-tag overlap is treated as a personalized match.
             focus_keys = [node_id("student", "Your exploration")]
+            focus_keys.extend(node_id("interest", x) for x in interests)
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
             if intended_majors:
                 labels = intended_majors if st.session_state.language == "English" else [MAJORS[m].get("name_vi", m) for m in intended_majors]
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
-            elif subjects:
-                st.info("Your current subjects are exploration context, not proof of suitability or admission eligibility." if st.session_state.language == "English" else "Các môn học hiện tại là bối cảnh khám phá, không phải bằng chứng về mức độ phù hợp hay điều kiện tuyển sinh.")
+            elif subjects or interests:
+                st.info("Your selected interests and current subjects are exploration context, not proof of suitability or admission eligibility." if st.session_state.language == "English" else "Sở thích đã chọn và các môn học hiện tại là bối cảnh khám phá, không phải bằng chứng về mức độ phù hợp hay điều kiện tuyển sinh.")
             st.caption(
                 "Map key — gold: majors; amber: catalogue groups; rose: academic disciplines; purple: interests; teal: current EMASI subjects; navy: your exploration. Shared discipline nodes show academic overlap, not personal suitability."
                 if st.session_state.language == "English" else
@@ -788,28 +797,6 @@ elif page == tr("majors"):
     for c in clusters:
         cluster_labels[next((v.get("cluster_vi",c) for v in MAJORS.values() if v["cluster"] == c),c) if st.session_state.language == "Tiếng Việt" else c] = c
     chosen_cluster = st.selectbox(tr("cluster"), list(cluster_labels))
-    # Student-authored reflection prompt; no interest-to-major matching is performed.
-    st.markdown("### Your reflection note" if st.session_state.language == "English" else "### Ghi chú tự suy ngẫm")
-    st.caption(
-        "You may describe a strength you have noticed in your own work. This is your observation, not an assessment or a major recommendation."
-        if st.session_state.language == "English" else
-        "Bạn có thể mô tả một điểm mạnh tự nhận thấy trong quá trình học tập. Đây là quan sát của bạn, không phải đánh giá năng lực hay đề xuất ngành học."
-    )
-    strength_note = st.text_input(
-        "A strength you have noticed" if st.session_state.language == "English" else "Một điểm mạnh bạn tự nhận thấy",
-        key="explore_strength_note",
-        placeholder="e.g. explaining complex ideas / e.g. giải thích ý tưởng phức tạp"
-    )
-    strength_example = st.text_area(
-        "A specific example that makes you think this is a strength (optional)" if st.session_state.language == "English" else "Một ví dụ cụ thể khiến bạn nhận thấy đây là điểm mạnh (không bắt buộc)",
-        key="explore_strength_example",
-        placeholder="What did you do? What was your contribution?" if st.session_state.language == "English" else "Bạn đã làm gì? Đóng góp cụ thể của bạn là gì?"
-    )
-    st.caption(
-        "Your example is student-provided context, not an independently assessed skill. You can leave these fields blank."
-        if st.session_state.language == "English" else
-        "Ví dụ do chính bạn cung cấp, không phải kỹ năng đã được đánh giá độc lập. Bạn có thể để trống các mục này."
-    )
     st.divider()
     for name,info in MAJORS.items():
         shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
@@ -818,22 +805,6 @@ elif page == tr("majors"):
         if q and q.casefold() not in name.casefold() and q.casefold() not in shown_name.casefold(): continue
         with st.expander(f"{shown_name} · {shown_cluster}"):
             st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
-            if strength_note or strength_example:
-                st.markdown("**Your own observations**" if st.session_state.language == "English" else "**Những quan sát của chính bạn**")
-                if strength_note:
-                    st.write(("Strength you identified: " if st.session_state.language == "English" else "Điểm mạnh bạn tự nhận thấy: ") + strength_note)
-                if strength_example:
-                    st.write(("Your example: " if st.session_state.language == "English" else "Ví dụ của bạn: ") + strength_example)
-                st.caption(
-                    "Horizon keeps this as your own evidence to reflect on. It does not automatically claim that this strength is required by or predicts success in this major."
-                    if st.session_state.language == "English" else
-                    "Horizon giữ nội dung này như minh chứng do bạn tự suy ngẫm. Hệ thống không tự kết luận điểm mạnh này là yêu cầu hay dự báo thành công trong ngành."
-                )
-                st.write(
-                    ("A question to investigate: Where, if anywhere, could this strength be used in the projects, questions or methods of " + name + "?")
-                    if st.session_state.language == "English" else
-                    ("Câu hỏi để tìm hiểu: Điểm mạnh này có thể được sử dụng ở đâu, nếu có, trong dự án, câu hỏi hoặc phương pháp của ngành " + shown_name + "?")
-                )
             a,b = st.columns(2)
             with a:
                 st.markdown(f"**{tr('disciplines')}**")
@@ -997,13 +968,6 @@ elif page == tr("compare"):
     selected = st.multiselect(tr("choosemajors"),list(MAJORS),max_selections=3)
     if len(selected)>=2:
         st.info("There is no overall winner here. Differences are presented to help you form better questions and investigate each programme further." if st.session_state.language == "English" else "Không có ngành nào được chọn là tốt nhất trong bảng này. Những điểm khác biệt giúp bạn hình thành câu hỏi tốt hơn và tiếp tục tìm hiểu từng chương trình.")
-        # Carry only the student's self-described reflection note; do not match interests to majors.
-        if st.session_state.get("explore_strength_note") or st.session_state.get("explore_strength_example"):
-            st.subheader("Your reflection note" if st.session_state.language == "English" else "Ghi chú tự suy ngẫm")
-            if st.session_state.get("explore_strength_note"):
-                st.write(("A strength you identified: " if st.session_state.language == "English" else "Điểm mạnh bạn tự nhận thấy: ") + st.session_state["explore_strength_note"])
-            if st.session_state.get("explore_strength_example"):
-                st.caption(("Your example: " if st.session_state.language == "English" else "Ví dụ của bạn: ") + st.session_state["explore_strength_example"])
         fields = [("cluster",tr("cluster")),("overview",tr("mainfocus")),
                   ("academic_foundations", "Academic foundations" if st.session_state.language == "English" else "Nền tảng học thuật"),
                   ("related_disciplines", "Related fields" if st.session_state.language == "English" else "Các lĩnh vực liên quan"),
