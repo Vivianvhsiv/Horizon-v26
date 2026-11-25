@@ -333,6 +333,63 @@ def render_reference_frameworks(page, language):
     st.markdown("  - [ " + labels["bls"] + "](https://www.bls.gov/ooh/)")
 
 
+
+def render_profile_section_sources(major, section, language):
+    """Render references by profile section without overstating what a source verifies."""
+    labels = {
+        "English": {
+            "disciplines": ("Academic-discipline references", "Programme and disciplinary sources support the broad field context; they do not necessarily verify every listed subfield individually."),
+            "skills": ("Skills framework references", "O*NET describes skills used across occupations. It is a reference framework, not proof that every skill is required in every degree programme."),
+            "careers": ("Career and occupation references", "These sources describe occupational families and career information. Listed career areas are exploratory possibilities, not guaranteed outcomes."),
+            "no_major": "No major-specific reference is mapped here yet; the framework sources below provide general context only.",
+            "source_type": "Reference"
+        },
+        "Tiếng Việt": {
+            "disciplines": ("Nguồn tham khảo về lĩnh vực học thuật", "Nguồn chương trình và ngành học hỗ trợ bối cảnh chung; không nhất thiết xác minh riêng từng chuyên ngành nhỏ được liệt kê."),
+            "skills": ("Nguồn tham khảo về khung kỹ năng", "O*NET mô tả các kỹ năng được sử dụng trong nhiều nghề nghiệp. Đây là khung tham chiếu, không chứng minh mọi kỹ năng đều bắt buộc trong mọi chương trình đại học."),
+            "careers": ("Nguồn tham khảo nghề nghiệp", "Các nguồn này mô tả nhóm nghề và thông tin nghề nghiệp. Những lĩnh vực nghề nghiệp được liệt kê chỉ là hướng khám phá, không bảo đảm kết quả việc làm."),
+            "no_major": "Hiện chưa có nguồn riêng cho ngành này được gắn tại đây; các nguồn khung bên dưới chỉ cung cấp bối cảnh chung.",
+            "source_type": "Nguồn tham khảo"
+        }
+    }[language]
+    title, scope = labels[section]
+    evidence = ACADEMIC_SOURCES.get(major, {})
+    sources = []
+    seen = set()
+    def add_source(institution, name, url, detail=""):
+        if not (name and url and str(url).startswith("https://")) or url in seen:
+            return
+        seen.add(url)
+        sources.append((institution, name, url, detail))
+    if section == "disciplines":
+        for claim in evidence.get("claims", []):
+            for source in claim.get("sources", []):
+                add_source(source.get("institution", ""), source.get("title", ""), source.get("url", ""),
+                           claim.get("status", ""))
+        for record in MAJORS.get(major, {}).get("source_records", []):
+            add_source(record.get("institution", ""), record.get("title", ""), record.get("source_url", ""),
+                       record.get("verification_status", ""))
+    st.markdown(f"**{title}**")
+    st.caption(scope)
+    if sources:
+        for institution, name, url, detail in sources:
+            prefix = f"{institution} — " if institution else ""
+            st.markdown(f"- {prefix}[{name}]({url})")
+            if detail:
+                st.caption(detail)
+    else:
+        st.caption(labels["no_major"])
+    if section == "disciplines":
+        st.markdown("- [UNESCO Institute for Statistics — ISCED-F 2013](https://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf)")
+        st.markdown("- [U.S. NCES — Classification of Instructional Programs (CIP)](https://nces.ed.gov/ipeds/cipcode/Default.aspx?y=56)")
+    elif section == "skills":
+        st.markdown("- [O*NET Resource Center — The O*NET Content Model](https://www.onetcenter.org/content.html)")
+        st.markdown("- [O*NET — Skills descriptor](https://www.onetonline.org/find/descriptor/browse/Skills/)")
+    elif section == "careers":
+        st.markdown("- [U.S. Bureau of Labor Statistics — Occupational Outlook Handbook](https://www.bls.gov/ooh/)")
+        st.markdown("- [O*NET OnLine — Occupation search](https://www.onetonline.org/)")
+
+
 def build_network(selected_subjects, selected_majors=None, selected_interests=None, expanded_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
@@ -1027,10 +1084,13 @@ elif page == tr("majors"):
                     st.markdown(f"- {shown_value}")
                     render_profile_item_evidence(name, value, st.session_state.language)
                 st.caption("Academic disciplines are university-level fields of study; they are not the same thing as EMASI school subjects." if st.session_state.language == "English" else "Các lĩnh vực học thuật là lĩnh vực nghiên cứu ở bậc đại học; chúng không đồng nghĩa với các môn học tại EMASI.")
+                render_profile_section_sources(name, "disciplines", st.session_state.language)
             with b:
                 st.markdown(f"**{tr('skills')}**"); st.write(", ".join(info.get("skills_vi",info["skills"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["skills"]))
+                render_profile_section_sources(name, "skills", st.session_state.language)
                 st.markdown(f"**{tr('careers')}**"); st.write(", ".join(info.get("careers_vi", info["careers"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["careers"]))
                 st.caption("Illustrative career areas to explore, not guaranteed job outcomes or a ranking of career paths." if st.session_state.language == "English" else "Đây là các lĩnh vực nghề nghiệp mang tính tham khảo để tìm hiểu, không phải cam kết về việc làm hay xếp hạng lộ trình nghề nghiệp.")
+                render_profile_section_sources(name, "careers", st.session_state.language)
             st.markdown(f"**{tr('preparation')}**")
             prep = info.get("preparation_vi",info["preparation"]) if st.session_state.language == "Tiếng Việt" else info["preparation"]
             for item in prep: st.markdown(f"- {item}")
@@ -1211,6 +1271,12 @@ elif page == tr("compare"):
                     else:
                         st.write(val)
                         render_profile_item_evidence(name, val, st.session_state.language)
+                    if field == "disciplines":
+                        render_profile_section_sources(name, "disciplines", st.session_state.language)
+                    elif field == "skills":
+                        render_profile_section_sources(name, "skills", st.session_state.language)
+                    elif field == "careers":
+                        render_profile_section_sources(name, "careers", st.session_state.language)
         st.subheader("EMASI subjects students should pay attention to when exploring this major" if st.session_state.language == "English" else "Các môn học EMASI học sinh nên chú ý khi tìm hiểu ngành này")
         for name in selected:
             info = MAJORS[name]
