@@ -215,6 +215,35 @@ active_nodes_pos = app.find('active_nodes = set(focus) | subject_linked_majors |
 check(branch_targets_pos >= 0 and active_nodes_pos > branch_targets_pos,
       'Network Map computes the selected major branch closure before activating it')
 
+# Regression: every source-rendered profile section has bilingual labels.
+check('"limitations": ("Scope and limitations references"' in app
+      and '"limitations": ("Nguồn về phạm vi và giới hạn"' in app,
+      'profile source renderer supports the limitations section in both languages')
+# Exploration-direction explanations must be genuinely translated, not merely populated.
+exploration_path = ROOT / 'exploration_directions.json'
+if exploration_path.exists():
+    translation_data = json.loads(exploration_path.read_text(encoding='utf-8'))
+    untranslated = [
+        f"{major}[{idx}]"
+        for major, items in translation_data.get('majors', {}).items()
+        for idx, item in enumerate(items)
+        if not item.get('why_vi') or item.get('why_vi') == item.get('why')
+    ]
+    check(not untranslated,
+          'all exploration direction explanations have Vietnamese translations'
+          + (': ' + ', '.join(untranslated[:12]) if untranslated else ''))
+else:
+    check(False, 'exploration directions file exists for bilingual QA')
+missing_source_types = [
+    f"{major}.claims[{i}].sources[{j}]"
+    for major, record in sources.items()
+    for i, claim in enumerate(record.get('claims', []))
+    for j, source in enumerate(claim.get('sources', []))
+    if not source.get('source_type_vi')
+]
+check(not missing_source_types,
+      'all source type labels have Vietnamese translations'
+      + (': ' + ', '.join(missing_source_types[:12]) if missing_source_types else ''))
 # Unexpected cross-disciplinary exploration coverage
 exploration_path = ROOT / 'exploration_directions.json'
 if exploration_path.exists():
