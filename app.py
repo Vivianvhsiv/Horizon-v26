@@ -25,6 +25,9 @@ with DATA_FILE.open(encoding="utf-8") as f:
 SOURCE_FILE = find_data_file("academic_sources.json")
 with SOURCE_FILE.open(encoding="utf-8") as f:
     ACADEMIC_SOURCES = json.load(f)
+EXPLORATION_FILE = find_data_file("exploration_directions.json")
+with EXPLORATION_FILE.open(encoding="utf-8") as f:
+    EXPLORATION_DIRECTIONS = json.load(f).get("majors", {})
 
 # Each item is stored in English for consistent database matching and translated for display.
 SUBJECT_GROUPS = {
@@ -375,6 +378,27 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                                  f"{label_en} listed in Horizon's exploratory profile for {major}. No direct claim-level source is mapped to this specific relationship yet.",
                                  [], "Exploratory profile context — not independently verified")
 
+        # Additional cross-disciplinary discovery prompts are deliberately
+        # labelled exploratory. They widen horizons without claiming curriculum,
+        # admissions or direct career-pathway verification.
+        if major in expanded_set:
+            for direction in EXPLORATION_DIRECTIONS.get(major, []):
+                label = direction.get("label", "").strip()
+                if not label:
+                    continue
+                direction_key = add_node(
+                    "direction", label,
+                    direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
+                    direction.get("label_vi", label), identity=f"{major}::{label}"
+                )
+                add_edge(major_key, direction_key, "unexpected direction to explore",
+                         direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
+                for adjacent_major in direction.get("explore_with", []):
+                    if adjacent_major in MAJORS and adjacent_major != major:
+                        adjacent_key = node_id("major", adjacent_major)
+                        add_edge(direction_key, adjacent_key, "exploratory connection to another major",
+                                 f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
+
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
         for guidance in info.get("emasi_subject_guidance", []):
@@ -416,7 +440,7 @@ def graphviz_source(nodes, edges):
     return "\n".join(lines)
 
 def node_options(nodes):
-    order = ["student","interest","subject","major","cluster","discipline","foundation","related","application","research","skill","career"]
+    order = ["student","interest","subject","major","cluster","discipline","foundation","related","application","research","skill","career","direction"]
     return [(f'{n["type"].title()} · {n["label"]}', key) for kind in order
             for key,n in nodes.items() if n["type"] == kind]
 
@@ -433,12 +457,13 @@ SKILL_TRANSLATIONS = {
 
 NODE_TYPE_VI = {
     "student":"Khám phá của bạn", "interest":"Sở thích", "subject":"Các môn học hiện có tại EMASI",
-    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng", "cluster":"Nhóm ngành", "foundation":"Nền tảng học thuật", "related":"Lĩnh vực liên quan", "application":"Ứng dụng chuyên sâu", "research":"Hướng nghiên cứu"
+    "major":"Ngành học đại học", "discipline":"Lĩnh vực học thuật", "career":"Lĩnh vực nghề nghiệp", "skill":"Kỹ năng", "direction":"Hướng khám phá bất ngờ", "cluster":"Nhóm ngành", "foundation":"Nền tảng học thuật", "related":"Lĩnh vực liên quan", "application":"Ứng dụng chuyên sâu", "research":"Hướng nghiên cứu"
 }
 RELATION_VI = {
     "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm", "contains major":"bao gồm ngành", "explore through curriculum context":"khám phá qua bối cảnh chương trình học",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
     "explore profile direction":"hướng khám phá trong hồ sơ", "documented academic relationship":"mối liên hệ học thuật có nguồn",
+    "unexpected direction to explore":"hướng khám phá mới", "exploratory connection to another major":"kết nối khám phá với ngành khác",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
 }
 
@@ -471,7 +496,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     if selected_key in nodes:
         expansion_seeds.add(selected_key)
         selected_type, _, selected_identity = selected_key.partition("::")
-        if selected_type in {"foundation", "related", "application", "research", "skill", "career"}:
+        if selected_type in {"foundation", "related", "application", "research", "skill", "career", "direction"}:
             owner_major = selected_identity.split("::", 1)[0]
             owner_key = node_id("major", owner_major)
             if owner_key in nodes:
@@ -495,7 +520,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             active_nodes.update((source, target))
 
     palette = {
-        "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98",
+        "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
         "major":"#C18B4A", "discipline":"#B87575", "career":"#7187A6",
         "skill":"#B28B9C", "cluster":"#D6A84F", "foundation":"#A87979",
         "related":"#9A86B8", "application":"#6D9C98", "research":"#6F88A8"
