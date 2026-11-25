@@ -326,6 +326,35 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
         key = add_node("subject", subject, "A current EMASI subject selected by the student.", SUBJECT_TRANSLATIONS.get(subject, subject))
         add_edge(student, key, "currently studies", "Student-selected input.")
 
+        # Geography opens a dedicated Earth & Environmental Systems branch.
+        # These are adjacent fields for discovery, not a required curriculum sequence.
+        if subject.strip().casefold() == "geography":
+            system_label = "Earth & Environmental Systems"
+            system_label_vi = "Hệ thống Trái Đất và Môi trường"
+            system_key = add_node(
+                "direction", system_label,
+                "A broad interdisciplinary exploration cluster connecting spatial, geological, environmental, climate, ocean and water systems. This is a discovery branch, not a prescribed degree pathway.",
+                system_label_vi, identity="subject::Geography::Earth & Environmental Systems"
+            )
+            add_edge(key, system_key, "explore subject system",
+                     "Geography can be explored through interconnected Earth and environmental systems; this is a broad conceptual grouping, not a verified course sequence.")
+            earth_fields = [
+                ("Geography", "Địa lý", "Spatial patterns, places and human–environment relationships."),
+                ("Geology", "Địa chất học", "Earth materials, structures and the processes that shape the planet."),
+                ("Environmental Science", "Khoa học môi trường", "Environmental systems and interactions between people and the natural world."),
+                ("Climate Science", "Khoa học khí hậu", "Climate processes, variability and long-term change."),
+                ("Oceanography", "Hải dương học", "The physical, chemical, biological and geological systems of oceans."),
+                ("Hydrology", "Thủy văn học", "Water movement, distribution and processes across the land and atmosphere."),
+            ]
+            for field, field_vi, description in earth_fields:
+                field_key = add_node(
+                    "related", field,
+                    description + " Presented as an adjacent field to investigate, not as a required Geography course.",
+                    field_vi, identity=f"subject::Geography::Earth & Environmental Systems::{field}"
+                )
+                add_edge(system_key, field_key, "explore earth system field",
+                         f"{field} is included as an adjacent area for exploration within Earth & Environmental Systems; verify specific course structures by institution.")
+
     # Expand each major into its own profile branches when selected or clicked.
     # These are exploratory catalogue paths unless claim-level evidence exists.
     profile_fields = [
@@ -470,6 +499,7 @@ NODE_TYPE_VI = {
 RELATION_VI = {
     "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm", "contains major":"bao gồm ngành", "explore through curriculum context":"khám phá qua bối cảnh chương trình học",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
+    "explore subject system":"khám phá hệ thống liên quan đến môn học", "explore earth system field":"khám phá lĩnh vực trong hệ thống Trái Đất",
     "explore profile direction":"hướng khám phá trong hồ sơ", "documented academic relationship":"mối liên hệ học thuật có nguồn",
     "unexpected direction to explore":"hướng khám phá mới", "exploratory connection to another major":"kết nối khám phá với ngành khác", "explore adjacent discipline":"khám phá lĩnh vực liên quan",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
