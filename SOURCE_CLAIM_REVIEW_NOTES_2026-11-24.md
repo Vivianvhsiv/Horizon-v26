@@ -126,3 +126,15 @@ These spot-checks strengthen a small number of named programme-availability and 
 **Official page inspected:** https://oisp.hcmut.edu.vn/en/study-programs/bachelor-degree/computer-science
 
 **Limit:** This verifies the HCMUT portion of the multi-institution claim only; UCL, NUS and VinUniversity require their own exact-page checks.
+
+### Data Science — claim 3: UCL curriculum context
+
+**Exact-page check:** Inspected UCL's official Data Science BSc course page for 2026 entry and its published course structure.
+
+**Confirmed details:** UCL describes the degree as combining statistical foundations with computing skills and algorithmic reasoning. Its listed compulsory modules include database systems, calculus and linear algebra, probability and statistics, practical statistics, programming fundamentals, algorithms and data structures, statistical design and data ethics, statistical machine learning, inference at scale and a final-year project. The page identifies application areas such as medicine and commerce as specialist options rather than implying that all students follow identical domain pathways.
+
+**Decision:** KEEP as institution-specific curriculum context for mathematics, statistics, computing/programming, data management and machine learning. Retain the caveat that course balance and options vary by programme and year. This is not evidence of EMASI syllabus equivalence or a universal admissions prerequisite.
+
+**Official page inspected:** https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/data-science-bsc-2026
+
+**Limit:** This verifies the UCL portion only; other institutions and the ACM curriculum guidance in the same multi-source claim require separate checks.
