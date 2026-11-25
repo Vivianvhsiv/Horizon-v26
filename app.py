@@ -607,8 +607,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             active_edges.add(index)
             active_nodes.update((source, target))
 
-    # Preserve the catalogue backbone: cluster hubs connect related majors.
-    all_cluster_nodes = {key for key, item in nodes.items() if item["type"] == "cluster"}
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
