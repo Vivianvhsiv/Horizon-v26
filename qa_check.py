@@ -164,6 +164,22 @@ for name,record in sources.items():
             u=src.get('url','')
             if not u.startswith('https://'): bad.append((name,u))
 check(not bad,'all academic source URLs use HTTPS'+(f': {bad[:5]}' if bad else ''))
+# Claim-level evidence traceability across all three exploration modules.
+check('def claims_for_profile_item(major, item):' in app and 'def render_profile_item_evidence(major, item, language):' in app,
+      'shared claim-level evidence lookup and bilingual renderer are present')
+check('render_profile_item_evidence(name, value, st.session_state.language)' in app,
+      'Explore Majors attaches source traceability to individual academic profile items')
+check('render_profile_item_evidence(name, item, st.session_state.language)' in app,
+      'Compare Majors attaches source traceability to individual compared items')
+check('matching_claims = [' in app and 'startswith("verified")' in app,
+      'Network Map only creates academic discipline links from explicitly named verified claims')
+check('"claim": claim_text' in app and '"claim_status": claim_status' in app,
+      'Network Map source records retain the exact supported claim and its verification status')
+check('Horizon profile reference' not in app,
+      'Network Map does not present generic major-level URLs as claim-level evidence')
+check('No direct claim-level source is mapped to this item yet' in app,
+      'Unmapped profile items are explicitly labelled exploratory rather than appearing sourced')
+
 # Network Map evidence-first regression checks
 network_start=app.find('def build_network(')
 network_end=app.find('def graphviz_source(', network_start)
