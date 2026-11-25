@@ -441,7 +441,7 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                     elif adjacent_major and adjacent_major != major:
                         adjacent_key = add_node(
                             "related", adjacent_major,
-                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 20 major profiles.",
+                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
                             identity=f"{major}::{label}::{adjacent_major}"
                         )
                         add_edge(direction_key, adjacent_key, "explore adjacent discipline",
@@ -494,7 +494,10 @@ def node_options(nodes):
 
 
 MAJOR_TRANSLATIONS = {
-    "Cognitive Science":"Khoa học nhận thức", "Psychology":"Tâm lý học", "Computer Science":"Khoa học máy tính", "Data Science":"Khoa học dữ liệu", "Economics":"Kinh tế học", "Biology":"Sinh học", "Mechanical Engineering":"Kỹ thuật cơ khí", "Finance":"Tài chính", "Chemistry":"Hóa học", "Physics":"Vật lý", "Environmental Science":"Khoa học môi trường", "Architecture":"Kiến trúc", "Electrical Engineering":"Kỹ thuật điện", "Civil Engineering":"Kỹ thuật xây dựng", "Political Science":"Khoa học chính trị", "Sociology":"Xã hội học", "Linguistics":"Ngôn ngữ học", "Education":"Giáo dục học", "Accounting":"Kế toán", "Communication & Media Studies":"Truyền thông và nghiên cứu truyền thông"
+    "Cognitive Science":"Khoa học nhận thức", "Psychology":"Tâm lý học", "Computer Science":"Khoa học máy tính", "Data Science":"Khoa học dữ liệu", "Economics":"Kinh tế học", "Biology":"Sinh học", "Mechanical Engineering":"Kỹ thuật cơ khí", "Finance":"Tài chính", "Chemistry":"Hóa học", "Physics":"Vật lý", "Environmental Science":"Khoa học môi trường", "Architecture":"Kiến trúc", "Electrical Engineering":"Kỹ thuật điện", "Civil Engineering":"Kỹ thuật xây dựng", "Political Science":"Khoa học chính trị", "Sociology":"Xã hội học", "Linguistics":"Ngôn ngữ học", "Education":"Giáo dục học", "Accounting":"Kế toán", "Communication & Media Studies":"Truyền thông và nghiên cứu truyền thông",
+    "Pure Mathematics":"Toán học thuần túy", "Geography":"Địa lý học", "Geology":"Địa chất học",
+    "Astronomy & Astrophysics":"Thiên văn học và Vật lý thiên văn", "Statistics":"Thống kê học",
+    "Philosophy":"Triết học", "History":"Lịch sử học", "Anthropology":"Nhân học", "Linguistics":"Ngôn ngữ học"
 }
 
 SKILL_TRANSLATIONS = {
@@ -728,14 +731,14 @@ elif page == tr("network"):
             nodes, edges, candidates = build_network(subjects, intended_majors, interests, sorted(expanded_majors))
             st.subheader(tr("fullmap"))
             st.caption(
-                "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
+                "The full map keeps all 28 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
                 if st.session_state.language == "English" else
                 "Bản đồ đầy đủ luôn hiển thị cả 20 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
                 "All 20 majors and their profile branches remain visible. Selected EMASI subjects may show referenced curriculum-context paths, clearly labelled exploratory; interests are not mapped to majors without claim-level evidence."
                 if st.session_state.language == "English" else
-                "Cả 20 ngành và các nhánh thông tin đều luôn hiển thị. Môn EMASI bạn chọn có thể xuất hiện kết nối bối cảnh chương trình học khi có nguồn tham khảo, nhưng chỉ mang tính khám phá; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
+                "Cả 28 ngành và các nhánh thông tin đều luôn hiển thị. Môn EMASI bạn chọn có thể xuất hiện kết nối bối cảnh chương trình học khi có nguồn tham khảo, nhưng chỉ mang tính khám phá; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
@@ -803,7 +806,7 @@ elif page == tr("network"):
 
             # Undecided students can browse every major without entering a choice.
             st.divider()
-            st.subheader("Explore any of the 20 majors" if st.session_state.language == "English" else "Khám phá 20 ngành học")
+            st.subheader("Explore any of the 28 majors" if st.session_state.language == "English" else "Khám phá 28 ngành học")
             st.caption("Inspect academic foundations, related fields, research areas and exploratory EMASI subject guidance. This is browsing support, not a personalized recommendation." if st.session_state.language == "English" else "Tìm hiểu nền tảng học thuật, lĩnh vực liên quan, hướng nghiên cứu và gợi ý khám phá môn học EMASI. Đây là thông tin tham khảo, không phải đề xuất ngành phù hợp cá nhân.")
             major_options = list(MAJORS.keys())
             major_placeholder = "— Chọn ngành để xem chi tiết —" if st.session_state.language == "Tiếng Việt" else "— Choose a major to explore —"
