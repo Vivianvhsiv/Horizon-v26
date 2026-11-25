@@ -1142,6 +1142,7 @@ elif page == tr("majors"):
                     for value in values:
                         st.markdown(f"- {value}")
                         render_profile_item_evidence(name, value, st.session_state.language)
+                    render_profile_section_sources(name, field, st.session_state.language)
             note_key = "taxonomy_note_vi" if st.session_state.language == "Tiếng Việt" else "taxonomy_note"
             if info.get(note_key): st.caption(info[note_key])
 
