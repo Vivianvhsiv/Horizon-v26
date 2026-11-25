@@ -188,12 +188,14 @@ check(network_start >= 0 and network_end > network_start,'Network Map builder is
 check('if interest in info["interests"]' not in network_code,'Network Map does not infer majors from shared interest tags')
 check('selected_interests=None' in network_code and 'for interest in selected_interests:' in network_code,
       'Network Map restores student-selected interest fields as visible exploration inputs')
-check('Earth & Environmental Systems' in network_code and 'subject::Geography::Earth & Environmental Systems' in network_code,
-      'Selecting Geography opens a dedicated Earth & Environmental Systems branch in Network Map')
+check('Earth & Environmental Systems' in network_code and 'domain::Earth & Environmental Systems' in network_code,
+      'Geography-related inputs open a dedicated Earth & Environmental Systems branch in Network Map')
+check('for value in selected_interests:' in network_code and '"geograph" in value.casefold()' in network_code,
+      'The Earth-systems branch can be triggered by Geography-related interest labels as well as current subjects')
 check('"Geology"' in network_code and '"Environmental Science"' in network_code and '"Climate Science"' in network_code and '"Oceanography"' in network_code and '"Hydrology"' in network_code,
       'The Geography branch exposes Geology, Environmental Science, Climate Science, Oceanography and Hydrology')
-check('explore subject system' in network_code and 'explore earth system field' in network_code,
-      'Earth-system fields are connected as explicitly exploratory map nodes, not prerequisites')
+check('explore earth and environmental systems' in network_code and 'explore earth system field' in network_code and 'source in subject_domain_nodes' in network_code,
+      'The entire Earth-systems branch, including its second-hop fields, is included in the visible highlighted map')
 check('chosen_interest_labels = st.multiselect(tr("interest")' in app and 'st.session_state.chosen_interests' in app,
       'Network Map exposes and stores the selected interest fields')
 check('no interest-to-major match is inferred' in network_code,
