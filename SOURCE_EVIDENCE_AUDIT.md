@@ -30,6 +30,18 @@ The following official pages were opened and inspected for title / page context:
 
 Additional official curriculum spot-checks surfaced in current search results include UCL Data Science BSc, UCL Computer Science BSc, UCL Psychology BSc, UC San Diego Psychology, and UC San Diego Cognitive Science programme pages.
 
+## V26 shared evidence implementation — 2026-11-25
+
+A shared evidence standard is now documented in `EVIDENCE_STANDARD_V26.md`.
+
+- Added a shared claim lookup that only associates a profile item with a source claim when the item's exact English wording appears in that claim.
+- Explore Majors and Compare Majors now show claim text, claim status, and named source links beside individually matched profile items. Items without a direct phrase-level match are explicitly labelled as exploratory and not directly sourced in the claim register.
+- Network Map no longer uses generic `source_records` URLs as if they supported individual discipline relationships. Discipline edges are created only when a claim explicitly names the discipline, carries sources, and has a status beginning with `Verified`. The edge displays the supporting claim and its verification status.
+- Network Map category/grouping edges remain Horizon navigation labels, not academic findings.
+- QA checks now cover the shared source lookup, item-level evidence display in Explore and Compare, and verified claim-level sourcing for Network Map relationships.
+
+This is a conservative phrase-level traceability mechanism. It does not prove semantic support, inspect every cited page, or replace human review. Items without an exact claim match remain exploratory and need claim-specific review before they can be presented as verified.
+
 ## Limitations
 
 - A page being reachable is not proof that every claim attached to it is supported.
