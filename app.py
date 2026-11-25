@@ -423,9 +423,8 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
         # explicitly selected or opened in the map. Adjacent fields and
         # cross-major links remain part of the same connected knowledge graph.
         if major in expanded_set:
-            # Every major contributes its curated exploration directions to the
-            # Network Map, even before a student selects or opens that major. This
-            # makes the 285-direction catalogue genuinely visible in the graph.
+            # The full direction catalogue stays in the data source, while only
+            # this opened major's prompts are instantiated in the current graph.
             # These are exploratory prompts, not verified curriculum or suitability claims.
             for direction in EXPLORATION_DIRECTIONS.get(major, []):
                 label = direction.get("label", "").strip()
