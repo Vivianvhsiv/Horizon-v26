@@ -609,7 +609,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
 
     # Preserve the catalogue backbone: cluster hubs connect related majors.
     all_cluster_nodes = {key for key, item in nodes.items() if item["type"] == "cluster"}
-    visible_node_keys = all_major_nodes | all_cluster_nodes | active_nodes
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
@@ -620,8 +619,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     muted = {"background":"#EEF1F4", "border":"#D9DEE5", "font":"#A7B0BC"}
     graph_nodes = []
     for key, item in nodes.items():
-        if key not in visible_node_keys:
-            continue
         is_focus = key in focus
         is_active = key in active_nodes
         display_label = item.get("label_vi", item["label"]) if st.session_state.language == "Tiếng Việt" else item["label"]
@@ -642,23 +639,19 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             id=key, label=node_label, title=title,
             size=node_size,
             color=color, borderWidth=3 if is_focus else (2 if is_active else 1),
-            font={"color":font_color, "size":15 if is_focus else (13 if is_active else 9)}
+            font={"color":font_color, "size":15 if is_focus else (13 if is_active else 10)}
         ))
 
     graph_edges = []
     for index, edge in enumerate(edges):
-        if index not in active_edges and edge["relation"] != "contains major":
-            continue
-        if edge["source"] not in visible_node_keys or edge["target"] not in visible_node_keys:
-            continue
         active = index in active_edges
         relation = edge["relation"]
         label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
         graph_edges.append(Edge(
             source=edge["source"], target=edge["target"], label=label,
-            color="#315B83" if active else "#D7DDE5",
-            width=2.8 if active else 1.0,
-            font={"color":"#315B83" if active else "#AAB3BF", "size":10},
+            color="#315B83" if active else "#E1E5EA",
+            width=2.8 if active else 0.7,
+            font={"color":"#315B83" if active else "#C3CAD3", "size":10},
             arrows="to"
         ))
 
