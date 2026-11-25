@@ -215,8 +215,10 @@ if exploration_path.exists():
           'Every major has at least five additional exploration directions')
     check(all(item.get('label') and item.get('label_vi') and item.get('why') and item.get('why_vi') for items in exploration_majors.values() for item in items),
           'Every additional direction has English and Vietnamese labels and explanations')
-    check(all(target in majors for items in exploration_majors.values() for item in items for target in item.get('explore_with', [])),
-          'Cross-disciplinary directions only reference majors in the Horizon catalogue')
+    check(all(isinstance(target, str) and target.strip() for items in exploration_majors.values() for item in items for target in item.get('explore_with', [])),
+          'Cross-disciplinary directions use named adjacent majors or academic fields')
+    check('elif adjacent_major and adjacent_major != major' in app and '"related"' in app,
+          'Adjacent fields outside the 20-major catalogue can appear as distinct map nodes')
     check('not verified curriculum requirements' in exploration_data.get('_meta', {}).get('description', ''),
           'Additional directions are explicitly scoped as exploratory rather than verified requirements')
 else:
