@@ -578,12 +578,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     # selected major's own directions and the adjacent fields/majors those
     # directions explicitly connect to.
     active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
-
-    # Full Map means all 28 major anchors remain visible. Direction and
-    # discipline nodes are included only for selected majors and their
-    # explicitly connected neighbours; unrelated majors' 285 directions
-    # must not be laid out as one dense background cloud.
-    all_major_nodes = {key for key, item in nodes.items() if item["type"] == "major"}
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -606,7 +600,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         if directly_selected or selected_major_branch or selected_subject_evidence:
             active_edges.add(index)
             active_nodes.update((source, target))
-
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
@@ -631,11 +624,9 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         else:
             color = {"background":muted["background"], "border":muted["border"], "highlight":{"background":muted["background"],"border":muted["border"]}}
             font_color = muted["font"]
-        node_label = display_label
-        node_size = 32 if is_focus else (25 if is_active else 19)
         graph_nodes.append(Node(
-            id=key, label=node_label, title=title,
-            size=node_size,
+            id=key, label=display_label, title=title,
+            size=32 if is_focus else (25 if is_active else (19 if item["type"] == "major" else 15)),
             color=color, borderWidth=3 if is_focus else (2 if is_active else 1),
             font={"color":font_color, "size":15 if is_focus else (13 if is_active else 10)}
         ))
@@ -644,7 +635,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     for index, edge in enumerate(edges):
         active = index in active_edges
         relation = edge["relation"]
-        label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
+        label = "" if relation == "profile includes" else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
         graph_edges.append(Edge(
             source=edge["source"], target=edge["target"], label=label,
             color="#315B83" if active else "#E1E5EA",
@@ -658,8 +649,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         nodeHighlightBehavior=False, collapsible=False,
         interaction={"hover":True, "navigationButtons":True, "keyboard":True},
         physics_options={"solver":"forceAtlas2Based",
-                         "forceAtlas2Based":{"gravitationalConstant":-180,"springLength":260,"springConstant":0.035,"avoidOverlap":1.0},
-                         "stabilization":{"enabled":True,"iterations":1800,"fit":True}}
+                         "forceAtlas2Based":{"gravitationalConstant":-75,"springLength":190,"springConstant":0.045}}
     )
     return agraph(nodes=graph_nodes, edges=graph_edges, config=config)
 with st.sidebar:
