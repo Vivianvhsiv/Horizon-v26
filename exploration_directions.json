@@ -2,8 +2,8 @@
   "_meta": {
     "title": "Unexpected exploration directions",
     "version": "1.0",
-    "description": "Curated interdisciplinary exploration prompts for all 28 Horizon majors. Each major has ten prompts. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
-    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 28 ngành Horizon, mỗi ngành có mười hướng tìm hiểu. Đây là gợi ý khám phá, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
+    "description": "Curated interdisciplinary exploration prompts for all 28 Horizon majors. Each major has ten or more prompts. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
+    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 28 ngành Horizon, mỗi ngành có ít nhất mười hướng tìm hiểu. Đây là gợi ý khám phá, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
   },
   "majors": {
     "Cognitive Science": [
@@ -1840,6 +1840,36 @@
           "Sociology",
           "Political Science"
         ]
+      },
+      {
+        "label": "Words and Meaning",
+        "label_vi": "Lexical Semantics",
+        "why": "Study how words encode meaning and how vocabularies are organised.",
+        "why_vi": "Study how words encode meaning and how vocabularies are organised.",
+        "explore_with": [
+          "Philosophy",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Language in the Digital Age",
+        "label_vi": "Digital Linguistics",
+        "why": "Explore language use, variation and change in digital communication.",
+        "why_vi": "Explore language use, variation and change in digital communication.",
+        "explore_with": [
+          "Computer Science",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "The Science of Conversation",
+        "label_vi": "Conversation Analysis",
+        "why": "Investigate how people coordinate meaning through interaction.",
+        "why_vi": "Investigate how people coordinate meaning through interaction.",
+        "explore_with": [
+          "Sociology",
+          "Psychology"
+        ]
       }
     ],
     "Education": [
@@ -2233,6 +2263,36 @@
           "Philosophy",
           "Computer Science"
         ]
+      },
+      {
+        "label": "Algebra Meets Geometry",
+        "label_vi": "Algebraic Geometry",
+        "why": "Explore geometric spaces described through polynomial equations.",
+        "why_vi": "Explore geometric spaces described through polynomial equations.",
+        "explore_with": [
+          "Geometry",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Mathematics of Change",
+        "label_vi": "Dynamical Systems",
+        "why": "Study long-term behaviour, stability and patterns in evolving systems.",
+        "why_vi": "Study long-term behaviour, stability and patterns in evolving systems.",
+        "explore_with": [
+          "Physics",
+          "Biology"
+        ]
+      },
+      {
+        "label": "The Shape of Space",
+        "label_vi": "Geometric Topology",
+        "why": "Investigate properties of spaces that remain unchanged under continuous deformation.",
+        "why_vi": "Investigate properties of spaces that remain unchanged under continuous deformation.",
+        "explore_with": [
+          "Physics",
+          "Geography"
+        ]
       }
     ],
     "Geography": [
@@ -2314,6 +2374,36 @@
           "Hydrology",
           "Geology"
         ]
+      },
+      {
+        "label": "The Geography of Food",
+        "label_vi": "Food Geographies",
+        "why": "Explore food systems, agriculture, trade and uneven access across places.",
+        "why_vi": "Explore food systems, agriculture, trade and uneven access across places.",
+        "explore_with": [
+          "Biology",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Islands and Remote Places",
+        "label_vi": "Island Geography",
+        "why": "Study isolation, biodiversity, settlement and cultural exchange in island environments.",
+        "why_vi": "Study isolation, biodiversity, settlement and cultural exchange in island environments.",
+        "explore_with": [
+          "Biology",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Geography of Energy",
+        "label_vi": "Energy Geographies",
+        "why": "Investigate where energy is produced, transported and contested.",
+        "why_vi": "Investigate where energy is produced, transported and contested.",
+        "explore_with": [
+          "Environmental Science",
+          "Political Science"
+        ]
       }
     ],
     "Geology": [
@@ -2384,6 +2474,36 @@
         "label_vi": "Geochemistry",
         "why": "Use chemical evidence to understand Earth's materials and processes.",
         "why_vi": "Sử dụng bằng chứng hóa học để tìm hiểu vật liệu và quá trình của Trái Đất.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Life in Ancient Oceans",
+        "label_vi": "Paleontology",
+        "why": "Study fossils to understand ancient life and changing environments.",
+        "why_vi": "Study fossils to understand ancient life and changing environments.",
+        "explore_with": [
+          "Biology",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Earth's Magnetic Story",
+        "label_vi": "Paleomagnetism",
+        "why": "Use magnetic records in rocks to investigate Earth's history and plate movement.",
+        "why_vi": "Use magnetic records in rocks to investigate Earth's history and plate movement.",
+        "explore_with": [
+          "Physics",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Geology of Natural Resources",
+        "label_vi": "Mineral Systems",
+        "why": "Explore how geological processes concentrate minerals and shape resource distributions.",
+        "why_vi": "Explore how geological processes concentrate minerals and shape resource distributions.",
         "explore_with": [
           "Chemistry",
           "Environmental Science"
@@ -2463,6 +2583,36 @@
           "Chemistry",
           "Physics"
         ]
+      },
+      {
+        "label": "How Stars Are Born",
+        "label_vi": "Star Formation",
+        "why": "Investigate how interstellar gas and dust form stars and planetary systems.",
+        "why_vi": "Investigate how interstellar gas and dust form stars and planetary systems.",
+        "explore_with": [
+          "Physics",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "The Dynamic Sun",
+        "label_vi": "Solar Physics",
+        "why": "Study solar activity and its influence on planetary environments and technology.",
+        "why_vi": "Study solar activity and its influence on planetary environments and technology.",
+        "explore_with": [
+          "Physics",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "The Mathematics of Orbits",
+        "label_vi": "Celestial Mechanics",
+        "why": "Explore gravitational motion and the mathematical structure of orbital systems.",
+        "why_vi": "Explore gravitational motion and the mathematical structure of orbital systems.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Physics"
+        ]
       }
     ],
     "Statistics": [
@@ -2539,6 +2689,36 @@
           "Computer Science",
           "Pure Mathematics"
         ]
+      },
+      {
+        "label": "Statistics of Language",
+        "label_vi": "Corpus Statistics",
+        "why": "Use statistical methods to investigate patterns in large collections of language.",
+        "why_vi": "Use statistical methods to investigate patterns in large collections of language.",
+        "explore_with": [
+          "Linguistics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "The Mathematics of Uncertainty",
+        "label_vi": "Probability Foundations",
+        "why": "Explore axioms and mathematical structures underlying probability.",
+        "why_vi": "Explore axioms and mathematical structures underlying probability.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Experiments and Evidence",
+        "label_vi": "Design of Experiments",
+        "why": "Study how experiments can produce reliable and interpretable evidence.",
+        "why_vi": "Study how experiments can produce reliable and interpretable evidence.",
+        "explore_with": [
+          "Biology",
+          "Psychology"
+        ]
       }
     ],
     "Philosophy": [
@@ -2610,6 +2790,36 @@
         "explore_with": [
           "Political Science",
           "Economics"
+        ]
+      },
+      {
+        "label": "The Logic of Arguments",
+        "label_vi": "Formal Logic",
+        "why": "Investigate valid reasoning, formal languages and logical systems.",
+        "why_vi": "Investigate valid reasoning, formal languages and logical systems.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Philosophy of the Natural World",
+        "label_vi": "Philosophy of Physics",
+        "why": "Explore concepts such as space, time, causation and physical law.",
+        "why_vi": "Explore concepts such as space, time, causation and physical law.",
+        "explore_with": [
+          "Physics",
+          "Astronomy & Astrophysics"
+        ]
+      },
+      {
+        "label": "Ethics of the Environment",
+        "label_vi": "Environmental Philosophy",
+        "why": "Examine moral questions about nature, conservation and future generations.",
+        "why_vi": "Examine moral questions about nature, conservation and future generations.",
+        "explore_with": [
+          "Environmental Science",
+          "Biology"
         ]
       }
     ],
@@ -2684,6 +2894,36 @@
           "Geography",
           "Data Science"
         ]
+      },
+      {
+        "label": "The History of the Earth",
+        "label_vi": "Historical Geology and Earth History",
+        "why": "Connect geological evidence with histories of landscapes and environments.",
+        "why_vi": "Connect geological evidence with histories of landscapes and environments.",
+        "explore_with": [
+          "Geology",
+          "Geography"
+        ]
+      },
+      {
+        "label": "History of Ideas",
+        "label_vi": "Intellectual History",
+        "why": "Study how concepts, arguments and systems of thought change over time.",
+        "why_vi": "Study how concepts, arguments and systems of thought change over time.",
+        "explore_with": [
+          "Philosophy",
+          "Linguistics"
+        ]
+      },
+      {
+        "label": "Maps and Power",
+        "label_vi": "History of Cartography",
+        "why": "Explore how maps have represented, shaped and contested the world.",
+        "why_vi": "Explore how maps have represented, shaped and contested the world.",
+        "explore_with": [
+          "Geography",
+          "Political Science"
+        ]
       }
     ],
     "Anthropology": [
@@ -2755,6 +2995,36 @@
         "explore_with": [
           "Geography",
           "Political Science",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "The Archaeology of Landscapes",
+        "label_vi": "Landscape Archaeology",
+        "why": "Study how people shaped and inhabited environments through time.",
+        "why_vi": "Study how people shaped and inhabited environments through time.",
+        "explore_with": [
+          "Geography",
+          "History"
+        ]
+      },
+      {
+        "label": "Human Variation and Adaptation",
+        "label_vi": "Biological Variation",
+        "why": "Explore human biological diversity and adaptation across environments.",
+        "why_vi": "Explore human biological diversity and adaptation across environments.",
+        "explore_with": [
+          "Biology",
+          "Geology"
+        ]
+      },
+      {
+        "label": "Ritual, Belief and Society",
+        "label_vi": "Anthropology of Religion",
+        "why": "Investigate ritual, belief, symbolism and social life across cultures.",
+        "why_vi": "Investigate ritual, belief, symbolism and social life across cultures.",
+        "explore_with": [
+          "History",
           "Sociology"
         ]
       }
