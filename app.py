@@ -576,11 +576,19 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     # selected major's own directions and the adjacent fields/majors those
     # directions explicitly connect to.
     active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
-    # Keep the full second-hop domain branch visible once its student input is focused.
+    # A selected Geography / Earth-related input expands one curated
+    # Earth & Environmental Systems branch, including its six adjacent fields.
+    # Only this explicitly selected domain branch is illuminated; other
+    # catalogue regions remain unchanged and muted.
     subject_domain_nodes = {
         edge["target"] for edge in edges
         if edge["source"] in focus
-        and edge["relation"] in {"explore earth and environmental systems"}
+        and edge["relation"] == "explore earth and environmental systems"
+    }
+    subject_domain_field_nodes = {
+        edge["target"] for edge in edges
+        if edge["source"] in subject_domain_nodes
+        and edge["relation"] == "explore earth system field"
     }
     active_edges = set()
     for index, edge in enumerate(edges):
@@ -589,13 +597,16 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         selected_major_branch = (
             (source in expansion_seeds and target in major_branch_nodes)
             or (source in major_branch_nodes and target in major_branch_targets)
-            or (source in focus and target in subject_domain_nodes)
         ) and edge["relation"] != "explore through curriculum context"
+        selected_domain_branch = (
+            (source in focus and target in subject_domain_nodes)
+            or (source in subject_domain_nodes and target in subject_domain_field_nodes)
+        )
         selected_subject_evidence = (
             edge["relation"] == "explore through curriculum context"
             and source in focus
         )
-        if directly_selected or selected_major_branch or selected_subject_evidence:
+        if directly_selected or selected_major_branch or selected_domain_branch or selected_subject_evidence:
             active_edges.add(index)
             active_nodes.update((source, target))
 
