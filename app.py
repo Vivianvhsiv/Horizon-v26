@@ -425,29 +425,29 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
         # the full catalogue map while preserving every direction for exploration.
         if major in expanded_set:
             for direction in EXPLORATION_DIRECTIONS.get(major, []):
-            label = direction.get("label", "").strip()
-            if not label:
-                continue
-            direction_key = add_node(
-                "direction", label,
-                direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
-                direction.get("label_vi", label), identity=f"{major}::{label}"
-            )
-            add_edge(major_key, direction_key, "unexpected direction to explore",
-                     direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
-            for adjacent_major in direction.get("explore_with", []):
-                if adjacent_major in MAJORS and adjacent_major != major:
-                    adjacent_key = node_id("major", adjacent_major)
-                    add_edge(direction_key, adjacent_key, "exploratory connection to another major",
-                             f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
-                elif adjacent_major and adjacent_major != major:
-                    adjacent_key = add_node(
-                        "related", adjacent_major,
-                        f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
-                        identity=f"{major}::{label}::{adjacent_major}"
-                    )
-                    add_edge(direction_key, adjacent_key, "explore adjacent discipline",
-                             f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
+                label = direction.get("label", "").strip()
+                if not label:
+                    continue
+                direction_key = add_node(
+                    "direction", label,
+                    direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
+                    direction.get("label_vi", label), identity=f"{major}::{label}"
+                )
+                add_edge(major_key, direction_key, "unexpected direction to explore",
+                         direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
+                for adjacent_major in direction.get("explore_with", []):
+                    if adjacent_major in MAJORS and adjacent_major != major:
+                        adjacent_key = node_id("major", adjacent_major)
+                        add_edge(direction_key, adjacent_key, "exploratory connection to another major",
+                                 f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
+                    elif adjacent_major and adjacent_major != major:
+                        adjacent_key = add_node(
+                            "related", adjacent_major,
+                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
+                            identity=f"{major}::{label}::{adjacent_major}"
+                        )
+                        add_edge(direction_key, adjacent_key, "explore adjacent discipline",
+                                 f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
 
 
         # Subject guidance can create an explicitly exploratory path only when
