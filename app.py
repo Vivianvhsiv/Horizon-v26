@@ -763,7 +763,9 @@ elif page == tr("majors"):
     chosen_cluster = st.selectbox(tr("cluster"), list(cluster_labels))
     # Student-authored exploration lens: exact topic overlap is shown transparently,
     # while strengths remain self-described evidence rather than inferred aptitude.
-    interest_catalog = sorted({item[0] for group in INTEREST_GROUPS.values() for item in group})
+    interest_pairs = grouped_options(INTEREST_GROUPS)
+    interest_display = {key: label for label, key in interest_pairs}
+    interest_catalog = [key for _, key in interest_pairs]
     st.markdown("### Your exploration lens" if st.session_state.language == "English" else "### Góc nhìn khám phá của bạn")
     st.caption(
         "Share topics you want to explore and a strength you have noticed in your own work. Horizon will not score, rank or infer your suitability."
@@ -772,7 +774,8 @@ elif page == tr("majors"):
     )
     profile_interests = st.multiselect(
         "Interests you want to explore" if st.session_state.language == "English" else "Sở thích bạn muốn khám phá",
-        interest_catalog, key="explore_profile_interests"
+        interest_catalog, format_func=lambda value: interest_display.get(value, value),
+        key="explore_profile_interests"
     )
     strength_note = st.text_input(
         "A strength you have noticed" if st.session_state.language == "English" else "Một điểm mạnh bạn tự nhận thấy",
