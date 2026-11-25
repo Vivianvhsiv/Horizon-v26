@@ -418,34 +418,34 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                                  f"{label_en} listed in Horizon's exploratory profile for {major}. No direct claim-level source is mapped to this specific relationship yet.",
                                  [], "Exploratory profile context — not independently verified")
 
-        # Every major contributes its curated exploration directions to the
-        # Network Map, even before a student selects or opens that major. This
-        # makes the 285-direction catalogue genuinely visible in the graph.
-        # These are exploratory prompts, not verified curriculum or suitability claims.
-        for direction in EXPLORATION_DIRECTIONS.get(major, []):
-            label = direction.get("label", "").strip()
-            if not label:
-                continue
-            direction_key = add_node(
-                "direction", label,
-                direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
-                direction.get("label_vi", label), identity=f"{major}::{label}"
-            )
-            add_edge(major_key, direction_key, "unexpected direction to explore",
-                     direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
-            for adjacent_major in direction.get("explore_with", []):
-                if adjacent_major in MAJORS and adjacent_major != major:
-                    adjacent_key = node_id("major", adjacent_major)
-                    add_edge(direction_key, adjacent_key, "exploratory connection to another major",
-                             f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
-                elif adjacent_major and adjacent_major != major:
-                    adjacent_key = add_node(
-                        "related", adjacent_major,
-                        f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
-                        identity=f"{major}::{label}::{adjacent_major}"
-                    )
-                    add_edge(direction_key, adjacent_key, "explore adjacent discipline",
-                             f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
+            # Every major contributes its curated exploration directions to the
+            # Network Map, even before a student selects or opens that major. This
+            # makes the 285-direction catalogue genuinely visible in the graph.
+            # These are exploratory prompts, not verified curriculum or suitability claims.
+            for direction in EXPLORATION_DIRECTIONS.get(major, []):
+                label = direction.get("label", "").strip()
+                if not label:
+                    continue
+                direction_key = add_node(
+                    "direction", label,
+                    direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
+                    direction.get("label_vi", label), identity=f"{major}::{label}"
+                )
+                add_edge(major_key, direction_key, "unexpected direction to explore",
+                         direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
+                for adjacent_major in direction.get("explore_with", []):
+                    if adjacent_major in MAJORS and adjacent_major != major:
+                        adjacent_key = node_id("major", adjacent_major)
+                        add_edge(direction_key, adjacent_key, "exploratory connection to another major",
+                                 f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
+                    elif adjacent_major and adjacent_major != major:
+                        adjacent_key = add_node(
+                            "related", adjacent_major,
+                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
+                            identity=f"{major}::{label}::{adjacent_major}"
+                        )
+                        add_edge(direction_key, adjacent_key, "explore adjacent discipline",
+                                 f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
 
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
@@ -569,22 +569,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     major_branch_targets.update(
         edge["target"] for edge in edges if edge["source"] in major_branch_nodes
     )
-    # Keep the complete curated exploration catalogue visible by default:
-    # all 285 direction nodes and their adjacent discipline/major links are
-    # first-class graph content, not faded hidden branches.
-    all_exploration_direction_nodes = {
-        edge["target"] for edge in edges
-        if edge["relation"] == "unexpected direction to explore"
-    }
-    all_exploration_direction_targets = set(all_exploration_direction_nodes)
-    all_exploration_direction_targets.update(
-        edge["target"] for edge in edges
-        if edge["source"] in all_exploration_direction_nodes
-    )
-    active_nodes = (
-        set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
-        | all_exploration_direction_nodes | all_exploration_direction_targets
-    )
+    active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -606,11 +591,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             edge["relation"] == "explore through curriculum context"
             and source in focus
         )
-        global_exploration_edge = (
-            source in all_exploration_direction_nodes
-            or target in all_exploration_direction_nodes
-        )
-        if directly_selected or selected_major_branch or selected_subject_evidence or global_exploration_edge:
+        if directly_selected or selected_major_branch or selected_subject_evidence:
             active_edges.add(index)
             active_nodes.update((source, target))
 
@@ -765,9 +746,9 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 28 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "All 28 majors and their profile branches remain available for exploration. Selected EMASI subjects may show referenced curriculum-context paths, clearly labelled exploratory; interests are not mapped to majors without claim-level evidence."
+                "All 28 majors remain available in the overview. Open a major to reveal its curated exploration directions and profile branches; interests are not mapped to majors without claim-level evidence."
                 if st.session_state.language == "English" else
-                "Cả 28 ngành và các nhánh thông tin đều luôn hiển thị. Môn EMASI bạn chọn có thể xuất hiện kết nối bối cảnh chương trình học khi có nguồn tham khảo, nhưng chỉ mang tính khám phá; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
+                "Cả 28 ngành đều có trong bản đồ tổng quan. Mở một ngành để xem các hướng khám phá và nhánh thông tin đã biên soạn; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
