@@ -137,13 +137,11 @@ if csv_path.exists():
           f'SOURCE_CLAIM_REGISTER.csv matches academic_sources.json ({len(csv_rows_norm)} CSV rows / {len(json_rows_norm)} JSON source rows)')
 else:
     check(False,'SOURCE_CLAIM_REGISTER.csv exists')
-# Student-centred reflection note only; Horizon does not match interests to majors.
-check('Your reflection note' in explore_code and 'Ghi chú tự suy ngẫm' in explore_code,
-      'Explore Majors offers an optional bilingual student reflection note')
-check('You may describe a strength you have noticed' in explore_code and 'A specific example that makes you think this is a strength' in explore_code,
-      'Student strengths remain self-described and can be supported by a concrete example')
-check('does not automatically claim that this strength is required by or predicts success' in explore_code,
-      'Student-provided strengths are not converted into aptitude or success claims')
+# Explore Majors is a searchable catalogue; reflection-note collection is intentionally absent.
+check('Your reflection note' not in explore_code and 'Ghi chú tự suy ngẫm' not in explore_code,
+      'Explore Majors does not collect a separate reflection note')
+check('explore_strength_note' not in app and 'explore_strength_example' not in app,
+      'Reflection-note state is not carried into Explore or Compare Majors')
 check('profile_topic_mentions' not in app and 'explore_profile_interests' not in app,
       'Horizon does not present interest-to-major matching or interest-based profile navigation')
 compare_start=app.find('elif page == tr("compare"):')
@@ -186,6 +184,12 @@ network_end=app.find('def graphviz_source(', network_start)
 network_code=app[network_start:network_end] if network_start >= 0 and network_end > network_start else ''
 check(network_start >= 0 and network_end > network_start,'Network Map builder is present')
 check('if interest in info["interests"]' not in network_code,'Network Map does not infer majors from shared interest tags')
+check('selected_interests=None' in network_code and 'for interest in selected_interests:' in network_code,
+      'Network Map restores student-selected interest fields as visible exploration inputs')
+check('chosen_interest_labels = st.multiselect(tr("interest")' in app and 'st.session_state.chosen_interests' in app,
+      'Network Map exposes and stores the selected interest fields')
+check('no interest-to-major match is inferred' in network_code,
+      'Restored interests are not converted into unsupported major matches')
 check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
 check('pages = [tr("home"),tr("network"),tr("majors"),tr("compare"),tr("about")]' in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
