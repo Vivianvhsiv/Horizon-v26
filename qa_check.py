@@ -194,6 +194,17 @@ check('no interest-to-major match is inferred' in network_code,
       'Restored interests are not converted into unsupported major matches')
 check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
+
+check('expanded_majors=None' in network_code and 'expanded_set = set(selected_majors) | set(expanded_majors)' in network_code,
+      'Every explicitly selected or expanded major can open its own exploration branches')
+check('"academic_foundations"' in network_code and '"related_disciplines"' in network_code and '"specialized_applications"' in network_code and '"research_areas"' in network_code,
+      'Major exploration branches include foundations, related fields, applications and research')
+check('"careers"' in network_code and '"skills"' in network_code,
+      'Major exploration branches include career areas and skill context')
+check('"Exploratory profile context — not independently verified"' in network_code and '"explore profile direction"' in network_code,
+      'Unreviewed profile branches are clearly labelled exploratory rather than verified evidence')
+check('possible_owner = selected_node_label.split("::", 1)[0]' in app and 'owner_major = selected_identity.split("::", 1)[0]' in app,
+      'Students can continue expanding a major after selecting one of its profile branches')
 check('pages = [tr("home"),tr("network"),tr("majors"),tr("compare"),tr("about")]' in app and 'elif page == tr("reflect"):' not in app,'standalone Reflection page is removed from navigation and routing')
 check('cols = st.columns(4)' in app and 'step_icons=["✧","▤","⌘","⚖"]' in app,'homepage workflow contains four steps and no Reflection step')
 check('No inferred major matches are shown.' in app,'Network Map explains the current evidence gap')
