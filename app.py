@@ -987,7 +987,8 @@ elif page == tr("network"):
                 st.info("Choose a major to browse its academic profile. Horizon will not select one for you." if st.session_state.language == "English" else "Chọn một ngành để xem hồ sơ học thuật. Horizon sẽ không tự ý chọn ngành thay bạn.")
             else:
                 explore_info = MAJORS[explore_major]
-                st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
+                selected_major_display = explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major
+                st.subheader(("Selected major: " if st.session_state.language == "English" else "Ngành đang xem: ") + selected_major_display)
                 st.write(explore_info.get("overview_vi", explore_info.get("overview", "")) if st.session_state.language == "Tiếng Việt" else explore_info.get("overview", ""))
                 detail_fields = [("academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"), ("related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"), ("specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"), ("research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu")]
                 for field, field_vi, label_en, label_vi in detail_fields:
