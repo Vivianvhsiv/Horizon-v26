@@ -470,6 +470,12 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     expansion_seeds = set(explicit_majors)
     if selected_key in nodes:
         expansion_seeds.add(selected_key)
+        selected_type, _, selected_identity = selected_key.partition("::")
+        if selected_type in {"foundation", "related", "application", "research", "skill", "career"}:
+            owner_major = selected_identity.split("::", 1)[0]
+            owner_key = node_id("major", owner_major)
+            if owner_key in nodes:
+                expansion_seeds.add(owner_key)
 
     active_nodes = set(focus) | subject_linked_majors
     active_edges = set()
@@ -623,6 +629,10 @@ elif page == tr("network"):
                 selected_node_type, _, selected_node_label = selected_key.partition("::")
                 if selected_node_type == "major" and selected_node_label in MAJORS:
                     expanded_major = selected_node_label
+                elif selected_node_type in {"foundation", "related", "application", "research", "skill", "career"}:
+                    possible_owner = selected_node_label.split("::", 1)[0]
+                    if possible_owner in MAJORS:
+                        expanded_major = possible_owner
             nodes, edges, candidates = build_network(subjects, intended_majors, interests, [expanded_major] if expanded_major else [])
             st.subheader(tr("fullmap"))
             st.caption(
