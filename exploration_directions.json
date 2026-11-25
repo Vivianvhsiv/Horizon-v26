@@ -66,7 +66,7 @@
         "label": "Mind in Motion",
         "label_vi": "Embodied Cognition",
         "why": "Explore how bodily action and sensory experience shape thinking.",
-        "why_vi": "Explore how bodily action and sensory experience shape thinking.",
+        "why_vi": "Khám phá cách hành động của cơ thể và trải nghiệm giác quan định hình tư duy.",
         "explore_with": [
           "Psychology",
           "Biology"
@@ -76,7 +76,7 @@
         "label": "The Predictive Brain",
         "label_vi": "Predictive Processing",
         "why": "Investigate theories of perception as prediction and inference.",
-        "why_vi": "Investigate theories of perception as prediction and inference.",
+        "why_vi": "Tìm hiểu các lý thuyết xem tri giác là quá trình dự đoán và suy luận.",
         "explore_with": [
           "Neuroscience",
           "Computer Science"
@@ -86,7 +86,7 @@
         "label": "Collective Intelligence",
         "label_vi": "Group Cognition",
         "why": "Study how teams and communities distribute memory, reasoning and problem-solving.",
-        "why_vi": "Study how teams and communities distribute memory, reasoning and problem-solving.",
+        "why_vi": "Nghiên cứu cách các nhóm và cộng đồng phân chia việc ghi nhớ, suy luận và giải quyết vấn đề.",
         "explore_with": [
           "Sociology",
           "Education"
@@ -96,7 +96,7 @@
         "label": "Thinking with Tools",
         "label_vi": "Extended Mind and Human-Computer Interaction",
         "why": "Explore how notebooks, devices and interfaces become part of cognitive activity.",
-        "why_vi": "Explore how notebooks, devices and interfaces become part of cognitive activity.",
+        "why_vi": "Khám phá cách sổ tay, thiết bị và giao diện trở thành một phần của hoạt động nhận thức.",
         "explore_with": [
           "Computer Science",
           "Philosophy"
@@ -106,7 +106,7 @@
         "label": "Conscious Experience",
         "label_vi": "Consciousness Studies",
         "why": "Compare philosophical and scientific approaches to awareness and experience.",
-        "why_vi": "Compare philosophical and scientific approaches to awareness and experience.",
+        "why_vi": "So sánh các cách tiếp cận triết học và khoa học về ý thức và trải nghiệm.",
         "explore_with": [
           "Philosophy",
           "Psychology"
@@ -173,7 +173,7 @@
         "label": "The Psychology of Time",
         "label_vi": "Time Perception",
         "why": "Study how attention, memory and emotion shape experienced time.",
-        "why_vi": "Study how attention, memory and emotion shape experienced time.",
+        "why_vi": "Nghiên cứu cách chú ý, trí nhớ và cảm xúc định hình cảm nhận của con người về thời gian.",
         "explore_with": [
           "Cognitive Science",
           "Neuroscience"
@@ -183,7 +183,7 @@
         "label": "Moral Judgement",
         "label_vi": "Moral Psychology",
         "why": "Explore how people form moral intuitions and make ethical decisions.",
-        "why_vi": "Explore how people form moral intuitions and make ethical decisions.",
+        "why_vi": "Khám phá cách con người hình thành trực giác đạo đức và đưa ra quyết định mang tính đạo đức.",
         "explore_with": [
           "Philosophy",
           "Political Science"
@@ -193,7 +193,7 @@
         "label": "Sleep and Memory",
         "label_vi": "Sleep and Cognitive Function",
         "why": "Investigate links among sleep, learning, memory and attention.",
-        "why_vi": "Investigate links among sleep, learning, memory and attention.",
+        "why_vi": "Tìm hiểu mối liên hệ giữa giấc ngủ, học tập, trí nhớ và sự chú ý.",
         "explore_with": [
           "Biology",
           "Neuroscience"
@@ -203,7 +203,7 @@
         "label": "Psychology of Music",
         "label_vi": "Music Cognition",
         "why": "Study perception, emotion and memory in musical experience.",
-        "why_vi": "Study perception, emotion and memory in musical experience.",
+        "why_vi": "Nghiên cứu tri giác, cảm xúc và trí nhớ trong trải nghiệm âm nhạc.",
         "explore_with": [
           "Music",
           "Cognitive Science"
@@ -213,7 +213,7 @@
         "label": "Culture and the Self",
         "label_vi": "Cultural Psychology",
         "why": "Explore how cultural contexts shape identity, thought and behaviour.",
-        "why_vi": "Explore how cultural contexts shape identity, thought and behaviour.",
+        "why_vi": "Khám phá cách bối cảnh văn hóa định hình bản sắc, tư duy và hành vi.",
         "explore_with": [
           "Anthropology",
           "Sociology"
@@ -280,7 +280,7 @@
         "label": "The Mathematics of Computation",
         "label_vi": "Algorithms and Complexity",
         "why": "Investigate what can be computed and how efficiently.",
-        "why_vi": "Investigate what can be computed and how efficiently.",
+        "why_vi": "Tìm hiểu những vấn đề nào có thể tính toán được và mức độ hiệu quả của quá trình đó.",
         "explore_with": [
           "Pure Mathematics",
           "Statistics"
@@ -290,7 +290,7 @@
         "label": "Computers and Society",
         "label_vi": "Critical Computing Studies",
         "why": "Explore how software systems shape institutions, power and everyday life.",
-        "why_vi": "Explore how software systems shape institutions, power and everyday life.",
+        "why_vi": "Khám phá cách các hệ thống phần mềm định hình thể chế, quyền lực và đời sống hằng ngày.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -300,7 +300,7 @@
         "label": "Programming Languages as Logic",
         "label_vi": "Programming Language Theory",
         "why": "Study type systems, semantics and formal reasoning about programs.",
-        "why_vi": "Study type systems, semantics and formal reasoning about programs.",
+        "why_vi": "Nghiên cứu hệ kiểu, ngữ nghĩa và lập luận hình thức về chương trình máy tính.",
         "explore_with": [
           "Pure Mathematics",
           "Philosophy"
@@ -310,7 +310,7 @@
         "label": "Computing the Natural World",
         "label_vi": "Scientific Computing",
         "why": "Use computation to investigate physical, biological and environmental systems.",
-        "why_vi": "Use computation to investigate physical, biological and environmental systems.",
+        "why_vi": "Sử dụng phương pháp tính toán để nghiên cứu các hệ thống vật lý, sinh học và môi trường.",
         "explore_with": [
           "Physics",
           "Biology",
@@ -321,7 +321,7 @@
         "label": "Art Made with Algorithms",
         "label_vi": "Generative Art and Creative Coding",
         "why": "Explore computation as a medium for visual, sound and interactive art.",
-        "why_vi": "Explore computation as a medium for visual, sound and interactive art.",
+        "why_vi": "Khám phá tính toán như một phương tiện sáng tạo nghệ thuật thị giác, âm thanh và tương tác.",
         "explore_with": [
           "Communication & Media Studies",
           "Architecture"
@@ -388,7 +388,7 @@
         "label": "Data and the Public Good",
         "label_vi": "Civic Data Science",
         "why": "Use data to examine public services, accessibility and community needs.",
-        "why_vi": "Use data to examine public services, accessibility and community needs.",
+        "why_vi": "Sử dụng dữ liệu để xem xét dịch vụ công, khả năng tiếp cận và nhu cầu cộng đồng.",
         "explore_with": [
           "Political Science",
           "Sociology"
@@ -398,7 +398,7 @@
         "label": "Seeing Patterns in Space",
         "label_vi": "Spatial Data Science",
         "why": "Study geographic patterns with spatial statistics and geospatial data.",
-        "why_vi": "Study geographic patterns with spatial statistics and geospatial data.",
+        "why_vi": "Nghiên cứu các quy luật địa lý bằng thống kê không gian và dữ liệu địa không gian.",
         "explore_with": [
           "Geography",
           "Environmental Science"
@@ -408,7 +408,7 @@
         "label": "Data About the Past",
         "label_vi": "Digital Humanities",
         "why": "Combine computational methods with historical and cultural research.",
-        "why_vi": "Combine computational methods with historical and cultural research.",
+        "why_vi": "Kết hợp phương pháp tính toán với nghiên cứu lịch sử và văn hóa.",
         "explore_with": [
           "History",
           "Linguistics"
@@ -418,7 +418,7 @@
         "label": "Data and Living Systems",
         "label_vi": "Computational Biology",
         "why": "Use statistical and computational methods to study biological systems.",
-        "why_vi": "Use statistical and computational methods to study biological systems.",
+        "why_vi": "Sử dụng phương pháp thống kê và tính toán để nghiên cứu các hệ thống sinh học.",
         "explore_with": [
           "Biology",
           "Statistics"
@@ -428,7 +428,7 @@
         "label": "Fairness in Measurement",
         "label_vi": "Data Ethics and Algorithmic Accountability",
         "why": "Investigate bias, privacy, uncertainty and accountability in data systems.",
-        "why_vi": "Investigate bias, privacy, uncertainty and accountability in data systems.",
+        "why_vi": "Tìm hiểu thiên lệch, quyền riêng tư, độ bất định và trách nhiệm giải trình trong hệ thống dữ liệu.",
         "explore_with": [
           "Philosophy",
           "Law"
@@ -495,7 +495,7 @@
         "label": "How People Actually Choose",
         "label_vi": "Behavioural Economics",
         "why": "Study how psychological processes influence economic decisions.",
-        "why_vi": "Study how psychological processes influence economic decisions.",
+        "why_vi": "Nghiên cứu cách các quá trình tâm lý ảnh hưởng đến quyết định kinh tế.",
         "explore_with": [
           "Psychology",
           "Cognitive Science"
@@ -505,7 +505,7 @@
         "label": "Cities and Resources",
         "label_vi": "Urban Economics",
         "why": "Explore housing, transport, land use and spatial patterns of economic activity.",
-        "why_vi": "Explore housing, transport, land use and spatial patterns of economic activity.",
+        "why_vi": "Khám phá nhà ở, giao thông, sử dụng đất và sự phân bố không gian của hoạt động kinh tế.",
         "explore_with": [
           "Geography",
           "Architecture"
@@ -515,7 +515,7 @@
         "label": "Economies of Nature",
         "label_vi": "Ecological Economics",
         "why": "Investigate relationships between economic systems and ecological limits.",
-        "why_vi": "Investigate relationships between economic systems and ecological limits.",
+        "why_vi": "Tìm hiểu mối quan hệ giữa các hệ thống kinh tế và giới hạn sinh thái.",
         "explore_with": [
           "Environmental Science",
           "Biology"
@@ -525,7 +525,7 @@
         "label": "Inequality Across Generations",
         "label_vi": "Intergenerational Economics",
         "why": "Study wealth, opportunity and public policy across generations.",
-        "why_vi": "Study wealth, opportunity and public policy across generations.",
+        "why_vi": "Nghiên cứu tài sản, cơ hội và chính sách công qua các thế hệ.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -535,7 +535,7 @@
         "label": "The Economics of Culture",
         "label_vi": "Cultural Economics",
         "why": "Explore how creative work, heritage and cultural institutions are organised and valued.",
-        "why_vi": "Explore how creative work, heritage and cultural institutions are organised and valued.",
+        "why_vi": "Khám phá cách các hoạt động sáng tạo, di sản và thiết chế văn hóa được tổ chức và định giá.",
         "explore_with": [
           "History",
           "Communication & Media Studies"
@@ -602,7 +602,7 @@
         "label": "The Origins of Life",
         "label_vi": "Evolutionary Biology",
         "why": "Investigate evolution, adaptation and the history of living systems.",
-        "why_vi": "Investigate evolution, adaptation and the history of living systems.",
+        "why_vi": "Tìm hiểu tiến hóa, thích nghi và lịch sử của các hệ thống sống.",
         "explore_with": [
           "Geology",
           "Chemistry"
@@ -612,7 +612,7 @@
         "label": "Life at the Molecular Scale",
         "label_vi": "Structural Biology",
         "why": "Explore how molecular structures support biological function.",
-        "why_vi": "Explore how molecular structures support biological function.",
+        "why_vi": "Khám phá cách cấu trúc phân tử hỗ trợ chức năng sinh học.",
         "explore_with": [
           "Chemistry",
           "Physics"
@@ -622,7 +622,7 @@
         "label": "Ecosystems in a Changing World",
         "label_vi": "Community Ecology",
         "why": "Study interactions among species and changing ecological communities.",
-        "why_vi": "Study interactions among species and changing ecological communities.",
+        "why_vi": "Nghiên cứu tương tác giữa các loài và sự biến đổi của các quần xã sinh thái.",
         "explore_with": [
           "Environmental Science",
           "Geography"
@@ -632,7 +632,7 @@
         "label": "Biology of Behaviour",
         "label_vi": "Behavioural Ecology",
         "why": "Explore how behaviour relates to evolution and ecological conditions.",
-        "why_vi": "Explore how behaviour relates to evolution and ecological conditions.",
+        "why_vi": "Khám phá mối liên hệ giữa hành vi, tiến hóa và điều kiện sinh thái.",
         "explore_with": [
           "Psychology",
           "Anthropology"
@@ -642,7 +642,7 @@
         "label": "Life Beyond Earth",
         "label_vi": "Astrobiology",
         "why": "Connect biology with planetary environments and the search for life.",
-        "why_vi": "Connect biology with planetary environments and the search for life.",
+        "why_vi": "Kết nối sinh học với môi trường hành tinh và hành trình tìm kiếm sự sống ngoài Trái Đất.",
         "explore_with": [
           "Astronomy & Astrophysics",
           "Geology"
@@ -709,7 +709,7 @@
         "label": "Mechanics of Living Bodies",
         "label_vi": "Biomechanics",
         "why": "Apply mechanics to movement, tissues and biological systems.",
-        "why_vi": "Apply mechanics to movement, tissues and biological systems.",
+        "why_vi": "Vận dụng cơ học để nghiên cứu chuyển động, mô và các hệ thống sinh học.",
         "explore_with": [
           "Biology",
           "Physics"
@@ -719,7 +719,7 @@
         "label": "Sound and Vibration",
         "label_vi": "Acoustics",
         "why": "Explore sound production, propagation, vibration and noise.",
-        "why_vi": "Explore sound production, propagation, vibration and noise.",
+        "why_vi": "Khám phá sự tạo thành, lan truyền âm thanh, dao động và tiếng ồn.",
         "explore_with": [
           "Physics",
           "Music"
@@ -729,7 +729,7 @@
         "label": "Machines Inspired by Nature",
         "label_vi": "Bio-inspired Design",
         "why": "Investigate engineering ideas inspired by biological structures and processes.",
-        "why_vi": "Investigate engineering ideas inspired by biological structures and processes.",
+        "why_vi": "Tìm hiểu các ý tưởng kỹ thuật lấy cảm hứng từ cấu trúc và quá trình sinh học.",
         "explore_with": [
           "Biology",
           "Chemistry"
@@ -739,7 +739,7 @@
         "label": "Materials at Extreme Conditions",
         "label_vi": "Materials Mechanics",
         "why": "Study deformation, fracture and performance of materials.",
-        "why_vi": "Study deformation, fracture and performance of materials.",
+        "why_vi": "Nghiên cứu biến dạng, phá hủy và hiệu năng của vật liệu.",
         "explore_with": [
           "Physics",
           "Chemistry"
@@ -749,7 +749,7 @@
         "label": "Engineering for Space",
         "label_vi": "Spacecraft Mechanical Systems",
         "why": "Explore thermal, structural and mechanical challenges in space systems.",
-        "why_vi": "Explore thermal, structural and mechanical challenges in space systems.",
+        "why_vi": "Khám phá các thách thức về nhiệt, kết cấu và cơ học trong hệ thống không gian.",
         "explore_with": [
           "Astronomy & Astrophysics",
           "Physics"
@@ -816,7 +816,7 @@
         "label": "Markets and Human Behaviour",
         "label_vi": "Behavioural Finance",
         "why": "Investigate how cognitive biases and social influences shape financial decisions.",
-        "why_vi": "Investigate how cognitive biases and social influences shape financial decisions.",
+        "why_vi": "Tìm hiểu cách thiên kiến nhận thức và ảnh hưởng xã hội định hình quyết định tài chính.",
         "explore_with": [
           "Psychology",
           "Economics"
@@ -826,7 +826,7 @@
         "label": "Money and the Climate",
         "label_vi": "Climate Finance",
         "why": "Explore financing approaches for climate mitigation and adaptation.",
-        "why_vi": "Explore financing approaches for climate mitigation and adaptation.",
+        "why_vi": "Khám phá các phương thức tài trợ cho giảm nhẹ và thích ứng với biến đổi khí hậu.",
         "explore_with": [
           "Environmental Science",
           "Economics"
@@ -836,7 +836,7 @@
         "label": "The History of Money",
         "label_vi": "Financial History",
         "why": "Study the evolution of money, banking and financial institutions.",
-        "why_vi": "Study the evolution of money, banking and financial institutions.",
+        "why_vi": "Nghiên cứu quá trình phát triển của tiền tệ, ngân hàng và các định chế tài chính.",
         "explore_with": [
           "History",
           "Political Science"
@@ -846,7 +846,7 @@
         "label": "Access to Financial Systems",
         "label_vi": "Financial Inclusion",
         "why": "Investigate barriers to financial services and their social consequences.",
-        "why_vi": "Investigate barriers to financial services and their social consequences.",
+        "why_vi": "Tìm hiểu rào cản tiếp cận dịch vụ tài chính và hệ quả xã hội của chúng.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -856,7 +856,7 @@
         "label": "Risk as a Mathematical Problem",
         "label_vi": "Financial Mathematics",
         "why": "Explore probability, stochastic models and mathematical approaches to risk.",
-        "why_vi": "Explore probability, stochastic models and mathematical approaches to risk.",
+        "why_vi": "Khám phá xác suất, mô hình ngẫu nhiên và các phương pháp toán học để phân tích rủi ro.",
         "explore_with": [
           "Pure Mathematics",
           "Statistics"
@@ -923,7 +923,7 @@
         "label": "Chemistry of the Atmosphere",
         "label_vi": "Atmospheric Chemistry",
         "why": "Study chemical processes in air and their environmental effects.",
-        "why_vi": "Study chemical processes in air and their environmental effects.",
+        "why_vi": "Nghiên cứu các quá trình hóa học trong không khí và tác động của chúng đến môi trường.",
         "explore_with": [
           "Environmental Science",
           "Physics"
@@ -933,7 +933,7 @@
         "label": "Molecules and Life",
         "label_vi": "Chemical Biology",
         "why": "Explore chemical processes in living systems.",
-        "why_vi": "Explore chemical processes in living systems.",
+        "why_vi": "Khám phá các quá trình hóa học diễn ra trong hệ thống sống.",
         "explore_with": [
           "Biology",
           "Medicine"
@@ -943,7 +943,7 @@
         "label": "Chemistry of Art",
         "label_vi": "Heritage Science",
         "why": "Use chemical analysis to understand and preserve cultural materials.",
-        "why_vi": "Use chemical analysis to understand and preserve cultural materials.",
+        "why_vi": "Sử dụng phân tích hóa học để tìm hiểu và bảo tồn các vật liệu văn hóa.",
         "explore_with": [
           "History",
           "Physics"
@@ -953,7 +953,7 @@
         "label": "Molecules by Design",
         "label_vi": "Supramolecular Chemistry",
         "why": "Investigate molecular recognition, self-assembly and complex chemical structures.",
-        "why_vi": "Investigate molecular recognition, self-assembly and complex chemical structures.",
+        "why_vi": "Tìm hiểu nhận diện phân tử, sự tự lắp ráp và các cấu trúc hóa học phức tạp.",
         "explore_with": [
           "Biology",
           "Materials Science"
@@ -963,7 +963,7 @@
         "label": "Chemistry of Other Worlds",
         "label_vi": "Astrochemistry",
         "why": "Explore molecules and chemical processes in space.",
-        "why_vi": "Explore molecules and chemical processes in space.",
+        "why_vi": "Khám phá các phân tử và quá trình hóa học trong không gian.",
         "explore_with": [
           "Astronomy & Astrophysics",
           "Physics"
@@ -1030,7 +1030,7 @@
         "label": "The Geometry of the Universe",
         "label_vi": "General Relativity",
         "why": "Explore gravity through spacetime geometry and mathematical physics.",
-        "why_vi": "Explore gravity through spacetime geometry and mathematical physics.",
+        "why_vi": "Khám phá lực hấp dẫn thông qua hình học không-thời gian và vật lý toán học.",
         "explore_with": [
           "Pure Mathematics",
           "Astronomy & Astrophysics"
@@ -1040,7 +1040,7 @@
         "label": "Physics of Living Systems",
         "label_vi": "Biophysics",
         "why": "Apply physical principles to cells, organisms and biological processes.",
-        "why_vi": "Apply physical principles to cells, organisms and biological processes.",
+        "why_vi": "Vận dụng các nguyên lý vật lý để nghiên cứu tế bào, sinh vật và quá trình sinh học.",
         "explore_with": [
           "Biology",
           "Chemistry"
@@ -1050,7 +1050,7 @@
         "label": "The Physics of Sound",
         "label_vi": "Acoustics and Musical Physics",
         "why": "Study waves, resonance and the physical foundations of sound.",
-        "why_vi": "Study waves, resonance and the physical foundations of sound.",
+        "why_vi": "Nghiên cứu sóng, cộng hưởng và nền tảng vật lý của âm thanh.",
         "explore_with": [
           "Music",
           "Electrical Engineering"
@@ -1060,7 +1060,7 @@
         "label": "Matter at the Smallest Scales",
         "label_vi": "Particle Physics",
         "why": "Investigate fundamental particles and interactions.",
-        "why_vi": "Investigate fundamental particles and interactions.",
+        "why_vi": "Tìm hiểu các hạt cơ bản và tương tác giữa chúng.",
         "explore_with": [
           "Pure Mathematics",
           "Chemistry"
@@ -1070,7 +1070,7 @@
         "label": "Complexity in Nature",
         "label_vi": "Nonlinear Dynamics",
         "why": "Explore complex behaviour in systems governed by nonlinear laws.",
-        "why_vi": "Explore complex behaviour in systems governed by nonlinear laws.",
+        "why_vi": "Khám phá hành vi phức tạp trong các hệ thống chịu sự chi phối của quy luật phi tuyến.",
         "explore_with": [
           "Pure Mathematics",
           "Biology",
@@ -1138,7 +1138,7 @@
         "label": "The Planet from Above",
         "label_vi": "Earth Observation",
         "why": "Use satellite data to study land, oceans, atmosphere and environmental change.",
-        "why_vi": "Use satellite data to study land, oceans, atmosphere and environmental change.",
+        "why_vi": "Sử dụng dữ liệu vệ tinh để nghiên cứu đất liền, đại dương, khí quyển và biến đổi môi trường.",
         "explore_with": [
           "Geography",
           "Astronomy & Astrophysics"
@@ -1148,7 +1148,7 @@
         "label": "Health and Ecosystems",
         "label_vi": "One Health",
         "why": "Explore links among human health, animal health and environmental conditions.",
-        "why_vi": "Explore links among human health, animal health and environmental conditions.",
+        "why_vi": "Khám phá mối liên hệ giữa sức khỏe con người, sức khỏe động vật và điều kiện môi trường.",
         "explore_with": [
           "Biology",
           "Sociology"
@@ -1158,7 +1158,7 @@
         "label": "Restoring Damaged Landscapes",
         "label_vi": "Restoration Ecology",
         "why": "Study ecological recovery and the rebuilding of degraded ecosystems.",
-        "why_vi": "Study ecological recovery and the rebuilding of degraded ecosystems.",
+        "why_vi": "Nghiên cứu quá trình phục hồi sinh thái và tái tạo các hệ sinh thái bị suy thoái.",
         "explore_with": [
           "Biology",
           "Geography"
@@ -1168,7 +1168,7 @@
         "label": "People, Power and Pollution",
         "label_vi": "Environmental Justice",
         "why": "Investigate unequal exposure to environmental harms and access to resources.",
-        "why_vi": "Investigate unequal exposure to environmental harms and access to resources.",
+        "why_vi": "Tìm hiểu sự bất bình đẳng trong mức độ chịu tác động môi trường và khả năng tiếp cận tài nguyên.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -1178,7 +1178,7 @@
         "label": "The Chemistry of Climate",
         "label_vi": "Climate Chemistry",
         "why": "Explore chemical processes that influence climate and atmospheric change.",
-        "why_vi": "Explore chemical processes that influence climate and atmospheric change.",
+        "why_vi": "Khám phá các quá trình hóa học ảnh hưởng đến khí hậu và biến đổi khí quyển.",
         "explore_with": [
           "Chemistry",
           "Physics"
@@ -1245,7 +1245,7 @@
         "label": "How Buildings Shape Experience",
         "label_vi": "Environmental Psychology of Space",
         "why": "Study how spatial design influences perception, behaviour and wellbeing.",
-        "why_vi": "Study how spatial design influences perception, behaviour and wellbeing.",
+        "why_vi": "Nghiên cứu cách thiết kế không gian ảnh hưởng đến tri giác, hành vi và sức khỏe.",
         "explore_with": [
           "Psychology",
           "Cognitive Science"
@@ -1255,7 +1255,7 @@
         "label": "Architecture Across Time",
         "label_vi": "Architectural History and Theory",
         "why": "Explore the cultural, political and intellectual histories of built environments.",
-        "why_vi": "Explore the cultural, political and intellectual histories of built environments.",
+        "why_vi": "Khám phá lịch sử văn hóa, chính trị và tư tưởng của môi trường kiến trúc qua các thời kỳ.",
         "explore_with": [
           "History",
           "Philosophy"
@@ -1265,7 +1265,7 @@
         "label": "Buildings as Living Systems",
         "label_vi": "Building Science",
         "why": "Investigate light, heat, air, materials and energy in buildings.",
-        "why_vi": "Investigate light, heat, air, materials and energy in buildings.",
+        "why_vi": "Tìm hiểu ánh sáng, nhiệt, không khí, vật liệu và năng lượng trong công trình như các hệ thống liên kết.",
         "explore_with": [
           "Physics",
           "Environmental Science"
@@ -1275,7 +1275,7 @@
         "label": "Designing for All Bodies",
         "label_vi": "Inclusive and Universal Design",
         "why": "Explore how environments can support diverse abilities and needs.",
-        "why_vi": "Explore how environments can support diverse abilities and needs.",
+        "why_vi": "Khám phá cách thiết kế môi trường hỗ trợ con người với những khả năng và nhu cầu đa dạng.",
         "explore_with": [
           "Psychology",
           "Education"
@@ -1285,7 +1285,7 @@
         "label": "The City as a Cultural Text",
         "label_vi": "Urban Morphology",
         "why": "Study patterns, forms and transformations of cities.",
-        "why_vi": "Study patterns, forms and transformations of cities.",
+        "why_vi": "Nghiên cứu các mô hình, hình thái và quá trình biến đổi của đô thị.",
         "explore_with": [
           "Geography",
           "Sociology"
@@ -1352,7 +1352,7 @@
         "label": "Signals and the Human Brain",
         "label_vi": "Neural Engineering",
         "why": "Explore electrical and computational approaches to understanding neural systems.",
-        "why_vi": "Explore electrical and computational approaches to understanding neural systems.",
+        "why_vi": "Khám phá các phương pháp điện học và tính toán để tìm hiểu hệ thần kinh.",
         "explore_with": [
           "Biology",
           "Cognitive Science"
@@ -1362,7 +1362,7 @@
         "label": "Quantum Devices",
         "label_vi": "Quantum Engineering",
         "why": "Investigate devices and systems based on quantum phenomena.",
-        "why_vi": "Investigate devices and systems based on quantum phenomena.",
+        "why_vi": "Nghiên cứu thiết bị và hệ thống dựa trên các hiện tượng lượng tử.",
         "explore_with": [
           "Physics",
           "Pure Mathematics"
@@ -1372,7 +1372,7 @@
         "label": "Energy in Connected Systems",
         "label_vi": "Power Systems and Grid Science",
         "why": "Study electricity networks, stability and energy transitions.",
-        "why_vi": "Study electricity networks, stability and energy transitions.",
+        "why_vi": "Nghiên cứu mạng lưới điện, độ ổn định và quá trình chuyển dịch năng lượng.",
         "explore_with": [
           "Physics",
           "Environmental Science"
@@ -1382,7 +1382,7 @@
         "label": "Sound, Speech and Hearing",
         "label_vi": "Audio and Speech Technology",
         "why": "Explore sensing, signal processing and human communication.",
-        "why_vi": "Explore sensing, signal processing and human communication.",
+        "why_vi": "Khám phá cảm biến, xử lý tín hiệu và giao tiếp của con người thông qua âm thanh, lời nói và thính giác.",
         "explore_with": [
           "Linguistics",
           "Physics"
@@ -1392,7 +1392,7 @@
         "label": "Sensing the Earth",
         "label_vi": "Remote Sensing Instrumentation",
         "why": "Develop and study instruments that observe environmental and planetary systems.",
-        "why_vi": "Develop and study instruments that observe environmental and planetary systems.",
+        "why_vi": "Phát triển và nghiên cứu các thiết bị quan sát hệ thống môi trường và hành tinh.",
         "explore_with": [
           "Geography",
           "Astronomy & Astrophysics"
@@ -1459,7 +1459,7 @@
         "label": "Water, Cities and Infrastructure",
         "label_vi": "Urban Water Systems",
         "why": "Explore how cities manage water supply, drainage and flood risk.",
-        "why_vi": "Explore how cities manage water supply, drainage and flood risk.",
+        "why_vi": "Khám phá cách các thành phố quản lý nguồn cấp nước, thoát nước và nguy cơ ngập lụt.",
         "explore_with": [
           "Hydrology",
           "Geography"
@@ -1469,7 +1469,7 @@
         "label": "The Science of Soil",
         "label_vi": "Geotechnical Science",
         "why": "Study soil, rock and the behaviour of foundations and slopes.",
-        "why_vi": "Study soil, rock and the behaviour of foundations and slopes.",
+        "why_vi": "Nghiên cứu đất, đá và đặc tính của nền móng cũng như mái dốc.",
         "explore_with": [
           "Geology",
           "Physics"
@@ -1479,7 +1479,7 @@
         "label": "Transport and Human Behaviour",
         "label_vi": "Transport Planning",
         "why": "Investigate mobility, accessibility and the spatial organisation of transport.",
-        "why_vi": "Investigate mobility, accessibility and the spatial organisation of transport.",
+        "why_vi": "Tìm hiểu khả năng di chuyển, khả năng tiếp cận và cách tổ chức không gian của giao thông.",
         "explore_with": [
           "Geography",
           "Sociology"
@@ -1489,7 +1489,7 @@
         "label": "Structures in Extreme Events",
         "label_vi": "Structural Resilience",
         "why": "Explore how structures respond to earthquakes, wind and other hazards.",
-        "why_vi": "Explore how structures respond to earthquakes, wind and other hazards.",
+        "why_vi": "Khám phá phản ứng của công trình trước động đất, gió và các hiểm họa khác.",
         "explore_with": [
           "Physics",
           "Geology"
@@ -1499,7 +1499,7 @@
         "label": "The Future of Construction Materials",
         "label_vi": "Sustainable Construction Materials",
         "why": "Study material performance, reuse and environmental impacts.",
-        "why_vi": "Study material performance, reuse and environmental impacts.",
+        "why_vi": "Nghiên cứu hiệu năng, khả năng tái sử dụng và tác động môi trường của vật liệu xây dựng.",
         "explore_with": [
           "Chemistry",
           "Environmental Science"
@@ -1566,7 +1566,7 @@
         "label": "Politics of Knowledge",
         "label_vi": "Science and Technology Policy",
         "why": "Study how institutions govern scientific research and emerging technologies.",
-        "why_vi": "Study how institutions govern scientific research and emerging technologies.",
+        "why_vi": "Nghiên cứu cách các thể chế quản lý nghiên cứu khoa học và công nghệ mới nổi.",
         "explore_with": [
           "Philosophy",
           "Computer Science"
@@ -1576,7 +1576,7 @@
         "label": "Borders and Belonging",
         "label_vi": "Political Geography",
         "why": "Explore territory, borders, identity and geopolitical space.",
-        "why_vi": "Explore territory, borders, identity and geopolitical space.",
+        "why_vi": "Khám phá lãnh thổ, biên giới, bản sắc và không gian địa chính trị.",
         "explore_with": [
           "Geography",
           "History"
@@ -1586,7 +1586,7 @@
         "label": "How Policies Change",
         "label_vi": "Policy Evaluation",
         "why": "Investigate how public programmes are designed and assessed.",
-        "why_vi": "Investigate how public programmes are designed and assessed.",
+        "why_vi": "Tìm hiểu cách các chương trình công được thiết kế và đánh giá.",
         "explore_with": [
           "Statistics",
           "Economics"
@@ -1596,7 +1596,7 @@
         "label": "War, Peace and Memory",
         "label_vi": "Peace and Conflict Studies",
         "why": "Study conflict, reconciliation and the social memory of political violence.",
-        "why_vi": "Study conflict, reconciliation and the social memory of political violence.",
+        "why_vi": "Nghiên cứu xung đột, hòa giải và ký ức xã hội về bạo lực chính trị.",
         "explore_with": [
           "History",
           "Sociology"
@@ -1606,7 +1606,7 @@
         "label": "The Politics of the Environment",
         "label_vi": "Environmental Governance",
         "why": "Explore institutions, law and political choices in environmental decision-making.",
-        "why_vi": "Explore institutions, law and political choices in environmental decision-making.",
+        "why_vi": "Khám phá thể chế, luật pháp và lựa chọn chính trị trong quá trình ra quyết định về môi trường.",
         "explore_with": [
           "Environmental Science",
           "Economics"
@@ -1673,7 +1673,7 @@
         "label": "How Societies Know",
         "label_vi": "Sociology of Knowledge",
         "why": "Study how institutions and social contexts shape what counts as knowledge.",
-        "why_vi": "Study how institutions and social contexts shape what counts as knowledge.",
+        "why_vi": "Nghiên cứu cách các thể chế và bối cảnh xã hội định hình điều được công nhận là tri thức.",
         "explore_with": [
           "Philosophy",
           "History"
@@ -1683,7 +1683,7 @@
         "label": "The Digital Public",
         "label_vi": "Digital Sociology",
         "why": "Explore how platforms and digital networks transform social life.",
-        "why_vi": "Explore how platforms and digital networks transform social life.",
+        "why_vi": "Khám phá cách nền tảng và mạng lưới số làm biến đổi đời sống xã hội.",
         "explore_with": [
           "Computer Science",
           "Communication & Media Studies"
@@ -1693,7 +1693,7 @@
         "label": "Space and Inequality",
         "label_vi": "Urban Sociology",
         "why": "Investigate neighbourhoods, segregation, housing and public space.",
-        "why_vi": "Investigate neighbourhoods, segregation, housing and public space.",
+        "why_vi": "Tìm hiểu khu dân cư, phân tách xã hội, nhà ở và không gian công cộng.",
         "explore_with": [
           "Geography",
           "Architecture"
@@ -1703,7 +1703,7 @@
         "label": "Work After Automation",
         "label_vi": "Sociology of Work",
         "why": "Study labour, organisations and changing employment structures.",
-        "why_vi": "Study labour, organisations and changing employment structures.",
+        "why_vi": "Nghiên cứu lao động, tổ chức và sự thay đổi của cấu trúc việc làm.",
         "explore_with": [
           "Economics",
           "Computer Science"
@@ -1713,7 +1713,7 @@
         "label": "Health, Institutions and Society",
         "label_vi": "Medical Sociology",
         "why": "Explore social structures and inequalities in health and healthcare.",
-        "why_vi": "Explore social structures and inequalities in health and healthcare.",
+        "why_vi": "Khám phá các cấu trúc xã hội và bất bình đẳng trong sức khỏe và chăm sóc y tế.",
         "explore_with": [
           "Biology",
           "Political Science"
@@ -1795,7 +1795,7 @@
         "label": "Language and the Brain",
         "label_vi": "Neurolinguistics",
         "why": "Explore neural processes involved in understanding and producing language.",
-        "why_vi": "Explore neural processes involved in understanding and producing language.",
+        "why_vi": "Khám phá các quá trình thần kinh tham gia vào việc hiểu và tạo ra ngôn ngữ.",
         "explore_with": [
           "Cognitive Science",
           "Biology"
@@ -1805,7 +1805,7 @@
         "label": "Language as a Formal System",
         "label_vi": "Mathematical Linguistics",
         "why": "Study formal models of grammar, meaning and language structure.",
-        "why_vi": "Study formal models of grammar, meaning and language structure.",
+        "why_vi": "Nghiên cứu mô hình hình thức của ngữ pháp, ý nghĩa và cấu trúc ngôn ngữ.",
         "explore_with": [
           "Pure Mathematics",
           "Computer Science"
@@ -1815,7 +1815,7 @@
         "label": "Sound and Communication",
         "label_vi": "Phonetics and Speech Science",
         "why": "Investigate speech sounds, acoustics and spoken interaction.",
-        "why_vi": "Investigate speech sounds, acoustics and spoken interaction.",
+        "why_vi": "Tìm hiểu âm thanh lời nói, âm học và tương tác bằng lời nói.",
         "explore_with": [
           "Physics",
           "Electrical Engineering"
@@ -1825,7 +1825,7 @@
         "label": "Languages Through History",
         "label_vi": "Historical Linguistics",
         "why": "Explore language change, reconstruction and relationships among languages.",
-        "why_vi": "Explore language change, reconstruction and relationships among languages.",
+        "why_vi": "Khám phá sự biến đổi ngôn ngữ, phương pháp phục nguyên và quan hệ giữa các ngôn ngữ.",
         "explore_with": [
           "History",
           "Anthropology"
@@ -1835,7 +1835,7 @@
         "label": "Language, Identity and Power",
         "label_vi": "Sociolinguistics",
         "why": "Study how language variation relates to identity and social structure.",
-        "why_vi": "Study how language variation relates to identity and social structure.",
+        "why_vi": "Nghiên cứu mối liên hệ giữa biến thể ngôn ngữ, bản sắc và cấu trúc xã hội.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -1845,7 +1845,7 @@
         "label": "Words and Meaning",
         "label_vi": "Lexical Semantics",
         "why": "Study how words encode meaning and how vocabularies are organised.",
-        "why_vi": "Study how words encode meaning and how vocabularies are organised.",
+        "why_vi": "Tìm hiểu cách từ ngữ mã hóa ý nghĩa và cách hệ thống từ vựng được tổ chức.",
         "explore_with": [
           "Philosophy",
           "Psychology"
@@ -1855,7 +1855,7 @@
         "label": "Language in the Digital Age",
         "label_vi": "Digital Linguistics",
         "why": "Explore language use, variation and change in digital communication.",
-        "why_vi": "Explore language use, variation and change in digital communication.",
+        "why_vi": "Khám phá cách ngôn ngữ được sử dụng, biến đổi và phát triển trong giao tiếp số.",
         "explore_with": [
           "Computer Science",
           "Communication & Media Studies"
@@ -1865,7 +1865,7 @@
         "label": "The Science of Conversation",
         "label_vi": "Conversation Analysis",
         "why": "Investigate how people coordinate meaning through interaction.",
-        "why_vi": "Investigate how people coordinate meaning through interaction.",
+        "why_vi": "Nghiên cứu cách con người phối hợp để tạo lập ý nghĩa thông qua tương tác.",
         "explore_with": [
           "Sociology",
           "Psychology"
@@ -1932,7 +1932,7 @@
         "label": "How Knowledge Develops",
         "label_vi": "Learning Sciences",
         "why": "Connect cognition, development and educational research.",
-        "why_vi": "Connect cognition, development and educational research.",
+        "why_vi": "Kết nối nhận thức, sự phát triển và nghiên cứu giáo dục.",
         "explore_with": [
           "Cognitive Science",
           "Psychology"
@@ -1942,7 +1942,7 @@
         "label": "Mathematics Learning",
         "label_vi": "Mathematics Education",
         "why": "Explore how mathematical ideas are taught, learned and represented.",
-        "why_vi": "Explore how mathematical ideas are taught, learned and represented.",
+        "why_vi": "Khám phá cách các ý tưởng toán học được giảng dạy, tiếp thu và biểu đạt.",
         "explore_with": [
           "Pure Mathematics",
           "Psychology"
@@ -1952,7 +1952,7 @@
         "label": "Learning Beyond Classrooms",
         "label_vi": "Informal and Museum Learning",
         "why": "Study learning in museums, communities and public spaces.",
-        "why_vi": "Study learning in museums, communities and public spaces.",
+        "why_vi": "Nghiên cứu hoạt động học tập tại bảo tàng, cộng đồng và không gian công cộng.",
         "explore_with": [
           "History",
           "Anthropology"
@@ -1962,7 +1962,7 @@
         "label": "Education and Inequality",
         "label_vi": "Sociology of Education",
         "why": "Investigate how institutions and social structures shape educational opportunity.",
-        "why_vi": "Investigate how institutions and social structures shape educational opportunity.",
+        "why_vi": "Tìm hiểu cách các thể chế và cấu trúc xã hội định hình cơ hội giáo dục.",
         "explore_with": [
           "Sociology",
           "Political Science"
@@ -1972,7 +1972,7 @@
         "label": "Designing Learning Environments",
         "label_vi": "Learning Design",
         "why": "Explore the design of activities, tools and environments that support learning.",
-        "why_vi": "Explore the design of activities, tools and environments that support learning.",
+        "why_vi": "Khám phá việc thiết kế hoạt động, công cụ và môi trường hỗ trợ học tập.",
         "explore_with": [
           "Computer Science",
           "Architecture"
@@ -2039,7 +2039,7 @@
         "label": "The History of Counting",
         "label_vi": "History of Accounting",
         "why": "Explore how record keeping and accounting practices developed across societies.",
-        "why_vi": "Explore how record keeping and accounting practices developed across societies.",
+        "why_vi": "Khám phá quá trình phát triển của việc ghi chép và các phương pháp kế toán trong những xã hội khác nhau.",
         "explore_with": [
           "History",
           "Anthropology"
@@ -2049,7 +2049,7 @@
         "label": "Numbers and Decisions",
         "label_vi": "Behavioural Accounting",
         "why": "Study how people interpret financial information and make organisational decisions.",
-        "why_vi": "Study how people interpret financial information and make organisational decisions.",
+        "why_vi": "Nghiên cứu cách con người diễn giải thông tin tài chính và đưa ra quyết định trong tổ chức.",
         "explore_with": [
           "Psychology",
           "Economics"
@@ -2059,7 +2059,7 @@
         "label": "Auditing Algorithms",
         "label_vi": "Accounting Information Systems",
         "why": "Investigate digital systems, controls and data in accounting processes.",
-        "why_vi": "Investigate digital systems, controls and data in accounting processes.",
+        "why_vi": "Tìm hiểu các hệ thống số, cơ chế kiểm soát và dữ liệu trong quy trình kế toán.",
         "explore_with": [
           "Computer Science",
           "Data Science"
@@ -2069,7 +2069,7 @@
         "label": "Measuring Sustainability",
         "label_vi": "Environmental and Social Accounting",
         "why": "Explore how organisations account for environmental and social impacts.",
-        "why_vi": "Explore how organisations account for environmental and social impacts.",
+        "why_vi": "Khám phá cách các tổ chức ghi nhận tác động môi trường và xã hội.",
         "explore_with": [
           "Environmental Science",
           "Sociology"
@@ -2079,7 +2079,7 @@
         "label": "Public Money and Accountability",
         "label_vi": "Public Sector Accounting",
         "why": "Study public budgets, institutions and accountability.",
-        "why_vi": "Study public budgets, institutions and accountability.",
+        "why_vi": "Nghiên cứu ngân sách công, thể chế và trách nhiệm giải trình.",
         "explore_with": [
           "Political Science",
           "Economics"
@@ -2146,7 +2146,7 @@
         "label": "How Science Reaches Society",
         "label_vi": "Science Communication",
         "why": "Explore how scientific knowledge is communicated and interpreted by publics.",
-        "why_vi": "Explore how scientific knowledge is communicated and interpreted by publics.",
+        "why_vi": "Khám phá cách tri thức khoa học được truyền đạt và diễn giải bởi công chúng.",
         "explore_with": [
           "Biology",
           "Physics"
@@ -2156,7 +2156,7 @@
         "label": "Stories Across Media",
         "label_vi": "Narrative and Media Theory",
         "why": "Study storytelling, representation and meaning across media forms.",
-        "why_vi": "Study storytelling, representation and meaning across media forms.",
+        "why_vi": "Nghiên cứu cách kể chuyện, sự đại diện và ý nghĩa được thể hiện qua nhiều hình thức truyền thông.",
         "explore_with": [
           "Linguistics",
           "Philosophy"
@@ -2166,7 +2166,7 @@
         "label": "Platforms and Power",
         "label_vi": "Platform Studies",
         "why": "Investigate how digital platforms organise communication and visibility.",
-        "why_vi": "Investigate how digital platforms organise communication and visibility.",
+        "why_vi": "Tìm hiểu cách các nền tảng số tổ chức hoạt động giao tiếp và khả năng hiển thị thông tin.",
         "explore_with": [
           "Computer Science",
           "Political Science"
@@ -2176,7 +2176,7 @@
         "label": "Museums as Media",
         "label_vi": "Museum and Heritage Communication",
         "why": "Explore exhibitions, interpretation and public engagement with heritage.",
-        "why_vi": "Explore exhibitions, interpretation and public engagement with heritage.",
+        "why_vi": "Khám phá triển lãm, hoạt động diễn giải và sự tham gia của công chúng với di sản.",
         "explore_with": [
           "History",
           "Anthropology"
@@ -2186,7 +2186,7 @@
         "label": "Sound, Image and Experience",
         "label_vi": "Sound Studies",
         "why": "Study sound as a cultural, technological and communicative form.",
-        "why_vi": "Study sound as a cultural, technological and communicative form.",
+        "why_vi": "Nghiên cứu âm thanh như một hình thức văn hóa, công nghệ và giao tiếp.",
         "explore_with": [
           "Music",
           "Physics"
@@ -2268,7 +2268,7 @@
         "label": "Algebra Meets Geometry",
         "label_vi": "Algebraic Geometry",
         "why": "Explore geometric spaces described through polynomial equations.",
-        "why_vi": "Explore geometric spaces described through polynomial equations.",
+        "why_vi": "Khám phá các không gian hình học được mô tả bằng phương trình đa thức.",
         "explore_with": [
           "Geometry",
           "Computer Science"
@@ -2278,7 +2278,7 @@
         "label": "Mathematics of Change",
         "label_vi": "Dynamical Systems",
         "why": "Study long-term behaviour, stability and patterns in evolving systems.",
-        "why_vi": "Study long-term behaviour, stability and patterns in evolving systems.",
+        "why_vi": "Nghiên cứu hành vi dài hạn, tính ổn định và các quy luật trong những hệ thống biến đổi.",
         "explore_with": [
           "Physics",
           "Biology"
@@ -2288,7 +2288,7 @@
         "label": "The Shape of Space",
         "label_vi": "Geometric Topology",
         "why": "Investigate properties of spaces that remain unchanged under continuous deformation.",
-        "why_vi": "Investigate properties of spaces that remain unchanged under continuous deformation.",
+        "why_vi": "Tìm hiểu các tính chất của không gian được giữ nguyên dưới phép biến dạng liên tục.",
         "explore_with": [
           "Physics",
           "Geography"
@@ -2379,7 +2379,7 @@
         "label": "The Geography of Food",
         "label_vi": "Food Geographies",
         "why": "Explore food systems, agriculture, trade and uneven access across places.",
-        "why_vi": "Explore food systems, agriculture, trade and uneven access across places.",
+        "why_vi": "Khám phá hệ thống thực phẩm, nông nghiệp, thương mại và sự khác biệt trong khả năng tiếp cận giữa các địa phương.",
         "explore_with": [
           "Biology",
           "Economics"
@@ -2389,7 +2389,7 @@
         "label": "Islands and Remote Places",
         "label_vi": "Island Geography",
         "why": "Study isolation, biodiversity, settlement and cultural exchange in island environments.",
-        "why_vi": "Study isolation, biodiversity, settlement and cultural exchange in island environments.",
+        "why_vi": "Nghiên cứu sự cô lập, đa dạng sinh học, định cư và giao lưu văn hóa trong môi trường đảo.",
         "explore_with": [
           "Biology",
           "Anthropology"
@@ -2399,7 +2399,7 @@
         "label": "Geography of Energy",
         "label_vi": "Energy Geographies",
         "why": "Investigate where energy is produced, transported and contested.",
-        "why_vi": "Investigate where energy is produced, transported and contested.",
+        "why_vi": "Tìm hiểu nơi năng lượng được sản xuất, vận chuyển và trở thành đối tượng tranh luận.",
         "explore_with": [
           "Environmental Science",
           "Political Science"
@@ -2483,7 +2483,7 @@
         "label": "Life in Ancient Oceans",
         "label_vi": "Paleontology",
         "why": "Study fossils to understand ancient life and changing environments.",
-        "why_vi": "Study fossils to understand ancient life and changing environments.",
+        "why_vi": "Nghiên cứu hóa thạch để tìm hiểu sự sống cổ đại và môi trường biến đổi.",
         "explore_with": [
           "Biology",
           "Geography"
@@ -2493,7 +2493,7 @@
         "label": "Earth's Magnetic Story",
         "label_vi": "Paleomagnetism",
         "why": "Use magnetic records in rocks to investigate Earth's history and plate movement.",
-        "why_vi": "Use magnetic records in rocks to investigate Earth's history and plate movement.",
+        "why_vi": "Sử dụng dấu tích từ tính trong đá để nghiên cứu lịch sử Trái Đất và sự dịch chuyển của các mảng kiến tạo.",
         "explore_with": [
           "Physics",
           "Geography"
@@ -2503,7 +2503,7 @@
         "label": "Geology of Natural Resources",
         "label_vi": "Mineral Systems",
         "why": "Explore how geological processes concentrate minerals and shape resource distributions.",
-        "why_vi": "Explore how geological processes concentrate minerals and shape resource distributions.",
+        "why_vi": "Khám phá cách các quá trình địa chất tập trung khoáng sản và định hình sự phân bố tài nguyên.",
         "explore_with": [
           "Chemistry",
           "Environmental Science"
@@ -2588,7 +2588,7 @@
         "label": "How Stars Are Born",
         "label_vi": "Star Formation",
         "why": "Investigate how interstellar gas and dust form stars and planetary systems.",
-        "why_vi": "Investigate how interstellar gas and dust form stars and planetary systems.",
+        "why_vi": "Tìm hiểu cách khí và bụi liên sao hình thành các ngôi sao và hệ hành tinh.",
         "explore_with": [
           "Physics",
           "Chemistry"
@@ -2598,7 +2598,7 @@
         "label": "The Dynamic Sun",
         "label_vi": "Solar Physics",
         "why": "Study solar activity and its influence on planetary environments and technology.",
-        "why_vi": "Study solar activity and its influence on planetary environments and technology.",
+        "why_vi": "Nghiên cứu hoạt động Mặt Trời và ảnh hưởng của nó đến môi trường hành tinh cũng như công nghệ.",
         "explore_with": [
           "Physics",
           "Electrical Engineering"
@@ -2608,7 +2608,7 @@
         "label": "The Mathematics of Orbits",
         "label_vi": "Celestial Mechanics",
         "why": "Explore gravitational motion and the mathematical structure of orbital systems.",
-        "why_vi": "Explore gravitational motion and the mathematical structure of orbital systems.",
+        "why_vi": "Khám phá chuyển động hấp dẫn và cấu trúc toán học của các hệ quỹ đạo.",
         "explore_with": [
           "Pure Mathematics",
           "Physics"
@@ -2694,7 +2694,7 @@
         "label": "Statistics of Language",
         "label_vi": "Corpus Statistics",
         "why": "Use statistical methods to investigate patterns in large collections of language.",
-        "why_vi": "Use statistical methods to investigate patterns in large collections of language.",
+        "why_vi": "Sử dụng phương pháp thống kê để nghiên cứu các quy luật trong những tập hợp ngôn ngữ quy mô lớn.",
         "explore_with": [
           "Linguistics",
           "Computer Science"
@@ -2704,7 +2704,7 @@
         "label": "The Mathematics of Uncertainty",
         "label_vi": "Probability Foundations",
         "why": "Explore axioms and mathematical structures underlying probability.",
-        "why_vi": "Explore axioms and mathematical structures underlying probability.",
+        "why_vi": "Khám phá các tiên đề và cấu trúc toán học làm nền tảng cho xác suất.",
         "explore_with": [
           "Pure Mathematics",
           "Philosophy"
@@ -2714,7 +2714,7 @@
         "label": "Experiments and Evidence",
         "label_vi": "Design of Experiments",
         "why": "Study how experiments can produce reliable and interpretable evidence.",
-        "why_vi": "Study how experiments can produce reliable and interpretable evidence.",
+        "why_vi": "Nghiên cứu cách thiết kế thí nghiệm có thể tạo ra bằng chứng đáng tin cậy và dễ diễn giải.",
         "explore_with": [
           "Biology",
           "Psychology"
@@ -2796,7 +2796,7 @@
         "label": "The Logic of Arguments",
         "label_vi": "Formal Logic",
         "why": "Investigate valid reasoning, formal languages and logical systems.",
-        "why_vi": "Investigate valid reasoning, formal languages and logical systems.",
+        "why_vi": "Tìm hiểu suy luận hợp lệ, ngôn ngữ hình thức và các hệ thống logic.",
         "explore_with": [
           "Pure Mathematics",
           "Computer Science"
@@ -2806,7 +2806,7 @@
         "label": "Philosophy of the Natural World",
         "label_vi": "Philosophy of Physics",
         "why": "Explore concepts such as space, time, causation and physical law.",
-        "why_vi": "Explore concepts such as space, time, causation and physical law.",
+        "why_vi": "Khám phá những khái niệm như không gian, thời gian, quan hệ nhân quả và quy luật vật lý.",
         "explore_with": [
           "Physics",
           "Astronomy & Astrophysics"
@@ -2816,7 +2816,7 @@
         "label": "Ethics of the Environment",
         "label_vi": "Environmental Philosophy",
         "why": "Examine moral questions about nature, conservation and future generations.",
-        "why_vi": "Examine moral questions about nature, conservation and future generations.",
+        "why_vi": "Xem xét các vấn đề đạo đức liên quan đến thiên nhiên, bảo tồn và các thế hệ tương lai.",
         "explore_with": [
           "Environmental Science",
           "Biology"
@@ -2899,7 +2899,7 @@
         "label": "The History of the Earth",
         "label_vi": "Historical Geology and Earth History",
         "why": "Connect geological evidence with histories of landscapes and environments.",
-        "why_vi": "Connect geological evidence with histories of landscapes and environments.",
+        "why_vi": "Kết nối bằng chứng địa chất với lịch sử cảnh quan và môi trường.",
         "explore_with": [
           "Geology",
           "Geography"
@@ -2909,7 +2909,7 @@
         "label": "History of Ideas",
         "label_vi": "Intellectual History",
         "why": "Study how concepts, arguments and systems of thought change over time.",
-        "why_vi": "Study how concepts, arguments and systems of thought change over time.",
+        "why_vi": "Nghiên cứu cách các khái niệm, lập luận và hệ thống tư tưởng thay đổi theo thời gian.",
         "explore_with": [
           "Philosophy",
           "Linguistics"
@@ -2919,7 +2919,7 @@
         "label": "Maps and Power",
         "label_vi": "History of Cartography",
         "why": "Explore how maps have represented, shaped and contested the world.",
-        "why_vi": "Explore how maps have represented, shaped and contested the world.",
+        "why_vi": "Khám phá cách bản đồ mô tả, định hình và phản ánh những tranh chấp về thế giới.",
         "explore_with": [
           "Geography",
           "Political Science"
@@ -3002,7 +3002,7 @@
         "label": "The Archaeology of Landscapes",
         "label_vi": "Landscape Archaeology",
         "why": "Study how people shaped and inhabited environments through time.",
-        "why_vi": "Study how people shaped and inhabited environments through time.",
+        "why_vi": "Nghiên cứu cách con người định hình và cư trú trong môi trường qua các thời kỳ.",
         "explore_with": [
           "Geography",
           "History"
@@ -3012,7 +3012,7 @@
         "label": "Human Variation and Adaptation",
         "label_vi": "Biological Variation",
         "why": "Explore human biological diversity and adaptation across environments.",
-        "why_vi": "Explore human biological diversity and adaptation across environments.",
+        "why_vi": "Khám phá sự đa dạng sinh học và khả năng thích nghi của con người trong các môi trường khác nhau.",
         "explore_with": [
           "Biology",
           "Geology"
@@ -3022,7 +3022,7 @@
         "label": "Ritual, Belief and Society",
         "label_vi": "Anthropology of Religion",
         "why": "Investigate ritual, belief, symbolism and social life across cultures.",
-        "why_vi": "Investigate ritual, belief, symbolism and social life across cultures.",
+        "why_vi": "Tìm hiểu nghi lễ, niềm tin, biểu tượng và đời sống xã hội giữa các nền văn hóa.",
         "explore_with": [
           "History",
           "Sociology"
