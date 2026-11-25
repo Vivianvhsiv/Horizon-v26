@@ -148,8 +148,10 @@ check('profile_topic_mentions' not in app and 'explore_profile_interests' not in
       'Horizon does not present interest-to-major matching or interest-based profile navigation')
 compare_start=app.find('elif page == tr("compare"):')
 compare_code=app[compare_start:] if compare_start >= 0 else ''
-check('Shared labels are a browsing aid only' in compare_code and 'Your self-identified strength:' in compare_code,
-      'Compare Majors carries the student lens without creating a match score')
+check('There is no overall winner here.' in compare_code and 'not which one is supposedly best for you' in compare_code,
+      'Compare Majors explains differences without declaring a best-fit major')
+check('Compare the substance of each field' in compare_code,
+      'Compare Majors frames comparison around academic substance and student-led next questions')
 
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
