@@ -758,6 +758,19 @@ elif page == tr("network"):
                     if values:
                         st.markdown("**" + (label_en if st.session_state.language == "English" else label_vi) + "**")
                         st.write(" · ".join(values))
+                # Show the deliberately broad cross-disciplinary prompts beside the profile.
+                unexpected_directions = EXPLORATION_DIRECTIONS.get(explore_major, [])
+                if unexpected_directions:
+                    st.markdown("**" + ("Unexpected directions to explore" if st.session_state.language == "English" else "Những hướng khám phá ngoài dự kiến") + "**")
+                    st.caption("These are curated ideas for broadening your search, not verified degree pathways or personalized matches." if st.session_state.language == "English" else "Đây là các ý tưởng được biên soạn để mở rộng hướng tìm hiểu, không phải lộ trình bằng cấp đã xác minh hay kết quả ghép ngành cá nhân.")
+                    for direction in unexpected_directions:
+                        direction_label = direction.get("label", "") if st.session_state.language == "English" else direction.get("label_vi", direction.get("label", ""))
+                        direction_reason = direction.get("why", "") if st.session_state.language == "English" else direction.get("why_vi", direction.get("why", ""))
+                        related_labels = direction.get("explore_with", [])
+                        related_display = related_labels if st.session_state.language == "English" else [MAJORS.get(m, {}).get("name_vi", m) for m in related_labels]
+                        with st.expander(direction_label):
+                            st.write(direction_reason)
+                            st.caption(("Explore alongside: " if st.session_state.language == "English" else "Có thể tìm hiểu cùng: ") + ", ".join(related_display))
                 st.markdown("**" + ("Skills" if st.session_state.language == "English" else "Kỹ năng") + "**")
                 skills = explore_info.get("skills", []) if st.session_state.language == "English" else explore_info.get("skills_vi", explore_info.get("skills", []))
                 st.write(" · ".join(skills))
