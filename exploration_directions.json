@@ -2,8 +2,8 @@
   "_meta": {
     "title": "Unexpected exploration directions",
     "version": "1.0",
-    "description": "Curated interdisciplinary exploration prompts for all 28 Horizon majors. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
-    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 28 ngành Horizon. Đây là hướng tìm hiểu, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
+    "description": "Curated interdisciplinary exploration prompts for all 28 Horizon majors. Each major has ten prompts. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
+    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 28 ngành Horizon, mỗi ngành có mười hướng tìm hiểu. Đây là gợi ý khám phá, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
   },
   "majors": {
     "Cognitive Science": [
@@ -59,6 +59,56 @@
         "explore_with": [
           "Economics",
           "Political Science",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Mind in Motion",
+        "label_vi": "Embodied Cognition",
+        "why": "Explore how bodily action and sensory experience shape thinking.",
+        "why_vi": "Explore how bodily action and sensory experience shape thinking.",
+        "explore_with": [
+          "Psychology",
+          "Biology"
+        ]
+      },
+      {
+        "label": "The Predictive Brain",
+        "label_vi": "Predictive Processing",
+        "why": "Investigate theories of perception as prediction and inference.",
+        "why_vi": "Investigate theories of perception as prediction and inference.",
+        "explore_with": [
+          "Neuroscience",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Collective Intelligence",
+        "label_vi": "Group Cognition",
+        "why": "Study how teams and communities distribute memory, reasoning and problem-solving.",
+        "why_vi": "Study how teams and communities distribute memory, reasoning and problem-solving.",
+        "explore_with": [
+          "Sociology",
+          "Education"
+        ]
+      },
+      {
+        "label": "Thinking with Tools",
+        "label_vi": "Extended Mind and Human-Computer Interaction",
+        "why": "Explore how notebooks, devices and interfaces become part of cognitive activity.",
+        "why_vi": "Explore how notebooks, devices and interfaces become part of cognitive activity.",
+        "explore_with": [
+          "Computer Science",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Conscious Experience",
+        "label_vi": "Consciousness Studies",
+        "why": "Compare philosophical and scientific approaches to awareness and experience.",
+        "why_vi": "Compare philosophical and scientific approaches to awareness and experience.",
+        "explore_with": [
+          "Philosophy",
           "Psychology"
         ]
       }
@@ -118,6 +168,56 @@
           "Environmental Science",
           "Sociology"
         ]
+      },
+      {
+        "label": "The Psychology of Time",
+        "label_vi": "Time Perception",
+        "why": "Study how attention, memory and emotion shape experienced time.",
+        "why_vi": "Study how attention, memory and emotion shape experienced time.",
+        "explore_with": [
+          "Cognitive Science",
+          "Neuroscience"
+        ]
+      },
+      {
+        "label": "Moral Judgement",
+        "label_vi": "Moral Psychology",
+        "why": "Explore how people form moral intuitions and make ethical decisions.",
+        "why_vi": "Explore how people form moral intuitions and make ethical decisions.",
+        "explore_with": [
+          "Philosophy",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Sleep and Memory",
+        "label_vi": "Sleep and Cognitive Function",
+        "why": "Investigate links among sleep, learning, memory and attention.",
+        "why_vi": "Investigate links among sleep, learning, memory and attention.",
+        "explore_with": [
+          "Biology",
+          "Neuroscience"
+        ]
+      },
+      {
+        "label": "Psychology of Music",
+        "label_vi": "Music Cognition",
+        "why": "Study perception, emotion and memory in musical experience.",
+        "why_vi": "Study perception, emotion and memory in musical experience.",
+        "explore_with": [
+          "Music",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Culture and the Self",
+        "label_vi": "Cultural Psychology",
+        "why": "Explore how cultural contexts shape identity, thought and behaviour.",
+        "why_vi": "Explore how cultural contexts shape identity, thought and behaviour.",
+        "explore_with": [
+          "Anthropology",
+          "Sociology"
+        ]
       }
     ],
     "Computer Science": [
@@ -174,6 +274,57 @@
           "Environmental Science",
           "Physics",
           "Data Science"
+        ]
+      },
+      {
+        "label": "The Mathematics of Computation",
+        "label_vi": "Algorithms and Complexity",
+        "why": "Investigate what can be computed and how efficiently.",
+        "why_vi": "Investigate what can be computed and how efficiently.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Statistics"
+        ]
+      },
+      {
+        "label": "Computers and Society",
+        "label_vi": "Critical Computing Studies",
+        "why": "Explore how software systems shape institutions, power and everyday life.",
+        "why_vi": "Explore how software systems shape institutions, power and everyday life.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Programming Languages as Logic",
+        "label_vi": "Programming Language Theory",
+        "why": "Study type systems, semantics and formal reasoning about programs.",
+        "why_vi": "Study type systems, semantics and formal reasoning about programs.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Computing the Natural World",
+        "label_vi": "Scientific Computing",
+        "why": "Use computation to investigate physical, biological and environmental systems.",
+        "why_vi": "Use computation to investigate physical, biological and environmental systems.",
+        "explore_with": [
+          "Physics",
+          "Biology",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Art Made with Algorithms",
+        "label_vi": "Generative Art and Creative Coding",
+        "why": "Explore computation as a medium for visual, sound and interactive art.",
+        "why_vi": "Explore computation as a medium for visual, sound and interactive art.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Architecture"
         ]
       }
     ],
@@ -232,6 +383,56 @@
           "Communication & Media Studies",
           "Linguistics"
         ]
+      },
+      {
+        "label": "Data and the Public Good",
+        "label_vi": "Civic Data Science",
+        "why": "Use data to examine public services, accessibility and community needs.",
+        "why_vi": "Use data to examine public services, accessibility and community needs.",
+        "explore_with": [
+          "Political Science",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Seeing Patterns in Space",
+        "label_vi": "Spatial Data Science",
+        "why": "Study geographic patterns with spatial statistics and geospatial data.",
+        "why_vi": "Study geographic patterns with spatial statistics and geospatial data.",
+        "explore_with": [
+          "Geography",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Data About the Past",
+        "label_vi": "Digital Humanities",
+        "why": "Combine computational methods with historical and cultural research.",
+        "why_vi": "Combine computational methods with historical and cultural research.",
+        "explore_with": [
+          "History",
+          "Linguistics"
+        ]
+      },
+      {
+        "label": "Data and Living Systems",
+        "label_vi": "Computational Biology",
+        "why": "Use statistical and computational methods to study biological systems.",
+        "why_vi": "Use statistical and computational methods to study biological systems.",
+        "explore_with": [
+          "Biology",
+          "Statistics"
+        ]
+      },
+      {
+        "label": "Fairness in Measurement",
+        "label_vi": "Data Ethics and Algorithmic Accountability",
+        "why": "Investigate bias, privacy, uncertainty and accountability in data systems.",
+        "why_vi": "Investigate bias, privacy, uncertainty and accountability in data systems.",
+        "explore_with": [
+          "Philosophy",
+          "Law"
+        ]
       }
     ],
     "Economics": [
@@ -288,6 +489,56 @@
           "Communication & Media Studies",
           "Sociology",
           "Accounting"
+        ]
+      },
+      {
+        "label": "How People Actually Choose",
+        "label_vi": "Behavioural Economics",
+        "why": "Study how psychological processes influence economic decisions.",
+        "why_vi": "Study how psychological processes influence economic decisions.",
+        "explore_with": [
+          "Psychology",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Cities and Resources",
+        "label_vi": "Urban Economics",
+        "why": "Explore housing, transport, land use and spatial patterns of economic activity.",
+        "why_vi": "Explore housing, transport, land use and spatial patterns of economic activity.",
+        "explore_with": [
+          "Geography",
+          "Architecture"
+        ]
+      },
+      {
+        "label": "Economies of Nature",
+        "label_vi": "Ecological Economics",
+        "why": "Investigate relationships between economic systems and ecological limits.",
+        "why_vi": "Investigate relationships between economic systems and ecological limits.",
+        "explore_with": [
+          "Environmental Science",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Inequality Across Generations",
+        "label_vi": "Intergenerational Economics",
+        "why": "Study wealth, opportunity and public policy across generations.",
+        "why_vi": "Study wealth, opportunity and public policy across generations.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "The Economics of Culture",
+        "label_vi": "Cultural Economics",
+        "why": "Explore how creative work, heritage and cultural institutions are organised and valued.",
+        "why_vi": "Explore how creative work, heritage and cultural institutions are organised and valued.",
+        "explore_with": [
+          "History",
+          "Communication & Media Studies"
         ]
       }
     ],
@@ -346,6 +597,56 @@
           "Education",
           "Psychology"
         ]
+      },
+      {
+        "label": "The Origins of Life",
+        "label_vi": "Evolutionary Biology",
+        "why": "Investigate evolution, adaptation and the history of living systems.",
+        "why_vi": "Investigate evolution, adaptation and the history of living systems.",
+        "explore_with": [
+          "Geology",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Life at the Molecular Scale",
+        "label_vi": "Structural Biology",
+        "why": "Explore how molecular structures support biological function.",
+        "why_vi": "Explore how molecular structures support biological function.",
+        "explore_with": [
+          "Chemistry",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Ecosystems in a Changing World",
+        "label_vi": "Community Ecology",
+        "why": "Study interactions among species and changing ecological communities.",
+        "why_vi": "Study interactions among species and changing ecological communities.",
+        "explore_with": [
+          "Environmental Science",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Biology of Behaviour",
+        "label_vi": "Behavioural Ecology",
+        "why": "Explore how behaviour relates to evolution and ecological conditions.",
+        "why_vi": "Explore how behaviour relates to evolution and ecological conditions.",
+        "explore_with": [
+          "Psychology",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Life Beyond Earth",
+        "label_vi": "Astrobiology",
+        "why": "Connect biology with planetary environments and the search for life.",
+        "why_vi": "Connect biology with planetary environments and the search for life.",
+        "explore_with": [
+          "Astronomy & Astrophysics",
+          "Geology"
+        ]
       }
     ],
     "Mechanical Engineering": [
@@ -402,6 +703,56 @@
           "Environmental Science",
           "Chemistry",
           "Architecture"
+        ]
+      },
+      {
+        "label": "Mechanics of Living Bodies",
+        "label_vi": "Biomechanics",
+        "why": "Apply mechanics to movement, tissues and biological systems.",
+        "why_vi": "Apply mechanics to movement, tissues and biological systems.",
+        "explore_with": [
+          "Biology",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Sound and Vibration",
+        "label_vi": "Acoustics",
+        "why": "Explore sound production, propagation, vibration and noise.",
+        "why_vi": "Explore sound production, propagation, vibration and noise.",
+        "explore_with": [
+          "Physics",
+          "Music"
+        ]
+      },
+      {
+        "label": "Machines Inspired by Nature",
+        "label_vi": "Bio-inspired Design",
+        "why": "Investigate engineering ideas inspired by biological structures and processes.",
+        "why_vi": "Investigate engineering ideas inspired by biological structures and processes.",
+        "explore_with": [
+          "Biology",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Materials at Extreme Conditions",
+        "label_vi": "Materials Mechanics",
+        "why": "Study deformation, fracture and performance of materials.",
+        "why_vi": "Study deformation, fracture and performance of materials.",
+        "explore_with": [
+          "Physics",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Engineering for Space",
+        "label_vi": "Spacecraft Mechanical Systems",
+        "why": "Explore thermal, structural and mechanical challenges in space systems.",
+        "why_vi": "Explore thermal, structural and mechanical challenges in space systems.",
+        "explore_with": [
+          "Astronomy & Astrophysics",
+          "Physics"
         ]
       }
     ],
@@ -460,6 +811,56 @@
           "Civil Engineering",
           "Economics"
         ]
+      },
+      {
+        "label": "Markets and Human Behaviour",
+        "label_vi": "Behavioural Finance",
+        "why": "Investigate how cognitive biases and social influences shape financial decisions.",
+        "why_vi": "Investigate how cognitive biases and social influences shape financial decisions.",
+        "explore_with": [
+          "Psychology",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Money and the Climate",
+        "label_vi": "Climate Finance",
+        "why": "Explore financing approaches for climate mitigation and adaptation.",
+        "why_vi": "Explore financing approaches for climate mitigation and adaptation.",
+        "explore_with": [
+          "Environmental Science",
+          "Economics"
+        ]
+      },
+      {
+        "label": "The History of Money",
+        "label_vi": "Financial History",
+        "why": "Study the evolution of money, banking and financial institutions.",
+        "why_vi": "Study the evolution of money, banking and financial institutions.",
+        "explore_with": [
+          "History",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Access to Financial Systems",
+        "label_vi": "Financial Inclusion",
+        "why": "Investigate barriers to financial services and their social consequences.",
+        "why_vi": "Investigate barriers to financial services and their social consequences.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Risk as a Mathematical Problem",
+        "label_vi": "Financial Mathematics",
+        "why": "Explore probability, stochastic models and mathematical approaches to risk.",
+        "why_vi": "Explore probability, stochastic models and mathematical approaches to risk.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Statistics"
+        ]
       }
     ],
     "Chemistry": [
@@ -516,6 +917,56 @@
           "Mechanical Engineering",
           "Environmental Science",
           "Biology"
+        ]
+      },
+      {
+        "label": "Chemistry of the Atmosphere",
+        "label_vi": "Atmospheric Chemistry",
+        "why": "Study chemical processes in air and their environmental effects.",
+        "why_vi": "Study chemical processes in air and their environmental effects.",
+        "explore_with": [
+          "Environmental Science",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Molecules and Life",
+        "label_vi": "Chemical Biology",
+        "why": "Explore chemical processes in living systems.",
+        "why_vi": "Explore chemical processes in living systems.",
+        "explore_with": [
+          "Biology",
+          "Medicine"
+        ]
+      },
+      {
+        "label": "Chemistry of Art",
+        "label_vi": "Heritage Science",
+        "why": "Use chemical analysis to understand and preserve cultural materials.",
+        "why_vi": "Use chemical analysis to understand and preserve cultural materials.",
+        "explore_with": [
+          "History",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Molecules by Design",
+        "label_vi": "Supramolecular Chemistry",
+        "why": "Investigate molecular recognition, self-assembly and complex chemical structures.",
+        "why_vi": "Investigate molecular recognition, self-assembly and complex chemical structures.",
+        "explore_with": [
+          "Biology",
+          "Materials Science"
+        ]
+      },
+      {
+        "label": "Chemistry of Other Worlds",
+        "label_vi": "Astrochemistry",
+        "why": "Explore molecules and chemical processes in space.",
+        "why_vi": "Explore molecules and chemical processes in space.",
+        "explore_with": [
+          "Astronomy & Astrophysics",
+          "Physics"
         ]
       }
     ],
@@ -574,6 +1025,57 @@
           "Chemistry",
           "Data Science"
         ]
+      },
+      {
+        "label": "The Geometry of the Universe",
+        "label_vi": "General Relativity",
+        "why": "Explore gravity through spacetime geometry and mathematical physics.",
+        "why_vi": "Explore gravity through spacetime geometry and mathematical physics.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Astronomy & Astrophysics"
+        ]
+      },
+      {
+        "label": "Physics of Living Systems",
+        "label_vi": "Biophysics",
+        "why": "Apply physical principles to cells, organisms and biological processes.",
+        "why_vi": "Apply physical principles to cells, organisms and biological processes.",
+        "explore_with": [
+          "Biology",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "The Physics of Sound",
+        "label_vi": "Acoustics and Musical Physics",
+        "why": "Study waves, resonance and the physical foundations of sound.",
+        "why_vi": "Study waves, resonance and the physical foundations of sound.",
+        "explore_with": [
+          "Music",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Matter at the Smallest Scales",
+        "label_vi": "Particle Physics",
+        "why": "Investigate fundamental particles and interactions.",
+        "why_vi": "Investigate fundamental particles and interactions.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Complexity in Nature",
+        "label_vi": "Nonlinear Dynamics",
+        "why": "Explore complex behaviour in systems governed by nonlinear laws.",
+        "why_vi": "Explore complex behaviour in systems governed by nonlinear laws.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Biology",
+          "Climate Science"
+        ]
       }
     ],
     "Environmental Science": [
@@ -630,6 +1132,56 @@
           "Data Science",
           "Physics",
           "Computer Science"
+        ]
+      },
+      {
+        "label": "The Planet from Above",
+        "label_vi": "Earth Observation",
+        "why": "Use satellite data to study land, oceans, atmosphere and environmental change.",
+        "why_vi": "Use satellite data to study land, oceans, atmosphere and environmental change.",
+        "explore_with": [
+          "Geography",
+          "Astronomy & Astrophysics"
+        ]
+      },
+      {
+        "label": "Health and Ecosystems",
+        "label_vi": "One Health",
+        "why": "Explore links among human health, animal health and environmental conditions.",
+        "why_vi": "Explore links among human health, animal health and environmental conditions.",
+        "explore_with": [
+          "Biology",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Restoring Damaged Landscapes",
+        "label_vi": "Restoration Ecology",
+        "why": "Study ecological recovery and the rebuilding of degraded ecosystems.",
+        "why_vi": "Study ecological recovery and the rebuilding of degraded ecosystems.",
+        "explore_with": [
+          "Biology",
+          "Geography"
+        ]
+      },
+      {
+        "label": "People, Power and Pollution",
+        "label_vi": "Environmental Justice",
+        "why": "Investigate unequal exposure to environmental harms and access to resources.",
+        "why_vi": "Investigate unequal exposure to environmental harms and access to resources.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "The Chemistry of Climate",
+        "label_vi": "Climate Chemistry",
+        "why": "Explore chemical processes that influence climate and atmospheric change.",
+        "why_vi": "Explore chemical processes that influence climate and atmospheric change.",
+        "explore_with": [
+          "Chemistry",
+          "Physics"
         ]
       }
     ],
@@ -688,6 +1240,56 @@
           "Environmental Science",
           "Psychology"
         ]
+      },
+      {
+        "label": "How Buildings Shape Experience",
+        "label_vi": "Environmental Psychology of Space",
+        "why": "Study how spatial design influences perception, behaviour and wellbeing.",
+        "why_vi": "Study how spatial design influences perception, behaviour and wellbeing.",
+        "explore_with": [
+          "Psychology",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Architecture Across Time",
+        "label_vi": "Architectural History and Theory",
+        "why": "Explore the cultural, political and intellectual histories of built environments.",
+        "why_vi": "Explore the cultural, political and intellectual histories of built environments.",
+        "explore_with": [
+          "History",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Buildings as Living Systems",
+        "label_vi": "Building Science",
+        "why": "Investigate light, heat, air, materials and energy in buildings.",
+        "why_vi": "Investigate light, heat, air, materials and energy in buildings.",
+        "explore_with": [
+          "Physics",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Designing for All Bodies",
+        "label_vi": "Inclusive and Universal Design",
+        "why": "Explore how environments can support diverse abilities and needs.",
+        "why_vi": "Explore how environments can support diverse abilities and needs.",
+        "explore_with": [
+          "Psychology",
+          "Education"
+        ]
+      },
+      {
+        "label": "The City as a Cultural Text",
+        "label_vi": "Urban Morphology",
+        "why": "Study patterns, forms and transformations of cities.",
+        "why_vi": "Study patterns, forms and transformations of cities.",
+        "explore_with": [
+          "Geography",
+          "Sociology"
+        ]
       }
     ],
     "Electrical Engineering": [
@@ -744,6 +1346,56 @@
           "Physics",
           "Computer Science",
           "Data Science"
+        ]
+      },
+      {
+        "label": "Signals and the Human Brain",
+        "label_vi": "Neural Engineering",
+        "why": "Explore electrical and computational approaches to understanding neural systems.",
+        "why_vi": "Explore electrical and computational approaches to understanding neural systems.",
+        "explore_with": [
+          "Biology",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Quantum Devices",
+        "label_vi": "Quantum Engineering",
+        "why": "Investigate devices and systems based on quantum phenomena.",
+        "why_vi": "Investigate devices and systems based on quantum phenomena.",
+        "explore_with": [
+          "Physics",
+          "Pure Mathematics"
+        ]
+      },
+      {
+        "label": "Energy in Connected Systems",
+        "label_vi": "Power Systems and Grid Science",
+        "why": "Study electricity networks, stability and energy transitions.",
+        "why_vi": "Study electricity networks, stability and energy transitions.",
+        "explore_with": [
+          "Physics",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Sound, Speech and Hearing",
+        "label_vi": "Audio and Speech Technology",
+        "why": "Explore sensing, signal processing and human communication.",
+        "why_vi": "Explore sensing, signal processing and human communication.",
+        "explore_with": [
+          "Linguistics",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Sensing the Earth",
+        "label_vi": "Remote Sensing Instrumentation",
+        "why": "Develop and study instruments that observe environmental and planetary systems.",
+        "why_vi": "Develop and study instruments that observe environmental and planetary systems.",
+        "explore_with": [
+          "Geography",
+          "Astronomy & Astrophysics"
         ]
       }
     ],
@@ -802,6 +1454,56 @@
           "Environmental Science",
           "Biology"
         ]
+      },
+      {
+        "label": "Water, Cities and Infrastructure",
+        "label_vi": "Urban Water Systems",
+        "why": "Explore how cities manage water supply, drainage and flood risk.",
+        "why_vi": "Explore how cities manage water supply, drainage and flood risk.",
+        "explore_with": [
+          "Hydrology",
+          "Geography"
+        ]
+      },
+      {
+        "label": "The Science of Soil",
+        "label_vi": "Geotechnical Science",
+        "why": "Study soil, rock and the behaviour of foundations and slopes.",
+        "why_vi": "Study soil, rock and the behaviour of foundations and slopes.",
+        "explore_with": [
+          "Geology",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Transport and Human Behaviour",
+        "label_vi": "Transport Planning",
+        "why": "Investigate mobility, accessibility and the spatial organisation of transport.",
+        "why_vi": "Investigate mobility, accessibility and the spatial organisation of transport.",
+        "explore_with": [
+          "Geography",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Structures in Extreme Events",
+        "label_vi": "Structural Resilience",
+        "why": "Explore how structures respond to earthquakes, wind and other hazards.",
+        "why_vi": "Explore how structures respond to earthquakes, wind and other hazards.",
+        "explore_with": [
+          "Physics",
+          "Geology"
+        ]
+      },
+      {
+        "label": "The Future of Construction Materials",
+        "label_vi": "Sustainable Construction Materials",
+        "why": "Study material performance, reuse and environmental impacts.",
+        "why_vi": "Study material performance, reuse and environmental impacts.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science"
+        ]
       }
     ],
     "Political Science": [
@@ -859,6 +1561,56 @@
           "Economics",
           "Communication & Media Studies"
         ]
+      },
+      {
+        "label": "Politics of Knowledge",
+        "label_vi": "Science and Technology Policy",
+        "why": "Study how institutions govern scientific research and emerging technologies.",
+        "why_vi": "Study how institutions govern scientific research and emerging technologies.",
+        "explore_with": [
+          "Philosophy",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Borders and Belonging",
+        "label_vi": "Political Geography",
+        "why": "Explore territory, borders, identity and geopolitical space.",
+        "why_vi": "Explore territory, borders, identity and geopolitical space.",
+        "explore_with": [
+          "Geography",
+          "History"
+        ]
+      },
+      {
+        "label": "How Policies Change",
+        "label_vi": "Policy Evaluation",
+        "why": "Investigate how public programmes are designed and assessed.",
+        "why_vi": "Investigate how public programmes are designed and assessed.",
+        "explore_with": [
+          "Statistics",
+          "Economics"
+        ]
+      },
+      {
+        "label": "War, Peace and Memory",
+        "label_vi": "Peace and Conflict Studies",
+        "why": "Study conflict, reconciliation and the social memory of political violence.",
+        "why_vi": "Study conflict, reconciliation and the social memory of political violence.",
+        "explore_with": [
+          "History",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "The Politics of the Environment",
+        "label_vi": "Environmental Governance",
+        "why": "Explore institutions, law and political choices in environmental decision-making.",
+        "why_vi": "Explore institutions, law and political choices in environmental decision-making.",
+        "explore_with": [
+          "Environmental Science",
+          "Economics"
+        ]
       }
     ],
     "Sociology": [
@@ -915,6 +1667,56 @@
           "Computer Science",
           "Economics",
           "Education"
+        ]
+      },
+      {
+        "label": "How Societies Know",
+        "label_vi": "Sociology of Knowledge",
+        "why": "Study how institutions and social contexts shape what counts as knowledge.",
+        "why_vi": "Study how institutions and social contexts shape what counts as knowledge.",
+        "explore_with": [
+          "Philosophy",
+          "History"
+        ]
+      },
+      {
+        "label": "The Digital Public",
+        "label_vi": "Digital Sociology",
+        "why": "Explore how platforms and digital networks transform social life.",
+        "why_vi": "Explore how platforms and digital networks transform social life.",
+        "explore_with": [
+          "Computer Science",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Space and Inequality",
+        "label_vi": "Urban Sociology",
+        "why": "Investigate neighbourhoods, segregation, housing and public space.",
+        "why_vi": "Investigate neighbourhoods, segregation, housing and public space.",
+        "explore_with": [
+          "Geography",
+          "Architecture"
+        ]
+      },
+      {
+        "label": "Work After Automation",
+        "label_vi": "Sociology of Work",
+        "why": "Study labour, organisations and changing employment structures.",
+        "why_vi": "Study labour, organisations and changing employment structures.",
+        "explore_with": [
+          "Economics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Health, Institutions and Society",
+        "label_vi": "Medical Sociology",
+        "why": "Explore social structures and inequalities in health and healthcare.",
+        "why_vi": "Explore social structures and inequalities in health and healthcare.",
+        "explore_with": [
+          "Biology",
+          "Political Science"
         ]
       }
     ],
@@ -988,6 +1790,56 @@
           "Anthropology",
           "Education"
         ]
+      },
+      {
+        "label": "Language and the Brain",
+        "label_vi": "Neurolinguistics",
+        "why": "Explore neural processes involved in understanding and producing language.",
+        "why_vi": "Explore neural processes involved in understanding and producing language.",
+        "explore_with": [
+          "Cognitive Science",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Language as a Formal System",
+        "label_vi": "Mathematical Linguistics",
+        "why": "Study formal models of grammar, meaning and language structure.",
+        "why_vi": "Study formal models of grammar, meaning and language structure.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Sound and Communication",
+        "label_vi": "Phonetics and Speech Science",
+        "why": "Investigate speech sounds, acoustics and spoken interaction.",
+        "why_vi": "Investigate speech sounds, acoustics and spoken interaction.",
+        "explore_with": [
+          "Physics",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Languages Through History",
+        "label_vi": "Historical Linguistics",
+        "why": "Explore language change, reconstruction and relationships among languages.",
+        "why_vi": "Explore language change, reconstruction and relationships among languages.",
+        "explore_with": [
+          "History",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Language, Identity and Power",
+        "label_vi": "Sociolinguistics",
+        "why": "Study how language variation relates to identity and social structure.",
+        "why_vi": "Study how language variation relates to identity and social structure.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
       }
     ],
     "Education": [
@@ -1044,6 +1896,56 @@
           "Environmental Science",
           "Communication & Media Studies",
           "Psychology"
+        ]
+      },
+      {
+        "label": "How Knowledge Develops",
+        "label_vi": "Learning Sciences",
+        "why": "Connect cognition, development and educational research.",
+        "why_vi": "Connect cognition, development and educational research.",
+        "explore_with": [
+          "Cognitive Science",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Mathematics Learning",
+        "label_vi": "Mathematics Education",
+        "why": "Explore how mathematical ideas are taught, learned and represented.",
+        "why_vi": "Explore how mathematical ideas are taught, learned and represented.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Learning Beyond Classrooms",
+        "label_vi": "Informal and Museum Learning",
+        "why": "Study learning in museums, communities and public spaces.",
+        "why_vi": "Study learning in museums, communities and public spaces.",
+        "explore_with": [
+          "History",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Education and Inequality",
+        "label_vi": "Sociology of Education",
+        "why": "Investigate how institutions and social structures shape educational opportunity.",
+        "why_vi": "Investigate how institutions and social structures shape educational opportunity.",
+        "explore_with": [
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Designing Learning Environments",
+        "label_vi": "Learning Design",
+        "why": "Explore the design of activities, tools and environments that support learning.",
+        "why_vi": "Explore the design of activities, tools and environments that support learning.",
+        "explore_with": [
+          "Computer Science",
+          "Architecture"
         ]
       }
     ],
@@ -1102,6 +2004,56 @@
           "Sociology",
           "Finance"
         ]
+      },
+      {
+        "label": "The History of Counting",
+        "label_vi": "History of Accounting",
+        "why": "Explore how record keeping and accounting practices developed across societies.",
+        "why_vi": "Explore how record keeping and accounting practices developed across societies.",
+        "explore_with": [
+          "History",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Numbers and Decisions",
+        "label_vi": "Behavioural Accounting",
+        "why": "Study how people interpret financial information and make organisational decisions.",
+        "why_vi": "Study how people interpret financial information and make organisational decisions.",
+        "explore_with": [
+          "Psychology",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Auditing Algorithms",
+        "label_vi": "Accounting Information Systems",
+        "why": "Investigate digital systems, controls and data in accounting processes.",
+        "why_vi": "Investigate digital systems, controls and data in accounting processes.",
+        "explore_with": [
+          "Computer Science",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Measuring Sustainability",
+        "label_vi": "Environmental and Social Accounting",
+        "why": "Explore how organisations account for environmental and social impacts.",
+        "why_vi": "Explore how organisations account for environmental and social impacts.",
+        "explore_with": [
+          "Environmental Science",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Public Money and Accountability",
+        "label_vi": "Public Sector Accounting",
+        "why": "Study public budgets, institutions and accountability.",
+        "why_vi": "Study public budgets, institutions and accountability.",
+        "explore_with": [
+          "Political Science",
+          "Economics"
+        ]
       }
     ],
     "Communication & Media Studies": [
@@ -1158,6 +2110,56 @@
           "Computer Science",
           "Cognitive Science",
           "Architecture"
+        ]
+      },
+      {
+        "label": "How Science Reaches Society",
+        "label_vi": "Science Communication",
+        "why": "Explore how scientific knowledge is communicated and interpreted by publics.",
+        "why_vi": "Explore how scientific knowledge is communicated and interpreted by publics.",
+        "explore_with": [
+          "Biology",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Stories Across Media",
+        "label_vi": "Narrative and Media Theory",
+        "why": "Study storytelling, representation and meaning across media forms.",
+        "why_vi": "Study storytelling, representation and meaning across media forms.",
+        "explore_with": [
+          "Linguistics",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Platforms and Power",
+        "label_vi": "Platform Studies",
+        "why": "Investigate how digital platforms organise communication and visibility.",
+        "why_vi": "Investigate how digital platforms organise communication and visibility.",
+        "explore_with": [
+          "Computer Science",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Museums as Media",
+        "label_vi": "Museum and Heritage Communication",
+        "why": "Explore exhibitions, interpretation and public engagement with heritage.",
+        "why_vi": "Explore exhibitions, interpretation and public engagement with heritage.",
+        "explore_with": [
+          "History",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Sound, Image and Experience",
+        "label_vi": "Sound Studies",
+        "why": "Study sound as a cultural, technological and communicative form.",
+        "why_vi": "Study sound as a cultural, technological and communicative form.",
+        "explore_with": [
+          "Music",
+          "Physics"
         ]
       }
     ],
