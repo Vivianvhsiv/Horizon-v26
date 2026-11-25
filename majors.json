@@ -7467,7 +7467,23 @@
       "limitations": [
         "Toán học thuần túy nhấn mạnh tư duy trừu tượng và chứng minh; tỷ trọng đại số, giải tích, hình học và liên hệ ứng dụng thay đổi theo chương trình."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "Monash University",
+        "title": "2026 Science Undergraduate Course Guide",
+        "source_url": "https://www.monash.edu/__data/assets/pdf_file/0004/3986635/2026-Science-undergraduate-courseguide.pdf",
+        "source_type": "Official university course guide",
+        "verification_status": "Lists Pure Mathematics as a possible major; supports programme-area availability, not every subfield or career."
+      },
+      {
+        "institution": "VNUHCM-University of Science",
+        "title": "Mathematics — Programme Overview",
+        "source_url": "https://math.hcmus.edu.vn/teaching/menu-master-level/31-english/teaching",
+        "source_type": "Official department programme page",
+        "verification_status": "Supports the undergraduate Mathematics programme and stated learning objectives; not a Pure Mathematics-only curriculum."
+      }
+    ]
   },
   "Geography": {
     "cluster": "Social Sciences",
@@ -7687,7 +7703,23 @@
       "limitations": [
         "Địa lý bao gồm địa lý tự nhiên và địa lý nhân văn; chương trình khác nhau về tỷ trọng khoa học môi trường, khoa học xã hội và phương pháp không gian."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "The University of Texas at Austin",
+        "title": "Geography (BA) — Undergraduate Catalog",
+        "source_url": "https://catalog.utexas.edu/undergraduate/programs/geography-ba/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Supports the Geography BA programme and catalog structure at this institution only."
+      },
+      {
+        "institution": "Vietnam National University, Hanoi — University of Science",
+        "title": "Natural Geography Programme Framework",
+        "source_url": "https://geography.hus.vnu.edu.vn/khung-ctdt-nganh-dia-ly-tu-nhien",
+        "source_type": "Official university curriculum page",
+        "verification_status": "Supports the listed Natural Geography curriculum at this institution only."
+      }
+    ]
   },
   "Geology": {
     "cluster": "Natural Sciences",
@@ -7891,7 +7923,16 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "VNUHCM-University of Science",
+        "title": "Faculty of Geology — Academic Programmes",
+        "source_url": "https://geology.hcmus.edu.vn/en/academic",
+        "source_type": "Official faculty programme page",
+        "verification_status": "Supports the listed Geology and Geological Engineering programme areas at this institution only."
+      }
+    ]
   },
   "Astronomy & Astrophysics": {
     "cluster": "Natural Sciences",
@@ -8095,7 +8136,23 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "The University of Texas at Austin",
+        "title": "Astronomy (BA) — Undergraduate Catalog",
+        "source_url": "https://catalog.utexas.edu/undergraduate/programs/astronomy-ba/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Supports the Astronomy BA programme and its stated curriculum context at this institution only."
+      },
+      {
+        "institution": "University of Illinois Urbana-Champaign",
+        "title": "College of Liberal Arts & Sciences — 2026–2027 Course Catalog",
+        "source_url": "https://catalog.illinois.edu/schools/las/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Lists Astronomy and Astrophysics as undergraduate majors; does not verify every listed research subfield."
+      }
+    ]
   },
   "Statistics": {
     "cluster": "Natural Sciences",
@@ -8303,7 +8360,16 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "Monash University",
+        "title": "2026 Science Undergraduate Course Guide",
+        "source_url": "https://www.monash.edu/__data/assets/pdf_file/0004/3986635/2026-Science-undergraduate-courseguide.pdf",
+        "source_type": "Official university course guide",
+        "verification_status": "Provides university-level course and major context including mathematical statistics; programme structures vary by institution."
+      }
+    ]
   },
   "Philosophy": {
     "cluster": "Humanities",
@@ -8511,7 +8577,23 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "Texas A&M University",
+        "title": "College of Arts and Sciences — Undergraduate Catalog",
+        "source_url": "https://tamu-public.courseleaf.com/undergraduate/arts-and-sciences/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Lists undergraduate Philosophy degree options; does not verify every subfield individually."
+      },
+      {
+        "institution": "The Chinese University of Hong Kong",
+        "title": "Undergraduate Student Handbook — Minor Programmes",
+        "source_url": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/public/handbook/view_document.aspx?id=1835&lang=en&seq=1",
+        "source_type": "Official university academic handbook",
+        "verification_status": "Lists Philosophy as a minor programme; degree level and structure differ from a major."
+      }
+    ]
   },
   "History": {
     "cluster": "Humanities",
@@ -8719,7 +8801,23 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "The Chinese University of Hong Kong",
+        "title": "Undergraduate Student Handbook — Minor Programmes",
+        "source_url": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/public/handbook/view_document.aspx?id=1835&lang=en&seq=1",
+        "source_type": "Official university academic handbook",
+        "verification_status": "Lists History and Public History as minor programmes; not evidence of a specific major curriculum."
+      },
+      {
+        "institution": "University of Illinois Urbana-Champaign",
+        "title": "College of Liberal Arts & Sciences — 2026–2027 Course Catalog",
+        "source_url": "https://catalog.illinois.edu/schools/las/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Provides official undergraduate programme catalogue context; verify exact History degree page for detailed curriculum."
+      }
+    ]
   },
   "Anthropology": {
     "cluster": "Social Sciences",
@@ -8927,6 +9025,22 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "source_records": [
+      {
+        "institution": "University of Illinois Urbana-Champaign",
+        "title": "College of Liberal Arts & Sciences — 2026–2027 Course Catalog",
+        "source_url": "https://catalog.illinois.edu/schools/las/",
+        "source_type": "Official university academic catalog",
+        "verification_status": "Lists Anthropology as an undergraduate major and names concentration areas; programme-specific requirements are institution-dependent."
+      },
+      {
+        "institution": "The Chinese University of Hong Kong",
+        "title": "Undergraduate Student Handbook — Minor Programmes",
+        "source_url": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/public/handbook/view_document.aspx?id=1835&lang=en&seq=1",
+        "source_type": "Official university academic handbook",
+        "verification_status": "Lists Anthropology as a minor programme; degree level and structure differ from a major."
+      }
+    ]
   }
 }
