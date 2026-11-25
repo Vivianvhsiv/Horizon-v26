@@ -397,7 +397,8 @@ def render_profile_section_sources(major, section, language):
     if sources:
         for institution, name, url, detail in sources:
             prefix = f"{institution} — " if institution else ""
-            st.markdown(f"- {prefix}[{name}]({url})")            if detail:
+            st.markdown(f"- {prefix}[{name}]({url})")
+            if detail:
                 st.caption(detail)
     else:
         st.caption(labels["no_major"])
@@ -796,7 +797,8 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         nodeHighlightBehavior=False, collapsible=False,
         interaction={"hover":True, "navigationButtons":True, "keyboard":True}
     )
-    return agraph(nodes=graph_nodes, edges=graph_edges, config=config)with st.sidebar:
+    return agraph(nodes=graph_nodes, edges=graph_edges, config=config)
+with st.sidebar:
     st.image(str(Path(__file__).parent / 'horizon_logo.svg'), use_container_width=True)
     lang = st.selectbox("Language / Ngôn ngữ", ["English","Tiếng Việt"],
                         index=0 if st.session_state.get("language","English")=="English" else 1)
@@ -899,9 +901,9 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 28 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "All 28 majors remain visible on the full map with readable, normal-weight labels. Selecting a major highlights its curated exploration directions and explicitly connected adjacent fields or majors; unrelated nodes may retain softer background styling, but their text stays clear and readable. These are exploratory links, not personalized suitability matches or verified degree pathways."
+                "All 28 majors remain visible on the full map with readable labels. Selecting a major highlights its curated exploration directions and explicitly connected adjacent fields or majors; unrelated nodes may retain softer background styling, but their text stays clear and readable. These are exploratory links, not personalized suitability matches or verified degree pathways."
                 if st.session_state.language == "English" else
-                "Cả 28 ngành vẫn hiển thị trên bản đồ với nhãn chữ rõ ràng, dễ đọc. Khi chọn một ngành, các hướng khám phá của ngành đó và những lĩnh vực/ngành liên quan được kết nối rõ ràng sẽ được làm nổi bật; các nút không liên quan có thể giữ nền dịu hơn nhưng chữ vẫn rõ và dễ đọc. Đây là liên kết khám phá, không phải đánh giá mức độ phù hợp cá nhân hay lộ trình bằng cấp đã xác minh."
+                "Cả 28 ngành vẫn được giữ trên bản đồ đầy đủ. Khi chọn một ngành, chỉ các hướng khám phá của ngành đó và những lĩnh vực/ngành liên quan được kết nối rõ ràng mới được làm nổi bật; các ngành không liên quan vẫn ở trạng thái mờ. Đây là liên kết khám phá, không phải đánh giá mức độ phù hợp cá nhân hay lộ trình bằng cấp đã xác minh."
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
@@ -1195,7 +1197,8 @@ elif page == tr("majors"):
                         if status:
                             st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
                         scope = item.get("evidence_scope_en", "") if st.session_state.language == "English" else item.get("evidence_scope_vi", "")
-                        if scope:                            st.caption(scope)
+                        if scope:
+                            st.caption(scope)
                         refs = item.get("evidence_refs", [])
                         if refs:
                             st.markdown(("**Curriculum / disciplinary references**" if st.session_state.language == "English" else "**Nguồn tham khảo chương trình / ngành học**"))
