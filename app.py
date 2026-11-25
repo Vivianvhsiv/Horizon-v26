@@ -582,7 +582,6 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     # explicitly connected neighbours; unrelated majors' 285 directions
     # must not be laid out as one dense background cloud.
     all_major_nodes = {key for key, item in nodes.items() if item["type"] == "major"}
-    visible_node_keys = all_major_nodes | active_nodes
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -605,6 +604,8 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         if directly_selected or selected_major_branch or selected_subject_evidence:
             active_edges.add(index)
             active_nodes.update((source, target))
+
+    visible_node_keys = all_major_nodes | active_nodes
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
