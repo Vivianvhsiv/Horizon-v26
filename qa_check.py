@@ -138,6 +138,8 @@ if csv_path.exists():
 else:
     check(False,'SOURCE_CLAIM_REGISTER.csv exists')
 # Explore Majors is a searchable catalogue; reflection-note collection is intentionally absent.
+check('q = st.text_input(tr("search_major")' not in explore_code and 'if q and q.casefold()' not in explore_code,
+      'Explore Majors does not show a separate Search Majors field or filter')
 check('Your reflection note' not in explore_code and 'Ghi chú tự suy ngẫm' not in explore_code,
       'Explore Majors does not collect a separate reflection note')
 check('explore_strength_note' not in app and 'explore_strength_example' not in app,
