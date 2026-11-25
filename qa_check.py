@@ -195,6 +195,13 @@ check('no interest-to-major match is inferred' in network_code,
 check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
 
+check('browsed_major = st.session_state.get("network_major_explorer")' in app and 'expanded_majors.add(browsed_major)' in app,
+      'The major selected in the Network Map browser is expanded in the graph')
+check('focus_keys.append(node_id("major", browsed_major))' in app,
+      'The browsed major and its newly expanded directions are highlighted in the graph')
+check('major_branch_nodes = {' in app and 'source in major_branch_nodes' in app,
+      'Cross-major discovery edges from newly added direction nodes are visible in the graph')
+
 # Unexpected cross-disciplinary exploration coverage
 exploration_path = ROOT / 'exploration_directions.json'
 if exploration_path.exists():
