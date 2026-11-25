@@ -572,20 +572,10 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
     major_branch_targets.update(
         edge["target"] for edge in edges if edge["source"] in major_branch_nodes
     )
-    # The Network Map is an open network, not a collapsed mind map:
-    # every curated direction and its adjacent discipline/major is visible by default.
-    all_exploration_direction_nodes = {
-        key for key, item in nodes.items() if item["type"] == "direction"
-        and key.startswith("direction::") and not key.startswith("direction::domain::")
-    }
-    all_exploration_direction_targets = {
-        edge["target"] for edge in edges
-        if edge["source"] in all_exploration_direction_nodes
-        and edge["relation"] in {"exploratory connection to another major", "explore adjacent discipline"}
-    }
-    active_nodes = (set(focus) | subject_linked_majors | major_branch_nodes |
-                    major_branch_targets | all_exploration_direction_nodes |
-                    all_exploration_direction_targets)
+    # Keep the complete catalogue in the map, but illuminate only the
+    # selected major's own directions and the adjacent fields/majors those
+    # directions explicitly connect to.
+    active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets
     # Keep the full second-hop domain branch visible once its student input is focused.
     subject_domain_nodes = {
         edge["target"] for edge in edges
@@ -597,23 +587,15 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         source, target = edge["source"], edge["target"]
         directly_selected = source in focus or target in focus
         selected_major_branch = (
-            (source in expansion_seeds or target in expansion_seeds
-             or source in major_branch_nodes or target in major_branch_nodes
-             or source in major_branch_targets or target in major_branch_targets
-             or source in subject_domain_nodes)
-            and edge["relation"] != "explore through curriculum context"
-        )
+            (source in expansion_seeds and target in major_branch_nodes)
+            or (source in major_branch_nodes and target in major_branch_targets)
+            or (source in focus and target in subject_domain_nodes)
+        ) and edge["relation"] != "explore through curriculum context"
         selected_subject_evidence = (
             edge["relation"] == "explore through curriculum context"
             and source in focus
         )
-        global_exploration_edge = (
-            source in all_exploration_direction_nodes
-            or target in all_exploration_direction_nodes
-            or source in all_exploration_direction_targets
-            or target in all_exploration_direction_targets
-        )
-        if directly_selected or selected_major_branch or selected_subject_evidence or global_exploration_edge:
+        if directly_selected or selected_major_branch or selected_subject_evidence:
             active_edges.add(index)
             active_nodes.update((source, target))
 
@@ -768,9 +750,9 @@ elif page == tr("network"):
                 "Bản đồ đầy đủ luôn hiển thị cả 28 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "All 28 majors and all 285 curated exploration directions are displayed on the map at once. Directions connect across disciplines as exploratory links; they are not personalized matches or verified degree pathways."
+                "All 28 majors remain on the full map. Selecting a major highlights only that major's curated exploration directions and their explicitly connected adjacent fields or majors; unrelated majors stay muted. These are exploratory links, not personalized suitability matches or verified degree pathways."
                 if st.session_state.language == "English" else
-                "Cả 28 ngành và toàn bộ 285 hướng khám phá được hiển thị đồng thời trên bản đồ. Các hướng kết nối liên ngành mang tính khám phá, không phải kết quả ghép cá nhân hay lộ trình bằng cấp đã xác minh."
+                "Cả 28 ngành vẫn được giữ trên bản đồ đầy đủ. Khi chọn một ngành, chỉ các hướng khám phá của ngành đó và những lĩnh vực/ngành liên quan được kết nối rõ ràng mới được làm nổi bật; các ngành không liên quan vẫn ở trạng thái mờ. Đây là liên kết khám phá, không phải đánh giá mức độ phù hợp cá nhân hay lộ trình bằng cấp đã xác minh."
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
