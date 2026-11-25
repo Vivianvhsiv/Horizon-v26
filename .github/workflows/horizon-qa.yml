@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [horizon-network-map-fix]
+    branches: [main, horizon-network-map-fix]
 
 jobs:
   structural-qa:
