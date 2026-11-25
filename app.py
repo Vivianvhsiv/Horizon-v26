@@ -761,6 +761,35 @@ elif page == tr("majors"):
     for c in clusters:
         cluster_labels[next((v.get("cluster_vi",c) for v in MAJORS.values() if v["cluster"] == c),c) if st.session_state.language == "Tiếng Việt" else c] = c
     chosen_cluster = st.selectbox(tr("cluster"), list(cluster_labels))
+    # Student-authored exploration lens: exact topic overlap is shown transparently,
+    # while strengths remain self-described evidence rather than inferred aptitude.
+    interest_catalog = sorted({item[0] for group in INTEREST_GROUPS.values() for item in group})
+    st.markdown("### Your exploration lens" if st.session_state.language == "English" else "### Góc nhìn khám phá của bạn")
+    st.caption(
+        "Share topics you want to explore and a strength you have noticed in your own work. Horizon will not score, rank or infer your suitability."
+        if st.session_state.language == "English" else
+        "Chia sẻ chủ đề bạn muốn tìm hiểu và một điểm mạnh bạn tự nhận thấy trong quá trình học tập hoặc hoạt động. Horizon không chấm điểm, xếp hạng hay tự suy luận mức độ phù hợp."
+    )
+    profile_interests = st.multiselect(
+        "Interests you want to explore" if st.session_state.language == "English" else "Sở thích bạn muốn khám phá",
+        interest_catalog, key="explore_profile_interests"
+    )
+    strength_note = st.text_input(
+        "A strength you have noticed" if st.session_state.language == "English" else "Một điểm mạnh bạn tự nhận thấy",
+        key="explore_strength_note",
+        placeholder="e.g. explaining complex ideas / e.g. giải thích ý tưởng phức tạp"
+    )
+    strength_example = st.text_area(
+        "A specific example that makes you think this is a strength (optional)" if st.session_state.language == "English" else "Một ví dụ cụ thể khiến bạn nhận thấy đây là điểm mạnh (không bắt buộc)",
+        key="explore_strength_example",
+        placeholder="What did you do? What was your contribution?" if st.session_state.language == "English" else "Bạn đã làm gì? Đóng góp cụ thể của bạn là gì?"
+    )
+    st.caption(
+        "Your example is student-provided context, not an independently assessed skill. You can leave these fields blank."
+        if st.session_state.language == "English" else
+        "Ví dụ do chính bạn cung cấp, không phải kỹ năng đã được đánh giá độc lập. Bạn có thể để trống các mục này."
+    )
+    st.divider()
     for name,info in MAJORS.items():
         shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
         shown_cluster = info.get("cluster_vi", info["cluster"]) if st.session_state.language == "Tiếng Việt" else info["cluster"]
@@ -768,6 +797,40 @@ elif page == tr("majors"):
         if q and q.casefold() not in name.casefold() and q.casefold() not in shown_name.casefold(): continue
         with st.expander(f"{shown_name} · {shown_cluster}"):
             st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
+            # Show only exact, student-selected topic labels shared with the profile taxonomy.
+            # This is a navigation aid, not a relevance score or evidence of academic fit.
+            shared_topics = sorted(set(profile_interests).intersection(info.get("interests", [])))
+            if shared_topics:
+                topic_labels = shared_topics if st.session_state.language == "English" else [INTEREST_TRANSLATIONS.get(x, x) for x in shared_topics]
+                st.markdown("**Topics you selected that also appear in this profile**" if st.session_state.language == "English" else "**Chủ đề bạn chọn cũng xuất hiện trong hồ sơ ngành này**")
+                st.write(" · ".join(topic_labels))
+                st.caption(
+                    "These are shared catalogue labels only. They do not prove a curriculum connection, personal suitability or a recommendation."
+                    if st.session_state.language == "English" else
+                    "Đây chỉ là các nhãn chủ đề trùng nhau trong danh mục. Chúng không chứng minh mối liên hệ chương trình học, mức độ phù hợp cá nhân hay một đề xuất ngành học."
+                )
+            elif profile_interests:
+                st.caption(
+                    "No exact topic labels are shared with this profile. That does not mean the major is unsuitable; you can still explore it."
+                    if st.session_state.language == "English" else
+                    "Hồ sơ này không có nhãn chủ đề trùng khớp chính xác. Điều đó không có nghĩa ngành học không phù hợp; bạn vẫn có thể tìm hiểu ngành này."
+                )
+            if strength_note or strength_example:
+                st.markdown("**Your own observations**" if st.session_state.language == "English" else "**Những quan sát của chính bạn**")
+                if strength_note:
+                    st.write(("Strength you identified: " if st.session_state.language == "English" else "Điểm mạnh bạn tự nhận thấy: ") + strength_note)
+                if strength_example:
+                    st.write(("Your example: " if st.session_state.language == "English" else "Ví dụ của bạn: ") + strength_example)
+                st.caption(
+                    "Horizon keeps this as your own evidence to reflect on. It does not automatically claim that this strength is required by or predicts success in this major."
+                    if st.session_state.language == "English" else
+                    "Horizon giữ nội dung này như minh chứng do bạn tự suy ngẫm. Hệ thống không tự kết luận điểm mạnh này là yêu cầu hay dự báo thành công trong ngành."
+                )
+                st.write(
+                    ("A question to investigate: Where, if anywhere, could this strength be used in the projects, questions or methods of " + name + "?")
+                    if st.session_state.language == "English" else
+                    ("Câu hỏi để tìm hiểu: Điểm mạnh này có thể được sử dụng ở đâu, nếu có, trong dự án, câu hỏi hoặc phương pháp của ngành " + shown_name + "?")
+                )
             a,b = st.columns(2)
             with a:
                 st.markdown(f"**{tr('disciplines')}**"); st.write(", ".join(info.get("disciplines_vi", info["disciplines"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["disciplines"]))
