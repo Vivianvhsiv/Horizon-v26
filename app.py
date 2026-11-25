@@ -758,6 +758,12 @@ elif page == tr("network"):
                                 url = ref.get("url", "")
                                 if url:
                                     st.markdown("- [" + ref.get("institution", "Institution") + ": " + ref.get("title", "Reference") + "](" + url + ")")
+                                    if ref.get("claim"):
+                                        st.caption(("Source supports this claim: " if st.session_state.language == "English" else "Nguồn hỗ trợ nhận định: ") + ref["claim"])
+                                    if ref.get("claim_status"):
+                                        st.caption(("Claim verification: " if st.session_state.language == "English" else "Trạng thái xác minh nhận định: ") + ref["claim_status"])
+                            if not edge.get("evidence_refs"):
+                                st.caption("No claim-level source is attached to this relationship; it is not shown as verified." if st.session_state.language == "English" else "Mối liên hệ này chưa có nguồn ở cấp độ nhận định; không được xem là đã xác minh.")
                             st.caption(f'{tr("relationship")}: {relation}')
 
                 else:
