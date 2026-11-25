@@ -260,6 +260,12 @@ check('all_exploration_direction_nodes' not in renderer_code
       and 'global_exploration_edge' not in renderer_code
       and 'major_branch_nodes' in renderer_code,
       'Network Map highlights a selected branch without globally activating unrelated branches')
+check('show_label = is_active or item["type"] in {"major", "cluster", "student", "subject", "interest"}' in renderer_code,
+      'Inactive direction and adjacent-field labels are suppressed to prevent a full-map text cloud')
+check('color="#315B83" if active else "#F3F5F7"' in renderer_code and 'width=2.8 if active else 0.1' in renderer_code,
+      'Inactive connections remain in the full map but are visually de-emphasized')
+check('"gravitationalConstant":-180' in renderer_code and '"springLength":260' in renderer_code,
+      'Network Map uses wider force-directed spacing for dense cross-disciplinary nodes')
 check('Unexpected directions to explore' in app and 'not verified degree pathways' in app,
       'Major detail pages explain the exploratory status of unexpected directions')
 
