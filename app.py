@@ -248,21 +248,6 @@ section[data-testid="stSidebar"] * {color:#F7F2EB;}
 div[data-testid="stMetric"] {background:#EFE8DF;padding:14px;border-radius:12px;border:1px solid #E4D8CC;}
 .stButton>button[kind="primary"], .stDownloadButton>button {background:#172B4D;color:white;border:1px solid #172B4D;border-radius:10px;}
 div[data-testid="stExpander"] {background:rgba(255,255,255,.48); border-radius:12px;}
-.st-key-network_major_profile,
-.st-key-network_major_profile p,
-.st-key-network_major_profile li,
-.st-key-network_major_profile strong,
-.st-key-network_major_profile [data-testid="stMarkdownContainer"],
-.st-key-network_major_profile [data-testid="stText"],
-.st-key-network_major_profile [data-testid="stCaptionContainer"],
-.st-key-network_major_profile label,
-.st-key-network_major_profile summary,
-.st-key-network_major_profile span {
-    color: #111827 !important;
-    opacity: 1 !important;
-}
-.st-key-network_major_profile a { color: #172B4D !important; }
-
 .small-note {font-size:0.9rem; opacity:0.85;}
 </style>
 """, unsafe_allow_html=True)
@@ -1001,169 +986,148 @@ elif page == tr("network"):
             if explore_major == major_placeholder:
                 st.info("Choose a major to browse its academic profile. Horizon will not select one for you." if st.session_state.language == "English" else "Chọn một ngành để xem hồ sơ học thuật. Horizon sẽ không tự ý chọn ngành thay bạn.")
             else:
-                with st.container(key="network_major_profile"):
-                    st.markdown("""
-                    <style>
-                    .st-key-network-selected-major-profile,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"],
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] p,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] li,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] strong,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] h1,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] h2,
-                    .st-key-network-selected-major-profile [data-testid="stMarkdownContainer"] h3,
-                    .st-key-network-selected-major-profile [data-testid="stCaptionContainer"],
-                    .st-key-network-selected-major-profile [data-testid="stExpander"] summary,
-                    .st-key-network-selected-major-profile [data-testid="stExpander"] summary p,
-                    .st-key-network-selected-major-profile a {
-                        color: #000000 !important;
-                        opacity: 1 !important;
-                    }
-                    </style>
-                    """, unsafe_allow_html=True)
-                    with st.container(key="network-selected-major-profile"):
-                        explore_info = MAJORS[explore_major]
-                        st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
-                        st.write(explore_info.get("overview_vi", explore_info.get("overview", "")) if st.session_state.language == "Tiếng Việt" else explore_info.get("overview", ""))
-                        detail_fields = [("academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"), ("related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"), ("specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"), ("research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu")]
-                        for field, field_vi, label_en, label_vi in detail_fields:
-                            values = explore_info.get(field, []) if st.session_state.language == "English" else explore_info.get(field_vi, explore_info.get(field, []))
-                            if values:
-                                st.markdown("**" + (label_en if st.session_state.language == "English" else label_vi) + "**")
-                                st.write(" · ".join(values))
-                                render_profile_section_sources(explore_major, field, st.session_state.language)
-                        # Show the deliberately broad cross-disciplinary prompts beside the profile.
-                        unexpected_directions = EXPLORATION_DIRECTIONS.get(explore_major, [])
-                        if unexpected_directions:
-                            st.markdown("**" + ("Unexpected directions to explore" if st.session_state.language == "English" else "Những hướng khám phá ngoài dự kiến") + "**")
-                            st.caption("These are curated ideas for broadening your search, not verified degree pathways or personalized matches." if st.session_state.language == "English" else "Đây là các ý tưởng được biên soạn để mở rộng hướng tìm hiểu, không phải lộ trình bằng cấp đã xác minh hay kết quả ghép ngành cá nhân.")
-                            for direction in unexpected_directions:
-                                direction_label = direction.get("label", "") if st.session_state.language == "English" else direction.get("label_vi", direction.get("label", ""))
-                                direction_reason = direction.get("why", "") if st.session_state.language == "English" else direction.get("why_vi", direction.get("why", ""))
-                                related_labels = direction.get("explore_with", [])
-                                related_display = related_labels if st.session_state.language == "English" else [MAJORS.get(m, {}).get("name_vi", m) for m in related_labels]
-                                with st.expander(direction_label):
-                                    st.write(direction_reason)
-                                    st.caption(("Explore alongside: " if st.session_state.language == "English" else "Có thể tìm hiểu cùng: ") + ", ".join(related_display))
-                                    render_profile_section_sources(explore_major, "exploration_directions", st.session_state.language)
-                        st.markdown("**" + ("Skills" if st.session_state.language == "English" else "Kỹ năng") + "**")
-                        skills = explore_info.get("skills", []) if st.session_state.language == "English" else explore_info.get("skills_vi", explore_info.get("skills", []))
-                        st.write(" · ".join(skills))
-                        st.markdown("**" + ("Career areas to explore" if st.session_state.language == "English" else "Lĩnh vực nghề nghiệp để tìm hiểu") + "**")
-                        careers = explore_info.get("careers", []) if st.session_state.language == "English" else explore_info.get("careers_vi", explore_info.get("careers", []))
-                        st.write(" · ".join(careers))
-                        guidance_items = explore_info.get("emasi_subject_guidance", [])
-                        relevant_guidance = [g for g in guidance_items if any(g.get("subject_en", "").casefold() == chosen.casefold() for chosen in subjects)]
-                        if not subjects:
-                            relevant_guidance = guidance_items[:4]
-                        if relevant_guidance:
-                            st.markdown("**" + ("EMASI subject exploration" if st.session_state.language == "English" else "Gợi ý khám phá môn học EMASI") + "**")
-                            for guidance in relevant_guidance:
-                                subject_label = guidance.get("subject_en", "") if st.session_state.language == "English" else guidance.get("subject_vi", guidance.get("subject_en", ""))
-                                reason = guidance.get("why_en", "") if st.session_state.language == "English" else guidance.get("why_vi", "")
-                                status_en = (guidance.get("evidence_status_en") or "").strip()
-                                status = status_en if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
-                                role_label = guidance.get("role_en", "") if st.session_state.language == "English" else guidance.get("role_vi", "")
-                                map_eligible = has_subject_major_evidence(guidance)
-                                with st.expander(subject_label + " · " + role_label):
-                                    st.write(reason)
-                                    if status:
-                                        st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
-                                    if not map_eligible:
-                                        st.caption("Not displayed as a map connection: this specific subject-to-major relationship has not met Horizon’s evidence threshold." if st.session_state.language == "English" else "Không hiển thị thành kết nối trên bản đồ: mối liên hệ cụ thể giữa môn học và ngành chưa đạt ngưỡng bằng chứng của Horizon.")
-                                    scope = guidance.get("evidence_scope_en", "") if st.session_state.language == "English" else guidance.get("evidence_scope_vi", "")
-                                    if scope:
-                                        st.caption(scope)
-                                    for ref in guidance.get("evidence_refs", []):
-                                        title = ref.get("title", "Reference")
-                                        institution = ref.get("institution", "Institution")
-                                        url = ref.get("url", "")
-                                        if url:
-                                            st.markdown("- [" + institution + ": " + title + "](" + url + ")")
-                        else:
-                            st.info("No subject-specific guidance is recorded for your selected subjects here. You can still explore the major profile above." if st.session_state.language == "English" else "Chưa có gợi ý môn học cụ thể cho các môn bạn đã chọn trong hồ sơ này. Bạn vẫn có thể tìm hiểu hồ sơ ngành ở trên.")
-        
-                selected_key = st.session_state.get("selected_network_node")
-                if selected_key in nodes:
-                    selected_node = nodes[selected_key]
-                    st.divider()
-                    st.subheader(tr("selected_node"))
-                    st.markdown(f"### {translated_node_label(selected_node)}")
-                    st.write((MAJORS.get(selected_node["label"], {}).get("overview_vi", selected_node["description"]) if st.session_state.language == "Tiếng Việt" else selected_node["description"]))
-    
-                    connected_edges = [e for e in edges if selected_key in (e["source"], e["target"])]
-                    if connected_edges:
-                        st.subheader(tr("direct"))
-                        for edge in connected_edges:
-                            other_key = edge["target"] if edge["source"] == selected_key else edge["source"]
-                            other_node = nodes[other_key]
-                            relation = edge["relation"]
-                            if st.session_state.language == "Tiếng Việt":
-                                relation = RELATION_VI.get(relation, relation)
-                            with st.expander(f'{translated_node_label(other_node)} · {relation}'):
-                                st.markdown(f"**{tr('why_connected')}**")
-                                st.write(edge["evidence"])
-                                for ref in edge.get("evidence_refs", []):
-                                    url = ref.get("url", "")
-                                    if url:
-                                        st.markdown("- [" + ref.get("institution", "Institution") + ": " + ref.get("title", "Reference") + "](" + url + ")")
-                                        if ref.get("claim"):
-                                            st.caption(("Source supports this claim: " if st.session_state.language == "English" else "Nguồn hỗ trợ nhận định: ") + ref["claim"])
-                                        if ref.get("claim_status"):
-                                            st.caption(("Claim verification: " if st.session_state.language == "English" else "Trạng thái xác minh nhận định: ") + ref["claim_status"])
-                                if not edge.get("evidence_refs"):
-                                    st.caption("No claim-level source is attached to this relationship; it is not shown as verified." if st.session_state.language == "English" else "Mối liên hệ này chưa có nguồn ở cấp độ nhận định; không được xem là đã xác minh.")
-                                st.caption(f'{tr("relationship")}: {relation}')
-    
-                    else:
-                        st.info(tr("no_connections"))
-    
-                    if st.button(tr("reset"), key="reset_network_view"):
-                        st.session_state.selected_network_node = None
-                        st.rerun()
-    
-                if intended_majors:
-                    st.subheader("Your stated major choices" if st.session_state.language == "English" else "Ngành học bạn chủ động cân nhắc")
-                    chosen_display = [m if st.session_state.language == "English" else MAJORS[m].get("name_vi", m) for m in intended_majors]
-                    st.write(", ".join(chosen_display))
-                    st.caption("These are your own stated choices, not a suitability ranking." if st.session_state.language == "English" else "Đây là lựa chọn do bạn tự nêu, không phải xếp hạng mức độ phù hợp.")
-    
-    elif page == tr("majors"):
-        st.title(tr("majors"))
-        st.caption("Browse broadly first. Each profile describes what the field studies, how it is approached, and where it may lead; none of this determines whether it is right for you." if st.session_state.language == "English" else "Hãy bắt đầu bằng việc khám phá rộng. Mỗi hồ sơ mô tả ngành nghiên cứu điều gì, cách tiếp cận và những hướng có thể mở ra; không nội dung nào quyết định ngành đó có phù hợp với bạn hay không.")
-        render_reference_frameworks("majors", st.session_state.language)
-        st.divider()
-        for name,info in MAJORS.items():
-            shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
-            shown_cluster = info.get("cluster_vi", info["cluster"]) if st.session_state.language == "Tiếng Việt" else info["cluster"]
-            with st.expander(f"{shown_name} · {shown_cluster}"):
-                st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
-                a,b = st.columns(2)
-                with a:
-                    st.markdown(f"**{tr('disciplines')}**")
-                    for value in info["disciplines"]:
-                        shown_value = DISCIPLINE_TRANSLATIONS.get(value, value) if st.session_state.language == "Tiếng Việt" else value
-                        st.markdown(f"- {shown_value}")
-                        render_profile_item_evidence(name, value, st.session_state.language)
-                    st.caption("Academic disciplines are university-level fields of study; they are not the same thing as EMASI school subjects." if st.session_state.language == "English" else "Các lĩnh vực học thuật là lĩnh vực nghiên cứu ở bậc đại học; chúng không đồng nghĩa với các môn học tại EMASI.")
-                    render_profile_section_sources(name, "disciplines", st.session_state.language)
-                with b:
-                    st.markdown(f"**{tr('skills')}**"); st.write(", ".join(info.get("skills_vi",info["skills"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["skills"]))
-                    render_profile_section_sources(name, "skills", st.session_state.language)
-                    st.markdown(f"**{tr('careers')}**"); st.write(", ".join(info.get("careers_vi", info["careers"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["careers"]))
-                    st.caption("Illustrative career areas to explore, not guaranteed job outcomes or a ranking of career paths." if st.session_state.language == "English" else "Đây là các lĩnh vực nghề nghiệp mang tính tham khảo để tìm hiểu, không phải cam kết về việc làm hay xếp hạng lộ trình nghề nghiệp.")
-                    render_profile_section_sources(name, "careers", st.session_state.language)
-                st.markdown(f"**{tr('preparation')}**")
-                prep = info.get("preparation_vi",info["preparation"]) if st.session_state.language == "Tiếng Việt" else info["preparation"]
-                for item in prep: st.markdown(f"- {item}")
-                st.caption(info.get("caveat_vi",info["caveat"]) if st.session_state.language == "Tiếng Việt" else info["caveat"])
-                profile_scope = info.get("profile_scope_vi", info.get("profile_scope", "")) if st.session_state.language == "Tiếng Việt" else info.get("profile_scope", "")
-                source_status = info.get("source_status_vi", info.get("source_status", "")) if st.session_state.language == "Tiếng Việt" else info.get("source_status", "")
-                if source_status:
-                    st.caption(("Profile evidence status: " if st.session_state.language == "English" else "Tình trạng bằng chứng của hồ sơ: ") + source_status)
-                if profile_scope:
-                    st.caption(profile_scope)
-    
+                explore_info = MAJORS[explore_major]
+                st.markdown("### " + (explore_info.get("name_vi", explore_major) if st.session_state.language == "Tiếng Việt" else explore_major))
+                st.write(explore_info.get("overview_vi", explore_info.get("overview", "")) if st.session_state.language == "Tiếng Việt" else explore_info.get("overview", ""))
+                detail_fields = [("academic_foundations", "academic_foundations_vi", "Academic foundations", "Nền tảng học thuật"), ("related_disciplines", "related_disciplines_vi", "Related disciplines", "Lĩnh vực liên quan"), ("specialized_applications", "specialized_applications_vi", "Specialized applications", "Ứng dụng chuyên sâu"), ("research_areas", "research_areas_vi", "Research areas", "Hướng nghiên cứu")]
+                for field, field_vi, label_en, label_vi in detail_fields:
+                    values = explore_info.get(field, []) if st.session_state.language == "English" else explore_info.get(field_vi, explore_info.get(field, []))
+                    if values:
+                        st.markdown("**" + (label_en if st.session_state.language == "English" else label_vi) + "**")
+                        st.write(" · ".join(values))
+                        render_profile_section_sources(explore_major, field, st.session_state.language)
+                # Show the deliberately broad cross-disciplinary prompts beside the profile.
+                unexpected_directions = EXPLORATION_DIRECTIONS.get(explore_major, [])
+                if unexpected_directions:
+                    st.markdown("**" + ("Unexpected directions to explore" if st.session_state.language == "English" else "Những hướng khám phá ngoài dự kiến") + "**")
+                    st.caption("These are curated ideas for broadening your search, not verified degree pathways or personalized matches." if st.session_state.language == "English" else "Đây là các ý tưởng được biên soạn để mở rộng hướng tìm hiểu, không phải lộ trình bằng cấp đã xác minh hay kết quả ghép ngành cá nhân.")
+                    for direction in unexpected_directions:
+                        direction_label = direction.get("label", "") if st.session_state.language == "English" else direction.get("label_vi", direction.get("label", ""))
+                        direction_reason = direction.get("why", "") if st.session_state.language == "English" else direction.get("why_vi", direction.get("why", ""))
+                        related_labels = direction.get("explore_with", [])
+                        related_display = related_labels if st.session_state.language == "English" else [MAJORS.get(m, {}).get("name_vi", m) for m in related_labels]
+                        with st.expander(direction_label):
+                            st.write(direction_reason)
+                            st.caption(("Explore alongside: " if st.session_state.language == "English" else "Có thể tìm hiểu cùng: ") + ", ".join(related_display))
+                            render_profile_section_sources(explore_major, "exploration_directions", st.session_state.language)
+                st.markdown("**" + ("Skills" if st.session_state.language == "English" else "Kỹ năng") + "**")
+                skills = explore_info.get("skills", []) if st.session_state.language == "English" else explore_info.get("skills_vi", explore_info.get("skills", []))
+                st.write(" · ".join(skills))
+                st.markdown("**" + ("Career areas to explore" if st.session_state.language == "English" else "Lĩnh vực nghề nghiệp để tìm hiểu") + "**")
+                careers = explore_info.get("careers", []) if st.session_state.language == "English" else explore_info.get("careers_vi", explore_info.get("careers", []))
+                st.write(" · ".join(careers))
+                guidance_items = explore_info.get("emasi_subject_guidance", [])
+                relevant_guidance = [g for g in guidance_items if any(g.get("subject_en", "").casefold() == chosen.casefold() for chosen in subjects)]
+                if not subjects:
+                    relevant_guidance = guidance_items[:4]
+                if relevant_guidance:
+                    st.markdown("**" + ("EMASI subject exploration" if st.session_state.language == "English" else "Gợi ý khám phá môn học EMASI") + "**")
+                    for guidance in relevant_guidance:
+                        subject_label = guidance.get("subject_en", "") if st.session_state.language == "English" else guidance.get("subject_vi", guidance.get("subject_en", ""))
+                        reason = guidance.get("why_en", "") if st.session_state.language == "English" else guidance.get("why_vi", "")
+                        status_en = (guidance.get("evidence_status_en") or "").strip()
+                        status = status_en if st.session_state.language == "English" else guidance.get("evidence_status_vi", "")
+                        role_label = guidance.get("role_en", "") if st.session_state.language == "English" else guidance.get("role_vi", "")
+                        map_eligible = has_subject_major_evidence(guidance)
+                        with st.expander(subject_label + " · " + role_label):
+                            st.write(reason)
+                            if status:
+                                st.caption(("Evidence status: " if st.session_state.language == "English" else "Trạng thái bằng chứng: ") + status)
+                            if not map_eligible:
+                                st.caption("Not displayed as a map connection: this specific subject-to-major relationship has not met Horizon’s evidence threshold." if st.session_state.language == "English" else "Không hiển thị thành kết nối trên bản đồ: mối liên hệ cụ thể giữa môn học và ngành chưa đạt ngưỡng bằng chứng của Horizon.")
+                            scope = guidance.get("evidence_scope_en", "") if st.session_state.language == "English" else guidance.get("evidence_scope_vi", "")
+                            if scope:
+                                st.caption(scope)
+                            for ref in guidance.get("evidence_refs", []):
+                                title = ref.get("title", "Reference")
+                                institution = ref.get("institution", "Institution")
+                                url = ref.get("url", "")
+                                if url:
+                                    st.markdown("- [" + institution + ": " + title + "](" + url + ")")
+                else:
+                    st.info("No subject-specific guidance is recorded for your selected subjects here. You can still explore the major profile above." if st.session_state.language == "English" else "Chưa có gợi ý môn học cụ thể cho các môn bạn đã chọn trong hồ sơ này. Bạn vẫn có thể tìm hiểu hồ sơ ngành ở trên.")
+
+            selected_key = st.session_state.get("selected_network_node")
+            if selected_key in nodes:
+                selected_node = nodes[selected_key]
+                st.divider()
+                st.subheader(tr("selected_node"))
+                st.markdown(f"### {translated_node_label(selected_node)}")
+                st.write((MAJORS.get(selected_node["label"], {}).get("overview_vi", selected_node["description"]) if st.session_state.language == "Tiếng Việt" else selected_node["description"]))
+
+                connected_edges = [e for e in edges if selected_key in (e["source"], e["target"])]
+                if connected_edges:
+                    st.subheader(tr("direct"))
+                    for edge in connected_edges:
+                        other_key = edge["target"] if edge["source"] == selected_key else edge["source"]
+                        other_node = nodes[other_key]
+                        relation = edge["relation"]
+                        if st.session_state.language == "Tiếng Việt":
+                            relation = RELATION_VI.get(relation, relation)
+                        with st.expander(f'{translated_node_label(other_node)} · {relation}'):
+                            st.markdown(f"**{tr('why_connected')}**")
+                            st.write(edge["evidence"])
+                            for ref in edge.get("evidence_refs", []):
+                                url = ref.get("url", "")
+                                if url:
+                                    st.markdown("- [" + ref.get("institution", "Institution") + ": " + ref.get("title", "Reference") + "](" + url + ")")
+                                    if ref.get("claim"):
+                                        st.caption(("Source supports this claim: " if st.session_state.language == "English" else "Nguồn hỗ trợ nhận định: ") + ref["claim"])
+                                    if ref.get("claim_status"):
+                                        st.caption(("Claim verification: " if st.session_state.language == "English" else "Trạng thái xác minh nhận định: ") + ref["claim_status"])
+                            if not edge.get("evidence_refs"):
+                                st.caption("No claim-level source is attached to this relationship; it is not shown as verified." if st.session_state.language == "English" else "Mối liên hệ này chưa có nguồn ở cấp độ nhận định; không được xem là đã xác minh.")
+                            st.caption(f'{tr("relationship")}: {relation}')
+
+                else:
+                    st.info(tr("no_connections"))
+
+                if st.button(tr("reset"), key="reset_network_view"):
+                    st.session_state.selected_network_node = None
+                    st.rerun()
+
+            if intended_majors:
+                st.subheader("Your stated major choices" if st.session_state.language == "English" else "Ngành học bạn chủ động cân nhắc")
+                chosen_display = [m if st.session_state.language == "English" else MAJORS[m].get("name_vi", m) for m in intended_majors]
+                st.write(", ".join(chosen_display))
+                st.caption("These are your own stated choices, not a suitability ranking." if st.session_state.language == "English" else "Đây là lựa chọn do bạn tự nêu, không phải xếp hạng mức độ phù hợp.")
+
+elif page == tr("majors"):
+    st.title(tr("majors"))
+    st.caption("Browse broadly first. Each profile describes what the field studies, how it is approached, and where it may lead; none of this determines whether it is right for you." if st.session_state.language == "English" else "Hãy bắt đầu bằng việc khám phá rộng. Mỗi hồ sơ mô tả ngành nghiên cứu điều gì, cách tiếp cận và những hướng có thể mở ra; không nội dung nào quyết định ngành đó có phù hợp với bạn hay không.")
+    render_reference_frameworks("majors", st.session_state.language)
+    st.divider()
+    for name,info in MAJORS.items():
+        shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
+        shown_cluster = info.get("cluster_vi", info["cluster"]) if st.session_state.language == "Tiếng Việt" else info["cluster"]
+        with st.expander(f"{shown_name} · {shown_cluster}"):
+            st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
+            a,b = st.columns(2)
+            with a:
+                st.markdown(f"**{tr('disciplines')}**")
+                for value in info["disciplines"]:
+                    shown_value = DISCIPLINE_TRANSLATIONS.get(value, value) if st.session_state.language == "Tiếng Việt" else value
+                    st.markdown(f"- {shown_value}")
+                    render_profile_item_evidence(name, value, st.session_state.language)
+                st.caption("Academic disciplines are university-level fields of study; they are not the same thing as EMASI school subjects." if st.session_state.language == "English" else "Các lĩnh vực học thuật là lĩnh vực nghiên cứu ở bậc đại học; chúng không đồng nghĩa với các môn học tại EMASI.")
+                render_profile_section_sources(name, "disciplines", st.session_state.language)
+            with b:
+                st.markdown(f"**{tr('skills')}**"); st.write(", ".join(info.get("skills_vi",info["skills"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["skills"]))
+                render_profile_section_sources(name, "skills", st.session_state.language)
+                st.markdown(f"**{tr('careers')}**"); st.write(", ".join(info.get("careers_vi", info["careers"])) if st.session_state.language == "Tiếng Việt" else ", ".join(info["careers"]))
+                st.caption("Illustrative career areas to explore, not guaranteed job outcomes or a ranking of career paths." if st.session_state.language == "English" else "Đây là các lĩnh vực nghề nghiệp mang tính tham khảo để tìm hiểu, không phải cam kết về việc làm hay xếp hạng lộ trình nghề nghiệp.")
+                render_profile_section_sources(name, "careers", st.session_state.language)
+            st.markdown(f"**{tr('preparation')}**")
+            prep = info.get("preparation_vi",info["preparation"]) if st.session_state.language == "Tiếng Việt" else info["preparation"]
+            for item in prep: st.markdown(f"- {item}")
+            st.caption(info.get("caveat_vi",info["caveat"]) if st.session_state.language == "Tiếng Việt" else info["caveat"])
+            profile_scope = info.get("profile_scope_vi", info.get("profile_scope", "")) if st.session_state.language == "Tiếng Việt" else info.get("profile_scope", "")
+            source_status = info.get("source_status_vi", info.get("source_status", "")) if st.session_state.language == "Tiếng Việt" else info.get("source_status", "")
+            if source_status:
+                st.caption(("Profile evidence status: " if st.session_state.language == "English" else "Tình trạng bằng chứng của hồ sơ: ") + source_status)
+            if profile_scope:
+                st.caption(profile_scope)
+
             # Expanded academic profile; these fields are descriptive, not admission requirements.
             detail_fields = [
                 ("academic_foundations", "Academic foundations" if st.session_state.language == "English" else "Nền tảng học thuật"),
