@@ -195,6 +195,30 @@ check('no interest-to-major match is inferred' in network_code,
 check('emasi_subject_connections' not in network_code,'Network Map does not infer majors from unverified EMASI subject records')
 check('return nodes, edges, selected_majors' in network_code,'Network Map returns only explicitly selected majors as candidates')
 
+# Unexpected cross-disciplinary exploration coverage
+exploration_path = ROOT / 'exploration_directions.json'
+if exploration_path.exists():
+    exploration_data = json.loads(exploration_path.read_text(encoding='utf-8'))
+    exploration_majors = exploration_data.get('majors', {})
+    check(len(exploration_majors) == 20 and set(exploration_majors) == set(majors.keys()),
+          'Unexpected exploration directions cover all 20 Horizon majors')
+    check(sum(len(items) for items in exploration_majors.values()) >= 100,
+          'Unexpected exploration catalogue includes at least 100 curated directions')
+    check(all(len(items) >= 5 for items in exploration_majors.values()),
+          'Every major has at least five additional exploration directions')
+    check(all(item.get('label') and item.get('label_vi') and item.get('why') and item.get('why_vi') for items in exploration_majors.values() for item in items),
+          'Every additional direction has English and Vietnamese labels and explanations')
+    check(all(target in majors for items in exploration_majors.values() for item in items for target in item.get('explore_with', [])),
+          'Cross-disciplinary directions only reference majors in the Horizon catalogue')
+    check('not verified curriculum requirements' in exploration_data.get('_meta', {}).get('description', ''),
+          'Additional directions are explicitly scoped as exploratory rather than verified requirements')
+else:
+    check(False, 'Unexpected exploration directions data file exists')
+check('EXPLORATION_DIRECTIONS' in app and 'unexpected direction to explore' in app and 'exploratory connection to another major' in app,
+      'Network Map integrates additional exploratory directions and cross-major discovery links')
+check('Unexpected directions to explore' in app and 'not verified degree pathways' in app,
+      'Major detail pages explain the exploratory status of unexpected directions')
+
 check('expanded_majors=None' in network_code and 'expanded_set = set(selected_majors) | set(expanded_majors)' in network_code,
       'Every explicitly selected or expanded major can open its own exploration branches')
 check('"academic_foundations"' in network_code and '"related_disciplines"' in network_code and '"specialized_applications"' in network_code and '"research_areas"' in network_code,
