@@ -524,7 +524,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Interdisciplinary studies",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/interdisciplinary-studies/interdisciplinary-studies-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Interdisciplinary studies degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Psychology": {
     "cluster": "Social Sciences",
@@ -1002,7 +1011,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Psychology",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/psychology/psychology-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Psychology degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Computer Science": {
     "cluster": "Technology",
@@ -1415,7 +1433,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Computer and information technology",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/computer-and-information/computer-and-information-technology-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Computer and information technology degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Data Science": {
     "cluster": "Technology",
@@ -2083,7 +2110,16 @@
     },
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Computer and information technology",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/computer-and-information/computer-and-information-technology-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Computer and information technology degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Economics": {
     "cluster": "Business & Economics",
@@ -2430,7 +2466,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Social science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/social-science/social-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Social science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Biology": {
     "cluster": "Natural Sciences",
@@ -2785,7 +2830,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Biology",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/biology/biology-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Biology degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Mechanical Engineering": {
     "cluster": "Engineering",
@@ -3128,7 +3182,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Engineering",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/engineering/engineering-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Engineering degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Finance": {
     "cluster": "Business & Economics",
@@ -3429,7 +3492,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Business",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/business/business-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Business degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Chemistry": {
     "cluster": "Natural Sciences",
@@ -3751,7 +3823,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Physical science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/physical-science/physical-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Physical science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Physics": {
     "cluster": "Natural Sciences",
@@ -4083,7 +4164,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Physical science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/physical-science/physical-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Physical science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Environmental Science": {
     "cluster": "Natural Sciences",
@@ -4417,7 +4507,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Natural resources",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/natural-resources/natural-resources-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Natural resources degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Architecture": {
     "cluster": "Engineering",
@@ -4812,7 +4911,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Architecture",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/architecture/architecture-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Architecture degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Electrical Engineering": {
     "cluster": "Engineering",
@@ -5103,7 +5211,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Engineering",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/engineering/engineering-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Engineering degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Civil Engineering": {
     "cluster": "Engineering",
@@ -5411,7 +5528,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Engineering",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/engineering/engineering-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Engineering degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Political Science": {
     "cluster": "Social Sciences",
@@ -5740,7 +5866,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Social science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/social-science/social-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Social science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Sociology": {
     "cluster": "Social Sciences",
@@ -6074,7 +6209,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Social science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/social-science/social-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Social science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Linguistics": {
     "cluster": "Humanities",
@@ -6282,7 +6426,39 @@
       "limitations": [
         "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
       ]
-    }
+    },
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Foreign language",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/foreign-language/foreign-language-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Foreign language degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ],
+    "source_records": [
+      {
+        "institution": "Stanford University",
+        "title": "Linguistics — Explore Majors",
+        "source_url": "https://majors.stanford.edu/opportunities/linguistics",
+        "source_type": "Official undergraduate major profile",
+        "verification_status": "Supports the listed core linguistic subfields, interdisciplinary connections and broad career preparation."
+      },
+      {
+        "institution": "Linguistic Society of America",
+        "title": "Careers in Linguistics",
+        "source_url": "https://www.lsadc.org/careers",
+        "source_type": "Professional association career resource",
+        "verification_status": "Supports broad career sectors and example pathways for linguistics graduates; individual roles may require additional training."
+      },
+      {
+        "institution": "UCLA Department of Linguistics",
+        "title": "What is Linguistics?",
+        "source_url": "https://linguistics.ucla.edu/undergraduate/what-is-linguistics/",
+        "source_type": "Official university department explainer",
+        "verification_status": "Supports the description of linguistics and its principal subfields."
+      }
+    ]
   },
   "Education": {
     "cluster": "Social Sciences",
@@ -6614,7 +6790,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Education",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/education/education-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Education degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Accounting": {
     "cluster": "Business & Economics",
@@ -6902,7 +7087,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Business",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/business/business-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Business degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Communication & Media Studies": {
     "cluster": "Social Sciences",
@@ -7255,7 +7449,16 @@
     ],
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành.",
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Communications",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/communications/communications-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Communications degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
+    ]
   },
   "Pure Mathematics": {
     "cluster": "Natural Sciences",
@@ -7482,6 +7685,15 @@
         "source_url": "https://math.hcmus.edu.vn/teaching/menu-master-level/31-english/teaching",
         "source_type": "Official department programme page",
         "verification_status": "Supports the undergraduate Mathematics programme and stated learning objectives; not a Pure Mathematics-only curriculum."
+      }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Mathematics",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/mathematics/mathematics-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Mathematics degree group; it is not a one-to-one validation of this exact major's listed career options."
       }
     ]
   },
@@ -7719,6 +7931,15 @@
         "source_type": "Official university curriculum page",
         "verification_status": "Supports the listed Natural Geography curriculum at this institution only."
       }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Social science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/social-science/social-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Social science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
     ]
   },
   "Geology": {
@@ -7931,6 +8152,15 @@
         "source_url": "https://geology.hcmus.edu.vn/en/academic",
         "source_type": "Official faculty programme page",
         "verification_status": "Supports the listed Geology and Geological Engineering programme areas at this institution only."
+      }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Physical science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/physical-science/physical-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Physical science degree group; it is not a one-to-one validation of this exact major's listed career options."
       }
     ]
   },
@@ -8152,6 +8382,15 @@
         "source_type": "Official university academic catalog",
         "verification_status": "Lists Astronomy and Astrophysics as undergraduate majors; does not verify every listed research subfield."
       }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Physical science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/physical-science/physical-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Physical science degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
     ]
   },
   "Statistics": {
@@ -8368,6 +8607,15 @@
         "source_url": "https://www.monash.edu/__data/assets/pdf_file/0004/3986635/2026-Science-undergraduate-courseguide.pdf",
         "source_type": "Official university course guide",
         "verification_status": "Provides university-level course and major context including mathematical statistics; programme structures vary by institution."
+      }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Mathematics",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/mathematics/mathematics-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Mathematics degree group; it is not a one-to-one validation of this exact major's listed career options."
       }
     ]
   },
@@ -8593,6 +8841,15 @@
         "source_type": "Official university academic handbook",
         "verification_status": "Lists Philosophy as a minor programme; degree level and structure differ from a major."
       }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Philosophy and religion",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/philosophy-and-religion/philosophy-and-religion-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Philosophy and religion degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
     ]
   },
   "History": {
@@ -8817,6 +9074,15 @@
         "source_type": "Official university academic catalog",
         "verification_status": "Provides official undergraduate programme catalogue context; verify exact History degree page for detailed curriculum."
       }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: History",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/history/history-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader History degree group; it is not a one-to-one validation of this exact major's listed career options."
+      }
     ]
   },
   "Anthropology": {
@@ -9040,6 +9306,15 @@
         "source_url": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/public/handbook/view_document.aspx?id=1835&lang=en&seq=1",
         "source_type": "Official university academic handbook",
         "verification_status": "Lists Anthropology as a minor programme; degree level and structure differ from a major."
+      }
+    ],
+    "career_sources": [
+      {
+        "institution": "U.S. Bureau of Labor Statistics",
+        "title": "Field of degree: Social science",
+        "source_url": "https://www.bls.gov/ooh/field-of-degree/social-science/social-science-field-of-degree.htm",
+        "source_type": "Official BLS and U.S. Census Bureau field-of-degree data",
+        "verification_status": "Provides occupational distribution and career context for the broader Social science degree group; it is not a one-to-one validation of this exact major's listed career options."
       }
     ]
   }
