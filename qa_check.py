@@ -13,7 +13,7 @@ for f in files:
     except Exception as e: check(False,f'{f}: invalid JSON ({e})')
 majors=loaded.get('majors.json',{})
 sources=loaded.get('academic_sources.json',{})
-check(len(majors)==20,'20 major profiles are present')
+check(len(majors)==28,'28 major profiles are present')
 required=['academic_foundations','related_disciplines','specialized_applications','research_areas','limitations']
 for name,record in majors.items():
     for field in required:
@@ -67,7 +67,7 @@ major_vi_fields=['name_vi','cluster_vi','overview_vi','preparation_vi','caveat_v
                  'related_disciplines_vi','specialized_applications_vi','research_areas_vi','limitations_vi']
 missing_major_vi=[f'{name}.{key}' for name,record in majors.items()
                   for key in major_vi_fields if not record.get(key)]
-check(not missing_major_vi,'all 20 major profiles contain English–Vietnamese paired content'+
+check(not missing_major_vi,'all 28 major profiles contain English–Vietnamese paired content'+
       (': '+', '.join(missing_major_vi[:8]) if missing_major_vi else ''))
 # Keep Vietnamese source/claim labels and subject guidance checked above; do not use
 # unrelated Chinese-character absence as a proxy for bilingual quality.
@@ -215,8 +215,8 @@ exploration_path = ROOT / 'exploration_directions.json'
 if exploration_path.exists():
     exploration_data = json.loads(exploration_path.read_text(encoding='utf-8'))
     exploration_majors = exploration_data.get('majors', {})
-    check(len(exploration_majors) == 20 and set(exploration_majors) == set(majors.keys()),
-          'Unexpected exploration directions cover all 20 Horizon majors')
+    check(len(exploration_majors) == 28 and set(exploration_majors) == set(majors.keys()),
+          'Unexpected exploration directions cover all 28 Horizon majors')
     check(sum(len(items) for items in exploration_majors.values()) >= 100,
           'Unexpected exploration catalogue includes at least 100 curated directions')
     check(all(len(items) >= 5 for items in exploration_majors.values()),
