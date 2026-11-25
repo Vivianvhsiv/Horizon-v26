@@ -2,8 +2,8 @@
   "_meta": {
     "title": "Unexpected exploration directions",
     "version": "1.0",
-    "description": "Curated interdisciplinary exploration prompts for all 20 Horizon majors. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
-    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 20 ngành Horizon. Đây là hướng tìm hiểu, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
+    "description": "Curated interdisciplinary exploration prompts for all 28 Horizon majors. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
+    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 28 ngành Horizon. Đây là hướng tìm hiểu, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
   },
   "majors": {
     "Cognitive Science": [
@@ -920,58 +920,73 @@
     ],
     "Linguistics": [
       {
-        "label": "Language technology and AI",
-        "label_vi": "Công nghệ ngôn ngữ và AI",
-        "why": "Explore how language structure informs speech recognition, translation and language models.",
-        "why_vi": "Khám phá cấu trúc ngôn ngữ hỗ trợ nhận dạng giọng nói, dịch thuật và mô hình ngôn ngữ.",
+        "label": "How Children Learn Language",
+        "label_vi": "Language Acquisition",
+        "why": "Study how humans acquire language and how development can vary.",
+        "why_vi": "Study how humans acquire language and how development can vary.",
         "explore_with": [
-          "Computer Science",
-          "Data Science",
-          "Cognitive Science"
-        ]
-      },
-      {
-        "label": "Language, law and forensic communication",
-        "label_vi": "Ngôn ngữ, pháp luật và giao tiếp pháp chứng",
-        "why": "Study language evidence, authorship, interpretation and communication in legal settings.",
-        "why_vi": "Nghiên cứu chứng cứ ngôn ngữ, quyền tác giả, diễn giải và giao tiếp trong bối cảnh pháp lý.",
-        "explore_with": [
-          "Political Science",
           "Psychology",
-          "Communication & Media Studies"
+          "Education"
         ]
       },
       {
-        "label": "Language revitalization and digital archives",
-        "label_vi": "Phục hồi ngôn ngữ và lưu trữ số",
-        "why": "Connect field linguistics, community collaboration and digital preservation of languages.",
-        "why_vi": "Kết nối ngôn ngữ học thực địa, hợp tác cộng đồng và bảo tồn ngôn ngữ bằng công nghệ số.",
+        "label": "Brains and Language",
+        "label_vi": "Neurolinguistics",
+        "why": "Explore the neural systems involved in language processing and production.",
+        "why_vi": "Explore the neural systems involved in language processing and production.",
         "explore_with": [
-          "Anthropology",
-          "Computer Science",
-          "History"
+          "Cognitive Science",
+          "Biology"
         ]
       },
       {
-        "label": "Speech science and hearing",
-        "label_vi": "Khoa học lời nói và thính giác",
-        "why": "Explore speech production, perception, acoustics and communication access.",
-        "why_vi": "Khám phá tạo lời nói, tri giác, âm học và khả năng tiếp cận giao tiếp.",
+        "label": "Languages in Contact",
+        "label_vi": "Historical and Comparative Linguistics",
+        "why": "Investigate language change, family relationships and contact across communities.",
+        "why_vi": "Investigate language change, family relationships and contact across communities.",
         "explore_with": [
-          "Biology",
+          "History",
+          "Anthropology"
+        ]
+      },
+      {
+        "label": "Formal Language Structures",
+        "label_vi": "Mathematical and Computational Linguistics",
+        "why": "Connect formal models of language with computation and mathematical reasoning.",
+        "why_vi": "Connect formal models of language with computation and mathematical reasoning.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Voices and Sound",
+        "label_vi": "Phonetics and Speech Science",
+        "why": "Study speech sounds, acoustic patterns and the physical production of voice.",
+        "why_vi": "Study speech sounds, acoustic patterns and the physical production of voice.",
+        "explore_with": [
           "Physics",
-          "Psychology"
+          "Electrical Engineering"
         ]
       },
       {
-        "label": "Language, identity and migration",
-        "label_vi": "Ngôn ngữ, bản sắc và di cư",
-        "why": "Investigate multilingual lives, belonging, education and language policy.",
-        "why_vi": "Nghiên cứu đời sống đa ngôn ngữ, cảm giác thuộc về, giáo dục và chính sách ngôn ngữ.",
+        "label": "Language and Power",
+        "label_vi": "Critical Sociolinguistics",
+        "why": "Explore language variation, identity, institutions and social inequality.",
+        "why_vi": "Explore language variation, identity, institutions and social inequality.",
         "explore_with": [
           "Sociology",
-          "Education",
           "Political Science"
+        ]
+      },
+      {
+        "label": "Saving Language Knowledge",
+        "label_vi": "Language Documentation and Revitalization",
+        "why": "Work with communities to document and support endangered languages.",
+        "why_vi": "Work with communities to document and support endangered languages.",
+        "explore_with": [
+          "Anthropology",
+          "Education"
         ]
       }
     ],
@@ -1143,6 +1158,602 @@
           "Computer Science",
           "Cognitive Science",
           "Architecture"
+        ]
+      }
+    ],
+    "Pure Mathematics": [
+      {
+        "label": "Mathematical Logic",
+        "label_vi": "Logic in Computer Science",
+        "why": "Explore formal logic, proof systems and the foundations of computation.",
+        "why_vi": "Explore formal logic, proof systems and the foundations of computation.",
+        "explore_with": [
+          "Computer Science",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Topology and Data",
+        "label_vi": "Topological Data Analysis",
+        "why": "Investigate how topological ideas can reveal structure in complex data.",
+        "why_vi": "Investigate how topological ideas can reveal structure in complex data.",
+        "explore_with": [
+          "Statistics",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Mathematics of Symmetry",
+        "label_vi": "Representation Theory and Physics",
+        "why": "Explore how algebraic symmetry describes physical systems.",
+        "why_vi": "Explore how algebraic symmetry describes physical systems.",
+        "explore_with": [
+          "Physics",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Networks and Discrete Structures",
+        "label_vi": "Graph Theory",
+        "why": "Study networks, combinatorial structures and their mathematical properties.",
+        "why_vi": "Study networks, combinatorial structures and their mathematical properties.",
+        "explore_with": [
+          "Computer Science",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Mathematics of Shape",
+        "label_vi": "Differential Geometry",
+        "why": "Connect geometry, curvature and the mathematics of space-time.",
+        "why_vi": "Connect geometry, curvature and the mathematics of space-time.",
+        "explore_with": [
+          "Physics",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Patterns in Nature",
+        "label_vi": "Mathematical Biology",
+        "why": "Explore mathematical models of populations, ecosystems and biological processes.",
+        "why_vi": "Explore mathematical models of populations, ecosystems and biological processes.",
+        "explore_with": [
+          "Biology",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "The Nature of Infinity",
+        "label_vi": "Set Theory and Foundations",
+        "why": "Investigate infinity, axioms and the logical structure of mathematics.",
+        "why_vi": "Investigate infinity, axioms and the logical structure of mathematics.",
+        "explore_with": [
+          "Philosophy",
+          "Computer Science"
+        ]
+      }
+    ],
+    "Geography": [
+      {
+        "label": "Earth & Environmental Systems",
+        "label_vi": "Earth and Environmental Systems",
+        "why": "Connect physical geography with geology, climate, oceans and water systems.",
+        "why_vi": "Connect physical geography with geology, climate, oceans and water systems.",
+        "explore_with": [
+          "Geology",
+          "Environmental Science",
+          "Climate Science",
+          "Oceanography",
+          "Hydrology"
+        ]
+      },
+      {
+        "label": "Cities as Systems",
+        "label_vi": "Urban Geography",
+        "why": "Explore how cities, infrastructure, inequality and movement shape places.",
+        "why_vi": "Explore how cities, infrastructure, inequality and movement shape places.",
+        "explore_with": [
+          "Sociology",
+          "Architecture",
+          "Civil Engineering"
+        ]
+      },
+      {
+        "label": "People on the Move",
+        "label_vi": "Population and Migration Geography",
+        "why": "Study migration, population change, borders and spatial patterns.",
+        "why_vi": "Study migration, population change, borders and spatial patterns.",
+        "explore_with": [
+          "Sociology",
+          "Anthropology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Mapping Invisible Worlds",
+        "label_vi": "Geospatial Science and GIS",
+        "why": "Use spatial data, remote sensing and mapping to investigate complex questions.",
+        "why_vi": "Use spatial data, remote sensing and mapping to investigate complex questions.",
+        "explore_with": [
+          "Computer Science",
+          "Data Science",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Landscapes Through Time",
+        "label_vi": "Historical Geography",
+        "why": "Explore how landscapes and places change through history.",
+        "why_vi": "Explore how landscapes and places change through history.",
+        "explore_with": [
+          "History",
+          "Archaeology",
+          "Geology"
+        ]
+      },
+      {
+        "label": "Nature and Society",
+        "label_vi": "Political Ecology",
+        "why": "Investigate power, resources, environment and unequal impacts across places.",
+        "why_vi": "Investigate power, resources, environment and unequal impacts across places.",
+        "explore_with": [
+          "Political Science",
+          "Sociology",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Coasts and Rivers",
+        "label_vi": "Coastal and Fluvial Geography",
+        "why": "Study shorelines, river basins, flooding, erosion and sediment systems.",
+        "why_vi": "Study shorelines, river basins, flooding, erosion and sediment systems.",
+        "explore_with": [
+          "Oceanography",
+          "Hydrology",
+          "Geology"
+        ]
+      }
+    ],
+    "Geology": [
+      {
+        "label": "Planetary Geology",
+        "label_vi": "Comparative Planetology",
+        "why": "Compare the geological histories and surfaces of planets and moons.",
+        "why_vi": "Compare the geological histories and surfaces of planets and moons.",
+        "explore_with": [
+          "Astronomy & Astrophysics",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Deep Time",
+        "label_vi": "Paleoclimate and Earth History",
+        "why": "Reconstruct ancient environments using rocks, fossils and geochemical records.",
+        "why_vi": "Reconstruct ancient environments using rocks, fossils and geochemical records.",
+        "explore_with": [
+          "Biology",
+          "Chemistry",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Earthquakes and Society",
+        "label_vi": "Seismology and Risk",
+        "why": "Explore seismic processes and how communities understand geological risk.",
+        "why_vi": "Explore seismic processes and how communities understand geological risk.",
+        "explore_with": [
+          "Physics",
+          "Civil Engineering",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Water Below Ground",
+        "label_vi": "Hydrogeology",
+        "why": "Study groundwater flow, aquifers and the relationship between water and rock.",
+        "why_vi": "Study groundwater flow, aquifers and the relationship between water and rock.",
+        "explore_with": [
+          "Hydrology",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Resources and Materials",
+        "label_vi": "Economic Geology",
+        "why": "Investigate the formation, distribution and responsible use of Earth materials.",
+        "why_vi": "Investigate the formation, distribution and responsible use of Earth materials.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Volcano Worlds",
+        "label_vi": "Volcanology",
+        "why": "Explore magma, eruptions, volcanic landscapes and planetary volcanism.",
+        "why_vi": "Explore magma, eruptions, volcanic landscapes and planetary volcanism.",
+        "explore_with": [
+          "Physics",
+          "Astronomy & Astrophysics"
+        ]
+      },
+      {
+        "label": "Reading the Earth",
+        "label_vi": "Geochemistry",
+        "why": "Use chemical evidence to understand Earth's materials and processes.",
+        "why_vi": "Use chemical evidence to understand Earth's materials and processes.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science"
+        ]
+      }
+    ],
+    "Astronomy & Astrophysics": [
+      {
+        "label": "Worlds Beyond the Solar System",
+        "label_vi": "Exoplanet Science",
+        "why": "Investigate how planets form, orbit stars and may support environments of interest.",
+        "why_vi": "Investigate how planets form, orbit stars and may support environments of interest.",
+        "explore_with": [
+          "Physics",
+          "Geology",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "The Early Universe",
+        "label_vi": "Cosmology",
+        "why": "Explore the origin, evolution and large-scale structure of the universe.",
+        "why_vi": "Explore the origin, evolution and large-scale structure of the universe.",
+        "explore_with": [
+          "Physics",
+          "Pure Mathematics"
+        ]
+      },
+      {
+        "label": "Extreme Objects",
+        "label_vi": "Black Holes and Relativistic Astrophysics",
+        "why": "Study gravity, compact objects and energetic cosmic phenomena.",
+        "why_vi": "Study gravity, compact objects and energetic cosmic phenomena.",
+        "explore_with": [
+          "Physics",
+          "Pure Mathematics"
+        ]
+      },
+      {
+        "label": "Life in the Universe",
+        "label_vi": "Astrobiology",
+        "why": "Connect planetary environments, chemistry and the possibility of life.",
+        "why_vi": "Connect planetary environments, chemistry and the possibility of life.",
+        "explore_with": [
+          "Biology",
+          "Chemistry",
+          "Geology"
+        ]
+      },
+      {
+        "label": "Listening to Space",
+        "label_vi": "Radio Astronomy",
+        "why": "Explore how radio signals reveal otherwise hidden cosmic processes.",
+        "why_vi": "Explore how radio signals reveal otherwise hidden cosmic processes.",
+        "explore_with": [
+          "Electrical Engineering",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Mapping the Cosmos",
+        "label_vi": "Computational Astrophysics",
+        "why": "Use simulations and large datasets to understand astronomical systems.",
+        "why_vi": "Use simulations and large datasets to understand astronomical systems.",
+        "explore_with": [
+          "Computer Science",
+          "Statistics",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Light from the Stars",
+        "label_vi": "Spectroscopy and Astrochemistry",
+        "why": "Use light to investigate the composition and conditions of celestial objects.",
+        "why_vi": "Use light to investigate the composition and conditions of celestial objects.",
+        "explore_with": [
+          "Chemistry",
+          "Physics"
+        ]
+      }
+    ],
+    "Statistics": [
+      {
+        "label": "Why Things Happen",
+        "label_vi": "Causal Inference",
+        "why": "Study how data and research designs can distinguish association from causal effects.",
+        "why_vi": "Study how data and research designs can distinguish association from causal effects.",
+        "explore_with": [
+          "Economics",
+          "Psychology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Randomness in Motion",
+        "label_vi": "Stochastic Processes",
+        "why": "Model systems that evolve under uncertainty, from queues to populations.",
+        "why_vi": "Model systems that evolve under uncertainty, from queues to populations.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Physics",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Genes and Variation",
+        "label_vi": "Statistical Genetics",
+        "why": "Explore statistical methods for understanding genetic variation and complex traits.",
+        "why_vi": "Explore statistical methods for understanding genetic variation and complex traits.",
+        "explore_with": [
+          "Biology",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Decisions Under Uncertainty",
+        "label_vi": "Bayesian Decision Theory",
+        "why": "Connect probability, evidence and rational decision-making.",
+        "why_vi": "Connect probability, evidence and rational decision-making.",
+        "explore_with": [
+          "Psychology",
+          "Economics",
+          "Philosophy"
+        ]
+      },
+      {
+        "label": "Measuring Society",
+        "label_vi": "Official and Social Statistics",
+        "why": "Study how populations, institutions and social change are measured.",
+        "why_vi": "Study how populations, institutions and social change are measured.",
+        "explore_with": [
+          "Sociology",
+          "Political Science",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Patterns in Sport",
+        "label_vi": "Sports Analytics",
+        "why": "Use statistical reasoning to investigate performance and strategy.",
+        "why_vi": "Use statistical reasoning to investigate performance and strategy.",
+        "explore_with": [
+          "Psychology",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Learning from Data",
+        "label_vi": "Statistical Learning Theory",
+        "why": "Explore the mathematical foundations of prediction and machine learning.",
+        "why_vi": "Explore the mathematical foundations of prediction and machine learning.",
+        "explore_with": [
+          "Computer Science",
+          "Pure Mathematics"
+        ]
+      }
+    ],
+    "Philosophy": [
+      {
+        "label": "Thinking About Thinking",
+        "label_vi": "Philosophy of Mind and Cognitive Science",
+        "why": "Explore consciousness, mental representation, perception and reasoning.",
+        "why_vi": "Explore consciousness, mental representation, perception and reasoning.",
+        "explore_with": [
+          "Cognitive Science",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "The Ethics of Machines",
+        "label_vi": "AI Ethics and Philosophy of Technology",
+        "why": "Investigate responsibility, agency, fairness and the meaning of intelligent systems.",
+        "why_vi": "Investigate responsibility, agency, fairness and the meaning of intelligent systems.",
+        "explore_with": [
+          "Computer Science",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "What Counts as Knowledge?",
+        "label_vi": "Social Epistemology",
+        "why": "Study trust, expertise, disagreement and how communities produce knowledge.",
+        "why_vi": "Study trust, expertise, disagreement and how communities produce knowledge.",
+        "explore_with": [
+          "Sociology",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Mathematical Truth",
+        "label_vi": "Philosophy of Mathematics",
+        "why": "Explore what mathematical objects are and why proofs establish knowledge.",
+        "why_vi": "Explore what mathematical objects are and why proofs establish knowledge.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Statistics"
+        ]
+      },
+      {
+        "label": "Living Well",
+        "label_vi": "Environmental Ethics",
+        "why": "Examine moral relationships between people, animals and ecosystems.",
+        "why_vi": "Examine moral relationships between people, animals and ecosystems.",
+        "explore_with": [
+          "Environmental Science",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Language and Meaning",
+        "label_vi": "Philosophy of Language",
+        "why": "Investigate reference, meaning, interpretation and communication.",
+        "why_vi": "Investigate reference, meaning, interpretation and communication.",
+        "explore_with": [
+          "Linguistics",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Justice and Institutions",
+        "label_vi": "Political Philosophy",
+        "why": "Explore rights, equality, authority and the foundations of political systems.",
+        "why_vi": "Explore rights, equality, authority and the foundations of political systems.",
+        "explore_with": [
+          "Political Science",
+          "Economics"
+        ]
+      }
+    ],
+    "History": [
+      {
+        "label": "Climate Through Time",
+        "label_vi": "Environmental History",
+        "why": "Study how climate, landscapes and human societies have shaped one another.",
+        "why_vi": "Study how climate, landscapes and human societies have shaped one another.",
+        "explore_with": [
+          "Geography",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Science Has a History",
+        "label_vi": "History of Science and Mathematics",
+        "why": "Trace how scientific and mathematical ideas developed across cultures and periods.",
+        "why_vi": "Trace how scientific and mathematical ideas developed across cultures and periods.",
+        "explore_with": [
+          "Pure Mathematics",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Cities and Memory",
+        "label_vi": "Urban and Architectural History",
+        "why": "Explore how buildings, public spaces and urban forms preserve historical change.",
+        "why_vi": "Explore how buildings, public spaces and urban forms preserve historical change.",
+        "explore_with": [
+          "Architecture",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Objects from the Past",
+        "label_vi": "Archaeology and Material Culture",
+        "why": "Interpret artifacts, settlements and material evidence of past societies.",
+        "why_vi": "Interpret artifacts, settlements and material evidence of past societies.",
+        "explore_with": [
+          "Anthropology",
+          "Geology"
+        ]
+      },
+      {
+        "label": "Connected Oceans",
+        "label_vi": "Maritime and Global History",
+        "why": "Study exchange, migration, trade and cultural contact across waterways.",
+        "why_vi": "Study exchange, migration, trade and cultural contact across waterways.",
+        "explore_with": [
+          "Geography",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Medicine and Society",
+        "label_vi": "History of Medicine",
+        "why": "Investigate changing ideas about health, bodies, disease and care.",
+        "why_vi": "Investigate changing ideas about health, bodies, disease and care.",
+        "explore_with": [
+          "Biology",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Digital Pasts",
+        "label_vi": "Digital History and Historical GIS",
+        "why": "Use digital archives and spatial tools to ask new historical questions.",
+        "why_vi": "Use digital archives and spatial tools to ask new historical questions.",
+        "explore_with": [
+          "Computer Science",
+          "Geography",
+          "Data Science"
+        ]
+      }
+    ],
+    "Anthropology": [
+      {
+        "label": "Humans Across Deep Time",
+        "label_vi": "Biological Anthropology and Human Evolution",
+        "why": "Study human evolution, biological variation and adaptation.",
+        "why_vi": "Study human evolution, biological variation and adaptation.",
+        "explore_with": [
+          "Biology",
+          "Geology"
+        ]
+      },
+      {
+        "label": "Language in Culture",
+        "label_vi": "Linguistic Anthropology",
+        "why": "Explore how language, identity, culture and social life shape one another.",
+        "why_vi": "Explore how language, identity, culture and social life shape one another.",
+        "explore_with": [
+          "Linguistics",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Objects, Rituals and Meaning",
+        "label_vi": "Material Culture Studies",
+        "why": "Investigate how objects and everyday practices carry cultural meaning.",
+        "why_vi": "Investigate how objects and everyday practices carry cultural meaning.",
+        "explore_with": [
+          "History",
+          "Archaeology"
+        ]
+      },
+      {
+        "label": "Health Across Cultures",
+        "label_vi": "Medical Anthropology",
+        "why": "Study how societies understand illness, care and health systems.",
+        "why_vi": "Study how societies understand illness, care and health systems.",
+        "explore_with": [
+          "Biology",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Humans and Environments",
+        "label_vi": "Environmental Anthropology",
+        "why": "Explore relationships among communities, environments and resource use.",
+        "why_vi": "Explore relationships among communities, environments and resource use.",
+        "explore_with": [
+          "Geography",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Digital Communities",
+        "label_vi": "Digital Anthropology",
+        "why": "Study online communities, technology and changing forms of social life.",
+        "why_vi": "Study online communities, technology and changing forms of social life.",
+        "explore_with": [
+          "Computer Science",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Migration and Belonging",
+        "label_vi": "Migration, Identity and Diaspora",
+        "why": "Investigate mobility, borders, belonging and cultural change.",
+        "why_vi": "Investigate mobility, borders, belonging and cultural change.",
+        "explore_with": [
+          "Geography",
+          "Political Science",
+          "Sociology"
         ]
       }
     ]
