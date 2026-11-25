@@ -791,7 +791,6 @@ elif page == tr("network"):
 elif page == tr("majors"):
     st.title(tr("majors"))
     st.caption("Browse broadly first. Each profile describes what the field studies, how it is approached, and where it may lead; none of this determines whether it is right for you." if st.session_state.language == "English" else "Hãy bắt đầu bằng việc khám phá rộng. Mỗi hồ sơ mô tả ngành nghiên cứu điều gì, cách tiếp cận và những hướng có thể mở ra; không nội dung nào quyết định ngành đó có phù hợp với bạn hay không.")
-    q = st.text_input(tr("search_major"), placeholder="e.g. Psychology / Tâm lý học" if st.session_state.language == "English" else "Ví dụ: Psychology / Tâm lý học")
     clusters = sorted({v["cluster"] for v in MAJORS.values()})
     cluster_labels = {tr("all"): None}
     for c in clusters:
@@ -802,7 +801,6 @@ elif page == tr("majors"):
         shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
         shown_cluster = info.get("cluster_vi", info["cluster"]) if st.session_state.language == "Tiếng Việt" else info["cluster"]
         if cluster_labels[chosen_cluster] and info["cluster"] != cluster_labels[chosen_cluster]: continue
-        if q and q.casefold() not in name.casefold() and q.casefold() not in shown_name.casefold(): continue
         with st.expander(f"{shown_name} · {shown_cluster}"):
             st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
             a,b = st.columns(2)
