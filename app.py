@@ -622,28 +622,23 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         else:
             color = {"background":muted["background"], "border":muted["border"], "highlight":{"background":muted["background"],"border":muted["border"]}}
             font_color = muted["font"]
-        # Keep all catalogue nodes in the full map, but suppress inactive
-        # direction/field labels so 285 prompts do not collapse into a text cloud.
-        show_label = is_active or item["type"] in {"major", "cluster", "student", "subject", "interest"}
-        node_label = display_label if show_label else ""
-        node_size = 32 if is_focus else (25 if is_active else (18 if item["type"] == "major" else 5))
         graph_nodes.append(Node(
-            id=key, label=node_label, title=title,
-            size=node_size,
+            id=key, label=display_label, title=title,
+            size=32 if is_focus else (25 if is_active else (19 if item["type"] == "major" else 15)),
             color=color, borderWidth=3 if is_focus else (2 if is_active else 1),
-            font={"color":font_color, "size":15 if is_focus else (13 if is_active else 9)}
+            font={"color":font_color, "size":15 if is_focus else (13 if is_active else 10)}
         ))
 
     graph_edges = []
     for index, edge in enumerate(edges):
         active = index in active_edges
         relation = edge["relation"]
-        label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
+        label = "" if relation == "profile includes" else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
         graph_edges.append(Edge(
             source=edge["source"], target=edge["target"], label=label,
-            color="#315B83" if active else "#F3F5F7",
-            width=2.8 if active else 0.1,
-            font={"color":"#315B83" if active else "#F3F5F7", "size":10},
+            color="#315B83" if active else "#E1E5EA",
+            width=2.8 if active else 0.7,
+            font={"color":"#315B83" if active else "#C3CAD3", "size":10},
             arrows="to"
         ))
 
@@ -652,8 +647,7 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         nodeHighlightBehavior=False, collapsible=False,
         interaction={"hover":True, "navigationButtons":True, "keyboard":True},
         physics_options={"solver":"forceAtlas2Based",
-                         "forceAtlas2Based":{"gravitationalConstant":-180,"springLength":260,"springConstant":0.035,"avoidOverlap":1.0},
-                         "stabilization":{"enabled":True,"iterations":1800,"fit":True}}
+                         "forceAtlas2Based":{"gravitationalConstant":-75,"springLength":190,"springConstant":0.045}}
     )
     return agraph(nodes=graph_nodes, edges=graph_edges, config=config)
 with st.sidebar:
