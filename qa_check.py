@@ -221,10 +221,20 @@ if exploration_path.exists():
     exploration_majors = exploration_data.get('majors', {})
     check(len(exploration_majors) == 28 and set(exploration_majors) == set(majors.keys()),
           'Unexpected exploration directions cover all 28 Horizon majors')
-    check(sum(len(items) for items in exploration_majors.values()) >= 280,
-          'Unexpected exploration catalogue includes at least 280 curated directions')
+    direction_total = sum(len(items) for items in exploration_majors.values())
+    check(direction_total == 285,
+          'Unexpected exploration catalogue contains exactly 285 curated directions')
     check(all(len(items) >= 10 for items in exploration_majors.values()),
           'Every major has at least ten additional exploration directions')
+    duplicate_direction_labels = [
+        major for major, items in exploration_majors.items()
+        if len({item.get('label') for item in items}) != len(items)
+    ]
+    check(not duplicate_direction_labels,
+          'Exploration direction labels are unique within each major'
+          + (': ' + ', '.join(duplicate_direction_labels) if duplicate_direction_labels else ''))
+    check(all(item.get('explore_with') for items in exploration_majors.values() for item in items),
+          'Every exploration direction identifies at least one adjacent field or major')
     check(all(item.get('label') and item.get('label_vi') and item.get('why') and item.get('why_vi') for items in exploration_majors.values() for item in items),
           'Every additional direction has English and Vietnamese labels and explanations')
     check(all(isinstance(target, str) and target.strip() for items in exploration_majors.values() for item in items for target in item.get('explore_with', [])),
