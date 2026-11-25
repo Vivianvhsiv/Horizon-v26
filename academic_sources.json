@@ -2308,13 +2308,15 @@
             "institution": "University of California, Berkeley",
             "title": "Course Requirements: Pure Mathematics",
             "url": "https://math.berkeley.edu/undergraduate/major/pure",
-            "source_type": "Official department curriculum"
+            "source_type": "Official department curriculum",
+            "source_type_vi": "Chương trình hoặc yêu cầu đào tạo chính thức"
           },
           {
             "institution": "University of California, Berkeley",
             "title": "Student Learning Goals for Mathematics Majors",
             "url": "https://math.berkeley.edu/undergraduate/student-learning-goals",
-            "source_type": "Official department learning outcomes"
+            "source_type": "Official department learning outcomes",
+            "source_type_vi": "Mục tiêu học tập chính thức của khoa"
           }
         ]
       }
@@ -2338,7 +2340,8 @@
             "institution": "University of Massachusetts Amherst",
             "title": "2026/2027 Guide to Undergraduate Programs — Geography",
             "url": "https://catalog.umass.edu/undergradguide/2026-2027/Page26167.html",
-            "source_type": "Official undergraduate catalogue"
+            "source_type": "Official undergraduate catalogue",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           }
         ]
       }
@@ -2362,7 +2365,8 @@
             "institution": "University of North Dakota",
             "title": "Geology Degree Requirements",
             "url": "https://und.edu/programs/geology-bs/requirements.html",
-            "source_type": "Official degree requirements"
+            "source_type": "Official degree requirements",
+            "source_type_vi": "Chương trình hoặc yêu cầu đào tạo chính thức"
           }
         ]
       }
@@ -2386,13 +2390,15 @@
             "institution": "University of Florida",
             "title": "Astronomy Courses — BS in Astrophysics",
             "url": "https://astro.ufl.edu/astronomy-courses/",
-            "source_type": "Official degree curriculum"
+            "source_type": "Official degree curriculum",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           },
           {
             "institution": "University of California, San Diego",
             "title": "Astronomy and Astrophysics Undergraduate Curriculum",
             "url": "https://catalog.ucsd.edu/curric/ASTR-ug.html",
-            "source_type": "Official undergraduate catalogue"
+            "source_type": "Official undergraduate catalogue",
+            "source_type_vi": "Chương trình hoặc yêu cầu đào tạo chính thức"
           }
         ]
       }
@@ -2416,7 +2422,8 @@
             "institution": "Duke University",
             "title": "Majors in Statistical Science",
             "url": "https://stat.duke.edu/undergraduate/major",
-            "source_type": "Official undergraduate major requirements"
+            "source_type": "Official undergraduate major requirements",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           }
         ]
       }
@@ -2440,13 +2447,15 @@
             "institution": "Georgetown University",
             "title": "Major in Philosophy",
             "url": "https://philosophy.georgetown.edu/undergraduate/majors-minors/majors/",
-            "source_type": "Official undergraduate major requirements"
+            "source_type": "Official undergraduate major requirements",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           },
           {
             "institution": "Stanford University",
             "title": "The Undergraduate Program in Philosophy",
             "url": "https://philosophy.stanford.edu/academics/undergraduate-program-philosophy",
-            "source_type": "Official department programme page"
+            "source_type": "Official department programme page",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           }
         ]
       }
@@ -2470,7 +2479,8 @@
             "institution": "Yale University",
             "title": "History — Yale College Programs of Study",
             "url": "https://catalog.yale.edu/ycps/subjects-of-instruction/history/",
-            "source_type": "Official undergraduate catalogue"
+            "source_type": "Official undergraduate catalogue",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           }
         ]
       }
@@ -2494,7 +2504,8 @@
             "institution": "University of Florida",
             "title": "Anthropology Major — BA in Anthropology",
             "url": "https://anthro.ufl.edu/academics/undergrad-students/anthropology-major/",
-            "source_type": "Official undergraduate major requirements"
+            "source_type": "Official undergraduate major requirements",
+            "source_type_vi": "Nguồn chương trình đào tạo chính thức"
           }
         ]
       }
