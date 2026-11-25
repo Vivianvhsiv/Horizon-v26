@@ -137,19 +137,15 @@ if csv_path.exists():
           f'SOURCE_CLAIM_REGISTER.csv matches academic_sources.json ({len(csv_rows_norm)} CSV rows / {len(json_rows_norm)} JSON source rows)')
 else:
     check(False,'SOURCE_CLAIM_REGISTER.csv exists')
-# Student-centred exploration lens: literal profile navigation, self-described strengths, no fit scoring.
-check('Your exploration lens' in explore_code and 'Góc nhìn khám phá của bạn' in explore_code,
-      'Explore Majors offers a bilingual, optional student exploration lens')
-check('interest_pairs = grouped_options(INTEREST_GROUPS)' in explore_code and 'format_func=lambda value: interest_display.get(value, value)' in explore_code,
-      'Exploration interest selector stores canonical taxonomy keys while displaying bilingual group labels')
-check('profile_topic_mentions(info, profile_interests)' in explore_code and 'def profile_topic_mentions(info, selected_topics):' in app,
-      'Selected interests navigate to literal mentions in existing academic profile fields')
-check('literal wording mentions in the profile' in explore_code and 'search limitation' in explore_code,
-      'Literal topic mentions are not presented as verified curriculum links or suitability')
-check('A strength you have noticed' in explore_code and 'A specific example that makes you think this is a strength' in explore_code,
-      'Student strengths are self-described and can be supported by a concrete example')
+# Student-centred reflection note only; Horizon does not match interests to majors.
+check('Your reflection note' in explore_code and 'Ghi chú tự suy ngẫm' in explore_code,
+      'Explore Majors offers an optional bilingual student reflection note')
+check('You may describe a strength you have noticed' in explore_code and 'A specific example that makes you think this is a strength' in explore_code,
+      'Student strengths remain self-described and can be supported by a concrete example')
 check('does not automatically claim that this strength is required by or predicts success' in explore_code,
       'Student-provided strengths are not converted into aptitude or success claims')
+check('profile_topic_mentions' not in app and 'explore_profile_interests' not in app,
+      'Horizon does not present interest-to-major matching or interest-based profile navigation')
 compare_start=app.find('elif page == tr("compare"):')
 compare_code=app[compare_start:] if compare_start >= 0 else ''
 check('Shared labels are a browsing aid only' in compare_code and 'Your self-identified strength:' in compare_code,
