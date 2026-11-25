@@ -987,6 +987,28 @@ elif page == tr("compare"):
     st.title(tr("compare"))
     selected = st.multiselect(tr("choosemajors"),list(MAJORS),max_selections=3)
     if len(selected)>=2:
+        # Carry the same student-authored exploration lens into comparison.
+        if st.session_state.get("explore_profile_interests") or st.session_state.get("explore_strength_note") or st.session_state.get("explore_strength_example"):
+            st.subheader("Your exploration lens" if st.session_state.language == "English" else "Góc nhìn khám phá của bạn")
+            if st.session_state.get("explore_strength_note"):
+                st.write(("Your self-identified strength: " if st.session_state.language == "English" else "Điểm mạnh bạn tự nhận thấy: ") + st.session_state["explore_strength_note"])
+            if st.session_state.get("explore_strength_example"):
+                st.caption(("Your example: " if st.session_state.language == "English" else "Ví dụ của bạn: ") + st.session_state["explore_strength_example"])
+            chosen_topics = st.session_state.get("explore_profile_interests", [])
+            if chosen_topics:
+                st.write(("Topics you chose to explore: " if st.session_state.language == "English" else "Chủ đề bạn chọn khám phá: ") + ", ".join(chosen_topics if st.session_state.language == "English" else [INTEREST_TRANSLATIONS.get(x, x) for x in chosen_topics]))
+                compare_cols = st.columns(len(selected))
+                for col, major_name in zip(compare_cols, selected):
+                    shared = sorted(set(chosen_topics).intersection(MAJORS[major_name].get("interests", [])))
+                    with col:
+                        label = MAJORS[major_name].get("name_vi", major_name) if st.session_state.language == "Tiếng Việt" else major_name
+                        st.markdown("**" + label + "**")
+                        if shared:
+                            shown_shared = shared if st.session_state.language == "English" else [INTEREST_TRANSLATIONS.get(x, x) for x in shared]
+                            st.write(", ".join(shown_shared))
+                        else:
+                            st.caption("No exact shared topic labels" if st.session_state.language == "English" else "Không có nhãn chủ đề trùng khớp chính xác")
+                st.caption("Shared labels are a browsing aid only—not a score, academic link or suitability judgement." if st.session_state.language == "English" else "Các nhãn trùng nhau chỉ hỗ trợ tra cứu, không phải điểm số, mối liên hệ học thuật hay đánh giá mức độ phù hợp.")
         fields = [("cluster",tr("cluster")),("overview",tr("mainfocus")),
                   ("academic_foundations", "Academic foundations" if st.session_state.language == "English" else "Nền tảng học thuật"),
                   ("related_disciplines", "Related fields" if st.session_state.language == "English" else "Các lĩnh vực liên quan"),
