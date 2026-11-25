@@ -137,15 +137,15 @@ if csv_path.exists():
           f'SOURCE_CLAIM_REGISTER.csv matches academic_sources.json ({len(csv_rows_norm)} CSV rows / {len(json_rows_norm)} JSON source rows)')
 else:
     check(False,'SOURCE_CLAIM_REGISTER.csv exists')
-# Student-centred exploration lens: transparent overlap, self-described strengths, no fit scoring.
+# Student-centred exploration lens: literal profile navigation, self-described strengths, no fit scoring.
 check('Your exploration lens' in explore_code and 'Góc nhìn khám phá của bạn' in explore_code,
       'Explore Majors offers a bilingual, optional student exploration lens')
 check('interest_pairs = grouped_options(INTEREST_GROUPS)' in explore_code and 'format_func=lambda value: interest_display.get(value, value)' in explore_code,
       'Exploration interest selector stores canonical taxonomy keys while displaying bilingual group labels')
-check('shared_topics = sorted(set(profile_interests).intersection(info.get("interests", [])))' in explore_code,
-      'Personal topic overlap uses exact selected taxonomy labels only')
-check('These are shared catalogue labels only.' in explore_code and 'That does not mean the major is unsuitable' in explore_code,
-      'Topic overlap is explicitly not presented as academic evidence or suitability')
+check('profile_topic_mentions(info, profile_interests)' in explore_code and 'def profile_topic_mentions(info, selected_topics):' in app,
+      'Selected interests navigate to literal mentions in existing academic profile fields')
+check('literal wording mentions in the profile' in explore_code and 'search limitation' in explore_code,
+      'Literal topic mentions are not presented as verified curriculum links or suitability')
 check('A strength you have noticed' in explore_code and 'A specific example that makes you think this is a strength' in explore_code,
       'Student strengths are self-described and can be supported by a concrete example')
 check('does not automatically claim that this strength is required by or predicts success' in explore_code,
