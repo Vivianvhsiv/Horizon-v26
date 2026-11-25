@@ -207,12 +207,13 @@ check('browsed_major = st.session_state.get("network_major_explorer")' in app an
       'The major selected in the Network Map browser is expanded in the graph')
 check('focus_keys.append(node_id("major", browsed_major))' in app,
       'The browsed major and its newly expanded directions are highlighted in the graph')
-check('major_branch_nodes = {' in app and 'major_branch_targets.update(' in app and 'target in major_branch_targets' in app and 'active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets' in app,
-      'Every generated exploration direction and its adjacent fields/majors are highlighted in Network Map')
+check('major_branch_nodes = {' in app and 'major_branch_targets.update(' in app
+      and 'all_exploration_direction_nodes' in app and 'all_exploration_direction_targets' in app,
+      'Selected major branches and all curated directions with adjacent fields/majors are highlighted in Network Map')
 branch_targets_pos = app.find('major_branch_targets.update(')
 active_nodes_pos = app.find('active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets')
-check(branch_targets_pos >= 0 and active_nodes_pos > branch_targets_pos,
-      'Network Map computes branch nodes and adjacent targets before activating them (prevents runtime UnboundLocalError)')
+check(branch_targets_pos >= 0 and app.find('all_exploration_direction_nodes = {', branch_targets_pos) > branch_targets_pos,
+      'Network Map computes branch nodes and global direction nodes before activating them')
 
 # Unexpected cross-disciplinary exploration coverage
 exploration_path = ROOT / 'exploration_directions.json'
