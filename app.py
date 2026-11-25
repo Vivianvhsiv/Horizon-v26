@@ -118,10 +118,10 @@ T = {
         "why_connected":"Why are these connected?", "relationship":"Relationship type", "evidence_status":"Evidence status",
         "sample_notice":"Evidence status: current interest tags are taxonomy labels, not claim-level evidence of a major connection. EMASI subject guidance remains exploratory and no verified subject-to-major connection records are populated. No inferred major matches are shown.",
         "reset":"Reset view", "selected_node":"Selected node", "no_connections":"No direct connections are recorded for this node in the current sample data.",
-        "click_hint":"Your selected interests and subjects are highlighted automatically. Click any node to inspect it and focus on its direct connections.",
+        "click_hint":"Your selected subjects and explicitly considered majors are highlighted. Click any node to inspect the academic connections recorded in the catalogue.",
         "major_intention":"Majors you are considering (up to 3)", "focus_view":"View one major at a time", "focus_view_help":"Choose a major to highlight its own pathway. Other selected majors remain visible but faded.", "undecided":"I have not decided yet (Undecided)", "major_intention_help":"Choose up to three majors from the same database used by the Network Map.",
         "interest":"Interests to explore", "subject":"EMASI subjects currently studied", "generate":"Generate my network",
-        "fullmap":"1. Your selected inputs", "mapcaption":"Only your selected interests, current subjects and explicitly chosen majors appear. Unrelated majors are never added as personalized matches.",
+        "fullmap":"1. Your selected inputs", "mapcaption":"Your selected subjects and explicitly considered majors are highlighted; other majors remain general catalogue context, not personalized matches.",
         "nodes":"2. Explore nodes", "node_prompt":"Choose a node to inspect", "direct":"Direct connections",
         "focus":"3. Focus on one connection", "related":"Related node", "candidates":"2. Majors you explicitly selected",
         "notranked":"These are only the majors you explicitly selected. They are not ranked or presented as suitability recommendations.",
@@ -586,7 +586,7 @@ elif page == tr("network"):
                                 if url:
                                     st.markdown("- [" + ref.get("institution", "Source") + ": " + ref.get("title", "Reference") + "](" + url + ")")
                 if not intended_majors:
-                    st.caption("These are research directions to investigate, not a system-selected answer. Student interests remain separate unless a specific interest-to-major claim is independently evidenced." if st.session_state.language == "English" else "Đây là các hướng để tự tìm hiểu, không phải kết quả do hệ thống chọn thay. Sở thích của học sinh vẫn được hiển thị riêng trừ khi có bằng chứng độc lập cho mối liên hệ cụ thể giữa sở thích và ngành học.")
+                    st.caption("These are research directions to investigate, not a system-selected answer. These are research directions to investigate, not a system-selected answer." if st.session_state.language == "English" else "Đây là các hướng để tự tìm hiểu, không phải kết quả do hệ thống chọn thay. Đây là các hướng để tự tìm hiểu, không phải kết quả do hệ thống chọn thay.")
             if not intended_majors:
                 st.info("Horizon does not rank or choose a major for you. Referenced subject paths, when shown, are exploratory curriculum context—not proof of a school prerequisite or personal suitability." if st.session_state.language == "English" else "Horizon không xếp hạng hoặc chọn ngành thay bạn. Các kết nối môn học có nguồn tham khảo, nếu xuất hiện, chỉ là bối cảnh chương trình mang tính khám phá, không phải điều kiện tiên quyết phổ thông hay kết luận về mức độ phù hợp cá nhân.")
             if exploratory_subject_paths:
@@ -601,8 +601,6 @@ elif page == tr("network"):
             focus_keys = [node_id("student", "Your exploration")]
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
-            if "Education and learning" in interests and "Education" in MAJORS:
-                focus_keys.append(node_id("major", "Education"))
             if intended_majors:
                 labels = intended_majors if st.session_state.language == "English" else [MAJORS[m].get("name_vi", m) for m in intended_majors]
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
