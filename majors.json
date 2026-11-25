@@ -6077,311 +6077,212 @@
     "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
   },
   "Linguistics": {
-    "cluster": "Social Sciences",
-    "overview": "Studies language structure, meaning, use and variation.",
-    "overview_vi": "Nghiên cứu cấu trúc, ý nghĩa, cách sử dụng và sự biến đổi của ngôn ngữ.",
-    "subjects": [
-      "English Language",
-      "World Languages",
-      "Mathematics",
-      "Computer Science"
-    ],
-    "interests": [],
-    "disciplines": [
-      "Phonetics",
-      "Syntax",
-      "Semantics",
-      "Sociolinguistics"
-    ],
-    "skills": [
-      "Pattern analysis",
-      "Attention to detail",
-      "Data analysis",
-      "Clear communication"
-    ],
-    "skills_vi": [
-      "Phân tích quy luật",
-      "Chú ý đến chi tiết",
-      "Phân tích dữ liệu",
-      "Giao tiếp rõ ràng"
-    ],
-    "preparation": [
-      "Compare language patterns",
-      "Explore grammar and sound systems",
-      "Try basic language-data analysis"
-    ],
-    "preparation_vi": [
-      "So sánh các mô hình ngôn ngữ.",
-      "Khám phá ngữ pháp và hệ thống âm thanh.",
-      "Thử phân tích dữ liệu ngôn ngữ ở mức cơ bản."
-    ],
-    "careers": [
-      "Language research",
-      "Localization",
-      "Speech technology",
-      "Language education"
-    ],
-    "caveat": "These are exploratory examples. Course structures, prerequisites and professional pathways vary by institution and country.",
-    "caveat_vi": "Đây là các ví dụ định hướng khám phá. Cấu trúc chương trình, môn tiên quyết và lộ trình nghề nghiệp khác nhau tùy trường và quốc gia.",
+    "cluster": "Humanities",
+    "cluster_vi": "Nhân văn",
     "name_vi": "Ngôn ngữ học",
-    "cluster_vi": "Khoa học xã hội",
-    "disciplines_vi": [
-      "Ngữ âm học",
-      "Cú pháp học",
-      "Ngữ nghĩa học",
-      "Ngôn ngữ học xã hội"
-    ],
-    "careers_vi": [
-      "Nghiên cứu ngôn ngữ",
-      "Bản địa hóa",
-      "Công nghệ tiếng nói",
-      "Giáo dục ngôn ngữ"
-    ],
-    "source_status": "Prototype academic mapping; references identified, but institution-specific curriculum verification remains pending.",
-    "source_status_vi": "Mối liên hệ học thuật trong bản thử nghiệm; đã xác định nguồn tham khảo nhưng vẫn cần đối chiếu chương trình cụ thể của từng trường.",
-    "profile_scope": "Exploration guidance only. It is not an aptitude assessment, a ranking of student ability, a universal admission prerequisite list, or a guarantee of admission.",
-    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá. Đây không phải bài đánh giá năng lực, bảng xếp hạng khả năng học sinh, danh sách điều kiện tuyển sinh phổ quát hay cam kết được nhận vào trường.",
+    "overview": "Studies the structure, use, history and cognition of human language.",
+    "overview_vi": "Studies the structure, use, history and cognition of human language.",
     "academic_foundations": [
       "Phonetics and phonology",
       "Morphology",
       "Syntax",
       "Semantics and pragmatics",
-      "Sociolinguistics"
-    ],
-    "related_disciplines": [
-      "Psycholinguistics",
-      "Cognitive science",
-      "Computer science",
-      "Anthropology",
-      "Statistics"
-    ],
-    "specialized_applications": [
-      "Computational linguistics",
-      "Language acquisition",
       "Historical linguistics",
-      "Speech and language technology",
-      "Forensic linguistics"
-    ],
-    "useful_school_subjects": [
-      "English and other languages",
-      "Mathematics (useful for formal and quantitative linguistics)",
-      "Computer science (useful for computational tracks)"
-    ],
-    "research_areas": [
-      "Language structure",
-      "Sound systems",
-      "Meaning and use",
-      "Language variation and change",
-      "Language processing"
-    ],
-    "limitations": [
-      "Knowing many languages can help but is not the same as studying the scientific structure of language."
+      "Sociolinguistics"
     ],
     "academic_foundations_vi": [
       "Ngữ âm học và âm vị học",
       "Hình thái học",
       "Cú pháp học",
       "Ngữ nghĩa học và ngữ dụng học",
+      "Ngôn ngữ học lịch sử",
       "Ngôn ngữ học xã hội"
     ],
-    "taxonomy_note": "Audited prototype taxonomy; distinguish foundations, related disciplines, specialized applications and useful school subjects.",
-    "source_records": [
-      {
-        "source_url": "https://www.linguisticsociety.org/",
-        "source_type": "professional or university reference",
-        "verification_status": "reference identified; program-level mapping not exhaustively verified"
-      }
+    "related_disciplines": [
+      "Psychology",
+      "Anthropology",
+      "Computer Science",
+      "Philosophy",
+      "Education"
     ],
-    "subjects_note": "Legacy compatibility field only. Use useful_school_subjects for exploratory preparation; these are not universal prerequisites.",
-    "subjects_note_vi": "Trường dữ liệu cũ được giữ để tương thích. Dùng useful_school_subjects để tham khảo; đây không phải môn tiên quyết áp dụng cho mọi trường.",
+    "related_disciplines_vi": [
+      "Tâm lý học",
+      "Nhân học",
+      "Khoa học máy tính",
+      "Triết học",
+      "Giáo dục học"
+    ],
+    "specialized_applications": [
+      "Language documentation",
+      "Psycholinguistics",
+      "Typology and language universals",
+      "Language acquisition",
+      "Endangered language revitalization"
+    ],
+    "specialized_applications_vi": [
+      "Tư liệu hóa ngôn ngữ",
+      "Tâm lý ngôn ngữ học",
+      "Loại hình học và phổ quát ngôn ngữ",
+      "Tiếp thu ngôn ngữ",
+      "Phục hồi ngôn ngữ có nguy cơ mai một"
+    ],
+    "research_areas": [
+      "Language documentation",
+      "Psycholinguistics",
+      "Typology and language universals",
+      "Language acquisition",
+      "Endangered language revitalization"
+    ],
+    "research_areas_vi": [
+      "Tư liệu hóa ngôn ngữ",
+      "Tâm lý ngôn ngữ học",
+      "Loại hình học và phổ quát ngôn ngữ",
+      "Tiếp thu ngôn ngữ",
+      "Phục hồi ngôn ngữ có nguy cơ mai một"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Phonetics and phonology",
+      "Morphology",
+      "Syntax",
+      "Semantics and pragmatics",
+      "Historical linguistics",
+      "Sociolinguistics"
+    ],
+    "disciplines_vi": [
+      "Ngữ âm học và âm vị học",
+      "Hình thái học",
+      "Cú pháp học",
+      "Ngữ nghĩa học và ngữ dụng học",
+      "Ngôn ngữ học lịch sử",
+      "Ngôn ngữ học xã hội"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
     "emasi_subject_connections": [],
-    "emasi_subject_mapping_status": "Pending verification",
-    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is displayed as confirmed until the relevant EMASI curriculum content and university programme/course evidence have been compared and cited.",
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
     "profile_sections": {
       "academic_foundations": [
         "Phonetics and phonology",
         "Morphology",
         "Syntax",
         "Semantics and pragmatics",
+        "Historical linguistics",
         "Sociolinguistics"
       ],
       "related_disciplines": [
-        "Psycholinguistics",
-        "Cognitive science",
-        "Computer science",
+        "Psychology",
         "Anthropology",
-        "Statistics"
+        "Computer Science",
+        "Philosophy",
+        "Education"
       ],
       "specialized_applications": [
-        "Computational linguistics",
+        "Language documentation",
+        "Psycholinguistics",
+        "Typology and language universals",
         "Language acquisition",
-        "Historical linguistics",
-        "Speech and language technology",
-        "Forensic linguistics"
+        "Endangered language revitalization"
       ],
       "research_areas": [
-        "Language structure",
-        "Sound systems",
-        "Meaning and use",
-        "Language variation and change",
-        "Language processing"
+        "Language documentation",
+        "Psycholinguistics",
+        "Typology and language universals",
+        "Language acquisition",
+        "Endangered language revitalization"
       ],
       "limitations": [
-        "Knowing many languages can help but is not the same as studying the scientific structure of language."
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
       ]
     },
-    "emasi_subject_guidance": [
-      {
-        "subject_id": "S03",
-        "subject_en": "English",
-        "subject_vi": "Tiếng Anh",
-        "role_en": "Strong preparation",
-        "role_vi": "Nền tảng nên ưu tiên",
-        "why_en": "English provides direct experience with language structure, usage, vocabulary, sound and communication for students exploring English linguistics.",
-        "why_vi": "Tiếng Anh đem lại trải nghiệm trực tiếp về cấu trúc, cách dùng, từ vựng, âm thanh và giao tiếp cho học sinh tìm hiểu ngôn ngữ học tiếng Anh.",
-        "focus_en": "Notice grammar, pronunciation, meaning, discourse and variation; linguistics studies language scientifically, not only language proficiency.",
-        "focus_vi": "Quan sát ngữ pháp, phát âm, ý nghĩa, diễn ngôn và biến thể; ngôn ngữ học nghiên cứu ngôn ngữ một cách khoa học, không chỉ là năng lực sử dụng ngoại ngữ.",
-        "evidence_en": "This is a subject-level exploration rationale based on the major's documented university-level knowledge areas and professional curriculum guidance. It does not establish that the current EMASI syllabus covers all listed content or that a university requires this school subject.",
-        "evidence_vi": "Đây là lý do gợi ý khám phá môn học dựa trên các lĩnh vực kiến thức ở bậc đại học và hướng dẫn chương trình chuyên môn được công bố. Điều này không chứng minh đề cương EMASI hiện tại bao gồm toàn bộ nội dung nêu trên hoặc trường đại học bắt buộc học sinh phải học môn này.",
-        "source_ids": [
-          "Linguistics"
-        ],
-        "claim_id": "LINGUIST-S03-01",
-        "evidence_status_en": "Exploratory mapping — subject-level link not yet independently verified",
-        "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
-        "evidence_refs": [],
-        "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
-        "evidence_scope_vi": "Các nguồn liên kết mô tả chương trình hoặc nền tảng kiến thức của ngành ở đại học. Việc ánh xạ từ nền tảng đó sang môn học EMASI là suy luận giáo dục và cần được đối chiếu với đề cương thực tế của EMASI."
-      },
-      {
-        "subject_id": "S02",
-        "subject_en": "Literature",
-        "subject_vi": "Văn",
-        "role_en": "Strong preparation",
-        "role_vi": "Nền tảng nên ưu tiên",
-        "why_en": "Literature supports close reading, interpretation, rhetoric, meaning and the relationship between language and culture.",
-        "why_vi": "Văn hỗ trợ đọc kỹ, diễn giải, tu từ, ý nghĩa và mối quan hệ giữa ngôn ngữ với văn hóa.",
-        "focus_en": "Explore text structure, style, meaning, context and argument.",
-        "focus_vi": "Tìm hiểu cấu trúc văn bản, phong cách, ý nghĩa, bối cảnh và lập luận.",
-        "evidence_en": "This is a subject-level exploration rationale based on the major's documented university-level knowledge areas and professional curriculum guidance. It does not establish that the current EMASI syllabus covers all listed content or that a university requires this school subject.",
-        "evidence_vi": "Đây là lý do gợi ý khám phá môn học dựa trên các lĩnh vực kiến thức ở bậc đại học và hướng dẫn chương trình chuyên môn được công bố. Điều này không chứng minh đề cương EMASI hiện tại bao gồm toàn bộ nội dung nêu trên hoặc trường đại học bắt buộc học sinh phải học môn này.",
-        "source_ids": [
-          "Linguistics"
-        ],
-        "claim_id": "LINGUIST-S02-02",
-        "evidence_status_en": "Exploratory mapping — subject-level link not yet independently verified",
-        "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
-        "evidence_refs": [],
-        "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
-        "evidence_scope_vi": "Các nguồn liên kết mô tả chương trình hoặc nền tảng kiến thức của ngành ở đại học. Việc ánh xạ từ nền tảng đó sang môn học EMASI là suy luận giáo dục và cần được đối chiếu với đề cương thực tế của EMASI."
-      },
-      {
-        "subject_id": "S01",
-        "subject_en": "Mathematics",
-        "subject_vi": "Toán",
-        "role_en": "Helpful support",
-        "role_vi": "Môn hỗ trợ hữu ích",
-        "why_en": "Mathematics supports formal models, logic, statistics and quantitative or computational linguistics pathways.",
-        "why_vi": "Toán hỗ trợ mô hình hình thức, logic, thống kê và hướng ngôn ngữ học định lượng hoặc tính toán.",
-        "focus_en": "Focus on patterns, logic, basic statistics and structured problem-solving.",
-        "focus_vi": "Chú ý quy luật, logic, thống kê cơ bản và giải quyết vấn đề có cấu trúc.",
-        "evidence_en": "This is a subject-level exploration rationale based on the major's documented university-level knowledge areas and professional curriculum guidance. It does not establish that the current EMASI syllabus covers all listed content or that a university requires this school subject.",
-        "evidence_vi": "Đây là lý do gợi ý khám phá môn học dựa trên các lĩnh vực kiến thức ở bậc đại học và hướng dẫn chương trình chuyên môn được công bố. Điều này không chứng minh đề cương EMASI hiện tại bao gồm toàn bộ nội dung nêu trên hoặc trường đại học bắt buộc học sinh phải học môn này.",
-        "source_ids": [
-          "Linguistics"
-        ],
-        "claim_id": "LINGUIST-S01-03",
-        "evidence_status_en": "Exploratory mapping — subject-level link not yet independently verified",
-        "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
-        "evidence_refs": [],
-        "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
-        "evidence_scope_vi": "Các nguồn liên kết mô tả chương trình hoặc nền tảng kiến thức của ngành ở đại học. Việc ánh xạ từ nền tảng đó sang môn học EMASI là suy luận giáo dục và cần được đối chiếu với đề cương thực tế của EMASI."
-      },
-      {
-        "subject_id": "S09",
-        "subject_en": "ICT (Information and Communication Technology)",
-        "subject_vi": "ICT",
-        "role_en": "Pathway-dependent",
-        "role_vi": "Tùy hướng chuyên sâu",
-        "why_en": "ICT is useful for corpus linguistics, speech technology, language data and computational linguistics.",
-        "why_vi": "ICT hữu ích cho ngôn ngữ học ngữ liệu, công nghệ giọng nói, dữ liệu ngôn ngữ và ngôn ngữ học tính toán.",
-        "focus_en": "Explore data organisation, text processing, basic coding and digital tools if interested in computational pathways.",
-        "focus_vi": "Tìm hiểu tổ chức dữ liệu, xử lý văn bản, lập trình cơ bản và công cụ số nếu quan tâm hướng tính toán.",
-        "evidence_en": "This is a subject-level exploration rationale based on the major's documented university-level knowledge areas and professional curriculum guidance. It does not establish that the current EMASI syllabus covers all listed content or that a university requires this school subject.",
-        "evidence_vi": "Đây là lý do gợi ý khám phá môn học dựa trên các lĩnh vực kiến thức ở bậc đại học và hướng dẫn chương trình chuyên môn được công bố. Điều này không chứng minh đề cương EMASI hiện tại bao gồm toàn bộ nội dung nêu trên hoặc trường đại học bắt buộc học sinh phải học môn này.",
-        "source_ids": [
-          "Linguistics"
-        ],
-        "claim_id": "LINGUIST-S09-04",
-        "evidence_status_en": "Exploratory mapping — subject-level link not yet independently verified",
-        "evidence_status_vi": "Ánh xạ khám phá — mối liên hệ ở cấp độ môn học chưa được xác minh độc lập",
-        "evidence_refs": [],
-        "evidence_scope_en": "The linked sources describe curriculum or disciplinary foundations of the university major. The mapping from those foundations to this EMASI school subject is an educational inference and must be checked against the actual EMASI syllabus.",
-        "evidence_scope_vi": "Các nguồn liên kết mô tả chương trình hoặc nền tảng kiến thức của ngành ở đại học. Việc ánh xạ từ nền tảng đó sang môn học EMASI là suy luận giáo dục và cần được đối chiếu với đề cương thực tế của EMASI."
-      },
-      {
-        "subject_id": "S13",
-        "subject_en": "History",
-        "subject_vi": "Lịch sử",
-        "role_en": "Helpful support",
-        "role_vi": "Môn học hỗ trợ",
-        "why_en": "History can provide context for institutions, ideas, technologies and social change, especially in programmes that examine how systems develop over time.",
-        "why_vi": "Lịch sử có thể cung cấp bối cảnh về thể chế, tư tưởng, công nghệ và biến đổi xã hội, đặc biệt với các ngành nghiên cứu sự phát triển của hệ thống theo thời gian.",
-        "focus_en": "Explore chronology, historical evidence, cause and consequence, continuity and change, and how interpretations are supported by sources.",
-        "focus_vi": "Tìm hiểu trình tự thời gian, tư liệu lịch sử, nguyên nhân và hệ quả, tính liên tục và biến đổi, cũng như cách lập luận được hỗ trợ bằng nguồn tư liệu.",
-        "evidence_en": "This is an exploratory contextual connection, not a claim that History is a formal prerequisite or a required component of every degree.",
-        "evidence_vi": "Đây là mối liên hệ bối cảnh mang tính khám phá, không khẳng định Lịch sử là môn tiên quyết chính thức hoặc thành phần bắt buộc của mọi chương trình đại học.",
-        "evidence_status_en": "Exploratory contextual connection; programme-specific verification pending",
-        "evidence_status_vi": "Mối liên hệ bối cảnh mang tính khám phá; cần xác minh theo từng chương trình",
-        "source_ids": [],
-        "claim_id": "LINGUIST-S13-EXPLORATORY",
-        "evidence_refs": [],
-        "evidence_scope_en": "No claim-level source is attached to this suggestion yet. Treat it as an exploratory prompt only; it is not verified against the EMASI syllabus and is not an admission prerequisite.",
-        "evidence_scope_vi": "Hiện chưa có nguồn ở cấp độ nhận định được đính kèm cho gợi ý này. Chỉ xem đây là gợi ý khám phá; nội dung chưa được đối chiếu với đề cương EMASI và không phải điều kiện tuyển sinh."
-      }
-    ],
-    "subject_guidance_note_en": "These are evidence-informed exploration suggestions, not universal admission prerequisites. Check each university's current entry requirements and the actual EMASI syllabus. A subject may be useful for one pathway but not central to another.",
-    "subject_guidance_note_vi": "Đây là gợi ý khám phá dựa trên bằng chứng, không phải điều kiện tuyển sinh áp dụng cho mọi trường. Hãy kiểm tra yêu cầu đầu vào hiện hành của từng đại học và đề cương thực tế của EMASI. Một môn có thể hữu ích với hướng chuyên sâu này nhưng không phải nền tảng chính của hướng khác.",
-    "selection_help_en": "Start with the subjects marked Strong preparation. Add Helpful support subjects according to the pathway that interests you. Pathway-dependent subjects matter only for particular specialisations. You do not need to choose every subject listed.",
-    "selection_help_vi": "Bắt đầu với các môn được đánh dấu Nền tảng nên ưu tiên. Bổ sung môn hỗ trợ theo hướng chuyên sâu bạn quan tâm. Môn Tùy hướng chuyên sâu chỉ quan trọng với một số chuyên ngành cụ thể. Bạn không cần chọn tất cả các môn được liệt kê.",
-    "pathway_choice_en": "If you are unsure, first choose the type of questions or applications that interest you. Then compare the related subject guidance; do not choose a subject solely because it appears on this list.",
-    "pathway_choice_vi": "Nếu chưa chắc chắn, trước tiên hãy xác định dạng câu hỏi hoặc ứng dụng khiến bạn quan tâm. Sau đó so sánh gợi ý môn học liên quan; không nên chọn môn chỉ vì môn đó xuất hiện trong danh sách.",
-    "profile_reference_note_en": "References support the general academic profile. They do not automatically verify every EMASI subject connection or represent every university's curriculum.",
-    "profile_reference_note_vi": "Các nguồn hỗ trợ hồ sơ học thuật tổng quát. Chúng không tự động xác minh mọi kết nối với môn học EMASI và không đại diện cho chương trình của tất cả đại học.",
-    "evidence_audit_summary": {
-      "status_en": "Subject-level evidence audit in progress",
-      "status_vi": "Đang kiểm tra bằng chứng ở cấp độ từng môn học",
-      "source_count": 2,
-      "note_en": "University programme existence, curriculum content, admission prerequisites and EMASI syllabus alignment are separate claims. A source may support one claim without supporting the others. Recommendations are exploratory and vary by institution, cohort and pathway.",
-      "note_vi": "Sự tồn tại của chương trình đại học, nội dung chương trình đào tạo, điều kiện tuyển sinh và mức độ tương ứng với đề cương EMASI là các nhận định riêng biệt. Một nguồn có thể hỗ trợ một nhận định nhưng không hỗ trợ các nhận định còn lại. Gợi ý chỉ phục vụ khám phá và thay đổi theo trường, khóa học và hướng chuyên sâu."
-    },
-    "related_disciplines_vi": [
-      "Tâm lý học ngôn ngữ",
-      "Khoa học nhận thức",
-      "Khoa học máy tính",
-      "Nhân học",
-      "Thống kê"
-    ],
-    "specialized_applications_vi": [
-      "Ngôn ngữ học tính toán",
-      "Tiếp thu ngôn ngữ",
-      "Ngôn ngữ học lịch sử",
-      "Công nghệ tiếng nói và ngôn ngữ",
-      "Ngôn ngữ học pháp chứng"
-    ],
-    "research_areas_vi": [
-      "Cấu trúc ngôn ngữ",
-      "Hệ thống âm thanh và ngữ âm",
-      "Ý nghĩa và cách sử dụng",
-      "Biến thể và biến đổi ngôn ngữ",
-      "Xử lý ngôn ngữ"
-    ],
-    "limitations_vi": [
-      "Biết nhiều ngôn ngữ có thể hữu ích, nhưng không đồng nghĩa với việc nghiên cứu cấu trúc ngôn ngữ bằng phương pháp khoa học."
-    ],
-    "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
-    "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
-    "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Ngữ âm học và âm vị học",
+        "Hình thái học",
+        "Cú pháp học",
+        "Ngữ nghĩa học và ngữ dụng học",
+        "Ngôn ngữ học lịch sử",
+        "Ngôn ngữ học xã hội"
+      ],
+      "related_disciplines": [
+        "Tâm lý học",
+        "Nhân học",
+        "Khoa học máy tính",
+        "Triết học",
+        "Giáo dục học"
+      ],
+      "specialized_applications": [
+        "Tư liệu hóa ngôn ngữ",
+        "Tâm lý ngôn ngữ học",
+        "Loại hình học và phổ quát ngôn ngữ",
+        "Tiếp thu ngôn ngữ",
+        "Phục hồi ngôn ngữ có nguy cơ mai một"
+      ],
+      "research_areas": [
+        "Tư liệu hóa ngôn ngữ",
+        "Tâm lý ngôn ngữ học",
+        "Loại hình học và phổ quát ngôn ngữ",
+        "Tiếp thu ngôn ngữ",
+        "Phục hồi ngôn ngữ có nguy cơ mai một"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
   },
   "Education": {
     "cluster": "Social Sciences",
@@ -7355,5 +7256,1677 @@
     "taxonomy_note_vi": "Phân biệt rõ nền tảng học thuật, lĩnh vực liên quan, ứng dụng chuyên sâu và các môn học phổ thông hữu ích; đây là các hướng khám phá, không phải danh sách điều kiện tuyển sinh.",
     "subject_inventory_note_en": "The EMASI subject inventory in this prototype contains 13 subjects, including Geography and History. Suggested links are exploratory and depend on the major pathway.",
     "subject_inventory_note_vi": "Danh mục môn học EMASI trong bản thử nghiệm gồm 13 môn, bao gồm Địa lý và Lịch sử. Các mối liên hệ được gợi ý chỉ mang tính khám phá và phụ thuộc vào hướng chuyên sâu của ngành."
+  },
+  "Pure Mathematics": {
+    "cluster": "Natural Sciences",
+    "cluster_vi": "Khoa học tự nhiên",
+    "name_vi": "Toán học thuần túy",
+    "overview": "Studies abstract mathematical structures, proofs and the logical foundations of mathematical ideas.",
+    "overview_vi": "Nghiên cứu các cấu trúc toán học trừu tượng, chứng minh và nền tảng logic của các ý tưởng toán học.",
+    "academic_foundations": [
+      "Mathematical logic and set theory",
+      "Abstract algebra",
+      "Real and complex analysis",
+      "Topology",
+      "Number theory",
+      "Geometry"
+    ],
+    "academic_foundations_vi": [
+      "Logic toán học và lý thuyết tập hợp",
+      "Đại số trừu tượng",
+      "Giải tích thực và phức",
+      "Tô pô học",
+      "Lý thuyết số",
+      "Hình học"
+    ],
+    "related_disciplines": [
+      "Theoretical computer science",
+      "Mathematical physics",
+      "Philosophy of mathematics",
+      "Statistics",
+      "Economics"
+    ],
+    "related_disciplines_vi": [
+      "Khoa học máy tính lý thuyết",
+      "Vật lý toán",
+      "Triết học toán học",
+      "Thống kê học",
+      "Kinh tế học"
+    ],
+    "specialized_applications": [
+      "Cryptography",
+      "Combinatorics and networks",
+      "Coding theory",
+      "Optimization theory",
+      "Mathematical biology"
+    ],
+    "specialized_applications_vi": [
+      "Mật mã học",
+      "Tổ hợp và mạng lưới",
+      "Lý thuyết mã hóa",
+      "Lý thuyết tối ưu",
+      "Sinh học toán học"
+    ],
+    "research_areas": [
+      "Prime numbers and analytic number theory",
+      "Geometric structures",
+      "Foundations of mathematics",
+      "Dynamical systems",
+      "Mathematical structures in physics"
+    ],
+    "research_areas_vi": [
+      "Số nguyên tố và lý thuyết số giải tích",
+      "Cấu trúc hình học",
+      "Nền tảng toán học",
+      "Hệ động lực",
+      "Cấu trúc toán học trong vật lý"
+    ],
+    "limitations": [
+      "Pure mathematics emphasizes abstraction and proof; the balance of algebra, analysis, geometry and applied connections varies by programme."
+    ],
+    "limitations_vi": [
+      "Toán học thuần túy nhấn mạnh tư duy trừu tượng và chứng minh; tỷ trọng đại số, giải tích, hình học và liên hệ ứng dụng thay đổi theo chương trình."
+    ],
+    "skills": [
+      "Proof writing",
+      "Abstract reasoning",
+      "Logical argument",
+      "Mathematical communication"
+    ],
+    "skills_vi": [
+      "Viết chứng minh",
+      "Tư duy trừu tượng",
+      "Lập luận logic",
+      "Diễn đạt toán học"
+    ],
+    "careers": [
+      "Academic research",
+      "Mathematical research",
+      "Cryptography and security",
+      "Quantitative research"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Nghiên cứu toán học",
+      "Mật mã và an toàn thông tin",
+      "Nghiên cứu định lượng"
+    ],
+    "preparation": [
+      "Explore proof-based mathematics",
+      "Study algebra, functions and geometry deeply",
+      "Practice explaining why a statement is true"
+    ],
+    "preparation_vi": [
+      "Khám phá toán học dựa trên chứng minh",
+      "Học sâu đại số, hàm số và hình học",
+      "Luyện giải thích vì sao một mệnh đề đúng"
+    ],
+    "subjects": [
+      "Mathematics"
+    ],
+    "interests": [],
+    "disciplines": [
+      "Logic",
+      "Algebra",
+      "Analysis",
+      "Geometry",
+      "Topology"
+    ],
+    "disciplines_vi": [
+      "Logic",
+      "Đại số",
+      "Giải tích",
+      "Hình học",
+      "Tô pô học"
+    ],
+    "useful_school_subjects": [
+      "Mathematics"
+    ],
+    "useful_school_subjects_vi": [
+      "Toán học"
+    ],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; programme titles and the balance of pure and applied mathematics vary by institution.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; tên chương trình và tỷ trọng toán thuần túy/toán ứng dụng thay đổi theo trường.",
+    "caveat": "This profile describes a broad academic field, not a universal degree structure or admission checklist.",
+    "caveat_vi": "Hồ sơ mô tả một lĩnh vực học thuật rộng, không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "taxonomy_note": "Pure mathematics is distinct from applied mathematics, although many programmes include both.",
+    "taxonomy_note_vi": "Toán học thuần túy khác với toán ứng dụng, dù nhiều chương trình có thể bao gồm cả hai.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Mathematical logic and set theory",
+        "Abstract algebra",
+        "Real and complex analysis",
+        "Topology",
+        "Number theory",
+        "Geometry"
+      ],
+      "related_disciplines": [
+        "Theoretical computer science",
+        "Mathematical physics",
+        "Philosophy of mathematics",
+        "Statistics",
+        "Economics"
+      ],
+      "specialized_applications": [
+        "Cryptography",
+        "Combinatorics and networks",
+        "Coding theory",
+        "Optimization theory",
+        "Mathematical biology"
+      ],
+      "research_areas": [
+        "Prime numbers and analytic number theory",
+        "Geometric structures",
+        "Foundations of mathematics",
+        "Dynamical systems",
+        "Mathematical structures in physics"
+      ],
+      "limitations": [
+        "Pure mathematics emphasizes abstraction and proof; the balance of algebra, analysis, geometry and applied connections varies by programme."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Logic toán học và lý thuyết tập hợp",
+        "Đại số trừu tượng",
+        "Giải tích thực và phức",
+        "Tô pô học",
+        "Lý thuyết số",
+        "Hình học"
+      ],
+      "related_disciplines": [
+        "Khoa học máy tính lý thuyết",
+        "Vật lý toán",
+        "Triết học toán học",
+        "Thống kê học",
+        "Kinh tế học"
+      ],
+      "specialized_applications": [
+        "Mật mã học",
+        "Tổ hợp và mạng lưới",
+        "Lý thuyết mã hóa",
+        "Lý thuyết tối ưu",
+        "Sinh học toán học"
+      ],
+      "research_areas": [
+        "Số nguyên tố và lý thuyết số giải tích",
+        "Cấu trúc hình học",
+        "Nền tảng toán học",
+        "Hệ động lực",
+        "Cấu trúc toán học trong vật lý"
+      ],
+      "limitations": [
+        "Toán học thuần túy nhấn mạnh tư duy trừu tượng và chứng minh; tỷ trọng đại số, giải tích, hình học và liên hệ ứng dụng thay đổi theo chương trình."
+      ]
+    }
+  },
+  "Geography": {
+    "cluster": "Social Sciences",
+    "cluster_vi": "Khoa học xã hội",
+    "name_vi": "Địa lý học",
+    "overview": "Studies places, spatial patterns and the relationships between people, environments and the Earth's surface.",
+    "overview_vi": "Nghiên cứu địa điểm, mô hình không gian và mối quan hệ giữa con người, môi trường và bề mặt Trái Đất.",
+    "academic_foundations": [
+      "Physical geography",
+      "Human geography",
+      "Geographical thought and methods",
+      "Cartography",
+      "Spatial analysis",
+      "Regional geography"
+    ],
+    "academic_foundations_vi": [
+      "Địa lý tự nhiên",
+      "Địa lý nhân văn",
+      "Tư tưởng và phương pháp địa lý",
+      "Bản đồ học",
+      "Phân tích không gian",
+      "Địa lý khu vực"
+    ],
+    "related_disciplines": [
+      "Geology",
+      "Environmental science",
+      "Sociology",
+      "Anthropology",
+      "Economics",
+      "History"
+    ],
+    "related_disciplines_vi": [
+      "Địa chất học",
+      "Khoa học môi trường",
+      "Xã hội học",
+      "Nhân học",
+      "Kinh tế học",
+      "Lịch sử"
+    ],
+    "specialized_applications": [
+      "Geographic information systems",
+      "Remote sensing",
+      "Urban and regional analysis",
+      "Landscape studies",
+      "Population geography"
+    ],
+    "specialized_applications_vi": [
+      "Hệ thống thông tin địa lý",
+      "Viễn thám",
+      "Phân tích đô thị và vùng",
+      "Nghiên cứu cảnh quan",
+      "Địa lý dân cư"
+    ],
+    "research_areas": [
+      "Climate and landscapes",
+      "Migration and population change",
+      "Cities and spatial inequality",
+      "Coasts and river systems",
+      "Cultural landscapes"
+    ],
+    "research_areas_vi": [
+      "Khí hậu và cảnh quan",
+      "Di cư và biến đổi dân số",
+      "Đô thị và bất bình đẳng không gian",
+      "Bờ biển và hệ thống sông",
+      "Cảnh quan văn hóa"
+    ],
+    "limitations": [
+      "Geography spans physical and human geography; programmes differ in their balance of environmental science, social science and geospatial methods."
+    ],
+    "limitations_vi": [
+      "Địa lý bao gồm địa lý tự nhiên và địa lý nhân văn; chương trình khác nhau về tỷ trọng khoa học môi trường, khoa học xã hội và phương pháp không gian."
+    ],
+    "skills": [
+      "Spatial reasoning",
+      "Map interpretation",
+      "Field observation",
+      "Working with geographic data"
+    ],
+    "skills_vi": [
+      "Tư duy không gian",
+      "Đọc và diễn giải bản đồ",
+      "Quan sát thực địa",
+      "Làm việc với dữ liệu địa lý"
+    ],
+    "careers": [
+      "Geographical research",
+      "Cartography and geospatial analysis",
+      "Environmental and regional research",
+      "Urban and community research"
+    ],
+    "careers_vi": [
+      "Nghiên cứu địa lý",
+      "Bản đồ học và phân tích không gian",
+      "Nghiên cứu môi trường và vùng",
+      "Nghiên cứu đô thị và cộng đồng"
+    ],
+    "preparation": [
+      "Explore maps, landscapes and spatial questions",
+      "Compare physical and human geography",
+      "Try interpreting geographic datasets"
+    ],
+    "preparation_vi": [
+      "Khám phá bản đồ, cảnh quan và câu hỏi không gian",
+      "So sánh địa lý tự nhiên và địa lý nhân văn",
+      "Thử diễn giải bộ dữ liệu địa lý"
+    ],
+    "subjects": [
+      "Geography",
+      "Mathematics",
+      "History"
+    ],
+    "interests": [],
+    "disciplines": [
+      "Physical geography",
+      "Human geography",
+      "Cartography",
+      "Spatial analysis"
+    ],
+    "disciplines_vi": [
+      "Địa lý tự nhiên",
+      "Địa lý nhân văn",
+      "Bản đồ học",
+      "Phân tích không gian"
+    ],
+    "useful_school_subjects": [
+      "Geography",
+      "Mathematics",
+      "History"
+    ],
+    "useful_school_subjects_vi": [
+      "Địa lý",
+      "Toán học",
+      "Lịch sử"
+    ],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; physical and human geography pathways vary substantially by institution.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; các hướng địa lý tự nhiên và địa lý nhân văn khác nhau đáng kể giữa các trường.",
+    "caveat": "Geography is a broad academic discipline and should not be reduced to map-making or travel.",
+    "caveat_vi": "Địa lý là một ngành học thuật rộng, không nên chỉ hiểu là làm bản đồ hoặc du lịch.",
+    "taxonomy_note": "Physical geography and human geography are complementary but distinct traditions within the discipline.",
+    "taxonomy_note_vi": "Địa lý tự nhiên và địa lý nhân văn là hai truyền thống bổ sung nhưng khác biệt trong ngành.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Physical geography",
+        "Human geography",
+        "Geographical thought and methods",
+        "Cartography",
+        "Spatial analysis",
+        "Regional geography"
+      ],
+      "related_disciplines": [
+        "Geology",
+        "Environmental science",
+        "Sociology",
+        "Anthropology",
+        "Economics",
+        "History"
+      ],
+      "specialized_applications": [
+        "Geographic information systems",
+        "Remote sensing",
+        "Urban and regional analysis",
+        "Landscape studies",
+        "Population geography"
+      ],
+      "research_areas": [
+        "Climate and landscapes",
+        "Migration and population change",
+        "Cities and spatial inequality",
+        "Coasts and river systems",
+        "Cultural landscapes"
+      ],
+      "limitations": [
+        "Geography spans physical and human geography; programmes differ in their balance of environmental science, social science and geospatial methods."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Địa lý tự nhiên",
+        "Địa lý nhân văn",
+        "Tư tưởng và phương pháp địa lý",
+        "Bản đồ học",
+        "Phân tích không gian",
+        "Địa lý khu vực"
+      ],
+      "related_disciplines": [
+        "Địa chất học",
+        "Khoa học môi trường",
+        "Xã hội học",
+        "Nhân học",
+        "Kinh tế học",
+        "Lịch sử"
+      ],
+      "specialized_applications": [
+        "Hệ thống thông tin địa lý",
+        "Viễn thám",
+        "Phân tích đô thị và vùng",
+        "Nghiên cứu cảnh quan",
+        "Địa lý dân cư"
+      ],
+      "research_areas": [
+        "Khí hậu và cảnh quan",
+        "Di cư và biến đổi dân số",
+        "Đô thị và bất bình đẳng không gian",
+        "Bờ biển và hệ thống sông",
+        "Cảnh quan văn hóa"
+      ],
+      "limitations": [
+        "Địa lý bao gồm địa lý tự nhiên và địa lý nhân văn; chương trình khác nhau về tỷ trọng khoa học môi trường, khoa học xã hội và phương pháp không gian."
+      ]
+    }
+  },
+  "Geology": {
+    "cluster": "Natural Sciences",
+    "cluster_vi": "Khoa học tự nhiên",
+    "name_vi": "Địa chất học",
+    "overview": "Studies Earth's materials, structure, history and the processes that shape the planet.",
+    "overview_vi": "Studies Earth's materials, structure, history and the processes that shape the planet.",
+    "academic_foundations": [
+      "Mineralogy",
+      "Petrology",
+      "Structural geology",
+      "Paleontology",
+      "Stratigraphy",
+      "Geophysics"
+    ],
+    "academic_foundations_vi": [
+      "Khoáng vật học",
+      "Thạch học",
+      "Địa chất cấu tạo",
+      "Cổ sinh vật học",
+      "Địa tầng học",
+      "Địa vật lý"
+    ],
+    "related_disciplines": [
+      "Geography",
+      "Physics",
+      "Chemistry",
+      "Environmental Science"
+    ],
+    "related_disciplines_vi": [
+      "Địa lý",
+      "Vật lý",
+      "Hóa học",
+      "Khoa học môi trường"
+    ],
+    "specialized_applications": [
+      "Earth history and deep time",
+      "Volcanology and earthquakes",
+      "Planetary geology",
+      "Groundwater and rocks",
+      "Geological hazards"
+    ],
+    "specialized_applications_vi": [
+      "Lịch sử Trái Đất và thời gian địa chất",
+      "Núi lửa và động đất",
+      "Địa chất hành tinh",
+      "Nước ngầm và đá",
+      "Tai biến địa chất"
+    ],
+    "research_areas": [
+      "Earth history and deep time",
+      "Volcanology and earthquakes",
+      "Planetary geology",
+      "Groundwater and rocks",
+      "Geological hazards"
+    ],
+    "research_areas_vi": [
+      "Lịch sử Trái Đất và thời gian địa chất",
+      "Núi lửa và động đất",
+      "Địa chất hành tinh",
+      "Nước ngầm và đá",
+      "Tai biến địa chất"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Mineralogy",
+      "Petrology",
+      "Structural geology",
+      "Paleontology",
+      "Stratigraphy",
+      "Geophysics"
+    ],
+    "disciplines_vi": [
+      "Khoáng vật học",
+      "Thạch học",
+      "Địa chất cấu tạo",
+      "Cổ sinh vật học",
+      "Địa tầng học",
+      "Địa vật lý"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Mineralogy",
+        "Petrology",
+        "Structural geology",
+        "Paleontology",
+        "Stratigraphy",
+        "Geophysics"
+      ],
+      "related_disciplines": [
+        "Geography",
+        "Physics",
+        "Chemistry",
+        "Environmental Science"
+      ],
+      "specialized_applications": [
+        "Earth history and deep time",
+        "Volcanology and earthquakes",
+        "Planetary geology",
+        "Groundwater and rocks",
+        "Geological hazards"
+      ],
+      "research_areas": [
+        "Earth history and deep time",
+        "Volcanology and earthquakes",
+        "Planetary geology",
+        "Groundwater and rocks",
+        "Geological hazards"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Khoáng vật học",
+        "Thạch học",
+        "Địa chất cấu tạo",
+        "Cổ sinh vật học",
+        "Địa tầng học",
+        "Địa vật lý"
+      ],
+      "related_disciplines": [
+        "Địa lý",
+        "Vật lý",
+        "Hóa học",
+        "Khoa học môi trường"
+      ],
+      "specialized_applications": [
+        "Lịch sử Trái Đất và thời gian địa chất",
+        "Núi lửa và động đất",
+        "Địa chất hành tinh",
+        "Nước ngầm và đá",
+        "Tai biến địa chất"
+      ],
+      "research_areas": [
+        "Lịch sử Trái Đất và thời gian địa chất",
+        "Núi lửa và động đất",
+        "Địa chất hành tinh",
+        "Nước ngầm và đá",
+        "Tai biến địa chất"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
+  },
+  "Astronomy & Astrophysics": {
+    "cluster": "Natural Sciences",
+    "cluster_vi": "Khoa học tự nhiên",
+    "name_vi": "Thiên văn học và Vật lý thiên văn",
+    "overview": "Studies celestial objects, cosmic phenomena and the physical universe.",
+    "overview_vi": "Studies celestial objects, cosmic phenomena and the physical universe.",
+    "academic_foundations": [
+      "Observational astronomy",
+      "Stellar astrophysics",
+      "Galaxies and cosmology",
+      "Celestial mechanics",
+      "Planetary science",
+      "High-energy astrophysics"
+    ],
+    "academic_foundations_vi": [
+      "Thiên văn quan sát",
+      "Vật lý thiên văn sao",
+      "Thiên hà và vũ trụ học",
+      "Cơ học thiên thể",
+      "Khoa học hành tinh",
+      "Vật lý thiên văn năng lượng cao"
+    ],
+    "related_disciplines": [
+      "Physics",
+      "Mathematics",
+      "Chemistry",
+      "Computer Science"
+    ],
+    "related_disciplines_vi": [
+      "Vật lý",
+      "Toán học",
+      "Hóa học",
+      "Khoa học máy tính"
+    ],
+    "specialized_applications": [
+      "Exoplanets and habitability",
+      "Gravitational waves",
+      "Dark matter and dark energy",
+      "Astrochemistry",
+      "Time-domain astronomy"
+    ],
+    "specialized_applications_vi": [
+      "Ngoại hành tinh và khả năng tồn tại sự sống",
+      "Sóng hấp dẫn",
+      "Vật chất tối và năng lượng tối",
+      "Hóa học thiên văn",
+      "Thiên văn học biến thiên theo thời gian"
+    ],
+    "research_areas": [
+      "Exoplanets and habitability",
+      "Gravitational waves",
+      "Dark matter and dark energy",
+      "Astrochemistry",
+      "Time-domain astronomy"
+    ],
+    "research_areas_vi": [
+      "Ngoại hành tinh và khả năng tồn tại sự sống",
+      "Sóng hấp dẫn",
+      "Vật chất tối và năng lượng tối",
+      "Hóa học thiên văn",
+      "Thiên văn học biến thiên theo thời gian"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Observational astronomy",
+      "Stellar astrophysics",
+      "Galaxies and cosmology",
+      "Celestial mechanics",
+      "Planetary science",
+      "High-energy astrophysics"
+    ],
+    "disciplines_vi": [
+      "Thiên văn quan sát",
+      "Vật lý thiên văn sao",
+      "Thiên hà và vũ trụ học",
+      "Cơ học thiên thể",
+      "Khoa học hành tinh",
+      "Vật lý thiên văn năng lượng cao"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Observational astronomy",
+        "Stellar astrophysics",
+        "Galaxies and cosmology",
+        "Celestial mechanics",
+        "Planetary science",
+        "High-energy astrophysics"
+      ],
+      "related_disciplines": [
+        "Physics",
+        "Mathematics",
+        "Chemistry",
+        "Computer Science"
+      ],
+      "specialized_applications": [
+        "Exoplanets and habitability",
+        "Gravitational waves",
+        "Dark matter and dark energy",
+        "Astrochemistry",
+        "Time-domain astronomy"
+      ],
+      "research_areas": [
+        "Exoplanets and habitability",
+        "Gravitational waves",
+        "Dark matter and dark energy",
+        "Astrochemistry",
+        "Time-domain astronomy"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Thiên văn quan sát",
+        "Vật lý thiên văn sao",
+        "Thiên hà và vũ trụ học",
+        "Cơ học thiên thể",
+        "Khoa học hành tinh",
+        "Vật lý thiên văn năng lượng cao"
+      ],
+      "related_disciplines": [
+        "Vật lý",
+        "Toán học",
+        "Hóa học",
+        "Khoa học máy tính"
+      ],
+      "specialized_applications": [
+        "Ngoại hành tinh và khả năng tồn tại sự sống",
+        "Sóng hấp dẫn",
+        "Vật chất tối và năng lượng tối",
+        "Hóa học thiên văn",
+        "Thiên văn học biến thiên theo thời gian"
+      ],
+      "research_areas": [
+        "Ngoại hành tinh và khả năng tồn tại sự sống",
+        "Sóng hấp dẫn",
+        "Vật chất tối và năng lượng tối",
+        "Hóa học thiên văn",
+        "Thiên văn học biến thiên theo thời gian"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
+  },
+  "Statistics": {
+    "cluster": "Natural Sciences",
+    "cluster_vi": "Khoa học tự nhiên",
+    "name_vi": "Thống kê học",
+    "overview": "Develops mathematical methods for learning from data, uncertainty and variation.",
+    "overview_vi": "Develops mathematical methods for learning from data, uncertainty and variation.",
+    "academic_foundations": [
+      "Probability theory",
+      "Statistical inference",
+      "Regression and modeling",
+      "Experimental design",
+      "Bayesian statistics",
+      "Stochastic processes"
+    ],
+    "academic_foundations_vi": [
+      "Lý thuyết xác suất",
+      "Suy luận thống kê",
+      "Hồi quy và mô hình hóa",
+      "Thiết kế thực nghiệm",
+      "Thống kê Bayes",
+      "Quá trình ngẫu nhiên"
+    ],
+    "related_disciplines": [
+      "Pure Mathematics",
+      "Data Science",
+      "Economics",
+      "Psychology",
+      "Biology"
+    ],
+    "related_disciplines_vi": [
+      "Toán học thuần túy",
+      "Khoa học dữ liệu",
+      "Kinh tế học",
+      "Tâm lý học",
+      "Sinh học"
+    ],
+    "specialized_applications": [
+      "Causal inference",
+      "Statistical genetics",
+      "Official statistics",
+      "Sports and performance statistics",
+      "Statistical learning theory"
+    ],
+    "specialized_applications_vi": [
+      "Suy luận nhân quả",
+      "Di truyền học thống kê",
+      "Thống kê chính thức",
+      "Thống kê thể thao và hiệu suất",
+      "Lý thuyết học thống kê"
+    ],
+    "research_areas": [
+      "Causal inference",
+      "Statistical genetics",
+      "Official statistics",
+      "Sports and performance statistics",
+      "Statistical learning theory"
+    ],
+    "research_areas_vi": [
+      "Suy luận nhân quả",
+      "Di truyền học thống kê",
+      "Thống kê chính thức",
+      "Thống kê thể thao và hiệu suất",
+      "Lý thuyết học thống kê"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Probability theory",
+      "Statistical inference",
+      "Regression and modeling",
+      "Experimental design",
+      "Bayesian statistics",
+      "Stochastic processes"
+    ],
+    "disciplines_vi": [
+      "Lý thuyết xác suất",
+      "Suy luận thống kê",
+      "Hồi quy và mô hình hóa",
+      "Thiết kế thực nghiệm",
+      "Thống kê Bayes",
+      "Quá trình ngẫu nhiên"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Probability theory",
+        "Statistical inference",
+        "Regression and modeling",
+        "Experimental design",
+        "Bayesian statistics",
+        "Stochastic processes"
+      ],
+      "related_disciplines": [
+        "Pure Mathematics",
+        "Data Science",
+        "Economics",
+        "Psychology",
+        "Biology"
+      ],
+      "specialized_applications": [
+        "Causal inference",
+        "Statistical genetics",
+        "Official statistics",
+        "Sports and performance statistics",
+        "Statistical learning theory"
+      ],
+      "research_areas": [
+        "Causal inference",
+        "Statistical genetics",
+        "Official statistics",
+        "Sports and performance statistics",
+        "Statistical learning theory"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Lý thuyết xác suất",
+        "Suy luận thống kê",
+        "Hồi quy và mô hình hóa",
+        "Thiết kế thực nghiệm",
+        "Thống kê Bayes",
+        "Quá trình ngẫu nhiên"
+      ],
+      "related_disciplines": [
+        "Toán học thuần túy",
+        "Khoa học dữ liệu",
+        "Kinh tế học",
+        "Tâm lý học",
+        "Sinh học"
+      ],
+      "specialized_applications": [
+        "Suy luận nhân quả",
+        "Di truyền học thống kê",
+        "Thống kê chính thức",
+        "Thống kê thể thao và hiệu suất",
+        "Lý thuyết học thống kê"
+      ],
+      "research_areas": [
+        "Suy luận nhân quả",
+        "Di truyền học thống kê",
+        "Thống kê chính thức",
+        "Thống kê thể thao và hiệu suất",
+        "Lý thuyết học thống kê"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
+  },
+  "Philosophy": {
+    "cluster": "Humanities",
+    "cluster_vi": "Nhân văn",
+    "name_vi": "Triết học",
+    "overview": "Examines fundamental questions about knowledge, reality, reasoning, value and human experience.",
+    "overview_vi": "Examines fundamental questions about knowledge, reality, reasoning, value and human experience.",
+    "academic_foundations": [
+      "Logic",
+      "Epistemology",
+      "Metaphysics",
+      "Ethics",
+      "Political philosophy",
+      "Philosophy of science"
+    ],
+    "academic_foundations_vi": [
+      "Logic",
+      "Nhận thức luận",
+      "Siêu hình học",
+      "Đạo đức học",
+      "Triết học chính trị",
+      "Triết học khoa học"
+    ],
+    "related_disciplines": [
+      "Linguistics",
+      "Psychology",
+      "Political Science",
+      "Pure Mathematics",
+      "Computer Science"
+    ],
+    "related_disciplines_vi": [
+      "Ngôn ngữ học",
+      "Tâm lý học",
+      "Khoa học chính trị",
+      "Toán học thuần túy",
+      "Khoa học máy tính"
+    ],
+    "specialized_applications": [
+      "Philosophy of mind and AI",
+      "Bioethics",
+      "Environmental philosophy",
+      "Philosophy of mathematics",
+      "Aesthetics and philosophy of art"
+    ],
+    "specialized_applications_vi": [
+      "Triết học tâm trí và AI",
+      "Đạo đức sinh học",
+      "Triết học môi trường",
+      "Triết học toán học",
+      "Mỹ học và triết học nghệ thuật"
+    ],
+    "research_areas": [
+      "Philosophy of mind and AI",
+      "Bioethics",
+      "Environmental philosophy",
+      "Philosophy of mathematics",
+      "Aesthetics and philosophy of art"
+    ],
+    "research_areas_vi": [
+      "Triết học tâm trí và AI",
+      "Đạo đức sinh học",
+      "Triết học môi trường",
+      "Triết học toán học",
+      "Mỹ học và triết học nghệ thuật"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Logic",
+      "Epistemology",
+      "Metaphysics",
+      "Ethics",
+      "Political philosophy",
+      "Philosophy of science"
+    ],
+    "disciplines_vi": [
+      "Logic",
+      "Nhận thức luận",
+      "Siêu hình học",
+      "Đạo đức học",
+      "Triết học chính trị",
+      "Triết học khoa học"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Logic",
+        "Epistemology",
+        "Metaphysics",
+        "Ethics",
+        "Political philosophy",
+        "Philosophy of science"
+      ],
+      "related_disciplines": [
+        "Linguistics",
+        "Psychology",
+        "Political Science",
+        "Pure Mathematics",
+        "Computer Science"
+      ],
+      "specialized_applications": [
+        "Philosophy of mind and AI",
+        "Bioethics",
+        "Environmental philosophy",
+        "Philosophy of mathematics",
+        "Aesthetics and philosophy of art"
+      ],
+      "research_areas": [
+        "Philosophy of mind and AI",
+        "Bioethics",
+        "Environmental philosophy",
+        "Philosophy of mathematics",
+        "Aesthetics and philosophy of art"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Logic",
+        "Nhận thức luận",
+        "Siêu hình học",
+        "Đạo đức học",
+        "Triết học chính trị",
+        "Triết học khoa học"
+      ],
+      "related_disciplines": [
+        "Ngôn ngữ học",
+        "Tâm lý học",
+        "Khoa học chính trị",
+        "Toán học thuần túy",
+        "Khoa học máy tính"
+      ],
+      "specialized_applications": [
+        "Triết học tâm trí và AI",
+        "Đạo đức sinh học",
+        "Triết học môi trường",
+        "Triết học toán học",
+        "Mỹ học và triết học nghệ thuật"
+      ],
+      "research_areas": [
+        "Triết học tâm trí và AI",
+        "Đạo đức sinh học",
+        "Triết học môi trường",
+        "Triết học toán học",
+        "Mỹ học và triết học nghệ thuật"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
+  },
+  "History": {
+    "cluster": "Humanities",
+    "cluster_vi": "Nhân văn",
+    "name_vi": "Lịch sử học",
+    "overview": "Studies the past through evidence, interpretation and changing human societies.",
+    "overview_vi": "Studies the past through evidence, interpretation and changing human societies.",
+    "academic_foundations": [
+      "Ancient history",
+      "Medieval and early modern history",
+      "Modern history",
+      "Historiography",
+      "Public history",
+      "Historical methods"
+    ],
+    "academic_foundations_vi": [
+      "Lịch sử cổ đại",
+      "Lịch sử trung đại và cận đại",
+      "Lịch sử hiện đại",
+      "Sử học",
+      "Lịch sử công chúng",
+      "Phương pháp nghiên cứu lịch sử"
+    ],
+    "related_disciplines": [
+      "Geography",
+      "Archaeology",
+      "Political Science",
+      "Sociology",
+      "Anthropology"
+    ],
+    "related_disciplines_vi": [
+      "Địa lý",
+      "Khảo cổ học",
+      "Khoa học chính trị",
+      "Xã hội học",
+      "Nhân học"
+    ],
+    "specialized_applications": [
+      "Environmental history",
+      "History of science and technology",
+      "History of medicine",
+      "Digital history",
+      "Maritime and migration history"
+    ],
+    "specialized_applications_vi": [
+      "Lịch sử môi trường",
+      "Lịch sử khoa học và công nghệ",
+      "Lịch sử y học",
+      "Lịch sử số",
+      "Lịch sử hàng hải và di cư"
+    ],
+    "research_areas": [
+      "Environmental history",
+      "History of science and technology",
+      "History of medicine",
+      "Digital history",
+      "Maritime and migration history"
+    ],
+    "research_areas_vi": [
+      "Lịch sử môi trường",
+      "Lịch sử khoa học và công nghệ",
+      "Lịch sử y học",
+      "Lịch sử số",
+      "Lịch sử hàng hải và di cư"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Ancient history",
+      "Medieval and early modern history",
+      "Modern history",
+      "Historiography",
+      "Public history",
+      "Historical methods"
+    ],
+    "disciplines_vi": [
+      "Lịch sử cổ đại",
+      "Lịch sử trung đại và cận đại",
+      "Lịch sử hiện đại",
+      "Sử học",
+      "Lịch sử công chúng",
+      "Phương pháp nghiên cứu lịch sử"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Ancient history",
+        "Medieval and early modern history",
+        "Modern history",
+        "Historiography",
+        "Public history",
+        "Historical methods"
+      ],
+      "related_disciplines": [
+        "Geography",
+        "Archaeology",
+        "Political Science",
+        "Sociology",
+        "Anthropology"
+      ],
+      "specialized_applications": [
+        "Environmental history",
+        "History of science and technology",
+        "History of medicine",
+        "Digital history",
+        "Maritime and migration history"
+      ],
+      "research_areas": [
+        "Environmental history",
+        "History of science and technology",
+        "History of medicine",
+        "Digital history",
+        "Maritime and migration history"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Lịch sử cổ đại",
+        "Lịch sử trung đại và cận đại",
+        "Lịch sử hiện đại",
+        "Sử học",
+        "Lịch sử công chúng",
+        "Phương pháp nghiên cứu lịch sử"
+      ],
+      "related_disciplines": [
+        "Địa lý",
+        "Khảo cổ học",
+        "Khoa học chính trị",
+        "Xã hội học",
+        "Nhân học"
+      ],
+      "specialized_applications": [
+        "Lịch sử môi trường",
+        "Lịch sử khoa học và công nghệ",
+        "Lịch sử y học",
+        "Lịch sử số",
+        "Lịch sử hàng hải và di cư"
+      ],
+      "research_areas": [
+        "Lịch sử môi trường",
+        "Lịch sử khoa học và công nghệ",
+        "Lịch sử y học",
+        "Lịch sử số",
+        "Lịch sử hàng hải và di cư"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
+  },
+  "Anthropology": {
+    "cluster": "Social Sciences",
+    "cluster_vi": "Khoa học xã hội",
+    "name_vi": "Nhân học",
+    "overview": "Studies human lives, cultures, societies and biological diversity across time and place.",
+    "overview_vi": "Studies human lives, cultures, societies and biological diversity across time and place.",
+    "academic_foundations": [
+      "Cultural anthropology",
+      "Archaeology",
+      "Biological anthropology",
+      "Linguistic anthropology",
+      "Ethnographic methods",
+      "Anthropological theory"
+    ],
+    "academic_foundations_vi": [
+      "Nhân học văn hóa",
+      "Khảo cổ học",
+      "Nhân học sinh học",
+      "Nhân học ngôn ngữ",
+      "Phương pháp dân tộc học",
+      "Lý thuyết nhân học"
+    ],
+    "related_disciplines": [
+      "Sociology",
+      "History",
+      "Linguistics",
+      "Biology",
+      "Geography"
+    ],
+    "related_disciplines_vi": [
+      "Xã hội học",
+      "Lịch sử",
+      "Ngôn ngữ học",
+      "Sinh học",
+      "Địa lý"
+    ],
+    "specialized_applications": [
+      "Medical anthropology",
+      "Digital anthropology",
+      "Environmental anthropology",
+      "Migration and identity",
+      "Material culture studies"
+    ],
+    "specialized_applications_vi": [
+      "Nhân học y tế",
+      "Nhân học số",
+      "Nhân học môi trường",
+      "Di cư và bản sắc",
+      "Nghiên cứu văn hóa vật chất"
+    ],
+    "research_areas": [
+      "Medical anthropology",
+      "Digital anthropology",
+      "Environmental anthropology",
+      "Migration and identity",
+      "Material culture studies"
+    ],
+    "research_areas_vi": [
+      "Nhân học y tế",
+      "Nhân học số",
+      "Nhân học môi trường",
+      "Di cư và bản sắc",
+      "Nghiên cứu văn hóa vật chất"
+    ],
+    "limitations": [
+      "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+    ],
+    "limitations_vi": [
+      "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+    ],
+    "skills": [
+      "Research methods",
+      "Critical analysis",
+      "Academic communication",
+      "Evidence interpretation"
+    ],
+    "skills_vi": [
+      "Phương pháp nghiên cứu",
+      "Phân tích phản biện",
+      "Giao tiếp học thuật",
+      "Diễn giải bằng chứng"
+    ],
+    "careers": [
+      "Academic research",
+      "Teaching and education",
+      "Public or cultural institutions",
+      "Research and analysis"
+    ],
+    "careers_vi": [
+      "Nghiên cứu học thuật",
+      "Giảng dạy và giáo dục",
+      "Cơ quan công hoặc văn hóa",
+      "Nghiên cứu và phân tích"
+    ],
+    "preparation": [
+      "Explore introductory academic texts in the field",
+      "Practice asking researchable questions",
+      "Compare different methods used to study the subject"
+    ],
+    "preparation_vi": [
+      "Đọc tài liệu nhập môn của ngành",
+      "Luyện đặt câu hỏi có thể nghiên cứu",
+      "So sánh các phương pháp nghiên cứu khác nhau"
+    ],
+    "subjects": [],
+    "interests": [],
+    "disciplines": [
+      "Cultural anthropology",
+      "Archaeology",
+      "Biological anthropology",
+      "Linguistic anthropology",
+      "Ethnographic methods",
+      "Anthropological theory"
+    ],
+    "disciplines_vi": [
+      "Nhân học văn hóa",
+      "Khảo cổ học",
+      "Nhân học sinh học",
+      "Nhân học ngôn ngữ",
+      "Phương pháp dân tộc học",
+      "Lý thuyết nhân học"
+    ],
+    "useful_school_subjects": [],
+    "useful_school_subjects_vi": [],
+    "source_status": "Exploratory profile; no claim-level programme or curriculum evidence has been audited for this new profile.",
+    "source_status_vi": "Hồ sơ mang tính khám phá; chưa kiểm tra bằng chứng ở cấp độ từng nhận định về chương trình hoặc học phần cho hồ sơ mới này.",
+    "profile_scope": "Exploration guidance only; this profile is not a universal degree structure or admission checklist.",
+    "profile_scope_vi": "Chỉ là nội dung định hướng khám phá; hồ sơ này không phải cấu trúc văn bằng hay danh sách tuyển sinh áp dụng cho mọi trường.",
+    "caveat": "Academic programmes vary by country and institution.",
+    "caveat_vi": "Chương trình học thuật thay đổi theo quốc gia và cơ sở đào tạo.",
+    "taxonomy_note": "The profile distinguishes core disciplinary study from adjacent interdisciplinary exploration.",
+    "taxonomy_note_vi": "Hồ sơ phân biệt nội dung cốt lõi của ngành với các hướng khám phá liên ngành lân cận.",
+    "emasi_subject_guidance": [],
+    "emasi_subject_connections": [],
+    "emasi_subject_mapping_status": "Not mapped",
+    "emasi_subject_mapping_note": "No EMASI subject-to-major relationship is asserted for this new profile.",
+    "emasi_subject_mapping_note_vi": "Không khẳng định mối liên hệ giữa môn học EMASI và ngành học cho hồ sơ mới này.",
+    "subject_inventory_note_en": "No EMASI subject mapping has been established for this exploratory profile.",
+    "subject_inventory_note_vi": "Chưa thiết lập ánh xạ môn học EMASI cho hồ sơ khám phá này.",
+    "profile_sections": {
+      "academic_foundations": [
+        "Cultural anthropology",
+        "Archaeology",
+        "Biological anthropology",
+        "Linguistic anthropology",
+        "Ethnographic methods",
+        "Anthropological theory"
+      ],
+      "related_disciplines": [
+        "Sociology",
+        "History",
+        "Linguistics",
+        "Biology",
+        "Geography"
+      ],
+      "specialized_applications": [
+        "Medical anthropology",
+        "Digital anthropology",
+        "Environmental anthropology",
+        "Migration and identity",
+        "Material culture studies"
+      ],
+      "research_areas": [
+        "Medical anthropology",
+        "Digital anthropology",
+        "Environmental anthropology",
+        "Migration and identity",
+        "Material culture studies"
+      ],
+      "limitations": [
+        "This is a broad disciplinary profile; programme scope, specialisations and methods vary by institution."
+      ]
+    },
+    "profile_sections_vi": {
+      "academic_foundations": [
+        "Nhân học văn hóa",
+        "Khảo cổ học",
+        "Nhân học sinh học",
+        "Nhân học ngôn ngữ",
+        "Phương pháp dân tộc học",
+        "Lý thuyết nhân học"
+      ],
+      "related_disciplines": [
+        "Xã hội học",
+        "Lịch sử",
+        "Ngôn ngữ học",
+        "Sinh học",
+        "Địa lý"
+      ],
+      "specialized_applications": [
+        "Nhân học y tế",
+        "Nhân học số",
+        "Nhân học môi trường",
+        "Di cư và bản sắc",
+        "Nghiên cứu văn hóa vật chất"
+      ],
+      "research_areas": [
+        "Nhân học y tế",
+        "Nhân học số",
+        "Nhân học môi trường",
+        "Di cư và bản sắc",
+        "Nghiên cứu văn hóa vật chất"
+      ],
+      "limitations": [
+        "Đây là hồ sơ ngành học rộng; phạm vi chương trình, chuyên ngành và phương pháp thay đổi theo từng trường."
+      ]
+    }
   }
 }
