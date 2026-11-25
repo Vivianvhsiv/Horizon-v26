@@ -291,18 +291,19 @@ def render_profile_item_evidence(major, item, language):
                 st.markdown(f"- **{institution}** — [{title}]({url})")
 
 
-def build_network(selected_subjects, selected_majors=None, selected_interests=None):
+def build_network(selected_subjects, selected_majors=None, selected_interests=None, expanded_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     selected_subjects = list(selected_subjects or [])
     selected_interests = list(selected_interests or [])
+    expanded_majors = [m for m in (expanded_majors or []) if m in MAJORS]
     selected_subject_names = {value.casefold() for value in selected_subjects}
     if "ict" in selected_subject_names:
         selected_subject_names.add("ict (information and communication technology)")
     nodes, edges = {}, []
 
-    def add_node(kind, label, description="", label_vi=None):
-        key = node_id(kind, label)
+    def add_node(kind, label, description="", label_vi=None, identity=None):
+        key = node_id(kind, identity if identity is not None else label)
         if key not in nodes:
             nodes[key] = {"id": key, "type": kind, "label": label, "label_vi": label_vi or label, "description": description}
         return key
@@ -322,48 +323,57 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
         key = add_node("subject", subject, "A current EMASI subject selected by the student.", SUBJECT_TRANSLATIONS.get(subject, subject))
         add_edge(student, key, "currently studies", "Student-selected input.")
 
-    # Build the complete catalogue. Shared profile terms intentionally form
-    # cross-major discovery paths; they describe academic content, not student fit.
-    # Keep the graph legible: the network shows majors, catalogue clusters and
-    # shared academic disciplines. Deeper foundations, applications, research,
-    # skills and career areas are available in the major explorer below.
+    # Expand each major into its own profile branches when selected or clicked.
+    # These are exploratory catalogue paths unless claim-level evidence exists.
     profile_fields = [
-        ("discipline", "disciplines", "disciplines_vi", "Academic disciplines", "Lĩnh vực học thuật"),
+        ("foundation", "academic_foundations", "academic_foundations_vi", "Academic foundation", "Nền tảng học thuật"),
+        ("related", "related_disciplines", "related_disciplines_vi", "Related academic field", "Lĩnh vực học thuật liên quan"),
+        ("application", "specialized_applications", "specialized_applications_vi", "Application area", "Lĩnh vực ứng dụng"),
+        ("research", "research_areas", "research_areas_vi", "Research area", "Hướng nghiên cứu"),
+        ("skill", "skills", "skills_vi", "Skill context", "Bối cảnh kỹ năng"),
+        ("career", "careers", "careers_vi", "Career area", "Lĩnh vực nghề nghiệp"),
     ]
+    expanded_set = set(selected_majors) | set(expanded_majors)
     for major, info in MAJORS.items():
         major_key = add_node("major", major, info.get("overview", ""), info.get("name_vi", major))
         cluster = info.get("cluster", "Other")
         cluster_key = add_node("cluster", cluster, "A browsing category used to organize the Horizon major catalogue; not a suitability label.", info.get("cluster_vi", cluster))
         add_edge(cluster_key, major_key, "contains major", "Horizon catalogue category.")
-        for kind, field, field_vi, label_en, label_vi in profile_fields:
-            values = info.get(field, [])
-            values_vi = info.get(field_vi, [])
-            if not isinstance(values, list):
-                continue
-            for index, value in enumerate(values):
-                if not isinstance(value, str) or not value.strip():
+        if major in expanded_set:
+            for kind, field, field_vi, label_en, label_vi in profile_fields:
+                values = info.get(field, [])
+                values_vi = info.get(field_vi, [])
+                if not isinstance(values, list):
                     continue
-                translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
-                matching_claims = [
-                    claim for claim in claims_for_profile_item(major, value)
-                    if str(claim.get("status", "")).casefold().startswith("verified")
-                ]
-                # A Network Map academic relationship is shown only when a reviewed
-                # claim explicitly names the profile item and carries its own sources.
-                if not matching_claims:
-                    continue
-                element_key = add_node(kind, value, f"{label_en}: {value}. Claim-level evidence is available; this describes academic context, not student suitability.", translated)
-                for claim in matching_claims:
-                    claim_text = claim.get("claim", "")
-                    claim_status = claim.get("status", "")
-                    source_refs = [
-                        {"institution": source.get("institution", ""), "title": source.get("title", ""),
-                         "url": source.get("url", ""), "claim": claim_text, "claim_status": claim_status}
-                        for source in claim.get("sources", [])
-                        if source.get("institution") and source.get("title") and str(source.get("url", "")).startswith("https://")
+                for index, value in enumerate(values):
+                    if not isinstance(value, str) or not value.strip():
+                        continue
+                    translated = values_vi[index] if isinstance(values_vi, list) and index < len(values_vi) else value
+                    element_key = add_node(
+                        kind, value,
+                        f"{label_en}: {value}. Exploratory catalogue context for {major}; not a personalized match or a verified curriculum requirement.",
+                        translated, identity=f"{major}::{value}"
+                    )
+                    matching_claims = [
+                        claim for claim in claims_for_profile_item(major, value)
+                        if str(claim.get("status", "")).casefold().startswith("verified")
                     ]
-                    add_edge(major_key, element_key, "documented academic relationship",
-                             f"{claim_text} Verification: {claim_status}", source_refs, claim_status)
+                    if matching_claims:
+                        for claim in matching_claims:
+                            claim_text = claim.get("claim", "")
+                            claim_status = claim.get("status", "")
+                            source_refs = [
+                                {"institution": source.get("institution", ""), "title": source.get("title", ""),
+                                 "url": source.get("url", ""), "claim": claim_text, "claim_status": claim_status}
+                                for source in claim.get("sources", [])
+                                if source.get("institution") and source.get("title") and str(source.get("url", "")).startswith("https://")
+                            ]
+                            add_edge(major_key, element_key, "documented academic relationship",
+                                     f"{claim_text} Verification: {claim_status}", source_refs, claim_status)
+                    else:
+                        add_edge(major_key, element_key, "explore profile direction",
+                                 f"{label_en} listed in Horizon's exploratory profile for {major}. No direct claim-level source is mapped to this specific relationship yet.",
+                                 [], "Exploratory profile context — not independently verified")
 
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
@@ -406,7 +416,7 @@ def graphviz_source(nodes, edges):
     return "\n".join(lines)
 
 def node_options(nodes):
-    order = ["student","interest","subject","major","discipline","skill","career"]
+    order = ["student","interest","subject","major","cluster","discipline","foundation","related","application","research","skill","career"]
     return [(f'{n["type"].title()} · {n["label"]}', key) for kind in order
             for key,n in nodes.items() if n["type"] == kind]
 
@@ -428,6 +438,7 @@ NODE_TYPE_VI = {
 RELATION_VI = {
     "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm", "contains major":"bao gồm ngành", "explore through curriculum context":"khám phá qua bối cảnh chương trình học",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
+    "explore profile direction":"hướng khám phá trong hồ sơ", "documented academic relationship":"mối liên hệ học thuật có nguồn",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
 }
 
@@ -439,7 +450,7 @@ def translated_node_label(node):
     return f'{node["type"].title()}: {label}'
 
 def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
-    """Render the full catalogue while highlighting only direct, supported links."""
+    """Render the catalogue and expand the selected major or clicked branch."""
     focus = {key for key in (focus_keys or []) if key in nodes}
     if selected_key in nodes:
         focus.add(selected_key)
@@ -606,7 +617,13 @@ elif page == tr("network"):
         if not interests and not subjects and not intended_majors:
             st.warning(tr("selectfirst"))
         else:
-            nodes, edges, candidates = build_network(subjects, intended_majors, interests)
+            expanded_major = None
+            selected_key = st.session_state.get("selected_network_node")
+            if selected_key:
+                selected_node_type, _, selected_node_label = selected_key.partition("::")
+                if selected_node_type == "major" and selected_node_label in MAJORS:
+                    expanded_major = selected_node_label
+            nodes, edges, candidates = build_network(subjects, intended_majors, interests, [expanded_major] if expanded_major else [])
             st.subheader(tr("fullmap"))
             st.caption(
                 "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
