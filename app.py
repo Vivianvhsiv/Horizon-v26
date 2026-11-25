@@ -294,6 +294,45 @@ def render_profile_item_evidence(major, item, language):
                 st.markdown(f"- **{institution}** — [{title}]({url})")
 
 
+
+
+def render_reference_frameworks(page, language):
+    """Show the shared public reference frameworks, with their scope clearly limited."""
+    labels = {
+        "English": {
+            "title": "Reference frameworks and source scope",
+            "academic": "Academic-field classification",
+            "skills": "Skills and occupational descriptors",
+            "careers": "Career and occupation information",
+            "scope": "These sources provide classification or occupational reference frameworks. They do not independently verify every Horizon profile item, establish universal university requirements, or prove that a major is suitable for an individual student.",
+            "unesco": "UNESCO Institute for Statistics — ISCED-F 2013: Fields of Education and Training",
+            "nces": "U.S. National Center for Education Statistics — CIP 2020",
+            "onet": "O*NET Resource Center — The O*NET Content Model",
+            "bls": "U.S. Bureau of Labor Statistics — Occupational Outlook Handbook",
+        },
+        "Tiếng Việt": {
+            "title": "Khung tham chiếu và phạm vi nguồn",
+            "academic": "Phân loại lĩnh vực học thuật",
+            "skills": "Kỹ năng và mô tả nghề nghiệp",
+            "careers": "Thông tin nghề nghiệp",
+            "scope": "Các nguồn này cung cấp khung phân loại hoặc tham chiếu nghề nghiệp. Chúng không tự xác minh mọi nội dung trong hồ sơ Horizon, không xác lập yêu cầu đại học áp dụng chung và không chứng minh một ngành phù hợp với từng học sinh.",
+            "unesco": "Viện Thống kê UNESCO — ISCED-F 2013: Phân loại lĩnh vực giáo dục và đào tạo",
+            "nces": "Trung tâm Thống kê Giáo dục Quốc gia Hoa Kỳ — CIP 2020",
+            "onet": "O*NET Resource Center — Mô hình nội dung O*NET",
+            "bls": "Cục Thống kê Lao động Hoa Kỳ — Sổ tay Triển vọng Nghề nghiệp",
+        },
+    }[language]
+    st.markdown("**" + labels["title"] + "**")
+    st.caption(labels["scope"])
+    st.markdown("- **" + labels["academic"] + "**")
+    st.markdown("  - [ " + labels["unesco"] + "](https://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf)")
+    st.markdown("  - [ " + labels["nces"] + "](https://nces.ed.gov/ipeds/cipcode/Default.aspx?y=56)")
+    st.markdown("- **" + labels["skills"] + "**")
+    st.markdown("  - [ " + labels["onet"] + "](https://www.onetcenter.org/content.html)")
+    st.markdown("- **" + labels["careers"] + "**")
+    st.markdown("  - [ " + labels["bls"] + "](https://www.bls.gov/ooh/)")
+
+
 def build_network(selected_subjects, selected_majors=None, selected_interests=None, expanded_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
@@ -714,10 +753,13 @@ if page == tr("home"):
     st.subheader("About Horizon" if st.session_state.language=="English" else "Giới thiệu Horizon")
     st.write(tr("mission"))
     st.info(tr("notice"))
+    render_reference_frameworks("home", st.session_state.language)
 
 elif page == tr("network"):
     st.title(tr("network"))
     st.write(tr("network_intro"))
+    render_reference_frameworks("network", st.session_state.language)
+    st.divider()
     interest_pairs = grouped_options(INTEREST_GROUPS)
     subject_pairs = grouped_options(SUBJECT_GROUPS)
     interest_label_to_key = {label:key for label,key in interest_pairs}
@@ -970,6 +1012,7 @@ elif page == tr("network"):
 elif page == tr("majors"):
     st.title(tr("majors"))
     st.caption("Browse broadly first. Each profile describes what the field studies, how it is approached, and where it may lead; none of this determines whether it is right for you." if st.session_state.language == "English" else "Hãy bắt đầu bằng việc khám phá rộng. Mỗi hồ sơ mô tả ngành nghiên cứu điều gì, cách tiếp cận và những hướng có thể mở ra; không nội dung nào quyết định ngành đó có phù hợp với bạn hay không.")
+    render_reference_frameworks("majors", st.session_state.language)
     st.divider()
     for name,info in MAJORS.items():
         shown_name = info.get("name_vi", name) if st.session_state.language == "Tiếng Việt" else name
@@ -1136,6 +1179,8 @@ elif page == tr("majors"):
 elif page == tr("compare"):
     st.title(tr("compare"))
     st.caption("Compare the substance of each field—not which one is supposedly best for you. Look at differences in academic foundations, questions, applications and possible pathways, then decide what you want to investigate next." if st.session_state.language == "English" else "So sánh nội dung thực chất của từng ngành — không phải ngành nào được cho là tốt nhất với bạn. Hãy xem sự khác biệt về nền tảng học thuật, câu hỏi nghiên cứu, ứng dụng và hướng phát triển, rồi tự chọn điều muốn tìm hiểu tiếp.")
+    render_reference_frameworks("compare", st.session_state.language)
+    st.divider()
     selected = st.multiselect(tr("choosemajors"),list(MAJORS),max_selections=3)
     if len(selected)>=2:
         st.info("There is no overall winner here. Differences are presented to help you form better questions and investigate each programme further." if st.session_state.language == "English" else "Không có ngành nào được chọn là tốt nhất trong bảng này. Những điểm khác biệt giúp bạn hình thành câu hỏi tốt hơn và tiếp tục tìm hiểu từng chương trình.")
@@ -1241,6 +1286,7 @@ elif page == tr("about"):
     st.header(tr("how_title")); st.write(tr("how"))
     st.header(tr("principles_title")); st.write(tr("principles"))
     st.header(tr("database_title")); st.write(tr("database"))
+    render_reference_frameworks("about", st.session_state.language)
     st.caption(tr("feedback"))
     st.markdown("---")
     st.subheader("About the Creator" if st.session_state.language == "English" else "Về người sáng lập")
