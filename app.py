@@ -114,7 +114,7 @@ T = {
         "explore_desc":"Learn about different majors.", "compare_desc":"Compare two or three majors.",
         
         "notice":"This tool supports exploration. It does not measure ability, predict admission or decide which major is right for you.",
-        "network_intro":"Choose your interests, current EMASI subjects and any majors you are considering. The map separates your own selections; it does not infer a major match without claim-level evidence.",
+        "network_intro":"Start with the EMASI subjects you currently study and any majors you are considering. Browse the wider academic landscape without receiving a system-generated major recommendation.",
         "why_connected":"Why are these connected?", "relationship":"Relationship type", "evidence_status":"Evidence status",
         "sample_notice":"Evidence status: current interest tags are taxonomy labels, not claim-level evidence of a major connection. EMASI subject guidance remains exploratory and no verified subject-to-major connection records are populated. No inferred major matches are shown.",
         "reset":"Reset view", "selected_node":"Selected node", "no_connections":"No direct connections are recorded for this node in the current sample data.",
@@ -152,7 +152,7 @@ T = {
         "explore_desc":"Tìm hiểu các ngành học khác nhau.", "compare_desc":"So sánh hai hoặc ba ngành học.",
         
         "notice":"Công cụ này hỗ trợ khám phá. Công cụ không đánh giá năng lực, dự đoán khả năng trúng tuyển hay quyết định ngành học phù hợp với bạn.",
-        "network_intro":"Chọn sở thích, các môn EMASI hiện đang học và những ngành bạn đang cân nhắc. Bản đồ phân biệt các lựa chọn của bạn; không tự suy ra ngành phù hợp khi chưa có bằng chứng ở cấp độ nhận định.",
+        "network_intro":"Bắt đầu từ các môn EMASI bạn đang học và những ngành bạn đã cân nhắc. Khám phá bức tranh học thuật rộng hơn mà không nhận đề xuất ngành do hệ thống tự tạo.",
         "why_connected":"Vì sao có những kết nối này?", "relationship":"Loại mối liên hệ", "evidence_status":"Tình trạng bằng chứng",
         "sample_notice":"Tình trạng bằng chứng: nhãn sở thích hiện tại là nhãn phân loại, không phải bằng chứng ở cấp độ nhận định về mối liên hệ với ngành. Gợi ý môn học EMASI vẫn mang tính khám phá và hiện chưa có hồ sơ kết nối môn học–ngành đã xác minh. Không hiển thị ngành được suy luận.",
         "reset":"Đặt lại chế độ xem", "selected_node":"Nút đã chọn", "no_connections":"Dữ liệu mẫu hiện tại chưa ghi nhận kết nối trực tiếp cho nút này.",
@@ -252,7 +252,7 @@ div[data-testid="stExpander"] {background:rgba(255,255,255,.48); border-radius:1
 def node_id(kind, label):
     return f"{kind}::{label}"
 
-def build_network(selected_interests, selected_subjects, selected_majors=None):
+def build_network(selected_subjects, selected_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
     selected_majors = [m for m in (selected_majors or []) if m in MAJORS]
     selected_subjects = list(selected_subjects or [])
@@ -273,10 +273,7 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
         if edge not in edges:
             edges.append(edge)
 
-    student = add_node("student", "Your exploration", "Your interests and current subjects are student-provided inputs, not an aptitude assessment.")
-    for interest in selected_interests:
-        key = add_node("interest", interest, "An interest selected by the student. No major match is inferred from this input.", INTEREST_TRANSLATIONS.get(interest, interest))
-        add_edge(student, key, "interest in", "Student-selected input; no interest-to-major relationship is inferred.")
+    student = add_node("student", "Your exploration", "Your current subjects and explicitly considered majors are student-provided exploration inputs, not an aptitude assessment.")
     for subject in selected_subjects:
         key = add_node("subject", subject, "A current EMASI subject selected by the student.", SUBJECT_TRANSLATIONS.get(subject, subject))
         add_edge(student, key, "currently studies", "Student-selected input.")
@@ -329,16 +326,6 @@ def build_network(selected_interests, selected_subjects, selected_majors=None):
             why = guidance.get("why_en", "")
             evidence = f"{why} Status: {status}. Scope: {scope} This is an exploratory curriculum-context link, not proof that EMASI teaches the same content or that this subject is an admission prerequisite."
             add_edge(subject_key, major_key, "explore through curriculum context", evidence, refs, status)
-
-    # If the student explicitly selects Education and learning as an interest,
-    # surface Education as their primary exploration direction. This records
-    # the student's stated interest; it is not an aptitude inference or a claim
-    # that their current school subjects are formal prerequisites.
-    if "Education and learning" in selected_interests and "Education" in MAJORS:
-        education_interest_key = node_id("interest", "Education and learning")
-        education_major_key = node_id("major", "Education")
-        add_edge(education_interest_key, education_major_key, "student-selected exploration direction",
-                 "The student explicitly selected Education and learning. Horizon surfaces the Education major as the corresponding direction to explore; this is a reflection of stated interest, not a suitability assessment or an admission claim.")
 
     for major in selected_majors:
         add_edge(student, node_id("major", major), "considering", "Student-selected major intention; not a suitability assessment.")
@@ -536,31 +523,27 @@ elif page == tr("network"):
             tr("major_intention"), list(major_label_to_key), max_selections=3,
             help=tr("major_intention_help"))
         undecided = st.checkbox(tr("undecided"), value=False)
-        chosen_interest_labels = st.multiselect(tr("interest"), list(interest_label_to_key))
         chosen_subject_labels = st.multiselect(tr("subject"), list(subject_label_to_key))
         submitted = st.form_submit_button(tr("generate"), type="primary")
     if submitted:
         st.session_state.chosen_majors = [] if undecided else [major_label_to_key[x] for x in chosen_major_labels]
         st.session_state.undecided_major = undecided
-        st.session_state.chosen_interests = [interest_label_to_key[x] for x in chosen_interest_labels]
         st.session_state.chosen_subjects = [subject_label_to_key[x] for x in chosen_subject_labels]
         # Reset the major detail browser to the student's stated direction.
         # Never silently default an undecided student to Cognitive Science.
-        education_interest = "Education and learning" in st.session_state.chosen_interests
         major_placeholder = "— Chọn ngành để xem chi tiết —" if st.session_state.language == "Tiếng Việt" else "— Choose a major to explore —"
-        initial_major = st.session_state.chosen_majors[0] if st.session_state.chosen_majors else ("Education" if education_interest else major_placeholder)
+        initial_major = st.session_state.chosen_majors[0] if st.session_state.chosen_majors else major_placeholder
         st.session_state.network_major_explorer = initial_major
         st.session_state.network_generated = True
         st.session_state.selected_network_node = None
 
     if st.session_state.get("network_generated"):
-        interests = st.session_state.get("chosen_interests",[])
         subjects = st.session_state.get("chosen_subjects",[])
         intended_majors = st.session_state.get("chosen_majors",[])
-        if not interests and not subjects and not intended_majors:
+        if not subjects and not intended_majors:
             st.warning(tr("selectfirst"))
         else:
-            nodes, edges, candidates = build_network(interests, subjects, intended_majors)
+            nodes, edges, candidates = build_network(subjects, intended_majors)
             st.subheader(tr("fullmap"))
             st.caption(
                 "The full map keeps all 20 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
@@ -574,21 +557,6 @@ elif page == tr("network"):
             )
             st.info(tr("sample_notice"))
             exploratory_subject_paths = [e for e in edges if e["relation"] == "explore through curriculum context"]
-            # Lead with the direction the student explicitly expressed interest in.
-            # Current subjects are shown as context to investigate, not prerequisites.
-            if "Education and learning" in interests and "Education" in MAJORS:
-                education_info = MAJORS["Education"]
-                education_name = "Education" if st.session_state.language == "English" else education_info.get("name_vi", "Education")
-                subject_display = [x if st.session_state.language == "English" else SUBJECT_TRANSLATIONS.get(x, x) for x in subjects]
-                support_interest = [x if st.session_state.language == "English" else INTEREST_TRANSLATIONS.get(x, x) for x in interests if x != "Education and learning"]
-                st.markdown("### " + ("Your combined exploration direction" if st.session_state.language == "English" else "Hướng khám phá tổng hợp của bạn"))
-                st.success(("Primary direction to explore: " if st.session_state.language == "English" else "Hướng chính nên tìm hiểu: ") + education_name)
-                st.write(("Why this direction appears: you explicitly selected “Education and learning”. Horizon therefore surfaces the Education major, rather than treating Psychology or Cognitive Science as the final result." if st.session_state.language == "English" else "Vì sao xuất hiện hướng này: bạn đã chủ động chọn “Giáo dục và học tập”. Vì vậy Horizon hiển thị ngành Giáo dục học, thay vì xem Tâm lý học hoặc Khoa học nhận thức là kết quả cuối cùng."))
-                if subject_display:
-                    st.write(("Your current subjects to consider within this direction: " if st.session_state.language == "English" else "Các môn hiện tại để bạn xem xét trong hướng này: ") + ", ".join(subject_display))
-                if support_interest:
-                    st.write(("Other interests you selected: " if st.session_state.language == "English" else "Các sở thích bổ trợ bạn đã chọn: ") + ", ".join(support_interest))
-                st.caption("Your selected subjects and additional interests provide personal context for further research. They are not being presented as verified Education-degree prerequisites or proof of suitability; check each university’s programme structure and teaching specialisation." if st.session_state.language == "English" else "Các môn học và sở thích bổ sung là bối cảnh cá nhân để bạn tìm hiểu thêm, không được xem là điều kiện tiên quyết đã xác minh của ngành Giáo dục học hay bằng chứng về mức độ phù hợp. Hãy kiểm tra cấu trúc chương trình và hướng chuyên sâu sư phạm của từng trường.")
             # Summarize evidence-backed subject-to-major pathways for undecided
             # students. This is a transparent browse aid, not a synthesized fit score.
             evidence_by_major = {}
@@ -631,7 +599,6 @@ elif page == tr("network"):
             # Focus only on explicit inputs and stated major intentions.
             # No taxonomy-tag overlap is treated as a personalized match.
             focus_keys = [node_id("student", "Your exploration")]
-            focus_keys.extend(node_id("interest", x) for x in interests)
             focus_keys.extend(node_id("subject", x) for x in subjects)
             focus_keys.extend(node_id("major", x) for x in intended_majors)
             if "Education and learning" in interests and "Education" in MAJORS:
@@ -639,8 +606,8 @@ elif page == tr("network"):
             if intended_majors:
                 labels = intended_majors if st.session_state.language == "English" else [MAJORS[m].get("name_vi", m) for m in intended_majors]
                 st.success(("These are the majors you explicitly said you are considering: " + ", ".join(labels) + ". This is your stated intention, not a suitability assessment.") if st.session_state.language == "English" else ("Đây là những ngành bạn chủ động cho biết đang cân nhắc: " + ", ".join(labels) + ". Đây là lựa chọn của bạn, không phải đánh giá mức độ phù hợp."))
-            elif interests or subjects:
-                st.info("Your selected interests and subjects are shown as separate inputs. No major match is inferred without claim-level evidence." if st.session_state.language == "English" else "Sở thích và môn học bạn chọn được hiển thị riêng. Hệ thống không suy ra ngành học khi chưa có bằng chứng ở cấp độ nhận định.")
+            elif subjects:
+                st.info("Your current subjects are exploration context, not proof of suitability or admission eligibility." if st.session_state.language == "English" else "Các môn học hiện tại là bối cảnh khám phá, không phải bằng chứng về mức độ phù hợp hay điều kiện tuyển sinh.")
             st.caption(
                 "Map key — gold: majors; amber: catalogue groups; rose: academic disciplines; purple: interests; teal: current EMASI subjects; navy: your exploration. Shared discipline nodes show academic overlap, not personal suitability."
                 if st.session_state.language == "English" else
@@ -657,7 +624,7 @@ elif page == tr("network"):
             st.caption("Inspect academic foundations, related fields, research areas and exploratory EMASI subject guidance. This is browsing support, not a personalized recommendation." if st.session_state.language == "English" else "Tìm hiểu nền tảng học thuật, lĩnh vực liên quan, hướng nghiên cứu và gợi ý khám phá môn học EMASI. Đây là thông tin tham khảo, không phải đề xuất ngành phù hợp cá nhân.")
             major_options = list(MAJORS.keys())
             major_placeholder = "— Chọn ngành để xem chi tiết —" if st.session_state.language == "Tiếng Việt" else "— Choose a major to explore —"
-            default_major = intended_majors[0] if intended_majors else ("Education" if "Education and learning" in interests else major_placeholder)
+            default_major = intended_majors[0] if intended_majors else major_placeholder
             explore_options = [major_placeholder] + major_options
             explore_major = st.selectbox(
                 "Choose a major" if st.session_state.language == "English" else "Chọn ngành học",
@@ -755,6 +722,7 @@ elif page == tr("network"):
 
 elif page == tr("majors"):
     st.title(tr("majors"))
+    st.caption("Browse broadly first. Each profile describes what the field studies, how it is approached, and where it may lead; none of this determines whether it is right for you." if st.session_state.language == "English" else "Hãy bắt đầu bằng việc khám phá rộng. Mỗi hồ sơ mô tả ngành nghiên cứu điều gì, cách tiếp cận và những hướng có thể mở ra; không nội dung nào quyết định ngành đó có phù hợp với bạn hay không.")
     q = st.text_input(tr("search_major"), placeholder="e.g. Psychology / Tâm lý học" if st.session_state.language == "English" else "Ví dụ: Psychology / Tâm lý học")
     clusters = sorted({v["cluster"] for v in MAJORS.values()})
     cluster_labels = {tr("all"): None}
@@ -961,8 +929,10 @@ elif page == tr("majors"):
 
 elif page == tr("compare"):
     st.title(tr("compare"))
+    st.caption("Compare the substance of each field—not which one is supposedly best for you. Look at differences in academic foundations, questions, applications and possible pathways, then decide what you want to investigate next." if st.session_state.language == "English" else "So sánh nội dung thực chất của từng ngành — không phải ngành nào được cho là tốt nhất với bạn. Hãy xem sự khác biệt về nền tảng học thuật, câu hỏi nghiên cứu, ứng dụng và hướng phát triển, rồi tự chọn điều muốn tìm hiểu tiếp.")
     selected = st.multiselect(tr("choosemajors"),list(MAJORS),max_selections=3)
     if len(selected)>=2:
+        st.info("There is no overall winner here. Differences are presented to help you form better questions and investigate each programme further." if st.session_state.language == "English" else "Không có ngành nào được chọn là tốt nhất trong bảng này. Những điểm khác biệt giúp bạn hình thành câu hỏi tốt hơn và tiếp tục tìm hiểu từng chương trình.")
         # Carry only the student's self-described reflection note; do not match interests to majors.
         if st.session_state.get("explore_strength_note") or st.session_state.get("explore_strength_example"):
             st.subheader("Your reflection note" if st.session_state.language == "English" else "Ghi chú tự suy ngẫm")
