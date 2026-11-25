@@ -2289,5 +2289,61 @@
         "status_vi": "Đã bổ sung bối cảnh chương trình từ hai trường chính thức; ánh xạ từng môn EMASI vẫn mang tính khám phá."
       }
     ]
+  },
+  "Pure Mathematics": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Geography": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Geology": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Astronomy & Astrophysics": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Statistics": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Philosophy": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "History": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
+  },
+  "Anthropology": {
+    "status": "Exploratory profile — not independently verified",
+    "status_vi": "Hồ sơ khám phá — chưa được xác minh độc lập",
+    "scope": "This profile is curated as a broad academic exploration guide. No institution-specific programme, curriculum, admission prerequisite or career-pathway claim is asserted as verified. Students should check current official university catalogues.",
+    "scope_vi": "Hồ sơ được biên soạn như hướng dẫn khám phá ngành học tổng quát. Không khẳng định đã xác minh chương trình cụ thể, học phần, điều kiện tuyển sinh hoặc lộ trình nghề nghiệp của trường nào. Học sinh nên kiểm tra danh mục chính thức hiện hành của từng trường.",
+    "claims": []
   }
 }
