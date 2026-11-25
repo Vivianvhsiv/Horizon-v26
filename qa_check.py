@@ -140,6 +140,8 @@ else:
 # Student-centred exploration lens: transparent overlap, self-described strengths, no fit scoring.
 check('Your exploration lens' in explore_code and 'Góc nhìn khám phá của bạn' in explore_code,
       'Explore Majors offers a bilingual, optional student exploration lens')
+check('interest_pairs = grouped_options(INTEREST_GROUPS)' in explore_code and 'format_func=lambda value: interest_display.get(value, value)' in explore_code,
+      'Exploration interest selector stores canonical taxonomy keys while displaying bilingual group labels')
 check('shared_topics = sorted(set(profile_interests).intersection(info.get("interests", [])))' in explore_code,
       'Personal topic overlap uses exact selected taxonomy labels only')
 check('These are shared catalogue labels only.' in explore_code and 'That does not mean the major is unsuitable' in explore_code,
