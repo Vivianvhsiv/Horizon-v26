@@ -733,10 +733,10 @@ elif page == tr("network"):
             st.caption(
                 "The full map keeps all 28 majors visible as browseable context. Your selected inputs and explicitly chosen majors are highlighted; other majors are not personalized matches. No unsupported links are inferred."
                 if st.session_state.language == "English" else
-                "Bản đồ đầy đủ luôn hiển thị cả 20 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
+                "Bản đồ đầy đủ luôn hiển thị cả 28 ngành để bạn tham khảo. Các lựa chọn của bạn và ngành bạn chủ động chọn được làm nổi bật; những ngành còn lại không phải kết quả cá nhân hóa. Hệ thống không tự suy ra kết nối khi chưa có bằng chứng."
             )
             st.caption(
-                "All 20 majors and their profile branches remain visible. Selected EMASI subjects may show referenced curriculum-context paths, clearly labelled exploratory; interests are not mapped to majors without claim-level evidence."
+                "All 28 majors and their profile branches remain available for exploration. Selected EMASI subjects may show referenced curriculum-context paths, clearly labelled exploratory; interests are not mapped to majors without claim-level evidence."
                 if st.session_state.language == "English" else
                 "Cả 28 ngành và các nhánh thông tin đều luôn hiển thị. Môn EMASI bạn chọn có thể xuất hiện kết nối bối cảnh chương trình học khi có nguồn tham khảo, nhưng chỉ mang tính khám phá; sở thích không được tự động ghép với ngành khi chưa có bằng chứng ở cấp độ nhận định."
             )
