@@ -208,12 +208,12 @@ check('browsed_major = st.session_state.get("network_major_explorer")' in app an
 check('focus_keys.append(node_id("major", browsed_major))' in app,
       'The browsed major and its newly expanded directions are highlighted in the graph')
 check('major_branch_nodes = {' in app and 'major_branch_targets.update(' in app
-      and 'all_exploration_direction_nodes' in app and 'all_exploration_direction_targets' in app,
-      'Selected major branches and all curated directions with adjacent fields/majors are highlighted in Network Map')
+      and 'active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets' in app,
+      'Only the selected major branches and their adjacent fields/majors are highlighted in Network Map')
 branch_targets_pos = app.find('major_branch_targets.update(')
 active_nodes_pos = app.find('active_nodes = set(focus) | subject_linked_majors | major_branch_nodes | major_branch_targets')
-check(branch_targets_pos >= 0 and app.find('all_exploration_direction_nodes = {', branch_targets_pos) > branch_targets_pos,
-      'Network Map computes branch nodes and global direction nodes before activating them')
+check(branch_targets_pos >= 0 and active_nodes_pos > branch_targets_pos,
+      'Network Map computes the selected major branch closure before activating it')
 
 # Unexpected cross-disciplinary exploration coverage
 exploration_path = ROOT / 'exploration_directions.json'
@@ -251,19 +251,19 @@ check('EXPLORATION_DIRECTIONS' in app and 'unexpected direction to explore' in a
 check('for direction in EXPLORATION_DIRECTIONS.get(major, []):' in network_code
       and 'if major in expanded_set:' in network_code,
       'Network Map generates every major\'s curated directions independently of profile expansion')
-check('all_exploration_direction_nodes' in app and 'all_exploration_direction_targets' in app
-      and 'or global_exploration_edge' in app,
-      'All curated directions and their adjacent cross-disciplinary links are active on the Network Map by default')
-check('all 285 curated exploration directions are displayed on the map at once' in app,
-      'Network Map explicitly communicates that all 285 directions are visible at once')
+check('all_exploration_direction_nodes' not in renderer_code
+      and 'global_exploration_edge' not in renderer_code
+      and 'source in major_branch_nodes and target in major_branch_targets' in renderer_code,
+      'Unselected directions remain muted; only selected-major directions and their adjacent links are illuminated')
+check('unrelated majors stay muted' in app and 'các ngành không liên quan vẫn ở trạng thái mờ' in app,
+      'Network Map explains that unrelated majors remain muted while the full map stays visible')
 renderer_start=app.find('def make_interactive_graph(')
 renderer_end=app.find('with st.sidebar:', renderer_start)
 renderer_code=app[renderer_start:renderer_end] if renderer_start >= 0 and renderer_end > renderer_start else ''
-check('all_exploration_direction_nodes' in renderer_code
-      and 'all_exploration_direction_targets' in renderer_code
-      and 'global_exploration_edge' in renderer_code
-      and 'all_exploration_direction_nodes |' in renderer_code,
-      'Network Map keeps every curated direction and its adjacent links visible, not only the opened major')
+check('all_exploration_direction_nodes' not in renderer_code
+      and 'global_exploration_edge' not in renderer_code
+      and 'major_branch_nodes' in renderer_code,
+      'Network Map highlights a selected branch without globally activating unrelated branches')
 check('Unexpected directions to explore' in app and 'not verified degree pathways' in app,
       'Major detail pages explain the exploratory status of unexpected directions')
 
