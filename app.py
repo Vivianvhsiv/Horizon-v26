@@ -369,6 +369,10 @@ def render_profile_section_sources(major, section, language):
         for record in MAJORS.get(major, {}).get("source_records", []):
             add_source(record.get("institution", ""), record.get("title", ""), record.get("source_url", ""),
                        record.get("verification_status", ""))
+    elif section == "careers":
+        for record in MAJORS.get(major, {}).get("career_sources", []):
+            add_source(record.get("institution", ""), record.get("title", ""), record.get("source_url", ""),
+                       record.get("verification_status", ""))
     st.markdown(f"**{title}**")
     st.caption(scope)
     if sources:
@@ -385,6 +389,7 @@ def render_profile_section_sources(major, section, language):
     elif section == "skills":
         st.markdown("- [O*NET Resource Center — The O*NET Content Model](https://www.onetcenter.org/content.html)")
         st.markdown("- [O*NET — Skills descriptor](https://www.onetonline.org/find/descriptor/browse/Skills/)")
+        st.markdown("- [U.S. Bureau of Labor Statistics — Skills Data and occupational skill tables](https://www.bls.gov/emp/data/skills-data.htm)")
     elif section == "careers":
         st.markdown("- [U.S. Bureau of Labor Statistics — Occupational Outlook Handbook](https://www.bls.gov/ooh/)")
         st.markdown("- [O*NET OnLine — Occupation search](https://www.onetonline.org/)")
