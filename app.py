@@ -195,6 +195,33 @@ def grouped_options(groups):
                            else f"{group_vi(group)} · {vi}", en))
     return result
 
+def profile_topic_mentions(info, selected_topics):
+    """Return literal topic mentions found in the major's existing academic profile.
+
+    This is a text-navigation aid only: it does not infer semantic relationships.
+    """
+    fields = [
+        ("academic_foundations", "Academic foundations", "Nền tảng học thuật"),
+        ("related_disciplines", "Related disciplines", "Các lĩnh vực liên quan"),
+        ("specialized_applications", "Specialized applications", "Ứng dụng chuyên sâu"),
+        ("research_areas", "Research directions", "Hướng nghiên cứu"),
+    ]
+    mentions = []
+    for topic in selected_topics:
+        needle = " ".join(str(topic).casefold().split())
+        if not needle:
+            continue
+        for field, label_en, label_vi in fields:
+            values_en = info.get(field, [])
+            values_vi = info.get(field + "_vi", [])
+            for index, value_en in enumerate(values_en):
+                haystack = " ".join(str(value_en).casefold().split())
+                if needle in haystack:
+                    value_vi = values_vi[index] if index < len(values_vi) else value_en
+                    mentions.append((topic, label_en, label_vi, value_en, value_vi))
+    return mentions
+
+
 GROUP_VI = {
     "EMASI Subjects":"Các môn học tại EMASI",
     "Mathematics & Sciences":"Toán học và Khoa học",
@@ -800,24 +827,28 @@ elif page == tr("majors"):
         if q and q.casefold() not in name.casefold() and q.casefold() not in shown_name.casefold(): continue
         with st.expander(f"{shown_name} · {shown_cluster}"):
             st.write(info.get("overview_vi",info["overview"]) if st.session_state.language == "Tiếng Việt" else info["overview"])
-            # Show only exact, student-selected topic labels shared with the profile taxonomy.
-            # This is a navigation aid, not a relevance score or evidence of academic fit.
-            shared_topics = sorted(set(profile_interests).intersection(info.get("interests", [])))
-            if shared_topics:
-                topic_labels = shared_topics if st.session_state.language == "English" else [INTEREST_TRANSLATIONS.get(x, x) for x in shared_topics]
-                st.markdown("**Topics you selected that also appear in this profile**" if st.session_state.language == "English" else "**Chủ đề bạn chọn cũng xuất hiện trong hồ sơ ngành này**")
-                st.write(" · ".join(topic_labels))
-                st.caption(
-                    "These are shared catalogue labels only. They do not prove a curriculum connection, personal suitability or a recommendation."
-                    if st.session_state.language == "English" else
-                    "Đây chỉ là các nhãn chủ đề trùng nhau trong danh mục. Chúng không chứng minh mối liên hệ chương trình học, mức độ phù hợp cá nhân hay một đề xuất ngành học."
-                )
-            elif profile_interests:
-                st.caption(
-                    "No exact topic labels are shared with this profile. That does not mean the major is unsuitable; you can still explore it."
-                    if st.session_state.language == "English" else
-                    "Hồ sơ này không có nhãn chủ đề trùng khớp chính xác. Điều đó không có nghĩa ngành học không phù hợp; bạn vẫn có thể tìm hiểu ngành này."
-                )
+            # Navigate from selected interests to literal mentions in existing profile content.
+            # No semantic or interest-to-major relationship is inferred.
+            topic_mentions = profile_topic_mentions(info, profile_interests)
+            if profile_interests:
+                st.markdown("**Where your selected topics appear in this academic profile**" if st.session_state.language == "English" else "**Chủ đề bạn chọn xuất hiện ở đâu trong hồ sơ học thuật này**")
+                if topic_mentions:
+                    for topic, field_en, field_vi, value_en, value_vi in topic_mentions:
+                        topic_label = topic if st.session_state.language == "English" else INTEREST_TRANSLATIONS.get(topic, topic)
+                        field_label = field_en if st.session_state.language == "English" else field_vi
+                        value_label = value_en if st.session_state.language == "English" else value_vi
+                        st.markdown(f"- **{topic_label}** · {field_label}: {value_label}")
+                    st.caption(
+                        "These are literal wording mentions in the profile, not verified curriculum links, evidence of personal suitability or recommendations. Open the source section below to inspect the academic context."
+                        if st.session_state.language == "English" else
+                        "Đây là những cụm từ xuất hiện trực tiếp trong hồ sơ, không phải kết nối chương trình học đã xác minh, bằng chứng về mức độ phù hợp cá nhân hay đề xuất ngành. Hãy xem phần nguồn bên dưới để kiểm tra bối cảnh học thuật."
+                    )
+                else:
+                    st.caption(
+                        "The selected wording does not appear literally in this profile's academic fields. This is a search limitation, not evidence that the topic or major is unrelated or unsuitable."
+                        if st.session_state.language == "English" else
+                        "Cụm từ bạn chọn không xuất hiện nguyên văn trong các mục học thuật của hồ sơ này. Đây là giới hạn tìm kiếm, không phải bằng chứng rằng chủ đề và ngành học không liên quan hoặc không phù hợp."
+                    )
             if strength_note or strength_example:
                 st.markdown("**Your own observations**" if st.session_state.language == "English" else "**Những quan sát của chính bạn**")
                 if strength_note:
