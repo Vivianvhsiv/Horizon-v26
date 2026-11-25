@@ -248,15 +248,16 @@ else:
 check('EXPLORATION_DIRECTIONS' in app and 'unexpected direction to explore' in app and 'exploratory connection to another major' in app,
       'Network Map integrates additional exploratory directions and cross-major discovery links')
 check('for direction in EXPLORATION_DIRECTIONS.get(major, []):' in network_code
-      and 'if major in expanded_set:\n            for direction' not in network_code,
-      'Network Map generates exploration-direction nodes for all 28 majors by default')
+      and 'if major in expanded_set:\n                for direction' in network_code,
+      'Network Map keeps all 285 directions in the catalogue and generates a major\'s nodes when that major is opened')
 renderer_start=app.find('def make_interactive_graph(')
 renderer_end=app.find('with st.sidebar:', renderer_start)
 renderer_code=app[renderer_start:renderer_end] if renderer_start >= 0 and renderer_end > renderer_start else ''
-check('all_exploration_direction_nodes' in renderer_code
-      and 'all_exploration_direction_targets' in renderer_code
-      and 'global_exploration_edge' in renderer_code,
-      'All 285 exploration directions and their adjacent links are activated and visible in the Network Map by default')
+check('all_exploration_direction_nodes' not in renderer_code
+      and 'all_exploration_direction_targets' not in renderer_code
+      and 'global_exploration_edge' not in renderer_code
+      and 'major_branch_targets.update(' in renderer_code,
+      'Network Map avoids the 285-node hairball and highlights only the opened major\'s directions and adjacent links')
 check('Unexpected directions to explore' in app and 'not verified degree pathways' in app,
       'Major detail pages explain the exploratory status of unexpected directions')
 
