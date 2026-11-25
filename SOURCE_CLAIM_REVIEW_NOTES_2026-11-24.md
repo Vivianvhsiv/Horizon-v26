@@ -114,3 +114,15 @@ These spot-checks strengthen a small number of named programme-availability and 
 - https://www.cogsci.uci.edu/undergraduate/bspsych.php
 
 **Limit:** This is one claim-level verification, not completion of the full 65-claim audit.
+
+### Computer Science — claim 3: HCMUT curriculum context
+
+**Exact-page check:** Inspected HCMUT's official international study-program page for the Bachelor of Engineering in Computer Science.
+
+**Confirmed details on the page's displayed referential curriculum:** Year 1 includes Calculus, Discrete Structures, Discrete Structures for Computing, General Chemistry, General Physics, Introduction to Computing, Linear Algebra, Programming Fundamentals and Physics Experiments. Year 2 includes Computer Architecture, Data Structures and Algorithms, Database Systems, Object-Oriented Programming, Operating Systems, Mathematical Modeling, Numerical Methods, and Probability and Statistics. Later years include algorithms design and analysis, computer networks, programming languages and software engineering.
+
+**Decision:** KEEP as institution-specific curriculum context. The page labels the displayed curriculum as referential and directs readers to a separate location for detailed/latest updates. Do not imply that this exact plan is universal across Computer Science degrees, and do not infer that any EMASI high-school subject is an admissions prerequisite or syllabus-equivalent.
+
+**Official page inspected:** https://oisp.hcmut.edu.vn/en/study-programs/bachelor-degree/computer-science
+
+**Limit:** This verifies the HCMUT portion of the multi-institution claim only; UCL, NUS and VinUniversity require their own exact-page checks.
