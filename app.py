@@ -419,35 +419,38 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                                  [], "Exploratory profile context — not independently verified")
 
 
-        # All curated exploration directions are part of the always-visible network.
-        # Every major contributes its curated exploration directions to the
-        # Network Map, even before a student selects or opens that major. This
-        # makes the 285-direction catalogue genuinely visible in the graph.
-        # These are exploratory prompts, not verified curriculum or suitability claims.
-        for direction in EXPLORATION_DIRECTIONS.get(major, []):
-            label = direction.get("label", "").strip()
-            if not label:
-                continue
-            direction_key = add_node(
-                "direction", label,
-                direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
-                direction.get("label_vi", label), identity=f"{major}::{label}"
-            )
-            add_edge(major_key, direction_key, "unexpected direction to explore",
-                     direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
-            for adjacent_major in direction.get("explore_with", []):
-                if adjacent_major in MAJORS and adjacent_major != major:
-                    adjacent_key = node_id("major", adjacent_major)
-                    add_edge(direction_key, adjacent_key, "exploratory connection to another major",
-                             f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
-                elif adjacent_major and adjacent_major != major:
-                    adjacent_key = add_node(
-                        "related", adjacent_major,
-                        f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
-                        identity=f"{major}::{label}::{adjacent_major}"
-                    )
-                    add_edge(direction_key, adjacent_key, "explore adjacent discipline",
-                             f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
+        # Curated exploration directions are added only when this major is
+        # explicitly selected or opened in the map. Adjacent fields and
+        # cross-major links remain part of the same connected knowledge graph.
+        if major in expanded_set:
+            # Every major contributes its curated exploration directions to the
+            # Network Map, even before a student selects or opens that major. This
+            # makes the 285-direction catalogue genuinely visible in the graph.
+            # These are exploratory prompts, not verified curriculum or suitability claims.
+            for direction in EXPLORATION_DIRECTIONS.get(major, []):
+                label = direction.get("label", "").strip()
+                if not label:
+                    continue
+                direction_key = add_node(
+                    "direction", label,
+                    direction.get("why", "") + " This is an exploratory connection, not a verified curriculum requirement, admissions prerequisite, direct career route or suitability match.",
+                    direction.get("label_vi", label), identity=f"{major}::{label}"
+                )
+                add_edge(major_key, direction_key, "unexpected direction to explore",
+                         direction.get("why", "") + " This curated cross-disciplinary prompt invites further investigation; it is not a verified pathway.")
+                for adjacent_major in direction.get("explore_with", []):
+                    if adjacent_major in MAJORS and adjacent_major != major:
+                        adjacent_key = node_id("major", adjacent_major)
+                        add_edge(direction_key, adjacent_key, "exploratory connection to another major",
+                                 f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
+                    elif adjacent_major and adjacent_major != major:
+                        adjacent_key = add_node(
+                            "related", adjacent_major,
+                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 28 major profiles.",
+                            identity=f"{major}::{label}::{adjacent_major}"
+                        )
+                        add_edge(direction_key, adjacent_key, "explore adjacent discipline",
+                                 f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
 
 
         # Subject guidance can create an explicitly exploratory path only when
@@ -605,7 +608,9 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
             active_edges.add(index)
             active_nodes.update((source, target))
 
-    visible_node_keys = all_major_nodes | active_nodes
+    # Preserve the catalogue backbone: cluster hubs connect related majors.
+    all_cluster_nodes = {key for key, item in nodes.items() if item["type"] == "cluster"}
+    visible_node_keys = all_major_nodes | all_cluster_nodes | active_nodes
 
     palette = {
         "student":"#315B83", "interest":"#8D7DB8", "subject":"#6D9C98", "direction":"#8A9B62",
@@ -652,9 +657,9 @@ def make_interactive_graph(nodes, edges, selected_key=None, focus_keys=None):
         label = "" if relation == "profile includes" or not active else (RELATION_VI.get(relation, relation) if st.session_state.language == "Tiếng Việt" else relation)
         graph_edges.append(Edge(
             source=edge["source"], target=edge["target"], label=label,
-            color="#315B83" if active else "#F3F5F7",
-            width=2.8 if active else 0.1,
-            font={"color":"#315B83" if active else "#F3F5F7", "size":10},
+            color="#315B83" if active else "#D7DDE5",
+            width=2.8 if active else 1.0,
+            font={"color":"#315B83" if active else "#AAB3BF", "size":10},
             arrows="to"
         ))
 
