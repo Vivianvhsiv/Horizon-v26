@@ -97,3 +97,20 @@ These spot-checks strengthen a small number of named programme-availability and 
 - Rewrote the Stanford portion to name the B.S.-specific quantitative core: Theory of Probability I, Econometrics, Linear Algebra/Multivariable Calculus, and Functions of a Real Variable.
 - Added scope notes so the Stanford B.S. is not generalized to the B.A. or other institutions. These sources provide university-level curriculum context only; they do not establish universal admissions prerequisites or verified EMASI subject equivalence.
 - Sources: https://economics.nd.edu/undergraduate/economics-major/requirements/ and https://economics.stanford.edu/undergraduate/major/economics-bs
+
+## Follow-up source-page verification — 25 November 2026
+
+### Cognitive Science — claim 5: UC Irvine 2026–27 comparison
+
+**Exact-page check:** Reopened the official UC Irvine Department of Cognitive Sciences undergraduate comparison and cross-checked the 2026–27 catalogue degree requirements for the B.S. in Cognitive Sciences and B.S. in Psychology.
+
+**Confirmed details:** Both degree routes list psychology fundamentals, three statistics courses, programming, and a six-course science background. The B.S. in Cognitive Sciences additionally requires two single-variable calculus courses, a Cognitive Sciences research seminar, and selection from computational/statistical-learning core options including Statistical Learning, Computational Lab Skills, Cognitive Modeling and Neural Analytics. The Psychology B.S. has a different upper-division psychology core and research-methods structure.
+
+**Decision:** KEEP, with institution- and catalogue-year-specific scope. The existing claim accurately describes the principal differences, but must not be generalized to other universities or treated as an EMASI subject-equivalence claim.
+
+**Official pages inspected:**
+- https://www.cogsci.uci.edu/undergraduate/
+- https://catalogue.uci.edu/schoolofsocialsciences/departmentofcognitivesciences/cognitivesciences_bs/
+- https://www.cogsci.uci.edu/undergraduate/bspsych.php
+
+**Limit:** This is one claim-level verification, not completion of the full 65-claim audit.
