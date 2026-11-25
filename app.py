@@ -335,44 +335,61 @@ def render_reference_frameworks(page, language):
 
 
 def render_profile_section_sources(major, section, language):
-    """Render references by profile section without overstating what a source verifies."""
+    """Render section-scoped references with an explicit evidence boundary."""
     labels = {
         "English": {
-            "disciplines": ("Academic-discipline references", "Programme and disciplinary sources support the broad field context; they do not necessarily verify every listed subfield individually."),
+            "disciplines": ("Academic-discipline references", "These references support the broad disciplinary context; they do not verify every listed subfield individually."),
+            "academic_foundations": ("Curriculum and foundation references", "These official curricula and disciplinary references provide context for the listed foundations. They do not establish universal requirements across universities."),
+            "related_disciplines": ("Related-field references", "These sources provide academic context for connections to neighbouring fields. A connection does not mean the fields are interchangeable or that every programme includes both."),
+            "specialized_applications": ("Application-area references", "These sources support the broader academic or applied context. They do not prove that each application is a required course or a separate degree."),
+            "research_areas": ("Research-area references", "These sources provide context for research themes. Research topics may be electives, labs or emerging areas rather than standard undergraduate requirements."),
+            "exploration_directions": ("References for further exploration", "These references support the major's broad academic context only. The individual exploration prompt is a curated idea, not a directly verified curriculum pathway or personalized match."),
             "skills": ("Skills framework references", "O*NET describes skills used across occupations. It is a reference framework, not proof that every skill is required in every degree programme."),
             "careers": ("Career and occupation references", "These sources describe occupational families and career information. Listed career areas are exploratory possibilities, not guaranteed outcomes."),
             "no_major": "No major-specific reference is mapped here yet; the framework sources below provide general context only.",
-            "source_type": "Reference"
         },
         "Tiếng Việt": {
-            "disciplines": ("Nguồn tham khảo về lĩnh vực học thuật", "Nguồn chương trình và ngành học hỗ trợ bối cảnh chung; không nhất thiết xác minh riêng từng chuyên ngành nhỏ được liệt kê."),
+            "disciplines": ("Nguồn tham khảo về lĩnh vực học thuật", "Các nguồn này hỗ trợ bối cảnh chung của lĩnh vực; không xác minh riêng từng chuyên ngành nhỏ được liệt kê."),
+            "academic_foundations": ("Nguồn về chương trình học và nền tảng", "Các chương trình đại học và nguồn chuyên ngành chính thức cung cấp bối cảnh cho những nền tảng được liệt kê. Đây không phải yêu cầu chung áp dụng cho mọi trường."),
+            "related_disciplines": ("Nguồn về các lĩnh vực liên quan", "Các nguồn cung cấp bối cảnh học thuật cho mối liên hệ với những lĩnh vực lân cận. Mối liên hệ không có nghĩa các lĩnh vực có thể thay thế nhau hoặc mọi chương trình đều bao gồm cả hai."),
+            "specialized_applications": ("Nguồn về lĩnh vực ứng dụng", "Các nguồn hỗ trợ bối cảnh học thuật hoặc ứng dụng rộng hơn. Chúng không chứng minh mỗi ứng dụng là học phần bắt buộc hay một bằng cấp riêng."),
+            "research_areas": ("Nguồn về hướng nghiên cứu", "Các nguồn cung cấp bối cảnh cho chủ đề nghiên cứu. Đây có thể là môn tự chọn, hoạt động phòng thí nghiệm hoặc lĩnh vực mới, không nhất thiết là yêu cầu chuẩn ở bậc đại học."),
+            "exploration_directions": ("Nguồn tham khảo để tìm hiểu thêm", "Các nguồn này chỉ hỗ trợ bối cảnh học thuật chung của ngành. Từng gợi ý khám phá là ý tưởng được biên soạn, không phải lộ trình chương trình học đã xác minh trực tiếp hay kết quả ghép ngành cá nhân."),
             "skills": ("Nguồn tham khảo về khung kỹ năng", "O*NET mô tả các kỹ năng được sử dụng trong nhiều nghề nghiệp. Đây là khung tham chiếu, không chứng minh mọi kỹ năng đều bắt buộc trong mọi chương trình đại học."),
-            "careers": ("Nguồn tham khảo nghề nghiệp", "Các nguồn này mô tả nhóm nghề và thông tin nghề nghiệp. Những lĩnh vực nghề nghiệp được liệt kê chỉ là hướng khám phá, không bảo đảm kết quả việc làm."),
+            "careers": ("Nguồn tham khảo nghề nghiệp", "Các nguồn mô tả nhóm nghề và thông tin nghề nghiệp. Những lĩnh vực nghề nghiệp được liệt kê chỉ là hướng khám phá, không bảo đảm kết quả việc làm."),
             "no_major": "Hiện chưa có nguồn riêng cho ngành này được gắn tại đây; các nguồn khung bên dưới chỉ cung cấp bối cảnh chung.",
-            "source_type": "Nguồn tham khảo"
         }
     }[language]
     title, scope = labels[section]
     evidence = ACADEMIC_SOURCES.get(major, {})
     sources = []
     seen = set()
+
     def add_source(institution, name, url, detail=""):
         if not (name and url and str(url).startswith("https://")) or url in seen:
             return
         seen.add(url)
         sources.append((institution, name, url, detail))
-    if section == "disciplines":
+
+    # Curriculum/disciplinary claims are contextual sources for the four academic
+    # profile sections. Programme-directory-only claims are excluded from these lists.
+    if section in {"disciplines", "academic_foundations", "related_disciplines",
+                   "specialized_applications", "research_areas", "exploration_directions"}:
         for claim in evidence.get("claims", []):
+            claim_type = str(claim.get("type", "")).casefold()
+            if section != "disciplines" and not any(token in claim_type for token in ("curriculum", "disciplinary", "professional education")):
+                continue
             for source in claim.get("sources", []):
-                add_source(source.get("institution", ""), source.get("title", ""), source.get("url", ""),
-                           claim.get("status", ""))
+                add_source(source.get("institution", ""), source.get("title", ""),
+                           source.get("url", ""), claim.get("status", ""))
         for record in MAJORS.get(major, {}).get("source_records", []):
-            add_source(record.get("institution", ""), record.get("title", ""), record.get("source_url", ""),
-                       record.get("verification_status", ""))
+            add_source(record.get("institution", ""), record.get("title", ""),
+                       record.get("source_url", ""), record.get("verification_status", ""))
     elif section == "careers":
         for record in MAJORS.get(major, {}).get("career_sources", []):
-            add_source(record.get("institution", ""), record.get("title", ""), record.get("source_url", ""),
-                       record.get("verification_status", ""))
+            add_source(record.get("institution", ""), record.get("title", ""),
+                       record.get("source_url", ""), record.get("verification_status", ""))
+
     st.markdown(f"**{title}**")
     st.caption(scope)
     if sources:
@@ -383,6 +400,7 @@ def render_profile_section_sources(major, section, language):
                 st.caption(detail)
     else:
         st.caption(labels["no_major"])
+
     if section == "disciplines":
         st.markdown("- [UNESCO Institute for Statistics — ISCED-F 2013](https://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf)")
         st.markdown("- [U.S. NCES — Classification of Instructional Programs (CIP)](https://nces.ed.gov/ipeds/cipcode/Default.aspx?y=56)")
@@ -393,7 +411,6 @@ def render_profile_section_sources(major, section, language):
     elif section == "careers":
         st.markdown("- [U.S. Bureau of Labor Statistics — Occupational Outlook Handbook](https://www.bls.gov/ooh/)")
         st.markdown("- [O*NET OnLine — Occupation search](https://www.onetonline.org/)")
-
 
 def build_network(selected_subjects, selected_majors=None, selected_interests=None, expanded_majors=None):
     """Build a browsable full catalogue with carefully labelled exploratory links."""
@@ -976,6 +993,7 @@ elif page == tr("network"):
                     if values:
                         st.markdown("**" + (label_en if st.session_state.language == "English" else label_vi) + "**")
                         st.write(" · ".join(values))
+                        render_profile_section_sources(explore_major, field, st.session_state.language)
                 # Show the deliberately broad cross-disciplinary prompts beside the profile.
                 unexpected_directions = EXPLORATION_DIRECTIONS.get(explore_major, [])
                 if unexpected_directions:
@@ -989,6 +1007,7 @@ elif page == tr("network"):
                         with st.expander(direction_label):
                             st.write(direction_reason)
                             st.caption(("Explore alongside: " if st.session_state.language == "English" else "Có thể tìm hiểu cùng: ") + ", ".join(related_display))
+                            render_profile_section_sources(explore_major, "exploration_directions", st.session_state.language)
                 st.markdown("**" + ("Skills" if st.session_state.language == "English" else "Kỹ năng") + "**")
                 skills = explore_info.get("skills", []) if st.session_state.language == "English" else explore_info.get("skills_vi", explore_info.get("skills", []))
                 st.write(" · ".join(skills))
