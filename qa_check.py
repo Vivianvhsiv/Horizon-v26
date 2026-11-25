@@ -137,6 +137,22 @@ if csv_path.exists():
           f'SOURCE_CLAIM_REGISTER.csv matches academic_sources.json ({len(csv_rows_norm)} CSV rows / {len(json_rows_norm)} JSON source rows)')
 else:
     check(False,'SOURCE_CLAIM_REGISTER.csv exists')
+# Student-centred exploration lens: transparent overlap, self-described strengths, no fit scoring.
+check('Your exploration lens' in explore_code and 'Góc nhìn khám phá của bạn' in explore_code,
+      'Explore Majors offers a bilingual, optional student exploration lens')
+check('shared_topics = sorted(set(profile_interests).intersection(info.get("interests", [])))' in explore_code,
+      'Personal topic overlap uses exact selected taxonomy labels only')
+check('These are shared catalogue labels only.' in explore_code and 'That does not mean the major is unsuitable' in explore_code,
+      'Topic overlap is explicitly not presented as academic evidence or suitability')
+check('A strength you have noticed' in explore_code and 'A specific example that makes you think this is a strength' in explore_code,
+      'Student strengths are self-described and can be supported by a concrete example')
+check('does not automatically claim that this strength is required by or predicts success' in explore_code,
+      'Student-provided strengths are not converted into aptitude or success claims')
+compare_start=app.find('elif page == tr("compare"):')
+compare_code=app[compare_start:] if compare_start >= 0 else ''
+check('Shared labels are a browsing aid only' in compare_code and 'Your self-identified strength:' in compare_code,
+      'Compare Majors carries the student lens without creating a match score')
+
 # Python syntax
 try: ast.parse(app); check(True,'app.py parses successfully')
 except SyntaxError as e: check(False,f'app.py syntax error: {e}')
