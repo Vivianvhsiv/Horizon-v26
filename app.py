@@ -216,7 +216,7 @@ def profile_topic_mentions(info, selected_topics):
             values_vi = info.get(field + "_vi", [])
             for index, value_en in enumerate(values_en):
                 haystack = " ".join(str(value_en).casefold().split())
-                if needle in haystack:
+                if f" {needle} " in f" {haystack} ":
                     value_vi = values_vi[index] if index < len(values_vi) else value_en
                     mentions.append((topic, label_en, label_vi, value_en, value_vi))
     return mentions
