@@ -248,7 +248,7 @@ else:
 check('EXPLORATION_DIRECTIONS' in app and 'unexpected direction to explore' in app and 'exploratory connection to another major' in app,
       'Network Map integrates additional exploratory directions and cross-major discovery links')
 check('for direction in EXPLORATION_DIRECTIONS.get(major, []):' in network_code
-      and 'if major in expanded_set:\\n            for direction' not in network_code,
+      and 'if major in expanded_set:\n            for direction' not in network_code,
       'Network Map generates exploration-direction nodes for all 28 majors by default')
 renderer_start=app.find('def make_interactive_graph(')
 renderer_end=app.find('with st.sidebar:', renderer_start)
