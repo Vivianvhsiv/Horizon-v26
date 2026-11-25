@@ -398,6 +398,14 @@ def build_network(selected_subjects, selected_majors=None, selected_interests=No
                         adjacent_key = node_id("major", adjacent_major)
                         add_edge(direction_key, adjacent_key, "exploratory connection to another major",
                                  f"This topic may offer a useful comparison with {adjacent_major}. Investigate the actual course content and pathway requirements; this is not a formal progression route.")
+                    elif adjacent_major and adjacent_major != major:
+                        adjacent_key = add_node(
+                            "related", adjacent_major,
+                            f"An adjacent discipline or knowledge area suggested for further exploration from {label}. It is not one of Horizon's 20 major profiles.",
+                            identity=f"{major}::{label}::{adjacent_major}"
+                        )
+                        add_edge(direction_key, adjacent_key, "explore adjacent discipline",
+                                 f"{adjacent_major} is an adjacent discipline or knowledge area to investigate alongside {major}; this is an exploratory connection, not a formal degree pathway.")
 
         # Subject guidance can create an explicitly exploratory path only when
         # the record carries curriculum references. Its scope caveat is retained.
@@ -463,7 +471,7 @@ RELATION_VI = {
     "interest in":"quan tâm đến", "currently studies":"đang học", "considering":"đang cân nhắc", "profile includes":"hồ sơ ngành học gồm", "contains major":"bao gồm ngành", "explore through curriculum context":"khám phá qua bối cảnh chương trình học",
     "interest connection":"kết nối sở thích", "academic subject connection":"kết nối môn học",
     "explore profile direction":"hướng khám phá trong hồ sơ", "documented academic relationship":"mối liên hệ học thuật có nguồn",
-    "unexpected direction to explore":"hướng khám phá mới", "exploratory connection to another major":"kết nối khám phá với ngành khác",
+    "unexpected direction to explore":"hướng khám phá mới", "exploratory connection to another major":"kết nối khám phá với ngành khác", "explore adjacent discipline":"khám phá lĩnh vực liên quan",
     "draws on":"có nền tảng từ", "may connect to":"có thể liên quan đến"
 }
 
