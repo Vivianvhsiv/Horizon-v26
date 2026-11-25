@@ -1,0 +1,1150 @@
+{
+  "_meta": {
+    "title": "Unexpected exploration directions",
+    "version": "1.0",
+    "description": "Curated interdisciplinary exploration prompts for all 20 Horizon majors. These are invitations to investigate, not verified curriculum requirements, admissions prerequisites, direct career pathways or suitability matches.",
+    "description_vi": "Các gợi ý khám phá liên ngành được biên soạn cho cả 20 ngành Horizon. Đây là hướng tìm hiểu, không phải yêu cầu chương trình đã xác minh, điều kiện tuyển sinh, lộ trình nghề nghiệp trực tiếp hay kết luận về mức độ phù hợp."
+  },
+  "majors": {
+    "Cognitive Science": [
+      {
+        "label": "Music cognition",
+        "label_vi": "Nhận thức âm nhạc",
+        "why": "Explore how rhythm, melody and sound interact with attention, memory and emotion.",
+        "why_vi": "Tìm hiểu nhịp điệu, giai điệu và âm thanh tương tác với chú ý, trí nhớ và cảm xúc như thế nào.",
+        "explore_with": [
+          "Psychology",
+          "Linguistics",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Accessible technology",
+        "label_vi": "Công nghệ tiếp cận",
+        "why": "Investigate interfaces and tools that help people with different sensory or cognitive needs use technology.",
+        "why_vi": "Khám phá giao diện và công cụ giúp người có nhu cầu giác quan hoặc nhận thức khác nhau sử dụng công nghệ.",
+        "explore_with": [
+          "Computer Science",
+          "Education",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Animal cognition",
+        "label_vi": "Nhận thức ở động vật",
+        "why": "Compare learning, communication and problem-solving across species.",
+        "why_vi": "So sánh khả năng học tập, giao tiếp và giải quyết vấn đề giữa các loài.",
+        "explore_with": [
+          "Biology",
+          "Psychology",
+          "Linguistics"
+        ]
+      },
+      {
+        "label": "Computational creativity",
+        "label_vi": "Sáng tạo tính toán",
+        "why": "Study how people and computational systems generate, evaluate and collaborate on ideas.",
+        "why_vi": "Nghiên cứu cách con người và hệ thống tính toán tạo ra, đánh giá và cùng phát triển ý tưởng.",
+        "explore_with": [
+          "Computer Science",
+          "Communication & Media Studies",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Decision science",
+        "label_vi": "Khoa học ra quyết định",
+        "why": "Connect cognitive processes with choices in markets, public policy and everyday life.",
+        "why_vi": "Kết nối quá trình nhận thức với lựa chọn trong thị trường, chính sách công và đời sống.",
+        "explore_with": [
+          "Economics",
+          "Political Science",
+          "Psychology"
+        ]
+      }
+    ],
+    "Psychology": [
+      {
+        "label": "Behavioral economics",
+        "label_vi": "Kinh tế học hành vi",
+        "why": "Explore how attention, habits, emotion and judgment shape economic decisions.",
+        "why_vi": "Tìm hiểu chú ý, thói quen, cảm xúc và phán đoán ảnh hưởng đến quyết định kinh tế.",
+        "explore_with": [
+          "Economics",
+          "Finance",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Human factors and safety",
+        "label_vi": "Yếu tố con người và an toàn",
+        "why": "Study how environments, interfaces and procedures affect human performance and system safety.",
+        "why_vi": "Nghiên cứu môi trường, giao diện và quy trình ảnh hưởng đến hiệu suất con người và an toàn hệ thống.",
+        "explore_with": [
+          "Mechanical Engineering",
+          "Computer Science",
+          "Architecture"
+        ]
+      },
+      {
+        "label": "Sports and performance science",
+        "label_vi": "Khoa học thể thao và hiệu suất",
+        "why": "Explore motivation, attention, teamwork and learning in sport and performance settings.",
+        "why_vi": "Khám phá động lực, chú ý, làm việc nhóm và học tập trong thể thao và biểu diễn.",
+        "explore_with": [
+          "Biology",
+          "Education",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Consumer and cultural psychology",
+        "label_vi": "Tâm lý người tiêu dùng và văn hóa",
+        "why": "Investigate how identity, culture and social context influence choices and communication.",
+        "why_vi": "Tìm hiểu bản sắc, văn hóa và bối cảnh xã hội ảnh hưởng đến lựa chọn và giao tiếp.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Sociology",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Environmental psychology",
+        "label_vi": "Tâm lý học môi trường",
+        "why": "Explore how buildings, cities, nature and climate-related experiences shape behavior and wellbeing.",
+        "why_vi": "Khám phá công trình, thành phố, thiên nhiên và trải nghiệm khí hậu ảnh hưởng đến hành vi và sức khỏe tinh thần.",
+        "explore_with": [
+          "Architecture",
+          "Environmental Science",
+          "Sociology"
+        ]
+      }
+    ],
+    "Computer Science": [
+      {
+        "label": "Digital humanities",
+        "label_vi": "Nhân văn số",
+        "why": "Use computation to explore historical texts, languages, cultural collections and creative works.",
+        "why_vi": "Dùng công nghệ tính toán để khám phá văn bản lịch sử, ngôn ngữ, tư liệu văn hóa và tác phẩm sáng tạo.",
+        "explore_with": [
+          "History",
+          "Linguistics",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Computational biology",
+        "label_vi": "Sinh học tính toán",
+        "why": "Apply algorithms and data methods to biological systems and biomedical questions.",
+        "why_vi": "Ứng dụng thuật toán và phương pháp dữ liệu vào hệ thống sinh học và câu hỏi y sinh.",
+        "explore_with": [
+          "Biology",
+          "Data Science",
+          "Chemistry"
+        ]
+      },
+      {
+        "label": "Civic technology",
+        "label_vi": "Công nghệ vì cộng đồng",
+        "why": "Explore digital tools for public services, participation, accessibility and government transparency.",
+        "why_vi": "Khám phá công cụ số cho dịch vụ công, sự tham gia, khả năng tiếp cận và minh bạch chính quyền.",
+        "explore_with": [
+          "Political Science",
+          "Education",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Creative coding and generative media",
+        "label_vi": "Lập trình sáng tạo và truyền thông tạo sinh",
+        "why": "Combine software, visual expression, sound and interactive storytelling.",
+        "why_vi": "Kết hợp phần mềm, biểu đạt thị giác, âm thanh và kể chuyện tương tác.",
+        "explore_with": [
+          "Architecture",
+          "Communication & Media Studies",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Climate informatics",
+        "label_vi": "Tin học khí hậu",
+        "why": "Use computing and data analysis to investigate climate patterns and environmental change.",
+        "why_vi": "Dùng máy tính và phân tích dữ liệu để nghiên cứu quy luật khí hậu và biến đổi môi trường.",
+        "explore_with": [
+          "Environmental Science",
+          "Physics",
+          "Data Science"
+        ]
+      }
+    ],
+    "Data Science": [
+      {
+        "label": "Computational social science",
+        "label_vi": "Khoa học xã hội tính toán",
+        "why": "Use data and computational methods to study social networks, inequality, migration and collective behavior.",
+        "why_vi": "Dùng dữ liệu và phương pháp tính toán để nghiên cứu mạng xã hội, bất bình đẳng, di cư và hành vi tập thể.",
+        "explore_with": [
+          "Sociology",
+          "Political Science",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Digital epidemiology",
+        "label_vi": "Dịch tễ học số",
+        "why": "Explore how data streams and statistical models can help understand population-level health patterns.",
+        "why_vi": "Khám phá cách dữ liệu số và mô hình thống kê hỗ trợ tìm hiểu xu hướng sức khỏe cộng đồng.",
+        "explore_with": [
+          "Biology",
+          "Psychology",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Geospatial data science",
+        "label_vi": "Khoa học dữ liệu không gian địa lý",
+        "why": "Combine maps, location data and statistics to study cities, ecosystems and movement.",
+        "why_vi": "Kết hợp bản đồ, dữ liệu vị trí và thống kê để nghiên cứu thành phố, hệ sinh thái và sự di chuyển.",
+        "explore_with": [
+          "Environmental Science",
+          "Civil Engineering",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Sports analytics",
+        "label_vi": "Phân tích dữ liệu thể thao",
+        "why": "Investigate performance, tactics and team decisions through data.",
+        "why_vi": "Nghiên cứu hiệu suất, chiến thuật và quyết định đội nhóm thông qua dữ liệu.",
+        "explore_with": [
+          "Psychology",
+          "Biology",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Digital heritage and archives",
+        "label_vi": "Di sản và lưu trữ số",
+        "why": "Use data tools to organize, analyze and make cultural collections more discoverable.",
+        "why_vi": "Dùng công cụ dữ liệu để tổ chức, phân tích và giúp công chúng khám phá các bộ sưu tập văn hóa.",
+        "explore_with": [
+          "History",
+          "Communication & Media Studies",
+          "Linguistics"
+        ]
+      }
+    ],
+    "Economics": [
+      {
+        "label": "Urban and regional economics",
+        "label_vi": "Kinh tế học đô thị và vùng",
+        "why": "Explore how housing, transport, land use and local opportunities shape cities and regions.",
+        "why_vi": "Khám phá nhà ở, giao thông, sử dụng đất và cơ hội địa phương định hình thành phố và vùng như thế nào.",
+        "explore_with": [
+          "Civil Engineering",
+          "Architecture",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Behavioral public policy",
+        "label_vi": "Chính sách công dựa trên hành vi",
+        "why": "Study how evidence about human decisions can inform public services and policy design.",
+        "why_vi": "Nghiên cứu bằng chứng về quyết định của con người để hỗ trợ thiết kế dịch vụ công và chính sách.",
+        "explore_with": [
+          "Psychology",
+          "Political Science",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Environmental and climate economics",
+        "label_vi": "Kinh tế môi trường và khí hậu",
+        "why": "Investigate incentives, resource use, climate risks and the economics of transition.",
+        "why_vi": "Nghiên cứu động lực, sử dụng tài nguyên, rủi ro khí hậu và kinh tế của quá trình chuyển đổi.",
+        "explore_with": [
+          "Environmental Science",
+          "Political Science",
+          "Finance"
+        ]
+      },
+      {
+        "label": "Health economics",
+        "label_vi": "Kinh tế y tế",
+        "why": "Explore resource allocation, access and incentives in health systems.",
+        "why_vi": "Khám phá phân bổ nguồn lực, khả năng tiếp cận và động lực trong hệ thống y tế.",
+        "explore_with": [
+          "Biology",
+          "Political Science",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Cultural and creative industries",
+        "label_vi": "Kinh tế văn hóa và công nghiệp sáng tạo",
+        "why": "Study how creative work, media, heritage and cultural markets are organized and valued.",
+        "why_vi": "Nghiên cứu cách lao động sáng tạo, truyền thông, di sản và thị trường văn hóa được tổ chức và định giá.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Sociology",
+          "Accounting"
+        ]
+      }
+    ],
+    "Biology": [
+      {
+        "label": "Bio-inspired engineering",
+        "label_vi": "Kỹ thuật lấy cảm hứng từ sinh học",
+        "why": "Explore how structures and processes in living systems inspire materials, robots and designs.",
+        "why_vi": "Khám phá cách cấu trúc và quá trình trong sinh vật truyền cảm hứng cho vật liệu, robot và thiết kế.",
+        "explore_with": [
+          "Mechanical Engineering",
+          "Chemistry",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Conservation technology",
+        "label_vi": "Công nghệ bảo tồn",
+        "why": "Connect ecology with sensors, remote monitoring, mapping and data tools for conservation.",
+        "why_vi": "Kết nối sinh thái học với cảm biến, giám sát từ xa, bản đồ và công cụ dữ liệu phục vụ bảo tồn.",
+        "explore_with": [
+          "Environmental Science",
+          "Data Science",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Food systems and biotechnology",
+        "label_vi": "Hệ thống thực phẩm và công nghệ sinh học",
+        "why": "Explore the biology, technology, sustainability and economics behind food production.",
+        "why_vi": "Khám phá sinh học, công nghệ, tính bền vững và kinh tế đằng sau sản xuất thực phẩm.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Astrobiology",
+        "label_vi": "Sinh học vũ trụ",
+        "why": "Investigate the conditions for life by connecting biology, chemistry, geology and space science.",
+        "why_vi": "Nghiên cứu điều kiện hình thành sự sống bằng cách kết nối sinh học, hóa học, địa chất và khoa học vũ trụ.",
+        "explore_with": [
+          "Chemistry",
+          "Physics",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Science communication",
+        "label_vi": "Truyền thông khoa học",
+        "why": "Explore how biological research is explained, visualized and discussed with the public.",
+        "why_vi": "Khám phá cách nghiên cứu sinh học được giải thích, trực quan hóa và trao đổi với công chúng.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Education",
+          "Psychology"
+        ]
+      }
+    ],
+    "Mechanical Engineering": [
+      {
+        "label": "Medical devices and rehabilitation engineering",
+        "label_vi": "Thiết bị y tế và kỹ thuật phục hồi chức năng",
+        "why": "Apply mechanics, materials and design to assistive devices and rehabilitation technologies.",
+        "why_vi": "Ứng dụng cơ học, vật liệu và thiết kế vào thiết bị hỗ trợ và công nghệ phục hồi chức năng.",
+        "explore_with": [
+          "Biology",
+          "Electrical Engineering",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Biomechanics and human movement",
+        "label_vi": "Cơ sinh học và chuyển động con người",
+        "why": "Study forces and motion in the human body, sport, ergonomics and assistive design.",
+        "why_vi": "Nghiên cứu lực và chuyển động trong cơ thể người, thể thao, công thái học và thiết kế hỗ trợ.",
+        "explore_with": [
+          "Biology",
+          "Physics",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Disaster-resilient systems",
+        "label_vi": "Hệ thống có khả năng chống chịu thiên tai",
+        "why": "Explore resilient machines, infrastructure equipment, energy and emergency systems.",
+        "why_vi": "Khám phá máy móc, thiết bị hạ tầng, năng lượng và hệ thống ứng phó khẩn cấp có khả năng chống chịu.",
+        "explore_with": [
+          "Civil Engineering",
+          "Environmental Science",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Acoustic engineering",
+        "label_vi": "Kỹ thuật âm học",
+        "why": "Connect vibration, materials and signal processing with sound in buildings, products and spaces.",
+        "why_vi": "Kết nối dao động, vật liệu và xử lý tín hiệu với âm thanh trong công trình, sản phẩm và không gian.",
+        "explore_with": [
+          "Physics",
+          "Architecture",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Circular product design",
+        "label_vi": "Thiết kế sản phẩm tuần hoàn",
+        "why": "Investigate repairable products, material reuse, manufacturing choices and lifecycle impacts.",
+        "why_vi": "Nghiên cứu sản phẩm dễ sửa chữa, tái sử dụng vật liệu, lựa chọn sản xuất và tác động vòng đời.",
+        "explore_with": [
+          "Environmental Science",
+          "Chemistry",
+          "Architecture"
+        ]
+      }
+    ],
+    "Finance": [
+      {
+        "label": "Climate and transition finance",
+        "label_vi": "Tài chính khí hậu và chuyển đổi",
+        "why": "Explore how capital, risk and investment relate to climate adaptation and low-carbon transitions.",
+        "why_vi": "Khám phá vốn, rủi ro và đầu tư liên quan đến thích ứng khí hậu và chuyển đổi phát thải thấp.",
+        "explore_with": [
+          "Environmental Science",
+          "Economics",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Behavioral finance",
+        "label_vi": "Tài chính hành vi",
+        "why": "Study how judgment, emotion and social influence affect financial decisions.",
+        "why_vi": "Nghiên cứu phán đoán, cảm xúc và ảnh hưởng xã hội tác động đến quyết định tài chính.",
+        "explore_with": [
+          "Psychology",
+          "Economics",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Financial inclusion and development",
+        "label_vi": "Tài chính toàn diện và phát triển",
+        "why": "Explore access to financial services, digital payments and economic opportunity.",
+        "why_vi": "Khám phá khả năng tiếp cận dịch vụ tài chính, thanh toán số và cơ hội kinh tế.",
+        "explore_with": [
+          "Computer Science",
+          "Economics",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Sports and entertainment finance",
+        "label_vi": "Tài chính thể thao và giải trí",
+        "why": "Investigate business models, media rights, sponsorship and investment in creative industries.",
+        "why_vi": "Nghiên cứu mô hình kinh doanh, bản quyền truyền thông, tài trợ và đầu tư trong ngành sáng tạo.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Economics",
+          "Accounting"
+        ]
+      },
+      {
+        "label": "Public finance and city futures",
+        "label_vi": "Tài chính công và tương lai đô thị",
+        "why": "Connect budgeting, infrastructure investment, public services and regional development.",
+        "why_vi": "Kết nối ngân sách, đầu tư hạ tầng, dịch vụ công và phát triển vùng.",
+        "explore_with": [
+          "Political Science",
+          "Civil Engineering",
+          "Economics"
+        ]
+      }
+    ],
+    "Chemistry": [
+      {
+        "label": "Forensic chemistry",
+        "label_vi": "Hóa học pháp chứng",
+        "why": "Explore how chemical analysis supports the examination of materials and evidence.",
+        "why_vi": "Khám phá cách phân tích hóa học hỗ trợ kiểm tra vật liệu và chứng cứ.",
+        "explore_with": [
+          "Biology",
+          "Political Science",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Art conservation science",
+        "label_vi": "Khoa học bảo tồn nghệ thuật",
+        "why": "Use chemistry and materials science to understand, preserve and restore artworks and heritage objects.",
+        "why_vi": "Dùng hóa học và khoa học vật liệu để tìm hiểu, bảo tồn và phục hồi tác phẩm nghệ thuật và hiện vật di sản.",
+        "explore_with": [
+          "Architecture",
+          "History",
+          "Physics"
+        ]
+      },
+      {
+        "label": "Energy storage materials",
+        "label_vi": "Vật liệu lưu trữ năng lượng",
+        "why": "Investigate chemical materials used in batteries, hydrogen systems and energy conversion.",
+        "why_vi": "Nghiên cứu vật liệu hóa học dùng trong pin, hệ thống hydro và chuyển đổi năng lượng.",
+        "explore_with": [
+          "Physics",
+          "Electrical Engineering",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Atmospheric chemistry",
+        "label_vi": "Hóa học khí quyển",
+        "why": "Study chemical processes in air, aerosols, pollution and climate interactions.",
+        "why_vi": "Nghiên cứu quá trình hóa học trong không khí, sol khí, ô nhiễm và tương tác khí hậu.",
+        "explore_with": [
+          "Environmental Science",
+          "Physics",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Sustainable materials and circular chemistry",
+        "label_vi": "Vật liệu bền vững và hóa học tuần hoàn",
+        "why": "Explore safer materials, recyclable polymers and chemical processes with lower environmental impact.",
+        "why_vi": "Khám phá vật liệu an toàn hơn, polymer có thể tái chế và quy trình hóa học ít tác động môi trường hơn.",
+        "explore_with": [
+          "Mechanical Engineering",
+          "Environmental Science",
+          "Biology"
+        ]
+      }
+    ],
+    "Physics": [
+      {
+        "label": "Medical physics",
+        "label_vi": "Vật lý y khoa",
+        "why": "Explore how radiation, imaging, measurement and physical models are used in healthcare.",
+        "why_vi": "Khám phá cách bức xạ, hình ảnh, đo lường và mô hình vật lý được ứng dụng trong chăm sóc sức khỏe.",
+        "explore_with": [
+          "Biology",
+          "Electrical Engineering",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Climate and ocean physics",
+        "label_vi": "Vật lý khí hậu và đại dương",
+        "why": "Study energy flows, fluid dynamics and physical processes in the atmosphere and oceans.",
+        "why_vi": "Nghiên cứu dòng năng lượng, động lực học chất lưu và quá trình vật lý trong khí quyển và đại dương.",
+        "explore_with": [
+          "Environmental Science",
+          "Mechanical Engineering",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Sound and music technology",
+        "label_vi": "Công nghệ âm thanh và âm nhạc",
+        "why": "Connect waves, acoustics and signal processing with musical instruments and audio technology.",
+        "why_vi": "Kết nối sóng, âm học và xử lý tín hiệu với nhạc cụ và công nghệ âm thanh.",
+        "explore_with": [
+          "Communication & Media Studies",
+          "Computer Science",
+          "Mechanical Engineering"
+        ]
+      },
+      {
+        "label": "Quantum information science",
+        "label_vi": "Khoa học thông tin lượng tử",
+        "why": "Explore the intersection of quantum physics, computation and information theory.",
+        "why_vi": "Khám phá giao điểm giữa vật lý lượng tử, tính toán và lý thuyết thông tin.",
+        "explore_with": [
+          "Computer Science",
+          "Mathematics",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "label": "Planetary science",
+        "label_vi": "Khoa học hành tinh",
+        "why": "Investigate planets and moons through physics, chemistry, geology and remote sensing.",
+        "why_vi": "Nghiên cứu hành tinh và vệ tinh tự nhiên thông qua vật lý, hóa học, địa chất và viễn thám.",
+        "explore_with": [
+          "Environmental Science",
+          "Chemistry",
+          "Data Science"
+        ]
+      }
+    ],
+    "Environmental Science": [
+      {
+        "label": "Environmental justice",
+        "label_vi": "Công bằng môi trường",
+        "why": "Explore how environmental risks and resources are distributed across communities.",
+        "why_vi": "Khám phá rủi ro và tài nguyên môi trường được phân bổ giữa các cộng đồng như thế nào.",
+        "explore_with": [
+          "Sociology",
+          "Political Science",
+          "Economics"
+        ]
+      },
+      {
+        "label": "One Health",
+        "label_vi": "Sức khỏe tổng thể One Health",
+        "why": "Connect human, animal and ecosystem health in research and public decision-making.",
+        "why_vi": "Kết nối sức khỏe con người, động vật và hệ sinh thái trong nghiên cứu và ra quyết định công.",
+        "explore_with": [
+          "Biology",
+          "Political Science",
+          "Data Science"
+        ]
+      },
+      {
+        "label": "Climate adaptation and resilient cities",
+        "label_vi": "Thích ứng khí hậu và đô thị chống chịu",
+        "why": "Explore urban heat, flood risk, green infrastructure and community resilience.",
+        "why_vi": "Khám phá đảo nhiệt đô thị, rủi ro lũ lụt, hạ tầng xanh và khả năng chống chịu cộng đồng.",
+        "explore_with": [
+          "Architecture",
+          "Civil Engineering",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Environmental law and governance",
+        "label_vi": "Luật và quản trị môi trường",
+        "why": "Investigate how regulation, institutions and international agreements shape environmental action.",
+        "why_vi": "Nghiên cứu quy định, thể chế và thỏa thuận quốc tế định hình hành động môi trường.",
+        "explore_with": [
+          "Political Science",
+          "Economics",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Remote sensing and Earth observation",
+        "label_vi": "Viễn thám và quan sát Trái Đất",
+        "why": "Use satellite imagery and spatial data to monitor land, water, forests and climate.",
+        "why_vi": "Dùng ảnh vệ tinh và dữ liệu không gian để theo dõi đất, nước, rừng và khí hậu.",
+        "explore_with": [
+          "Data Science",
+          "Physics",
+          "Computer Science"
+        ]
+      }
+    ],
+    "Architecture": [
+      {
+        "label": "Neuroarchitecture and wellbeing",
+        "label_vi": "Kiến trúc thần kinh và sức khỏe",
+        "why": "Explore how light, sound, layout and built environments relate to perception and experience.",
+        "why_vi": "Khám phá ánh sáng, âm thanh, bố cục và môi trường xây dựng liên quan đến nhận thức và trải nghiệm.",
+        "explore_with": [
+          "Psychology",
+          "Cognitive Science",
+          "Biology"
+        ]
+      },
+      {
+        "label": "Disaster-resilient and humanitarian design",
+        "label_vi": "Thiết kế nhân đạo và chống chịu thiên tai",
+        "why": "Connect spatial design with accessibility, shelter, risk reduction and recovery.",
+        "why_vi": "Kết nối thiết kế không gian với khả năng tiếp cận, nơi trú ẩn, giảm thiểu rủi ro và phục hồi.",
+        "explore_with": [
+          "Civil Engineering",
+          "Environmental Science",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Heritage and adaptive reuse",
+        "label_vi": "Di sản và tái sử dụng thích ứng",
+        "why": "Explore how historic buildings can be conserved and given new functions.",
+        "why_vi": "Khám phá cách bảo tồn công trình lịch sử và trao cho chúng chức năng mới.",
+        "explore_with": [
+          "History",
+          "Chemistry",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Urban informatics",
+        "label_vi": "Tin học đô thị",
+        "why": "Combine spatial design, sensors and data to understand how cities function.",
+        "why_vi": "Kết hợp thiết kế không gian, cảm biến và dữ liệu để tìm hiểu cách thành phố vận hành.",
+        "explore_with": [
+          "Data Science",
+          "Computer Science",
+          "Civil Engineering"
+        ]
+      },
+      {
+        "label": "Biophilic and regenerative design",
+        "label_vi": "Thiết kế ưa sinh học và tái tạo",
+        "why": "Explore connections between buildings, biodiversity, materials and human experience.",
+        "why_vi": "Khám phá kết nối giữa công trình, đa dạng sinh học, vật liệu và trải nghiệm con người.",
+        "explore_with": [
+          "Biology",
+          "Environmental Science",
+          "Psychology"
+        ]
+      }
+    ],
+    "Electrical Engineering": [
+      {
+        "label": "Assistive and wearable technology",
+        "label_vi": "Công nghệ hỗ trợ và thiết bị đeo",
+        "why": "Explore sensors, embedded systems and electronics for accessibility and health monitoring.",
+        "why_vi": "Khám phá cảm biến, hệ thống nhúng và điện tử cho khả năng tiếp cận và theo dõi sức khỏe.",
+        "explore_with": [
+          "Biology",
+          "Computer Science",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Smart grids and energy transitions",
+        "label_vi": "Lưới điện thông minh và chuyển dịch năng lượng",
+        "why": "Connect power systems, control, data and renewable energy integration.",
+        "why_vi": "Kết nối hệ thống điện, điều khiển, dữ liệu và tích hợp năng lượng tái tạo.",
+        "explore_with": [
+          "Environmental Science",
+          "Data Science",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Sound, speech and hearing technology",
+        "label_vi": "Công nghệ âm thanh, lời nói và thính giác",
+        "why": "Explore signal processing and devices for audio, communication and hearing support.",
+        "why_vi": "Khám phá xử lý tín hiệu và thiết bị cho âm thanh, giao tiếp và hỗ trợ thính giác.",
+        "explore_with": [
+          "Linguistics",
+          "Biology",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Agricultural sensing and automation",
+        "label_vi": "Cảm biến và tự động hóa nông nghiệp",
+        "why": "Apply electronics and sensing to irrigation, crop monitoring and controlled environments.",
+        "why_vi": "Ứng dụng điện tử và cảm biến vào tưới tiêu, theo dõi cây trồng và môi trường kiểm soát.",
+        "explore_with": [
+          "Biology",
+          "Environmental Science",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Space systems and satellite communications",
+        "label_vi": "Hệ thống không gian và truyền thông vệ tinh",
+        "why": "Connect electronics, communications, control and sensing in satellite systems.",
+        "why_vi": "Kết nối điện tử, truyền thông, điều khiển và cảm biến trong hệ thống vệ tinh.",
+        "explore_with": [
+          "Physics",
+          "Computer Science",
+          "Data Science"
+        ]
+      }
+    ],
+    "Civil Engineering": [
+      {
+        "label": "Disaster risk and resilience",
+        "label_vi": "Rủi ro thiên tai và khả năng chống chịu",
+        "why": "Explore how infrastructure, communities and planning prepare for floods, earthquakes and hazards.",
+        "why_vi": "Khám phá cách hạ tầng, cộng đồng và quy hoạch chuẩn bị trước lũ lụt, động đất và hiểm họa.",
+        "explore_with": [
+          "Environmental Science",
+          "Political Science",
+          "Architecture"
+        ]
+      },
+      {
+        "label": "Water security and public health",
+        "label_vi": "An ninh nguồn nước và sức khỏe cộng đồng",
+        "why": "Connect water infrastructure, treatment, environmental monitoring and community health.",
+        "why_vi": "Kết nối hạ tầng nước, xử lý nước, giám sát môi trường và sức khỏe cộng đồng.",
+        "explore_with": [
+          "Biology",
+          "Chemistry",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Smart mobility and transport equity",
+        "label_vi": "Di chuyển thông minh và công bằng giao thông",
+        "why": "Study transport networks, accessibility, data and how mobility shapes opportunity.",
+        "why_vi": "Nghiên cứu mạng lưới giao thông, khả năng tiếp cận, dữ liệu và cách di chuyển định hình cơ hội.",
+        "explore_with": [
+          "Data Science",
+          "Economics",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Construction materials and circular infrastructure",
+        "label_vi": "Vật liệu xây dựng và hạ tầng tuần hoàn",
+        "why": "Explore low-impact materials, reuse, lifecycle analysis and resilient construction.",
+        "why_vi": "Khám phá vật liệu ít tác động, tái sử dụng, phân tích vòng đời và xây dựng có khả năng chống chịu.",
+        "explore_with": [
+          "Chemistry",
+          "Environmental Science",
+          "Mechanical Engineering"
+        ]
+      },
+      {
+        "label": "Urban climate and green infrastructure",
+        "label_vi": "Khí hậu đô thị và hạ tầng xanh",
+        "why": "Connect drainage, heat, vegetation and public space in city planning.",
+        "why_vi": "Kết nối thoát nước, nhiệt độ, thảm thực vật và không gian công cộng trong quy hoạch đô thị.",
+        "explore_with": [
+          "Architecture",
+          "Environmental Science",
+          "Biology"
+        ]
+      }
+    ],
+    "Political Science": [
+      {
+        "label": "Technology governance and AI policy",
+        "label_vi": "Quản trị công nghệ và chính sách AI",
+        "why": "Explore how institutions shape technology, privacy, accountability and public access.",
+        "why_vi": "Khám phá cách thể chế định hình công nghệ, quyền riêng tư, trách nhiệm giải trình và khả năng tiếp cận công.",
+        "explore_with": [
+          "Computer Science",
+          "Sociology",
+          "Economics"
+        ]
+      },
+      {
+        "label": "Climate diplomacy and global governance",
+        "label_vi": "Ngoại giao khí hậu và quản trị toàn cầu",
+        "why": "Study negotiation, international institutions and collective responses to environmental challenges.",
+        "why_vi": "Nghiên cứu đàm phán, thể chế quốc tế và phản ứng tập thể trước thách thức môi trường.",
+        "explore_with": [
+          "Environmental Science",
+          "Economics",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Behavioral political science",
+        "label_vi": "Khoa học chính trị hành vi",
+        "why": "Connect identity, information, group psychology and public opinion with political participation.",
+        "why_vi": "Kết nối bản sắc, thông tin, tâm lý nhóm và dư luận với sự tham gia chính trị.",
+        "explore_with": [
+          "Psychology",
+          "Cognitive Science",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Urban governance and planning",
+        "label_vi": "Quản trị đô thị và quy hoạch",
+        "why": "Explore how local institutions make decisions about housing, transport and public space.",
+        "why_vi": "Khám phá cách thể chế địa phương ra quyết định về nhà ở, giao thông và không gian công cộng.",
+        "explore_with": [
+          "Architecture",
+          "Civil Engineering",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Science and health policy",
+        "label_vi": "Chính sách khoa học và y tế",
+        "why": "Investigate how evidence, expertise and public institutions shape research and health decisions.",
+        "why_vi": "Nghiên cứu bằng chứng, chuyên môn và thể chế công định hình quyết định nghiên cứu và y tế.",
+        "explore_with": [
+          "Biology",
+          "Economics",
+          "Communication & Media Studies"
+        ]
+      }
+    ],
+    "Sociology": [
+      {
+        "label": "Digital society and platform studies",
+        "label_vi": "Xã hội số và nghiên cứu nền tảng",
+        "why": "Explore how platforms, algorithms and online communities shape social life.",
+        "why_vi": "Khám phá nền tảng số, thuật toán và cộng đồng trực tuyến định hình đời sống xã hội.",
+        "explore_with": [
+          "Computer Science",
+          "Communication & Media Studies",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Migration and diaspora studies",
+        "label_vi": "Nghiên cứu di cư và cộng đồng hải ngoại",
+        "why": "Connect identity, labor, policy, language and belonging across places.",
+        "why_vi": "Kết nối bản sắc, lao động, chính sách, ngôn ngữ và cảm giác thuộc về giữa các vùng đất.",
+        "explore_with": [
+          "Political Science",
+          "Economics",
+          "Linguistics"
+        ]
+      },
+      {
+        "label": "Medical sociology and health inequality",
+        "label_vi": "Xã hội học y tế và bất bình đẳng sức khỏe",
+        "why": "Study how institutions, social conditions and access shape health experiences.",
+        "why_vi": "Nghiên cứu thể chế, điều kiện xã hội và khả năng tiếp cận định hình trải nghiệm sức khỏe.",
+        "explore_with": [
+          "Biology",
+          "Psychology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Urban sociology and public space",
+        "label_vi": "Xã hội học đô thị và không gian công cộng",
+        "why": "Explore neighborhoods, housing, mobility, community life and spatial inequality.",
+        "why_vi": "Khám phá khu dân cư, nhà ở, di chuyển, đời sống cộng đồng và bất bình đẳng không gian.",
+        "explore_with": [
+          "Architecture",
+          "Civil Engineering",
+          "Geography"
+        ]
+      },
+      {
+        "label": "Work, automation and the future of labor",
+        "label_vi": "Lao động, tự động hóa và tương lai việc làm",
+        "why": "Investigate how technology and institutions change work, skills and inequality.",
+        "why_vi": "Nghiên cứu công nghệ và thể chế thay đổi công việc, kỹ năng và bất bình đẳng như thế nào.",
+        "explore_with": [
+          "Computer Science",
+          "Economics",
+          "Education"
+        ]
+      }
+    ],
+    "Linguistics": [
+      {
+        "label": "Language technology and AI",
+        "label_vi": "Công nghệ ngôn ngữ và AI",
+        "why": "Explore how language structure informs speech recognition, translation and language models.",
+        "why_vi": "Khám phá cấu trúc ngôn ngữ hỗ trợ nhận dạng giọng nói, dịch thuật và mô hình ngôn ngữ.",
+        "explore_with": [
+          "Computer Science",
+          "Data Science",
+          "Cognitive Science"
+        ]
+      },
+      {
+        "label": "Language, law and forensic communication",
+        "label_vi": "Ngôn ngữ, pháp luật và giao tiếp pháp chứng",
+        "why": "Study language evidence, authorship, interpretation and communication in legal settings.",
+        "why_vi": "Nghiên cứu chứng cứ ngôn ngữ, quyền tác giả, diễn giải và giao tiếp trong bối cảnh pháp lý.",
+        "explore_with": [
+          "Political Science",
+          "Psychology",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Language revitalization and digital archives",
+        "label_vi": "Phục hồi ngôn ngữ và lưu trữ số",
+        "why": "Connect field linguistics, community collaboration and digital preservation of languages.",
+        "why_vi": "Kết nối ngôn ngữ học thực địa, hợp tác cộng đồng và bảo tồn ngôn ngữ bằng công nghệ số.",
+        "explore_with": [
+          "Anthropology",
+          "Computer Science",
+          "History"
+        ]
+      },
+      {
+        "label": "Speech science and hearing",
+        "label_vi": "Khoa học lời nói và thính giác",
+        "why": "Explore speech production, perception, acoustics and communication access.",
+        "why_vi": "Khám phá tạo lời nói, tri giác, âm học và khả năng tiếp cận giao tiếp.",
+        "explore_with": [
+          "Biology",
+          "Physics",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Language, identity and migration",
+        "label_vi": "Ngôn ngữ, bản sắc và di cư",
+        "why": "Investigate multilingual lives, belonging, education and language policy.",
+        "why_vi": "Nghiên cứu đời sống đa ngôn ngữ, cảm giác thuộc về, giáo dục và chính sách ngôn ngữ.",
+        "explore_with": [
+          "Sociology",
+          "Education",
+          "Political Science"
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "label": "Learning analytics and educational data",
+        "label_vi": "Phân tích học tập và dữ liệu giáo dục",
+        "why": "Explore how learning evidence can inform feedback, course design and student support.",
+        "why_vi": "Khám phá cách bằng chứng học tập hỗ trợ phản hồi, thiết kế khóa học và hỗ trợ học sinh.",
+        "explore_with": [
+          "Data Science",
+          "Psychology",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Museum and informal learning",
+        "label_vi": "Học tập tại bảo tàng và ngoài lớp học",
+        "why": "Study how people learn through museums, science centers, media and community programs.",
+        "why_vi": "Nghiên cứu cách con người học qua bảo tàng, trung tâm khoa học, truyền thông và chương trình cộng đồng.",
+        "explore_with": [
+          "History",
+          "Communication & Media Studies",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Education in emergencies and humanitarian contexts",
+        "label_vi": "Giáo dục trong tình huống khẩn cấp và nhân đạo",
+        "why": "Explore learning access, displacement, resilience and community-led education.",
+        "why_vi": "Khám phá khả năng tiếp cận học tập, di dời, khả năng phục hồi và giáo dục do cộng đồng dẫn dắt.",
+        "explore_with": [
+          "Political Science",
+          "Sociology",
+          "Environmental Science"
+        ]
+      },
+      {
+        "label": "Universal design for learning",
+        "label_vi": "Thiết kế học tập phổ quát",
+        "why": "Connect accessibility, cognitive differences and flexible learning environments.",
+        "why_vi": "Kết nối khả năng tiếp cận, khác biệt nhận thức và môi trường học tập linh hoạt.",
+        "explore_with": [
+          "Cognitive Science",
+          "Architecture",
+          "Computer Science"
+        ]
+      },
+      {
+        "label": "Climate and sustainability education",
+        "label_vi": "Giáo dục khí hậu và phát triển bền vững",
+        "why": "Explore how schools and communities learn about environmental change and collective action.",
+        "why_vi": "Khám phá cách trường học và cộng đồng học về biến đổi môi trường và hành động tập thể.",
+        "explore_with": [
+          "Environmental Science",
+          "Communication & Media Studies",
+          "Psychology"
+        ]
+      }
+    ],
+    "Accounting": [
+      {
+        "label": "Forensic accounting and investigations",
+        "label_vi": "Kế toán pháp chứng và điều tra",
+        "why": "Explore how financial records, controls and analytical methods help examine irregularities.",
+        "why_vi": "Khám phá cách hồ sơ tài chính, kiểm soát và phương pháp phân tích hỗ trợ xem xét sai lệch.",
+        "explore_with": [
+          "Political Science",
+          "Computer Science",
+          "Finance"
+        ]
+      },
+      {
+        "label": "Sustainability and carbon accounting",
+        "label_vi": "Kế toán bền vững và carbon",
+        "why": "Study how organizations measure and report environmental and social impacts.",
+        "why_vi": "Nghiên cứu cách tổ chức đo lường và báo cáo tác động môi trường và xã hội.",
+        "explore_with": [
+          "Environmental Science",
+          "Economics",
+          "Communication & Media Studies"
+        ]
+      },
+      {
+        "label": "Accounting technology and process design",
+        "label_vi": "Công nghệ kế toán và thiết kế quy trình",
+        "why": "Connect accounting information with automation, systems design and data governance.",
+        "why_vi": "Kết nối thông tin kế toán với tự động hóa, thiết kế hệ thống và quản trị dữ liệu.",
+        "explore_with": [
+          "Computer Science",
+          "Data Science",
+          "Finance"
+        ]
+      },
+      {
+        "label": "Public sector accountability",
+        "label_vi": "Trách nhiệm giải trình khu vực công",
+        "why": "Explore public budgets, transparency, audit and how institutions account for public resources.",
+        "why_vi": "Khám phá ngân sách công, minh bạch, kiểm toán và cách thể chế giải trình việc sử dụng nguồn lực công.",
+        "explore_with": [
+          "Political Science",
+          "Economics",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Behavioral accounting",
+        "label_vi": "Kế toán hành vi",
+        "why": "Investigate how incentives, judgment and organizational culture affect reporting and controls.",
+        "why_vi": "Nghiên cứu động lực, phán đoán và văn hóa tổ chức ảnh hưởng đến báo cáo và kiểm soát.",
+        "explore_with": [
+          "Psychology",
+          "Sociology",
+          "Finance"
+        ]
+      }
+    ],
+    "Communication & Media Studies": [
+      {
+        "label": "Science and risk communication",
+        "label_vi": "Truyền thông khoa học và rủi ro",
+        "why": "Explore how evidence and uncertainty are communicated during scientific and public challenges.",
+        "why_vi": "Khám phá cách truyền đạt bằng chứng và bất định trong thách thức khoa học và công chúng.",
+        "explore_with": [
+          "Environmental Science",
+          "Biology",
+          "Psychology"
+        ]
+      },
+      {
+        "label": "Digital cultures and platform governance",
+        "label_vi": "Văn hóa số và quản trị nền tảng",
+        "why": "Study online communities, recommendation systems, moderation and digital participation.",
+        "why_vi": "Nghiên cứu cộng đồng trực tuyến, hệ thống gợi ý, kiểm duyệt và tham gia số.",
+        "explore_with": [
+          "Computer Science",
+          "Sociology",
+          "Political Science"
+        ]
+      },
+      {
+        "label": "Museum, heritage and exhibition communication",
+        "label_vi": "Truyền thông bảo tàng, di sản và triển lãm",
+        "why": "Connect storytelling, interpretation, visual design and public learning around cultural collections.",
+        "why_vi": "Kết nối kể chuyện, diễn giải, thiết kế thị giác và học tập cộng đồng quanh bộ sưu tập văn hóa.",
+        "explore_with": [
+          "History",
+          "Architecture",
+          "Education"
+        ]
+      },
+      {
+        "label": "Health communication",
+        "label_vi": "Truyền thông sức khỏe",
+        "why": "Explore how messages, trust, culture and media shape health knowledge and decisions.",
+        "why_vi": "Khám phá thông điệp, niềm tin, văn hóa và truyền thông định hình kiến thức và quyết định sức khỏe.",
+        "explore_with": [
+          "Biology",
+          "Psychology",
+          "Sociology"
+        ]
+      },
+      {
+        "label": "Interactive storytelling and experience design",
+        "label_vi": "Kể chuyện tương tác và thiết kế trải nghiệm",
+        "why": "Combine narrative, sound, visuals and technology to create participatory media experiences.",
+        "why_vi": "Kết hợp tự sự, âm thanh, hình ảnh và công nghệ để tạo trải nghiệm truyền thông có tính tương tác.",
+        "explore_with": [
+          "Computer Science",
+          "Cognitive Science",
+          "Architecture"
+        ]
+      }
+    ]
+  }
+}
